@@ -3,9 +3,8 @@ services:
     name: gigpilot-api
     env: node
     plan: free
-    rootDir: apps/backend
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    buildCommand: npm install && npm --prefix apps/backend run build
+    startCommand: npm --prefix apps/backend start
     envVars:
       - key: NODE_ENV
         value: production

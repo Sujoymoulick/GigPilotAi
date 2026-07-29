@@ -5,7 +5,8 @@
   "main": "./src/index.ts",
   "scripts": {
     "dev": "node --import tsx src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@fastify/compress": "^9.1.0",
