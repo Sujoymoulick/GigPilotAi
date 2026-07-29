@@ -1,81 +1,424 @@
-# GigPilot AI SaaS Architecture
+# Architecture
 
-This document describes the production-grade Clean Architecture and design system of the transformed GigPilot AI SaaS backend.
+## System Overview
 
-## Architecture Diagram
-
-```mermaid
-graph TD
-    Client[Astro Frontend] -->|HTTP Request / Bearer JWT| Fastify[Fastify Server]
-    
-    subgraph Fastify Backend
-        Fastify -->|Middleware| Security[Helmet, CORS, Rate Limiter, Compression]
-        Security -->|Auth Middleware| AuthHook[Verify Supabase JWT & Sync User]
-        AuthHook -->|Router| Routes[Versioned Routes /api/v1/...]
-        Routes -->|Controller| Controllers[Input Validation via Zod]
-        Controllers -->|Service| Services[Business Logic & AI Prompt Engineering]
-        Services -->|Repository| Repositories[Database Access Abstraction]
-    end
-    
-    subgraph Data & Caching & Jobs
-        Repositories -->|SQL Queries| DB[Supabase PostgreSQL & Row Level Security]
-        Services -->|Cache Get/Set| Cache[Upstash Redis Caching Layer]
-        Services -->|Queue Add| Queue[BullMQ Background Job Queues]
-    end
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        CLIENTS                                   │
+│  ┌──────────┐  ┌──────────────┐  ┌──────────┐  ┌────────────┐  │
+│  │ Web App  │  │ Chrome Ext   │  │ Mobile   │  │ API Client │  │
+│  │ (Astro)  │  │ (Manifest v3)│  │ (Future) │  │ (SDK)      │  │
+│  └────┬─────┘  └──────┬───────┘  └────┬─────┘  └─────┬──────┘  │
+│       │               │               │              │           │
+└───────┼───────────────┼───────────────┼──────────────┼───────────┘
+        │               │               │              │
+        ▼               ▼               ▼              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    CLOUDFLARE EDGE                               │
+│              ┌─────────────────────┐                             │
+│              │   CDN / Pages       │                             │
+│              │  (Static Assets)    │                             │
+│              └──────────┬──────────┘                             │
+└─────────────────────────┼───────────────────────────────────────┘
+                          │
+                          ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    FRONTEND (Astro SSR)                          │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐       │
+│  │  Pages   │  │Components│  │  React   │  │Supabase  │       │
+│  │  (SSR)   │  │  (24)    │  │ Widgets │  │  Client  │       │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘       │
+└─────────────────────────────┬───────────────────────────────────┘
+                              │ API Calls
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    BACKEND (Fastify)                              │
+│                                                                  │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │                    MIDDLEWARE                             │    │
+│  │  Helmet │ CORS │ Rate Limit │ Compress │ Cookie         │    │
+│  └──────────────────────────┬──────────────────────────────┘    │
+│                              │                                   │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │                    ROUTES (100+)                          │    │
+│  │  /api/auth    /api/ai     /api/social   /api/analytics  │    │
+│  │  /api/billing /api/storage /api/settings /api/notify    │    │
+│  └──────────────────────────┬──────────────────────────────┘    │
+│                              │                                   │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │                 AUTH MIDDLEWARE                            │    │
+│  │            JWT Verification → req.user                    │    │
+│  └──────────────────────────┬──────────────────────────────┘    │
+│                              │                                   │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │                 CONTROLLERS (8)                            │    │
+│  │  AuthController      AiController      SocialController  │    │
+│  │  AnalyticsController NotificationController               │    │
+│  │  BillingController   SettingsController StorageController │    │
+│  └──────────────────────────┬──────────────────────────────┘    │
+│                              │                                   │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │                 SERVICES (8)                              │    │
+│  │  AuthService      AiService       SocialService          │    │
+│  │  AnalyticsService NotificationService BillingService     │    │
+│  │  SettingsService   StorageService                        │    │
+│  └──────┬──────────────┬──────────────┬────────────────────┘    │
+│         │              │              │                          │
+│         ▼              ▼              ▼                          │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐                      │
+│  │  Auth    │  │   AI     │  │  Social  │                      │
+│  │ Package  │  │ Package  │  │ Providers│                      │
+│  └────┬─────┘  └────┬─────┘  └────┬─────┘                      │
+└───────┼──────────────┼──────────────┼────────────────────────────┘
+        │              │              │
+        ▼              ▼              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    EXTERNAL SERVICES                              │
+│                                                                  │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
+│  │   Supabase   │  │  AI Providers │  │   Razorpay   │          │
+│  │  ┌────────┐  │  │  ┌────────┐  │  │  ┌────────┐  │          │
+│  │  │  Auth  │  │  │  │ OpenAI │  │  │  │Payments│  │          │
+│  │  ├────────┤  │  │  │ Gemini │  │  │  └────────┘  │          │
+│  │  │   DB   │  │  │  │ Claude │  │  └──────────────┘          │
+│  │  ├────────┤  │  │  │  Groq  │  │                             │
+│  │  │Storage │  │  │  │OpenRtr │  │  ┌──────────────┐          │
+│  │  └────────┘  │  │  └────────┘  │  │    Redis     │          │
+│  └──────────────┘  └──────────────┘  │   (Upstash)  │          │
+│                                       └──────────────┘          │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-## Layered Clean Architecture
+## Request Lifecycle
 
-We implement Clean Architecture principles by separating concerns into distinct, fully-typed layers:
+```
+Client Request
+     │
+     ▼
+┌─────────────┐
+│  Fastify    │
+│  Server     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐    ┌─────────────┐
+│   Helmet    │───▶│ Security    │
+│   (Headers) │    │ Headers     │
+└──────┬──────┘    └─────────────┘
+       │
+       ▼
+┌─────────────┐    ┌─────────────┐
+│    CORS     │───▶│  Origin     │
+│  Check      │    │  Validation │
+└──────┬──────┘    └─────────────┘
+       │
+       ▼
+┌─────────────┐    ┌─────────────┐
+│ Rate Limit  │───▶│  100 req/min│
+│  Check      │    │  per IP     │
+└──────┬──────┘    └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│   Route     │
+│  Handler    │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+│  Auth       │───▶│  JWT        │───▶│  Supabase   │
+│ Middleware  │    │  Verify     │    │  getUser()  │
+└──────┬──────┘    └─────────────┘    └──────┬──────┘
+       │                                      │
+       ▼                                      ▼
+┌─────────────┐                      ┌─────────────┐
+│  Controller │                      │  Attach     │
+│  Handler    │◀─────────────────────│  req.user   │
+└──────┬──────┘                      └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│  Zod        │
+│  Validation │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Service    │
+│  Layer      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│ Repository  │
+│  (DB Ops)   │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐    ┌─────────────┐
+│  Supabase   │───▶│ PostgreSQL  │
+│  Client     │    │    / JSON   │
+└─────────────┘    └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│  Response   │
+│  {success,  │
+│   data,     │
+│   message}  │
+└─────────────┘
+```
 
-### 1. Routes Layer (`src/routes/`)
-Maps HTTP requests (endpoints and verbs) directly to the corresponding controller methods. Routes do not contain any business logic or direct controller actions; they serve strictly as configuration. In addition, routes are versioned under `/api/v1/...` while registering compatibility aliases for legacy endpoints to keep the frontend running out-of-the-box.
+## Authentication Flow
 
-### 2. Controllers Layer (`src/controllers/`)
-Controllers receive the Fastify request and reply objects. They perform two tasks:
-1. Validate query parameters, URL path parameters, and request body payloads using **Zod** validation schemas.
-2. Delegate business logic execution to the appropriate service class and format the output into a standardized JSON response:
-   - **Success Envelope:** `{ success: true, message: "string", data: {} }`
-   - **Error Envelope:** `{ success: false, message: "string", error: {} }`
+```
+┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐
+│  Client  │     │ Supabase │     │ Backend  │     │ Database │
+└────┬─────┘     └────┬─────┘     └────┬─────┘     └────┬─────┘
+     │                │                │                │
+     │  1. OAuth      │                │                │
+     │  Initiation    │                │                │
+     │───────────────▶│                │                │
+     │                │                │                │
+     │  2. Google     │                │                │
+     │  Auth Screen   │                │                │
+     │◀───────────────│                │                │
+     │                │                │                │
+     │  3. Callback   │                │                │
+     │  with Code     │                │                │
+     │───────────────▶│                │                │
+     │                │                │                │
+     │  4. Session    │                │                │
+     │  Token         │                │                │
+     │◀───────────────│                │                │
+     │                │                │                │
+     │  5. POST /api/auth/login        │                │
+     │  (email + Bearer token)         │                │
+     │────────────────────────────────▶│                │
+     │                │                │                │
+     │                │   6. getUser() │                │
+     │                │───────────────▶│                │
+     │                │                │                │
+     │                │   7. Verify    │                │
+     │                │◀───────────────│                │
+     │                │                │                │
+     │                │   8. Query/    │                │
+     │                │   Upsert User  │                │
+     │                │───────────────────────────────▶│
+     │                │                │                │
+     │                │                │   9. User     │
+     │                │                │◀───────────────│
+     │                │                │                │
+     │  10. Session JWT                │                │
+     │◀────────────────────────────────│                │
+     │                │                │                │
+     │  11. API Calls with Bearer JWT  │                │
+     │────────────────────────────────▶│                │
+     │                │                │                │
+     │                │   12. Verify JWT               │
+     │                │───────────────▶│                │
+     │                │                │   13. RLS     │
+     │                │                │───────────────▶│
+     │                │                │                │
+```
 
-### 3. Services Layer (`src/services/`)
-Services contain all core business logic, including:
-- prompt construction and calls to LLMs (Gemini, OpenAI).
-- user credit deductions.
-- triggering email dispatches.
-- scheduling social posts.
-- caching decisions.
+## AI Request Flow
 
-### 4. Repositories Layer (`src/repositories/`)
-Repositories abstract all direct database queries. They use **Dependency Inversion** to allow the backend to operate in two modes:
-1. **Supabase Mode:** Directly executes SQL queries against the remote PostgreSQL database using the user's auth token (fully enforcing **Row Level Security** at the database engine level).
-2. **Local Fallback Mode:** Operates on the local JSON file database client when Supabase credentials are not supplied. This prevents developer setup blockers.
+```
+┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐
+│  Client  │     │ Backend  │     │ AI Mgr   │     │ Provider │
+└────┬─────┘     └────┬─────┘     └────┬─────┘     └────┬─────┘
+     │                │                │                │
+     │  POST /api/    │                │                │
+     │  proposal/     │                │                │
+     │  generate      │                │                │
+     │───────────────▶│                │                │
+     │                │                │                │
+     │  1. Validate   │                │                │
+     │  (Zod)         │                │                │
+     │                │                │                │
+     │  2. Deduct     │                │                │
+     │  Credits       │                │                │
+     │───────────────────────────────▶│                │
+     │                │                │                │
+     │  3. Build      │                │                │
+     │  Prompt        │                │                │
+     │                │                │                │
+     │  4. Generate   │                │                │
+     │───────────────────────────────▶│                │
+     │                │                │                │
+     │                │  5. Route to   │                │
+     │                │  Provider      │                │
+     │                │───────────────▶│                │
+     │                │                │                │
+     │                │                │  6. API Call   │
+     │                │                │───────────────▶│
+     │                │                │                │
+     │                │                │  7. Response   │
+     │                │                │◀───────────────│
+     │                │                │                │
+     │                │  8. Result     │                │
+     │                │◀───────────────│                │
+     │                │                │                │
+     │  9. Parse JSON │                │                │
+     │                │                │                │
+     │  10. Save to   │                │                │
+     │  History       │                │                │
+     │───────────────────────────────▶│                │
+     │                │                │                │
+     │  11. Queue     │                │                │
+     │  Analytics Job │                │                │
+     │                │                │                │
+     │  12. Response  │                │                │
+     │◀───────────────│                │                │
+```
 
----
+## Scheduler Flow
 
-## Database Design & Row Level Security (RLS)
+```
+┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐
+│  Client  │     │ Backend  │     │  Queue   │     │ Provider │
+└────┬─────┘     └────┬─────┘     └────┬─────┘     └────┬─────┘
+     │                │                │                │
+     │  POST /api/    │                │                │
+     │  social/       │                │                │
+     │  schedule      │                │                │
+     │───────────────▶│                │                │
+     │                │                │                │
+     │  1. Create     │                │                │
+     │  Post Record   │                │                │
+     │                │                │                │
+     │  2. Create     │                │                │
+     │  Scheduled     │                │                │
+     │  Posts         │                │                │
+     │                │                │                │
+     │  3. Queue with │                │                │
+     │  Delay         │                │                │
+     │───────────────────────────────▶│                │
+     │                │                │                │
+     │                │  4. Timer      │                │
+     │                │  Fires         │                │
+     │                │◀───────────────│                │
+     │                │                │                │
+     │                │  5. POST /api/ │                │
+     │                │  social/       │                │
+     │                │  scheduler/run │                │
+     │                │───────────────▶│                │
+     │                │                │                │
+     │                │  6. Get Pending│                │
+     │                │  Posts         │                │
+     │                │                │                │
+     │                │  7. Publish    │                │
+     │                │  to Provider   │                │
+     │                │───────────────────────────────▶│
+     │                │                │                │
+     │                │  8. Success/   │                │
+     │                │  Retry         │                │
+     │                │◀───────────────│                │
+     │                │                │                │
+     │                │  9. Update     │                │
+     │                │  Status        │                │
+     │                │                │                │
+```
 
-The database schema utilizes **Supabase PostgreSQL** with Row Level Security (RLS) enabled on every table. RLS ensures strict tenant isolation—a user can only select, insert, update, or delete records where the `user_id` matches their own verified Supabase Auth user ID (`auth.uid()`).
+## Data Flow
 
-For full details on the tables, indexes, and security policies, see [supabase_schema.sql](../apps/backend/supabase_schema.sql).
+### Dual-Mode Database
 
----
+The application supports two database modes:
 
-## Caching Strategy
+1. **Supabase PostgreSQL** (Production) - When valid Supabase credentials are provided
+2. **File-based JSON** (Development/Testing) - Fallback when Supabase URL contains `mock.supabase.co`
 
-The caching system is powered by **Upstash Redis** (accessible via standard HTTP REST or Redis TCP protocols). Caching is automatically applied to:
-- User dashboard analytics (invalidated on credit deduction/billing upgrades).
-- AI prompt generations (for frequently used outputs).
-- User and Social Hub settings.
+The `BaseRepository` class automatically determines which mode to use based on environment configuration.
 
-If no `REDIS_URL` is present in the environment variables, the system automatically falls back to an in-memory TTL cache to maintain local developer velocity.
+### Request Envelope
 
----
+All API responses follow a consistent envelope:
 
-## Background Processing & Queue Workers
+```json
+{
+  "success": true,
+  "message": "Optional message",
+  "data": { ... }
+}
+```
 
-Asynchronous background processes (such as social posting retry loops, weekly analytics reports, and cleanup tasks) are handled by a modular **BullMQ** wrapper.
-- **AI Generation Queue:** Deducts credits and tracks user usage metrics asynchronously.
-- **Email Queue:** Dispatches transactional email alerts and magic links.
-- **Scheduled Social Posts Queue:** Processes scheduler runs and manages posting retry queues.
-- **Cleanup Queue:** Purges soft-deleted records.
+Error responses:
+
+```json
+{
+  "success": false,
+  "message": "Error description",
+  "error": { ... }
+}
+```
+
+## Package Structure
+
+```
+packages/
+├── ai/              # AI provider abstraction
+│   ├── src/
+│   │   ├── AIServiceManager.ts    # Provider registry & router
+│   │   ├── interfaces/            # AIService interface
+│   │   ├── providers/             # 5 AI providers
+│   │   └── prompts/               # 10 prompt templates
+│   └── test/
+├── auth/            # Authentication library
+│   ├── src/
+│   │   └── index.ts               # JWT creation/verification
+│   └── test/
+├── database/        # Database client
+│   └── src/
+│       └── index.ts               # File-based JSON DB
+├── shared/          # TypeScript types
+│   └── src/
+│       └── index.ts               # All shared interfaces
+└── ui/              # UI theme tokens
+```
+
+## Job Queue System
+
+In-process job queue with 6 named queues:
+
+| Queue | Purpose |
+|-------|---------|
+| `aiGenerationQueue` | AI usage tracking |
+| `emailQueue` | Magic link emails |
+| `socialPostQueue` | Scheduled post publishing |
+| `notificationsQueue` | Push notifications |
+| `cleanupQueue` | Daily DB cleanup (24h interval) |
+| `analyticsQueue` | Daily API log aggregation |
+
+Jobs support delayed execution (used for post scheduling).
+
+## Social Media Providers
+
+6 platform integrations via a common `SocialProvider` interface:
+
+| Provider | API | Auth Method |
+|----------|-----|-------------|
+| LinkedIn | API v2 | OAuth 2.0 |
+| Facebook | Graph API v19 | OAuth 2.0 |
+| Instagram | Graph API (via Facebook) | OAuth 2.0 |
+| Bluesky | AT Protocol | App Password |
+| Mastodon | REST API | OAuth 2.0 |
+| Dev.to | REST API | API Key |
+
+## Security Layers
+
+1. **Helmet** - HTTP security headers (CSP, HSTS, etc.)
+2. **CORS** - Origin whitelist from `FRONTEND_URL`
+3. **Rate Limiting** - 100 requests/minute per IP
+4. **Authentication** - JWT verification on protected routes
+5. **Input Validation** - Zod schemas on all endpoints
+6. **Error Handler** - Hides stack traces in production
+7. **Log Redaction** - Pino redacts auth headers and passwords
+8. **RLS** - Supabase Row Level Security via user-scoped clients
+
+## Related
+
+- [Folder Structure](FOLDER_STRUCTURE.md)
+- [Database](DATABASE.md)
+- [Security](SECURITY.md)
