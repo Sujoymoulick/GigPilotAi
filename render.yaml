@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: gigpilot-api
+    env: node
+    plan: free
+    rootDir: apps/backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: SUPABASE_URL
+        sync: false
+        placeholder: "Your Supabase Project REST URL"
+      - key: SUPABASE_ANON_KEY
+        sync: false
+        placeholder: "Your Supabase client anonymous key"
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+        placeholder: "Your Supabase secret service role key"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: REDIS_URL
+        sync: false
+        placeholder: "Your Upstash Redis connection URL (optional)"
+      - key: FRONTEND_URL
+        sync: false
+        placeholder: "Your Cloudflare Pages frontend URL (for CORS)"
