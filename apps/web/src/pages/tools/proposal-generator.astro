@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Sidebar } from '../../components/Sidebar';
+import { ProposalGenerator } from '../../components/ProposalGenerator';
+import { FileText } from 'lucide-react';
+---
+
+<Layout title="AI Proposal Generator - GigPilot AI">
+  <div class="flex min-h-screen bg-[#0B0F17]">
+    {/* Sidebar Navigation */}
+    <Sidebar currentPath="/tools/proposal-generator" client:load />
+
+    {/* Main Content Area */}
+    <main class="flex-1 flex flex-col min-w-0 overflow-y-auto">
+      {/* Top Navbar */}
+      <header class="h-16 border-b border-slate-800/80 bg-slate-950/40 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-30 flex-shrink-0">
+        <div class="flex items-center gap-2">
+          <FileText className="w-5 h-5 text-emerald-400" />
+          <h1 class="text-sm font-bold text-white">AI Proposal Generator</h1>
+        </div>
+      </header>
+
+      {/* Main Workspace */}
+      <div class="flex-1">
+        <ProposalGenerator client:load />
+      </div>
+    </main>
+  </div>
+</Layout>

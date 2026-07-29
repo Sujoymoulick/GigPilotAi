@@ -1,0 +1,5983 @@
+{
+  "users": [
+    {
+      "id": "usr_fiverr_pro_001",
+      "email": "alex@gigpilot.ai",
+      "full_name": "Alex Vance",
+      "fullName": "Alex Vance",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+      "role": "Pro",
+      "credits_remaining": 447,
+      "creditsRemaining": 450,
+      "monthly_quota": 500,
+      "monthlyQuota": 500,
+      "created_at": "2026-07-28T10:36:51.966Z",
+      "updated_at": "2026-07-29T06:25:53.093Z",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T10:36:51.966Z",
+          "payload": {
+            "id": "usr_fiverr_pro_001",
+            "email": "alex@gigpilot.ai",
+            "full_name": "Alex Vance",
+            "fullName": "Alex Vance",
+            "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "role": "Pro",
+            "credits_remaining": 450,
+            "creditsRemaining": 450,
+            "monthly_quota": 500,
+            "monthlyQuota": 500,
+            "created_at": "2026-07-28T10:36:51.966Z",
+            "updated_at": "2026-07-28T10:36:51.966Z"
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-28T10:36:52.049Z",
+          "payload": {
+            "id": "usr_fiverr_pro_001",
+            "email": "alex@gigpilot.ai",
+            "full_name": "Alex Vance",
+            "fullName": "Alex Vance",
+            "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "role": "Pro",
+            "credits_remaining": 449,
+            "creditsRemaining": 450,
+            "monthly_quota": 500,
+            "monthlyQuota": 500,
+            "created_at": "2026-07-28T10:36:51.966Z",
+            "updated_at": "2026-07-28T10:36:52.049Z"
+          }
+        },
+        {
+          "version": 3,
+          "updated_at": "2026-07-28T10:37:02.274Z",
+          "payload": {
+            "id": "usr_fiverr_pro_001",
+            "email": "alex@gigpilot.ai",
+            "full_name": "Alex Vance",
+            "fullName": "Alex Vance",
+            "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "role": "Pro",
+            "credits_remaining": 448,
+            "creditsRemaining": 450,
+            "monthly_quota": 500,
+            "monthlyQuota": 500,
+            "created_at": "2026-07-28T10:36:51.966Z",
+            "updated_at": "2026-07-28T10:37:02.274Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_users_r8t4c2fo1",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.189Z",
+      "updated_at": "2026-07-29T06:25:53.157Z",
+      "email": "test@gigpilot.ai",
+      "full_name": "test",
+      "fullName": "test",
+      "role": "Pro",
+      "credits_remaining": 446,
+      "monthly_quota": 500,
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T10:37:02.189Z",
+          "payload": {
+            "id": "id_users_r8t4c2fo1",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-28T10:37:02.189Z",
+            "updated_at": "2026-07-28T10:37:02.189Z",
+            "email": "test@gigpilot.ai",
+            "full_name": "test",
+            "fullName": "test",
+            "role": "Pro",
+            "credits_remaining": 450,
+            "monthly_quota": 500
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-28T10:37:02.194Z",
+          "payload": {
+            "id": "id_users_r8t4c2fo1",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-28T10:37:02.189Z",
+            "updated_at": "2026-07-28T10:37:02.194Z",
+            "email": "test@gigpilot.ai",
+            "full_name": "test",
+            "fullName": "test",
+            "role": "Pro",
+            "credits_remaining": 448,
+            "monthly_quota": 500
+          }
+        }
+      ]
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub_001",
+      "user_id": "usr_fiverr_pro_001",
+      "plan": "Pro",
+      "status": "active",
+      "razorpay_subscription_id": "sub_prod_12891391",
+      "current_period_start": "2026-07-28T10:36:51.966Z",
+      "current_period_end": "2026-08-27T10:36:51.966Z",
+      "created_at": "2026-07-28T10:36:51.966Z"
+    }
+  ],
+  "templates": [
+    {
+      "id": "tmpl_01",
+      "user_id": "usr_fiverr_pro_001",
+      "title": "Premium Next.js Web Development description",
+      "category": "Programming & Tech",
+      "type": "gig",
+      "content": "Are you looking to build a blazing-fast, SEO-optimized website? I specialize in React, Next.js, and Tailwind CSS templates...",
+      "is_custom": false,
+      "isCustom": false,
+      "is_favorite": true,
+      "isFavorite": true,
+      "created_at": "2026-07-23T10:36:51.966Z"
+    },
+    {
+      "id": "tmpl_02",
+      "user_id": "usr_fiverr_pro_001",
+      "title": "Winning Custom Proposal for Figma Rebrand",
+      "category": "Graphics & Design",
+      "type": "proposal",
+      "content": "Hi [Buyer Name], I saw your request for a modern brand overhaul. I have designed logos and complete kits for 50+ startups...",
+      "is_custom": true,
+      "isCustom": true,
+      "is_favorite": true,
+      "isFavorite": true,
+      "created_at": "2026-07-24T10:36:51.966Z"
+    },
+    {
+      "id": "tmpl_03",
+      "user_id": "usr_fiverr_pro_001",
+      "title": "Out of Office - Project Delivery Message",
+      "category": "Client Messages",
+      "type": "reply",
+      "content": "Hi there, thank you for placing the order. I have started working on your requirements and will keep you posted with updates!",
+      "is_custom": false,
+      "isCustom": false,
+      "is_favorite": false,
+      "isFavorite": false,
+      "created_at": "2026-07-25T10:36:51.966Z"
+    }
+  ],
+  "generations": [
+    {
+      "id": "gen_001",
+      "user_id": "usr_fiverr_pro_001",
+      "module": "Proposal Generator",
+      "input": {
+        "type": "buyer_request",
+        "buyerName": "David K.",
+        "jobDescription": "Need a developer to convert my landing page mockup into a fully operational Next.js site.",
+        "myService": "Full-stack Web Developer specialized in Next.js, React and CSS",
+        "tone": "Professional & Assertive",
+        "pricingEstimate": "$300",
+        "deliveryTime": "3 Days"
+      },
+      "output": {
+        "subjectLine": "Convert Landing Page mockup to Next.js in 3 days",
+        "proposalText": "Hi David K.,\n\nI reviewed your request to convert your landing page mockup into a high-performance Next.js site. I specialize in exact PSD/Figma-to-code conversions using modular React structures and pixel-perfect styling.\n\nWhy me:\n- 100% Responsive layout\n- SEO optimized metadata\n- Blazing fast performance (95+ page speed score)\n\nI can deliver this within 3 days for $300. Let's discuss details in chat!\n\nBest,\nAlex",
+        "keyHighlights": [
+          "Figma-to-Next.js exact match",
+          "Lighthouse PageSpeed 95+",
+          "Fully interactive components"
+        ],
+        "suggestedQuestions": [
+          "Can you share the link to your current mockups/Figma design?"
+        ],
+        "callToAction": "Send me a message in chat to get started!"
+      },
+      "tokens_used": 480,
+      "provider": "Gemini",
+      "is_favorite": true,
+      "isFavorite": true,
+      "created_at": "2026-07-28T08:36:51.966Z"
+    },
+    {
+      "id": "gen_002",
+      "user_id": "usr_fiverr_pro_001",
+      "module": "Keyword Finder",
+      "input": {
+        "service": "Logo Design"
+      },
+      "output": {
+        "primaryKeywords": [
+          {
+            "keyword": "logo designer",
+            "type": "primary",
+            "estimatedSearchVolume": 45000,
+            "competitionLevel": "High",
+            "difficultyScore": 82,
+            "opportunityScore": 68,
+            "trend": "Stable",
+            "intent": "Transactional"
+          },
+          {
+            "keyword": "professional logo design",
+            "type": "primary",
+            "estimatedSearchVolume": 12500,
+            "competitionLevel": "High",
+            "difficultyScore": 74,
+            "opportunityScore": 55,
+            "trend": "Rising",
+            "intent": "Transactional"
+          }
+        ],
+        "longTailKeywords": [
+          {
+            "keyword": "minimalist business logo",
+            "type": "long-tail",
+            "estimatedSearchVolume": 8500,
+            "competitionLevel": "Medium",
+            "difficultyScore": 42,
+            "opportunityScore": 88,
+            "trend": "Rising",
+            "intent": "Transactional"
+          },
+          {
+            "keyword": "tech startup branding logo design",
+            "type": "long-tail",
+            "estimatedSearchVolume": 2400,
+            "competitionLevel": "Low",
+            "difficultyScore": 18,
+            "opportunityScore": 95,
+            "trend": "Rising",
+            "intent": "Transactional"
+          }
+        ],
+        "relatedSearches": [
+          {
+            "keyword": "modern minimalist logo design",
+            "type": "related",
+            "estimatedSearchVolume": 15400,
+            "competitionLevel": "Medium",
+            "difficultyScore": 48,
+            "opportunityScore": 82,
+            "trend": "Stable",
+            "intent": "Commercial"
+          }
+        ],
+        "competitorKeywords": [
+          {
+            "keyword": "vector brand identity logo",
+            "type": "competitor",
+            "estimatedSearchVolume": 6700,
+            "competitionLevel": "Medium",
+            "difficultyScore": 35,
+            "opportunityScore": 79,
+            "trend": "Stable",
+            "intent": "Commercial"
+          }
+        ],
+        "summary": {
+          "avgDifficulty": 49,
+          "avgOpportunity": 77,
+          "recommendedFocus": [
+            "Target long-tail keywords in your Fiverr tags",
+            "Optimize description with \"minimalist business logo\""
+          ]
+        }
+      },
+      "tokens_used": 620,
+      "provider": "OpenAI",
+      "is_favorite": false,
+      "isFavorite": false,
+      "created_at": "2026-07-28T05:36:51.966Z"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "fav_01",
+      "user_id": "usr_fiverr_pro_001",
+      "item_type": "template",
+      "target_id": "tmpl_01",
+      "payload": {
+        "title": "Premium Next.js Web Development description",
+        "type": "gig",
+        "content": "Are you looking to build a blazing-fast, SEO-optimized website? I specialize in React, Next.js, and Tailwind CSS templates..."
+      },
+      "created_at": "2026-07-28T10:36:51.966Z"
+    }
+  ],
+  "settings": [
+    {
+      "id": "set_001",
+      "user_id": "usr_fiverr_pro_001",
+      "default_provider": "gemini",
+      "default_tone": "Professional",
+      "email_notifications": true,
+      "dark_mode": true,
+      "updated_at": "2026-07-28T10:36:51.966Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "hist_01",
+      "user_id": "usr_fiverr_pro_001",
+      "action": "AI Proposal Generation",
+      "details": {
+        "client": "David K.",
+        "type": "buyer_request"
+      },
+      "created_at": "2026-07-28T08:36:51.966Z"
+    },
+    {
+      "id": "hist_02",
+      "user_id": "usr_fiverr_pro_001",
+      "action": "AI Keyword Search",
+      "details": {
+        "query": "Logo Design"
+      },
+      "created_at": "2026-07-28T05:36:51.966Z"
+    },
+    {
+      "id": "id_history_zn08lmhw0",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.972Z",
+      "updated_at": "2026-07-28T10:36:51.972Z",
+      "action": "Connected bluesky Account",
+      "details": {
+        "username": "gigpilot.bsky.social"
+      }
+    },
+    {
+      "id": "id_history_28kjzikw8",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.988Z",
+      "updated_at": "2026-07-28T10:36:51.988Z",
+      "action": "Connected linkedin Account",
+      "details": {
+        "username": "alexvance_linkedin"
+      }
+    },
+    {
+      "id": "id_history_837yt6hmo",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.995Z",
+      "updated_at": "2026-07-28T10:36:51.995Z",
+      "action": "Published Post",
+      "details": {
+        "results": [
+          {
+            "accountId": "acc_li_001",
+            "provider": "linkedin",
+            "success": true,
+            "url": "https://www.linkedin.com/feed/update/urn:li:share:203591963",
+            "providerPostId": "urn:li:share:203591963"
+          }
+        ]
+      }
+    },
+    {
+      "id": "id_history_sxoo56gha",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.000Z",
+      "updated_at": "2026-07-28T10:36:52.000Z",
+      "action": "Connected mastodon Account",
+      "details": {
+        "username": "alexvance_mastodon"
+      }
+    },
+    {
+      "id": "id_history_vjiier7ob",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.012Z",
+      "updated_at": "2026-07-28T10:36:52.012Z",
+      "action": "Connected linkedin Account",
+      "details": {
+        "username": "alexvance_linkedin"
+      }
+    },
+    {
+      "id": "id_history_dqwag1gvc",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.208Z",
+      "updated_at": "2026-07-28T10:37:02.208Z",
+      "action": "Connected linkedin Account",
+      "details": {
+        "username": "alexvance_linkedin"
+      }
+    },
+    {
+      "id": "id_history_x1emv4x32",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.216Z",
+      "updated_at": "2026-07-28T10:37:02.216Z",
+      "action": "Published Post",
+      "details": {
+        "results": [
+          {
+            "accountId": "acc_li_001",
+            "provider": "linkedin",
+            "success": true,
+            "url": "https://www.linkedin.com/feed/update/urn:li:share:40147807",
+            "providerPostId": "urn:li:share:40147807"
+          }
+        ]
+      }
+    },
+    {
+      "id": "id_history_6ewejdr6a",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.222Z",
+      "updated_at": "2026-07-28T10:37:02.222Z",
+      "action": "Connected mastodon Account",
+      "details": {
+        "username": "alexvance_mastodon"
+      }
+    },
+    {
+      "id": "id_history_a5135011n",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.232Z",
+      "updated_at": "2026-07-28T10:37:02.232Z",
+      "action": "Connected linkedin Account",
+      "details": {
+        "username": "alexvance_linkedin"
+      }
+    },
+    {
+      "id": "id_history_dhah8d2ff",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.003Z",
+      "updated_at": "2026-07-29T06:25:53.003Z",
+      "action": "Connected bluesky Account",
+      "details": {
+        "username": "gigpilot.bsky.social"
+      }
+    },
+    {
+      "id": "id_history_6sn9ivvbf",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.015Z",
+      "updated_at": "2026-07-29T06:25:53.015Z",
+      "action": "Connected linkedin Account",
+      "details": {
+        "username": "alexvance_linkedin"
+      }
+    },
+    {
+      "id": "id_history_azmyxe5b4",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.022Z",
+      "updated_at": "2026-07-29T06:25:53.022Z",
+      "action": "Published Post",
+      "details": {
+        "results": [
+          {
+            "accountId": "acc_li_001",
+            "provider": "linkedin",
+            "success": true,
+            "url": "https://www.linkedin.com/feed/update/urn:li:share:623854322",
+            "providerPostId": "urn:li:share:623854322"
+          }
+        ]
+      }
+    },
+    {
+      "id": "id_history_q9bwdfjlo",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.027Z",
+      "updated_at": "2026-07-29T06:25:53.027Z",
+      "action": "Connected mastodon Account",
+      "details": {
+        "username": "alexvance_mastodon"
+      }
+    },
+    {
+      "id": "id_history_y9b1q4544",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.039Z",
+      "updated_at": "2026-07-29T06:25:53.039Z",
+      "action": "Connected linkedin Account",
+      "details": {
+        "username": "alexvance_linkedin"
+      }
+    }
+  ],
+  "billing": [
+    {
+      "id": "bill_inv_001",
+      "user_id": "usr_fiverr_pro_001",
+      "invoice_id": "INV-2026-0728",
+      "amount": 29,
+      "currency": "USD",
+      "status": "Paid",
+      "pdf_url": "#",
+      "created_at": "2026-07-28T09:36:51.966Z"
+    }
+  ],
+  "analytics": [
+    {
+      "id": "log_29",
+      "date": "2026-06-29",
+      "day": "Mon",
+      "creditsUsed": 5,
+      "wordsGenerated": 4955,
+      "timeSavedMinutes": 75,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 1
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 1
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_28",
+      "date": "2026-06-30",
+      "day": "Tue",
+      "creditsUsed": 7,
+      "wordsGenerated": 4928,
+      "timeSavedMinutes": 105,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 2
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 2
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "log_27",
+      "date": "2026-07-01",
+      "day": "Wed",
+      "creditsUsed": 4,
+      "wordsGenerated": 2592,
+      "timeSavedMinutes": 60,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_26",
+      "date": "2026-07-02",
+      "day": "Thu",
+      "creditsUsed": 7,
+      "wordsGenerated": 5523,
+      "timeSavedMinutes": 105,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 1
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_25",
+      "date": "2026-07-03",
+      "day": "Fri",
+      "creditsUsed": 4,
+      "wordsGenerated": 2704,
+      "timeSavedMinutes": 60,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 1
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_24",
+      "date": "2026-07-04",
+      "day": "Sat",
+      "creditsUsed": 7,
+      "wordsGenerated": 6685,
+      "timeSavedMinutes": 105,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 1
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 1
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_23",
+      "date": "2026-07-05",
+      "day": "Sun",
+      "creditsUsed": 2,
+      "wordsGenerated": 1726,
+      "timeSavedMinutes": 30,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "log_22",
+      "date": "2026-07-06",
+      "day": "Mon",
+      "creditsUsed": 4,
+      "wordsGenerated": 3792,
+      "timeSavedMinutes": 60,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 2
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_21",
+      "date": "2026-07-07",
+      "day": "Tue",
+      "creditsUsed": 5,
+      "wordsGenerated": 3225,
+      "timeSavedMinutes": 75,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 1
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 1
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_20",
+      "date": "2026-07-08",
+      "day": "Wed",
+      "creditsUsed": 4,
+      "wordsGenerated": 3724,
+      "timeSavedMinutes": 60,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 2
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_19",
+      "date": "2026-07-09",
+      "day": "Thu",
+      "creditsUsed": 2,
+      "wordsGenerated": 1746,
+      "timeSavedMinutes": 30,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_18",
+      "date": "2026-07-10",
+      "day": "Fri",
+      "creditsUsed": 1,
+      "wordsGenerated": 638,
+      "timeSavedMinutes": 15,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_17",
+      "date": "2026-07-11",
+      "day": "Sat",
+      "creditsUsed": 7,
+      "wordsGenerated": 6321,
+      "timeSavedMinutes": 105,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 1
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_16",
+      "date": "2026-07-12",
+      "day": "Sun",
+      "creditsUsed": 5,
+      "wordsGenerated": 3615,
+      "timeSavedMinutes": 75,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 2
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 1
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_15",
+      "date": "2026-07-13",
+      "day": "Mon",
+      "creditsUsed": 8,
+      "wordsGenerated": 6464,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 2
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_14",
+      "date": "2026-07-14",
+      "day": "Tue",
+      "creditsUsed": 6,
+      "wordsGenerated": 5832,
+      "timeSavedMinutes": 90,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 2
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 1
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 2
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_13",
+      "date": "2026-07-15",
+      "day": "Wed",
+      "creditsUsed": 7,
+      "wordsGenerated": 5873,
+      "timeSavedMinutes": 105,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 1
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 2
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 1
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_12",
+      "date": "2026-07-16",
+      "day": "Thu",
+      "creditsUsed": 2,
+      "wordsGenerated": 1642,
+      "timeSavedMinutes": 30,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 1
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 2
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_11",
+      "date": "2026-07-17",
+      "day": "Fri",
+      "creditsUsed": 8,
+      "wordsGenerated": 6464,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 2
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_10",
+      "date": "2026-07-18",
+      "day": "Sat",
+      "creditsUsed": 6,
+      "wordsGenerated": 4806,
+      "timeSavedMinutes": 90,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_9",
+      "date": "2026-07-19",
+      "day": "Sun",
+      "creditsUsed": 2,
+      "wordsGenerated": 1640,
+      "timeSavedMinutes": 30,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 2
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 1
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_8",
+      "date": "2026-07-20",
+      "day": "Mon",
+      "creditsUsed": 5,
+      "wordsGenerated": 3825,
+      "timeSavedMinutes": 75,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 2
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 1
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 2
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_7",
+      "date": "2026-07-21",
+      "day": "Tue",
+      "creditsUsed": 5,
+      "wordsGenerated": 4770,
+      "timeSavedMinutes": 75,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 2
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_6",
+      "date": "2026-07-22",
+      "day": "Wed",
+      "creditsUsed": 8,
+      "wordsGenerated": 5096,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 2
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 2
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 2
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_5",
+      "date": "2026-07-23",
+      "day": "Thu",
+      "creditsUsed": 8,
+      "wordsGenerated": 7248,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 1
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_4",
+      "date": "2026-07-24",
+      "day": "Fri",
+      "creditsUsed": 5,
+      "wordsGenerated": 3325,
+      "timeSavedMinutes": 75,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 1
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 2
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_3",
+      "date": "2026-07-25",
+      "day": "Sat",
+      "creditsUsed": 3,
+      "wordsGenerated": 2295,
+      "timeSavedMinutes": 45,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 2
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 2
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 1
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_2",
+      "date": "2026-07-26",
+      "day": "Sun",
+      "creditsUsed": 8,
+      "wordsGenerated": 7824,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 2
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 2
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_1",
+      "date": "2026-07-27",
+      "day": "Mon",
+      "creditsUsed": 2,
+      "wordsGenerated": 1204,
+      "timeSavedMinutes": 30,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_0",
+      "date": "2026-07-28",
+      "day": "Tue",
+      "creditsUsed": 4,
+      "wordsGenerated": 2616,
+      "timeSavedMinutes": 60,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 2
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 1
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "gigs": [
+    {
+      "id": "gig_draft_01",
+      "user_id": "usr_fiverr_pro_001",
+      "title": "I will build high converting Next js website and Tailwind CSS application",
+      "category": "Programming & Tech",
+      "content": {
+        "seoTitle": "I will build high converting Next js website and Tailwind CSS application",
+        "description": "Looking for a custom site? I will build optimized frontend pages using React, Next.js, and Tailwind CSS.\n\nWhat is included:\n- Clean modular code\n- Fully responsive layout\n- SEO-optimized tags and speed settings",
+        "packages": {
+          "basic": {
+            "name": "Basic Starter",
+            "title": "Single Page Setup",
+            "description": "Core Layout built in Next.js",
+            "deliveryDays": 2,
+            "revisions": "2 Revisions",
+            "price": 45,
+            "features": [
+              "1 Page",
+              "Tailwind integration",
+              "Source Code"
+            ]
+          },
+          "standard": {
+            "name": "Standard Pro",
+            "title": "Complete Web App",
+            "description": "Up to 5 Pages with API link",
+            "deliveryDays": 4,
+            "revisions": "5 Revisions",
+            "price": 95,
+            "features": [
+              "Everything in Basic",
+              "API integration",
+              "Custom design"
+            ]
+          },
+          "premium": {
+            "name": "Premium Empire",
+            "title": "Enterprise Portal",
+            "description": "Full application with admin setup",
+            "deliveryDays": 7,
+            "revisions": "Unlimited",
+            "price": 250,
+            "features": [
+              "Everything in Standard",
+              "Supabase integration",
+              "Multi-role layout"
+            ]
+          }
+        },
+        "faqs": [
+          {
+            "question": "Do you design or just write code?",
+            "answer": "I specialize in both custom Tailwind layout design and clean Next.js coding."
+          }
+        ],
+        "requirements": [
+          "Brand preferred style guidelines",
+          "Wireframes / references"
+        ],
+        "tags": [
+          "nextjs",
+          "tailwindcss",
+          "web-development",
+          "react",
+          "api-integration"
+        ],
+        "callToAction": "Order today to unlock elite performance!",
+        "imagePrompt": "Isometric 3D workspace graphic showing purple neon grids and code screens for gig thumbnail.",
+        "videoScript": "[Intro 0:00-0:05] Fast websites sell. I build Next.js apps...",
+        "upsellSuggestions": [
+          "Fast 24-hr express (+$30)"
+        ]
+      },
+      "status": "draft",
+      "created_at": "2026-07-27T10:36:51.966Z"
+    },
+    {
+      "id": "id_gigs_t74luj1c1",
+      "user_id": "id_users_bul21cktg",
+      "created_at": "2026-07-28T10:36:51.968Z",
+      "updated_at": "2026-07-28T10:36:51.968Z",
+      "title": "I will do expert Next.js developer",
+      "category": "Tech",
+      "content": {
+        "seoTitle": "I will do expert Next.js developer",
+        "description": "Need expert help with Next.js developer? I provide premium layouts, clean files and commercial rights.",
+        "packages": {
+          "basic": {
+            "name": "Basic",
+            "title": "Starter setup",
+            "description": "Essential deliverables",
+            "price": 25,
+            "deliveryDays": 3,
+            "revisions": "3",
+            "features": []
+          },
+          "standard": {
+            "name": "Standard",
+            "title": "Pro setup",
+            "description": "Recommended deliverables",
+            "price": 65,
+            "deliveryDays": 5,
+            "revisions": "5",
+            "features": []
+          },
+          "premium": {
+            "name": "Premium",
+            "title": "Enterprise setup",
+            "description": "Full business solutions",
+            "price": 150,
+            "deliveryDays": 7,
+            "revisions": "Unlimited",
+            "features": []
+          }
+        },
+        "faqs": [],
+        "requirements": [],
+        "tags": [
+          "next.js-developer"
+        ],
+        "callToAction": "Order now!",
+        "imagePrompt": "A glowing desk with code mockups for gig cover image.",
+        "videoScript": "Hi there, need this gig? I will deliver it fast.",
+        "upsellSuggestions": []
+      },
+      "status": "draft"
+    },
+    {
+      "id": "id_gigs_93pnkakrr",
+      "user_id": "id_users_r8t4c2fo1",
+      "created_at": "2026-07-28T10:37:02.195Z",
+      "updated_at": "2026-07-28T10:37:02.195Z",
+      "title": "I will do expert Next.js developer",
+      "category": "Tech",
+      "content": {
+        "seoTitle": "I will do expert Next.js developer",
+        "description": "Need expert help with Next.js developer? I provide premium layouts, clean files and commercial rights.",
+        "packages": {
+          "basic": {
+            "name": "Basic",
+            "title": "Starter setup",
+            "description": "Essential deliverables",
+            "price": 25,
+            "deliveryDays": 3,
+            "revisions": "3",
+            "features": []
+          },
+          "standard": {
+            "name": "Standard",
+            "title": "Pro setup",
+            "description": "Recommended deliverables",
+            "price": 65,
+            "deliveryDays": 5,
+            "revisions": "5",
+            "features": []
+          },
+          "premium": {
+            "name": "Premium",
+            "title": "Enterprise setup",
+            "description": "Full business solutions",
+            "price": 150,
+            "deliveryDays": 7,
+            "revisions": "Unlimited",
+            "features": []
+          }
+        },
+        "faqs": [],
+        "requirements": [],
+        "tags": [
+          "next.js-developer"
+        ],
+        "callToAction": "Order now!",
+        "imagePrompt": "A glowing desk with code mockups for gig cover image.",
+        "videoScript": "Hi there, need this gig? I will deliver it fast.",
+        "upsellSuggestions": []
+      },
+      "status": "draft"
+    },
+    {
+      "id": "id_gigs_vzc3e7vb4",
+      "user_id": "id_users_r8t4c2fo1",
+      "created_at": "2026-07-29T06:25:53.158Z",
+      "updated_at": "2026-07-29T06:25:53.158Z",
+      "title": "I will do expert Next.js developer",
+      "category": "Tech",
+      "content": {
+        "seoTitle": "I will do expert Next.js developer",
+        "description": "Need expert help with Next.js developer? I provide premium layouts, clean files and commercial rights.",
+        "packages": {
+          "basic": {
+            "name": "Basic",
+            "title": "Starter setup",
+            "description": "Essential deliverables",
+            "price": 25,
+            "deliveryDays": 3,
+            "revisions": "3",
+            "features": []
+          },
+          "standard": {
+            "name": "Standard",
+            "title": "Pro setup",
+            "description": "Recommended deliverables",
+            "price": 65,
+            "deliveryDays": 5,
+            "revisions": "5",
+            "features": []
+          },
+          "premium": {
+            "name": "Premium",
+            "title": "Enterprise setup",
+            "description": "Full business solutions",
+            "price": 150,
+            "deliveryDays": 7,
+            "revisions": "Unlimited",
+            "features": []
+          }
+        },
+        "faqs": [],
+        "requirements": [],
+        "tags": [
+          "next.js-developer"
+        ],
+        "callToAction": "Order now!",
+        "imagePrompt": "A glowing desk with code mockups for gig cover image.",
+        "videoScript": "Hi there, need this gig? I will deliver it fast.",
+        "upsellSuggestions": []
+      },
+      "status": "draft"
+    }
+  ],
+  "portfolios": [],
+  "social_accounts": [
+    {
+      "id": "acc_li_001",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "provider_user_id": "li_usr_998273",
+      "username": "alexvance_linkedin",
+      "display_name": "Alex Vance",
+      "email": "alex@gigpilot.ai",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+      "access_token": "mock_linkedin_access_token_l19io00hd9o",
+      "refresh_token": "mock_linkedin_refresh_token_f1nxgj5x1of",
+      "expires_at": "2026-09-27T06:25:53.036Z",
+      "scope": "w_member_social r_liteprofile r_emailaddress",
+      "status": "connected",
+      "last_sync": "2026-07-29T06:25:53.036Z",
+      "created_at": "2026-07-18T10:36:51.966Z",
+      "updated_at": "2026-07-29T06:25:53.037Z",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T08:36:51.966Z",
+          "payload": {
+            "id": "acc_li_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "linkedin",
+            "provider_user_id": "li_usr_998273",
+            "username": "alexvance_linkedin",
+            "display_name": "Alex Vance",
+            "email": "alex@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_linkedin_token_alex",
+            "refresh_token": "mock_linkedin_refresh_alex",
+            "expires_at": "2026-09-26T10:36:51.966Z",
+            "scope": "w_member_social r_liteprofile r_emailaddress",
+            "status": "connected",
+            "last_sync": "2026-07-28T08:36:51.966Z",
+            "created_at": "2026-07-18T10:36:51.966Z",
+            "updated_at": "2026-07-28T08:36:51.966Z"
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-28T10:36:51.985Z",
+          "payload": {
+            "id": "acc_li_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "linkedin",
+            "provider_user_id": "li_usr_998273",
+            "username": "alexvance_linkedin",
+            "display_name": "Alex Vance",
+            "email": "alex@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_linkedin_access_token_u0xs8caod48",
+            "refresh_token": "mock_linkedin_refresh_token_z0fhzjjy1v9",
+            "expires_at": "2026-09-26T10:36:51.984Z",
+            "scope": "w_member_social r_liteprofile r_emailaddress",
+            "status": "connected",
+            "last_sync": "2026-07-28T10:36:51.984Z",
+            "created_at": "2026-07-18T10:36:51.966Z",
+            "updated_at": "2026-07-28T10:36:51.985Z"
+          }
+        },
+        {
+          "version": 3,
+          "updated_at": "2026-07-28T10:36:52.011Z",
+          "payload": {
+            "id": "acc_li_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "linkedin",
+            "provider_user_id": "li_usr_998273",
+            "username": "alexvance_linkedin",
+            "display_name": "Alex Vance",
+            "email": "alex@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_linkedin_access_token_zpokhnfgn0r",
+            "refresh_token": "mock_linkedin_refresh_token_fqca6fj2dz",
+            "expires_at": "2026-09-26T10:36:52.010Z",
+            "scope": "w_member_social r_liteprofile r_emailaddress",
+            "status": "connected",
+            "last_sync": "2026-07-28T10:36:52.010Z",
+            "created_at": "2026-07-18T10:36:51.966Z",
+            "updated_at": "2026-07-28T10:36:52.011Z"
+          }
+        },
+        {
+          "version": 4,
+          "updated_at": "2026-07-28T10:37:02.206Z",
+          "payload": {
+            "id": "acc_li_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "linkedin",
+            "provider_user_id": "li_usr_998273",
+            "username": "alexvance_linkedin",
+            "display_name": "Alex Vance",
+            "email": "alex@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_linkedin_access_token_03n811n70jtn",
+            "refresh_token": "mock_linkedin_refresh_token_1fpcx60bjzn",
+            "expires_at": "2026-09-26T10:37:02.205Z",
+            "scope": "w_member_social r_liteprofile r_emailaddress",
+            "status": "connected",
+            "last_sync": "2026-07-28T10:37:02.205Z",
+            "created_at": "2026-07-18T10:36:51.966Z",
+            "updated_at": "2026-07-28T10:37:02.206Z"
+          }
+        },
+        {
+          "version": 5,
+          "updated_at": "2026-07-28T10:37:02.231Z",
+          "payload": {
+            "id": "acc_li_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "linkedin",
+            "provider_user_id": "li_usr_998273",
+            "username": "alexvance_linkedin",
+            "display_name": "Alex Vance",
+            "email": "alex@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_linkedin_access_token_7mqoh067lxg",
+            "refresh_token": "mock_linkedin_refresh_token_iy35k6rb8g",
+            "expires_at": "2026-09-26T10:37:02.230Z",
+            "scope": "w_member_social r_liteprofile r_emailaddress",
+            "status": "connected",
+            "last_sync": "2026-07-28T10:37:02.230Z",
+            "created_at": "2026-07-18T10:36:51.966Z",
+            "updated_at": "2026-07-28T10:37:02.231Z"
+          }
+        },
+        {
+          "version": 6,
+          "updated_at": "2026-07-29T06:25:53.014Z",
+          "payload": {
+            "id": "acc_li_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "linkedin",
+            "provider_user_id": "li_usr_998273",
+            "username": "alexvance_linkedin",
+            "display_name": "Alex Vance",
+            "email": "alex@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_linkedin_access_token_rku3hhik3o",
+            "refresh_token": "mock_linkedin_refresh_token_d0u7rgta92s",
+            "expires_at": "2026-09-27T06:25:53.013Z",
+            "scope": "w_member_social r_liteprofile r_emailaddress",
+            "status": "connected",
+            "last_sync": "2026-07-29T06:25:53.013Z",
+            "created_at": "2026-07-18T10:36:51.966Z",
+            "updated_at": "2026-07-29T06:25:53.014Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "acc_ma_001",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "provider_user_id": "mast_usr_998182",
+      "username": "alexvance_mastodon",
+      "display_name": "Alex Vance",
+      "email": "mastodon@gigpilot.ai",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+      "access_token": "mock_mastodon_token_msk5ix1yiis",
+      "refresh_token": "mock_mastodon_refresh_token",
+      "expires_at": "",
+      "scope": "read write follow instance:mastodon.social",
+      "status": "connected",
+      "last_sync": "2026-07-29T06:25:53.025Z",
+      "created_at": "2026-07-23T10:36:51.966Z",
+      "updated_at": "2026-07-29T06:25:53.026Z",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T07:36:51.966Z",
+          "payload": {
+            "id": "acc_ma_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "mastodon",
+            "provider_user_id": "mast_usr_998182",
+            "username": "alexvance_mastodon",
+            "display_name": "Alex Vance",
+            "email": "mastodon@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_mastodon_token_alex",
+            "refresh_token": "",
+            "expires_at": "",
+            "scope": "read write follow instance:mastodon.social",
+            "status": "connected",
+            "last_sync": "2026-07-28T07:36:51.966Z",
+            "created_at": "2026-07-23T10:36:51.966Z",
+            "updated_at": "2026-07-28T07:36:51.966Z"
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-28T10:36:51.999Z",
+          "payload": {
+            "id": "acc_ma_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "mastodon",
+            "provider_user_id": "mast_usr_998182",
+            "username": "alexvance_mastodon",
+            "display_name": "Alex Vance",
+            "email": "mastodon@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_mastodon_token_zrsam8bwxbk",
+            "refresh_token": "mock_mastodon_refresh_token",
+            "expires_at": "",
+            "scope": "read write follow instance:mastodon.social",
+            "status": "connected",
+            "last_sync": "2026-07-28T10:36:51.998Z",
+            "created_at": "2026-07-23T10:36:51.966Z",
+            "updated_at": "2026-07-28T10:36:51.999Z"
+          }
+        },
+        {
+          "version": 3,
+          "updated_at": "2026-07-28T10:37:02.221Z",
+          "payload": {
+            "id": "acc_ma_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "mastodon",
+            "provider_user_id": "mast_usr_998182",
+            "username": "alexvance_mastodon",
+            "display_name": "Alex Vance",
+            "email": "mastodon@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_mastodon_token_2f9uq3b7j54",
+            "refresh_token": "mock_mastodon_refresh_token",
+            "expires_at": "",
+            "scope": "read write follow instance:mastodon.social",
+            "status": "connected",
+            "last_sync": "2026-07-28T10:37:02.220Z",
+            "created_at": "2026-07-23T10:36:51.966Z",
+            "updated_at": "2026-07-28T10:37:02.221Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "acc_dev_001",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "provider_user_id": "devto_acc_100201",
+      "username": "gigpilot_devto",
+      "display_name": "GigPilot AI Author",
+      "email": "devto@gigpilot.ai",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+      "access_token": "mock_devto_key_alex",
+      "refresh_token": "",
+      "expires_at": "",
+      "scope": "api-key",
+      "status": "connected",
+      "last_sync": "2026-07-28T09:36:51.966Z",
+      "created_at": "2026-07-20T10:36:51.966Z",
+      "updated_at": "2026-07-28T09:36:51.966Z"
+    },
+    {
+      "id": "id_social_accounts_j1qb24z2j",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.970Z",
+      "updated_at": "2026-07-29T06:25:53.001Z",
+      "provider": "bluesky",
+      "provider_user_id": "did:plc:mock_gigpilot",
+      "username": "gigpilot.bsky.social",
+      "display_name": "GigPilot AI",
+      "email": "bluesky@gigpilot.ai",
+      "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
+      "access_token": "mock_bluesky_jwt_m2mctcu01el",
+      "refresh_token": "mock_bluesky_refresh_jwt",
+      "expires_at": "2026-07-29T08:25:53.000Z",
+      "scope": "atproto",
+      "status": "connected",
+      "last_sync": "2026-07-29T06:25:53.000Z",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T10:36:51.970Z",
+          "payload": {
+            "id": "id_social_accounts_j1qb24z2j",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-28T10:36:51.970Z",
+            "updated_at": "2026-07-28T10:36:51.970Z",
+            "provider": "bluesky",
+            "provider_user_id": "did:plc:mock_gigpilot",
+            "username": "gigpilot.bsky.social",
+            "display_name": "GigPilot AI",
+            "email": "bluesky@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_bluesky_jwt_p7fbuq45o8l",
+            "refresh_token": "mock_bluesky_refresh_jwt",
+            "expires_at": "2026-07-28T12:36:51.969Z",
+            "scope": "atproto",
+            "status": "connected",
+            "last_sync": "2026-07-28T10:36:51.969Z"
+          }
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "post_001",
+      "user_id": "usr_fiverr_pro_001",
+      "title": "Unlocking 10x Productivity with Next.js & GigPilot",
+      "content": "Just shared my secret sauce for NextJS styling and landing page optimization. Building modular frontends has never been faster when backed by structured prompt engineering and Tailwind UI blocks. Read full guide here!",
+      "hashtags": "nextjs,webdev,freelancer,ai",
+      "mentions": "gigpilot_ai",
+      "link": "https://gigpilot.ai/blog/productivity-nextjs",
+      "status": "Published",
+      "created_at": "2026-07-27T10:36:51.966Z",
+      "updated_at": "2026-07-27T10:36:51.966Z"
+    },
+    {
+      "id": "post_002",
+      "user_id": "usr_fiverr_pro_001",
+      "title": "AI-powered Social Scheduler is Here",
+      "content": "I am excited to share the release of our new Social Media Hub! Seamlessly connect your channels, write with AI assistance, and schedule posts directly from your workspace dashboard.",
+      "hashtags": "ai,marketing,productivity,saas",
+      "mentions": "",
+      "link": "https://gigpilot.ai/social-hub",
+      "status": "Scheduled",
+      "created_at": "2026-07-28T09:36:51.966Z",
+      "updated_at": "2026-07-28T09:36:51.966Z"
+    },
+    {
+      "id": "post_003",
+      "user_id": "usr_fiverr_pro_001",
+      "title": "Fiverr Freelancing Hacks for 2026",
+      "content": "Drafting my next gig. To rank high in Fiverr searches, always research long-tail tags, write clear packages, and perform keyword analysis. Here is how I use AI keywords data...",
+      "hashtags": "fiverr,gigeconomy,sidehustle",
+      "mentions": "",
+      "link": "",
+      "status": "Draft",
+      "created_at": "2026-07-27T22:36:51.966Z",
+      "updated_at": "2026-07-27T22:36:51.966Z"
+    },
+    {
+      "id": "id_posts_23m3nzev4",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.980Z",
+      "updated_at": "2026-07-28T10:36:51.980Z",
+      "title": "Test Post Draft",
+      "content": "This is a test post content",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Draft"
+    },
+    {
+      "id": "id_posts_o9kqsv4v0",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.991Z",
+      "updated_at": "2026-07-28T10:36:51.993Z",
+      "title": "Instant Publish Test",
+      "content": "Publishing immediately to LinkedIn!",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T10:36:51.991Z",
+          "payload": {
+            "id": "id_posts_o9kqsv4v0",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-28T10:36:51.991Z",
+            "updated_at": "2026-07-28T10:36:51.991Z",
+            "title": "Instant Publish Test",
+            "content": "Publishing immediately to LinkedIn!",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Publishing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_posts_b69wx8qmm",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.002Z",
+      "updated_at": "2026-07-28T10:36:52.002Z",
+      "title": "Scheduled Test Post",
+      "content": "This post is scheduled for tomorrow",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Scheduled"
+    },
+    {
+      "id": "id_posts_v662vqhcm",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.015Z",
+      "updated_at": "2026-07-28T10:36:52.025Z",
+      "title": "Past Scheduled Post",
+      "content": "Should trigger right now!",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T10:36:52.015Z",
+          "payload": {
+            "id": "id_posts_v662vqhcm",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-28T10:36:52.015Z",
+            "updated_at": "2026-07-28T10:36:52.015Z",
+            "title": "Past Scheduled Post",
+            "content": "Should trigger right now!",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Scheduled"
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_posts_6rqmle5yf",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.200Z",
+      "updated_at": "2026-07-28T10:37:02.200Z",
+      "title": "Test Post Draft",
+      "content": "This is a test post content",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Draft"
+    },
+    {
+      "id": "id_posts_16joya636",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.212Z",
+      "updated_at": "2026-07-28T10:37:02.215Z",
+      "title": "Instant Publish Test",
+      "content": "Publishing immediately to LinkedIn!",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T10:37:02.212Z",
+          "payload": {
+            "id": "id_posts_16joya636",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-28T10:37:02.212Z",
+            "updated_at": "2026-07-28T10:37:02.212Z",
+            "title": "Instant Publish Test",
+            "content": "Publishing immediately to LinkedIn!",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Publishing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_posts_1tuzwx4a0",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.225Z",
+      "updated_at": "2026-07-28T10:37:02.225Z",
+      "title": "Scheduled Test Post",
+      "content": "This post is scheduled for tomorrow",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Scheduled"
+    },
+    {
+      "id": "id_posts_l8da3xt18",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.237Z",
+      "updated_at": "2026-07-28T10:37:02.248Z",
+      "title": "Past Scheduled Post",
+      "content": "Should trigger right now!",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T10:37:02.237Z",
+          "payload": {
+            "id": "id_posts_l8da3xt18",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-28T10:37:02.237Z",
+            "updated_at": "2026-07-28T10:37:02.237Z",
+            "title": "Past Scheduled Post",
+            "content": "Should trigger right now!",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Scheduled"
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_posts_xtk03r3rd",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.010Z",
+      "updated_at": "2026-07-29T06:25:53.010Z",
+      "title": "Test Post Draft",
+      "content": "This is a test post content",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Draft"
+    },
+    {
+      "id": "id_posts_6vdra6krz",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.018Z",
+      "updated_at": "2026-07-29T06:25:53.020Z",
+      "title": "Instant Publish Test",
+      "content": "Publishing immediately to LinkedIn!",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T06:25:53.018Z",
+          "payload": {
+            "id": "id_posts_6vdra6krz",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T06:25:53.018Z",
+            "updated_at": "2026-07-29T06:25:53.018Z",
+            "title": "Instant Publish Test",
+            "content": "Publishing immediately to LinkedIn!",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Publishing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_posts_dfnueaoke",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.031Z",
+      "updated_at": "2026-07-29T06:25:53.031Z",
+      "title": "Scheduled Test Post",
+      "content": "This post is scheduled for tomorrow",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Scheduled"
+    },
+    {
+      "id": "id_posts_wr3eh2yju",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.042Z",
+      "updated_at": "2026-07-29T06:25:53.061Z",
+      "title": "Past Scheduled Post",
+      "content": "Should trigger right now!",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T06:25:53.042Z",
+          "payload": {
+            "id": "id_posts_wr3eh2yju",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T06:25:53.042Z",
+            "updated_at": "2026-07-29T06:25:53.042Z",
+            "title": "Past Scheduled Post",
+            "content": "Should trigger right now!",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Scheduled"
+          }
+        }
+      ]
+    }
+  ],
+  "scheduled_posts": [
+    {
+      "id": "sched_001",
+      "user_id": "usr_fiverr_pro_001",
+      "post_id": "post_002",
+      "provider": "linkedin",
+      "scheduled_time": "2026-07-29T04:36:51.966Z",
+      "timezone": "UTC",
+      "status": "Failed",
+      "retry_count": 0,
+      "published_at": null,
+      "error_message": "Post or connected social account details not found",
+      "created_at": "2026-07-28T09:36:51.966Z",
+      "updated_at": "2026-07-29T06:25:53.049Z",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T09:36:51.966Z",
+          "payload": {
+            "id": "sched_001",
+            "user_id": "usr_fiverr_pro_001",
+            "post_id": "post_002",
+            "provider": "linkedin",
+            "scheduled_time": "2026-07-29T04:36:51.966Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null,
+            "created_at": "2026-07-28T09:36:51.966Z",
+            "updated_at": "2026-07-28T09:36:51.966Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sched_002",
+      "user_id": "usr_fiverr_pro_001",
+      "post_id": "post_002",
+      "provider": "mastodon",
+      "scheduled_time": "2026-07-29T04:36:51.966Z",
+      "timezone": "UTC",
+      "status": "Failed",
+      "retry_count": 0,
+      "published_at": null,
+      "error_message": "Post or connected social account details not found",
+      "created_at": "2026-07-28T09:36:51.966Z",
+      "updated_at": "2026-07-29T06:25:53.053Z",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T09:36:51.966Z",
+          "payload": {
+            "id": "sched_002",
+            "user_id": "usr_fiverr_pro_001",
+            "post_id": "post_002",
+            "provider": "mastodon",
+            "scheduled_time": "2026-07-29T04:36:51.966Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null,
+            "created_at": "2026-07-28T09:36:51.966Z",
+            "updated_at": "2026-07-28T09:36:51.966Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_scheduled_posts_z4qhwndq2",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.005Z",
+      "updated_at": "2026-07-28T10:36:52.005Z",
+      "post_id": "id_posts_b69wx8qmm",
+      "provider": "mastodon",
+      "social_account_id": "acc_ma_001",
+      "scheduled_time": "2026-07-29T10:36:52.001Z",
+      "timezone": "UTC",
+      "status": "Scheduled",
+      "retry_count": 0,
+      "published_at": null,
+      "error_message": null
+    },
+    {
+      "id": "id_scheduled_posts_xukaxz615",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.017Z",
+      "updated_at": "2026-07-28T10:36:52.023Z",
+      "post_id": "id_posts_v662vqhcm",
+      "provider": "linkedin",
+      "social_account_id": "acc_li_001",
+      "scheduled_time": "2026-07-28T10:36:47.014Z",
+      "timezone": "UTC",
+      "status": "Published",
+      "retry_count": 0,
+      "published_at": "2026-07-28T10:36:52.022Z",
+      "error_message": null,
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T10:36:52.017Z",
+          "payload": {
+            "id": "id_scheduled_posts_xukaxz615",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-28T10:36:52.017Z",
+            "updated_at": "2026-07-28T10:36:52.017Z",
+            "post_id": "id_posts_v662vqhcm",
+            "provider": "linkedin",
+            "social_account_id": "acc_li_001",
+            "scheduled_time": "2026-07-28T10:36:47.014Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-28T10:36:52.022Z",
+          "payload": {
+            "id": "id_scheduled_posts_xukaxz615",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-28T10:36:52.017Z",
+            "updated_at": "2026-07-28T10:36:52.022Z",
+            "post_id": "id_posts_v662vqhcm",
+            "provider": "linkedin",
+            "social_account_id": "acc_li_001",
+            "scheduled_time": "2026-07-28T10:36:47.014Z",
+            "timezone": "UTC",
+            "status": "Publishing",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_scheduled_posts_scw8hpg6x",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.227Z",
+      "updated_at": "2026-07-28T10:37:02.227Z",
+      "post_id": "id_posts_1tuzwx4a0",
+      "provider": "mastodon",
+      "social_account_id": "acc_ma_001",
+      "scheduled_time": "2026-07-29T10:37:02.223Z",
+      "timezone": "UTC",
+      "status": "Scheduled",
+      "retry_count": 0,
+      "published_at": null,
+      "error_message": null
+    },
+    {
+      "id": "id_scheduled_posts_zc14wiihq",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.239Z",
+      "updated_at": "2026-07-28T10:37:02.246Z",
+      "post_id": "id_posts_l8da3xt18",
+      "provider": "linkedin",
+      "social_account_id": "acc_li_001",
+      "scheduled_time": "2026-07-28T10:36:57.236Z",
+      "timezone": "UTC",
+      "status": "Published",
+      "retry_count": 0,
+      "published_at": "2026-07-28T10:37:02.245Z",
+      "error_message": null,
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-28T10:37:02.239Z",
+          "payload": {
+            "id": "id_scheduled_posts_zc14wiihq",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-28T10:37:02.239Z",
+            "updated_at": "2026-07-28T10:37:02.239Z",
+            "post_id": "id_posts_l8da3xt18",
+            "provider": "linkedin",
+            "social_account_id": "acc_li_001",
+            "scheduled_time": "2026-07-28T10:36:57.236Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-28T10:37:02.244Z",
+          "payload": {
+            "id": "id_scheduled_posts_zc14wiihq",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-28T10:37:02.239Z",
+            "updated_at": "2026-07-28T10:37:02.244Z",
+            "post_id": "id_posts_l8da3xt18",
+            "provider": "linkedin",
+            "social_account_id": "acc_li_001",
+            "scheduled_time": "2026-07-28T10:36:57.236Z",
+            "timezone": "UTC",
+            "status": "Publishing",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_scheduled_posts_t0fgs65on",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.033Z",
+      "updated_at": "2026-07-29T06:25:53.033Z",
+      "post_id": "id_posts_dfnueaoke",
+      "provider": "mastodon",
+      "social_account_id": "acc_ma_001",
+      "scheduled_time": "2026-07-30T06:25:53.029Z",
+      "timezone": "UTC",
+      "status": "Scheduled",
+      "retry_count": 0,
+      "published_at": null,
+      "error_message": null
+    },
+    {
+      "id": "id_scheduled_posts_89lgrzf12",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.044Z",
+      "updated_at": "2026-07-29T06:25:53.059Z",
+      "post_id": "id_posts_wr3eh2yju",
+      "provider": "linkedin",
+      "social_account_id": "acc_li_001",
+      "scheduled_time": "2026-07-29T06:25:48.040Z",
+      "timezone": "UTC",
+      "status": "Published",
+      "retry_count": 0,
+      "published_at": "2026-07-29T06:25:53.058Z",
+      "error_message": null,
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T06:25:53.044Z",
+          "payload": {
+            "id": "id_scheduled_posts_89lgrzf12",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T06:25:53.044Z",
+            "updated_at": "2026-07-29T06:25:53.044Z",
+            "post_id": "id_posts_wr3eh2yju",
+            "provider": "linkedin",
+            "social_account_id": "acc_li_001",
+            "scheduled_time": "2026-07-29T06:25:48.040Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-29T06:25:53.057Z",
+          "payload": {
+            "id": "id_scheduled_posts_89lgrzf12",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T06:25:53.044Z",
+            "updated_at": "2026-07-29T06:25:53.057Z",
+            "post_id": "id_posts_wr3eh2yju",
+            "provider": "linkedin",
+            "social_account_id": "acc_li_001",
+            "scheduled_time": "2026-07-29T06:25:48.040Z",
+            "timezone": "UTC",
+            "status": "Publishing",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        }
+      ]
+    }
+  ],
+  "media_library": [
+    {
+      "id": "med_001",
+      "user_id": "usr_fiverr_pro_001",
+      "type": "image/jpeg",
+      "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+      "filename": "workspace_setup.jpg",
+      "size": 245310,
+      "created_at": "2026-07-25T10:36:51.966Z"
+    },
+    {
+      "id": "med_002",
+      "user_id": "usr_fiverr_pro_001",
+      "type": "image/jpeg",
+      "url": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80",
+      "filename": "analytics_charts.jpg",
+      "size": 182400,
+      "created_at": "2026-07-26T10:36:51.966Z"
+    },
+    {
+      "id": "med_003",
+      "user_id": "usr_fiverr_pro_001",
+      "type": "application/pdf",
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+      "filename": "freelance_strategy.pdf",
+      "size": 104523,
+      "created_at": "2026-07-27T10:36:51.966Z"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "camp_001",
+      "user_id": "usr_fiverr_pro_001",
+      "name": "Launch Promo Q3",
+      "description": "Promotional postings and outreach campaign for GigPilot Social Hub release.",
+      "color": "#10B981",
+      "start_date": "2026-07-23",
+      "end_date": "2026-08-27",
+      "budget": 500,
+      "goal": "Get 1,000 trial sign-ups",
+      "status": "Active",
+      "created_at": "2026-07-23T10:36:51.966Z",
+      "updated_at": "2026-07-23T10:36:51.966Z"
+    },
+    {
+      "id": "camp_002",
+      "user_id": "usr_fiverr_pro_001",
+      "name": "Fiverr Success Tips",
+      "description": "Weekly tutorials sharing gig setup tips and branding guides.",
+      "color": "#8B5CF6",
+      "start_date": "2026-07-28",
+      "end_date": "2026-09-26",
+      "budget": 200,
+      "goal": "Increase profile engagement",
+      "status": "Active",
+      "created_at": "2026-07-28T10:36:51.966Z",
+      "updated_at": "2026-07-28T10:36:51.966Z"
+    }
+  ],
+  "social_analytics": [
+    {
+      "id": "soc_an_linkedin_29",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 1818,
+      "posts": 8,
+      "engagement": 708.5,
+      "clicks": 124,
+      "likes": 307,
+      "shares": 61,
+      "comments": 46,
+      "date": "2026-06-29"
+    },
+    {
+      "id": "soc_an_facebook_29",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 969,
+      "posts": 4,
+      "engagement": 378,
+      "clicks": 66,
+      "likes": 164,
+      "shares": 32,
+      "comments": 24,
+      "date": "2026-06-29"
+    },
+    {
+      "id": "soc_an_instagram_29",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 969,
+      "posts": 4,
+      "engagement": 378,
+      "clicks": 66,
+      "likes": 164,
+      "shares": 32,
+      "comments": 24,
+      "date": "2026-06-29"
+    },
+    {
+      "id": "soc_an_bluesky_29",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 969,
+      "posts": 4,
+      "engagement": 378,
+      "clicks": 66,
+      "likes": 164,
+      "shares": 32,
+      "comments": 24,
+      "date": "2026-06-29"
+    },
+    {
+      "id": "soc_an_mastodon_29",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 1818,
+      "posts": 8,
+      "engagement": 708.5,
+      "clicks": 124,
+      "likes": 307,
+      "shares": 61,
+      "comments": 46,
+      "date": "2026-06-29"
+    },
+    {
+      "id": "soc_an_dev.to_29",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 1818,
+      "posts": 8,
+      "engagement": 708.5,
+      "clicks": 124,
+      "likes": 307,
+      "shares": 61,
+      "comments": 46,
+      "date": "2026-06-29"
+    },
+    {
+      "id": "soc_an_linkedin_28",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 1836,
+      "posts": 9,
+      "engagement": 730.5,
+      "clicks": 129,
+      "likes": 315,
+      "shares": 63,
+      "comments": 47,
+      "date": "2026-06-30"
+    },
+    {
+      "id": "soc_an_facebook_28",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 979,
+      "posts": 4,
+      "engagement": 388,
+      "clicks": 68,
+      "likes": 168,
+      "shares": 33,
+      "comments": 25,
+      "date": "2026-06-30"
+    },
+    {
+      "id": "soc_an_instagram_28",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 979,
+      "posts": 4,
+      "engagement": 388,
+      "clicks": 68,
+      "likes": 168,
+      "shares": 33,
+      "comments": 25,
+      "date": "2026-06-30"
+    },
+    {
+      "id": "soc_an_bluesky_28",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 979,
+      "posts": 4,
+      "engagement": 388,
+      "clicks": 68,
+      "likes": 168,
+      "shares": 33,
+      "comments": 25,
+      "date": "2026-06-30"
+    },
+    {
+      "id": "soc_an_mastodon_28",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 1836,
+      "posts": 9,
+      "engagement": 730.5,
+      "clicks": 129,
+      "likes": 315,
+      "shares": 63,
+      "comments": 47,
+      "date": "2026-06-30"
+    },
+    {
+      "id": "soc_an_dev.to_28",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 1836,
+      "posts": 9,
+      "engagement": 730.5,
+      "clicks": 129,
+      "likes": 315,
+      "shares": 63,
+      "comments": 47,
+      "date": "2026-06-30"
+    },
+    {
+      "id": "soc_an_linkedin_27",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 1854,
+      "posts": 9,
+      "engagement": 749,
+      "clicks": 133,
+      "likes": 322,
+      "shares": 64,
+      "comments": 48,
+      "date": "2026-07-01"
+    },
+    {
+      "id": "soc_an_facebook_27",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 988,
+      "posts": 5,
+      "engagement": 400,
+      "clicks": 71,
+      "likes": 172,
+      "shares": 34,
+      "comments": 25,
+      "date": "2026-07-01"
+    },
+    {
+      "id": "soc_an_instagram_27",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 988,
+      "posts": 5,
+      "engagement": 400,
+      "clicks": 71,
+      "likes": 172,
+      "shares": 34,
+      "comments": 25,
+      "date": "2026-07-01"
+    },
+    {
+      "id": "soc_an_bluesky_27",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 988,
+      "posts": 5,
+      "engagement": 400,
+      "clicks": 71,
+      "likes": 172,
+      "shares": 34,
+      "comments": 25,
+      "date": "2026-07-01"
+    },
+    {
+      "id": "soc_an_mastodon_27",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 1854,
+      "posts": 9,
+      "engagement": 749,
+      "clicks": 133,
+      "likes": 322,
+      "shares": 64,
+      "comments": 48,
+      "date": "2026-07-01"
+    },
+    {
+      "id": "soc_an_dev.to_27",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 1854,
+      "posts": 9,
+      "engagement": 749,
+      "clicks": 133,
+      "likes": 322,
+      "shares": 64,
+      "comments": 48,
+      "date": "2026-07-01"
+    },
+    {
+      "id": "soc_an_linkedin_26",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 1872,
+      "posts": 10,
+      "engagement": 771,
+      "clicks": 138,
+      "likes": 330,
+      "shares": 66,
+      "comments": 49,
+      "date": "2026-07-02"
+    },
+    {
+      "id": "soc_an_facebook_26",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 998,
+      "posts": 5,
+      "engagement": 410,
+      "clicks": 73,
+      "likes": 176,
+      "shares": 35,
+      "comments": 26,
+      "date": "2026-07-02"
+    },
+    {
+      "id": "soc_an_instagram_26",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 998,
+      "posts": 5,
+      "engagement": 410,
+      "clicks": 73,
+      "likes": 176,
+      "shares": 35,
+      "comments": 26,
+      "date": "2026-07-02"
+    },
+    {
+      "id": "soc_an_bluesky_26",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 998,
+      "posts": 5,
+      "engagement": 410,
+      "clicks": 73,
+      "likes": 176,
+      "shares": 35,
+      "comments": 26,
+      "date": "2026-07-02"
+    },
+    {
+      "id": "soc_an_mastodon_26",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 1872,
+      "posts": 10,
+      "engagement": 771,
+      "clicks": 138,
+      "likes": 330,
+      "shares": 66,
+      "comments": 49,
+      "date": "2026-07-02"
+    },
+    {
+      "id": "soc_an_dev.to_26",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 1872,
+      "posts": 10,
+      "engagement": 771,
+      "clicks": 138,
+      "likes": 330,
+      "shares": 66,
+      "comments": 49,
+      "date": "2026-07-02"
+    },
+    {
+      "id": "soc_an_linkedin_25",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 1890,
+      "posts": 11,
+      "engagement": 789.5,
+      "clicks": 142,
+      "likes": 337,
+      "shares": 67,
+      "comments": 50,
+      "date": "2026-07-03"
+    },
+    {
+      "id": "soc_an_facebook_25",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1008,
+      "posts": 6,
+      "engagement": 422,
+      "clicks": 76,
+      "likes": 180,
+      "shares": 36,
+      "comments": 27,
+      "date": "2026-07-03"
+    },
+    {
+      "id": "soc_an_instagram_25",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1008,
+      "posts": 6,
+      "engagement": 422,
+      "clicks": 76,
+      "likes": 180,
+      "shares": 36,
+      "comments": 27,
+      "date": "2026-07-03"
+    },
+    {
+      "id": "soc_an_bluesky_25",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1008,
+      "posts": 6,
+      "engagement": 422,
+      "clicks": 76,
+      "likes": 180,
+      "shares": 36,
+      "comments": 27,
+      "date": "2026-07-03"
+    },
+    {
+      "id": "soc_an_mastodon_25",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 1890,
+      "posts": 11,
+      "engagement": 789.5,
+      "clicks": 142,
+      "likes": 337,
+      "shares": 67,
+      "comments": 50,
+      "date": "2026-07-03"
+    },
+    {
+      "id": "soc_an_dev.to_25",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 1890,
+      "posts": 11,
+      "engagement": 789.5,
+      "clicks": 142,
+      "likes": 337,
+      "shares": 67,
+      "comments": 50,
+      "date": "2026-07-03"
+    },
+    {
+      "id": "soc_an_linkedin_24",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 1908,
+      "posts": 12,
+      "engagement": 811.5,
+      "clicks": 147,
+      "likes": 345,
+      "shares": 69,
+      "comments": 51,
+      "date": "2026-07-04"
+    },
+    {
+      "id": "soc_an_facebook_24",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1017,
+      "posts": 6,
+      "engagement": 432,
+      "clicks": 78,
+      "likes": 184,
+      "shares": 36,
+      "comments": 27,
+      "date": "2026-07-04"
+    },
+    {
+      "id": "soc_an_instagram_24",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1017,
+      "posts": 6,
+      "engagement": 432,
+      "clicks": 78,
+      "likes": 184,
+      "shares": 36,
+      "comments": 27,
+      "date": "2026-07-04"
+    },
+    {
+      "id": "soc_an_bluesky_24",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1017,
+      "posts": 6,
+      "engagement": 432,
+      "clicks": 78,
+      "likes": 184,
+      "shares": 36,
+      "comments": 27,
+      "date": "2026-07-04"
+    },
+    {
+      "id": "soc_an_mastodon_24",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 1908,
+      "posts": 12,
+      "engagement": 811.5,
+      "clicks": 147,
+      "likes": 345,
+      "shares": 69,
+      "comments": 51,
+      "date": "2026-07-04"
+    },
+    {
+      "id": "soc_an_dev.to_24",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 1908,
+      "posts": 12,
+      "engagement": 811.5,
+      "clicks": 147,
+      "likes": 345,
+      "shares": 69,
+      "comments": 51,
+      "date": "2026-07-04"
+    },
+    {
+      "id": "soc_an_linkedin_23",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 1926,
+      "posts": 12,
+      "engagement": 830,
+      "clicks": 151,
+      "likes": 352,
+      "shares": 70,
+      "comments": 52,
+      "date": "2026-07-05"
+    },
+    {
+      "id": "soc_an_facebook_23",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1027,
+      "posts": 6,
+      "engagement": 442,
+      "clicks": 80,
+      "likes": 188,
+      "shares": 37,
+      "comments": 28,
+      "date": "2026-07-05"
+    },
+    {
+      "id": "soc_an_instagram_23",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1027,
+      "posts": 6,
+      "engagement": 442,
+      "clicks": 80,
+      "likes": 188,
+      "shares": 37,
+      "comments": 28,
+      "date": "2026-07-05"
+    },
+    {
+      "id": "soc_an_bluesky_23",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1027,
+      "posts": 6,
+      "engagement": 442,
+      "clicks": 80,
+      "likes": 188,
+      "shares": 37,
+      "comments": 28,
+      "date": "2026-07-05"
+    },
+    {
+      "id": "soc_an_mastodon_23",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 1926,
+      "posts": 12,
+      "engagement": 830,
+      "clicks": 151,
+      "likes": 352,
+      "shares": 70,
+      "comments": 52,
+      "date": "2026-07-05"
+    },
+    {
+      "id": "soc_an_dev.to_23",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 1926,
+      "posts": 12,
+      "engagement": 830,
+      "clicks": 151,
+      "likes": 352,
+      "shares": 70,
+      "comments": 52,
+      "date": "2026-07-05"
+    },
+    {
+      "id": "soc_an_linkedin_22",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 1944,
+      "posts": 13,
+      "engagement": 852,
+      "clicks": 156,
+      "likes": 360,
+      "shares": 72,
+      "comments": 54,
+      "date": "2026-07-06"
+    },
+    {
+      "id": "soc_an_facebook_22",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1036,
+      "posts": 7,
+      "engagement": 454,
+      "clicks": 83,
+      "likes": 192,
+      "shares": 38,
+      "comments": 28,
+      "date": "2026-07-06"
+    },
+    {
+      "id": "soc_an_instagram_22",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1036,
+      "posts": 7,
+      "engagement": 454,
+      "clicks": 83,
+      "likes": 192,
+      "shares": 38,
+      "comments": 28,
+      "date": "2026-07-06"
+    },
+    {
+      "id": "soc_an_bluesky_22",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1036,
+      "posts": 7,
+      "engagement": 454,
+      "clicks": 83,
+      "likes": 192,
+      "shares": 38,
+      "comments": 28,
+      "date": "2026-07-06"
+    },
+    {
+      "id": "soc_an_mastodon_22",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 1944,
+      "posts": 13,
+      "engagement": 852,
+      "clicks": 156,
+      "likes": 360,
+      "shares": 72,
+      "comments": 54,
+      "date": "2026-07-06"
+    },
+    {
+      "id": "soc_an_dev.to_22",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 1944,
+      "posts": 13,
+      "engagement": 852,
+      "clicks": 156,
+      "likes": 360,
+      "shares": 72,
+      "comments": 54,
+      "date": "2026-07-06"
+    },
+    {
+      "id": "soc_an_linkedin_21",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 1962,
+      "posts": 14,
+      "engagement": 870.5,
+      "clicks": 160,
+      "likes": 367,
+      "shares": 73,
+      "comments": 55,
+      "date": "2026-07-07"
+    },
+    {
+      "id": "soc_an_facebook_21",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1046,
+      "posts": 7,
+      "engagement": 464,
+      "clicks": 85,
+      "likes": 196,
+      "shares": 39,
+      "comments": 29,
+      "date": "2026-07-07"
+    },
+    {
+      "id": "soc_an_instagram_21",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1046,
+      "posts": 7,
+      "engagement": 464,
+      "clicks": 85,
+      "likes": 196,
+      "shares": 39,
+      "comments": 29,
+      "date": "2026-07-07"
+    },
+    {
+      "id": "soc_an_bluesky_21",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1046,
+      "posts": 7,
+      "engagement": 464,
+      "clicks": 85,
+      "likes": 196,
+      "shares": 39,
+      "comments": 29,
+      "date": "2026-07-07"
+    },
+    {
+      "id": "soc_an_mastodon_21",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 1962,
+      "posts": 14,
+      "engagement": 870.5,
+      "clicks": 160,
+      "likes": 367,
+      "shares": 73,
+      "comments": 55,
+      "date": "2026-07-07"
+    },
+    {
+      "id": "soc_an_dev.to_21",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 1962,
+      "posts": 14,
+      "engagement": 870.5,
+      "clicks": 160,
+      "likes": 367,
+      "shares": 73,
+      "comments": 55,
+      "date": "2026-07-07"
+    },
+    {
+      "id": "soc_an_linkedin_20",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 1980,
+      "posts": 15,
+      "engagement": 892.5,
+      "clicks": 165,
+      "likes": 375,
+      "shares": 75,
+      "comments": 56,
+      "date": "2026-07-08"
+    },
+    {
+      "id": "soc_an_facebook_20",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1056,
+      "posts": 8,
+      "engagement": 476,
+      "clicks": 88,
+      "likes": 200,
+      "shares": 40,
+      "comments": 30,
+      "date": "2026-07-08"
+    },
+    {
+      "id": "soc_an_instagram_20",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1056,
+      "posts": 8,
+      "engagement": 476,
+      "clicks": 88,
+      "likes": 200,
+      "shares": 40,
+      "comments": 30,
+      "date": "2026-07-08"
+    },
+    {
+      "id": "soc_an_bluesky_20",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1056,
+      "posts": 8,
+      "engagement": 476,
+      "clicks": 88,
+      "likes": 200,
+      "shares": 40,
+      "comments": 30,
+      "date": "2026-07-08"
+    },
+    {
+      "id": "soc_an_mastodon_20",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 1980,
+      "posts": 15,
+      "engagement": 892.5,
+      "clicks": 165,
+      "likes": 375,
+      "shares": 75,
+      "comments": 56,
+      "date": "2026-07-08"
+    },
+    {
+      "id": "soc_an_dev.to_20",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 1980,
+      "posts": 15,
+      "engagement": 892.5,
+      "clicks": 165,
+      "likes": 375,
+      "shares": 75,
+      "comments": 56,
+      "date": "2026-07-08"
+    },
+    {
+      "id": "soc_an_linkedin_19",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 1998,
+      "posts": 15,
+      "engagement": 911,
+      "clicks": 169,
+      "likes": 382,
+      "shares": 76,
+      "comments": 57,
+      "date": "2026-07-09"
+    },
+    {
+      "id": "soc_an_facebook_19",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1065,
+      "posts": 8,
+      "engagement": 486,
+      "clicks": 90,
+      "likes": 204,
+      "shares": 40,
+      "comments": 30,
+      "date": "2026-07-09"
+    },
+    {
+      "id": "soc_an_instagram_19",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1065,
+      "posts": 8,
+      "engagement": 486,
+      "clicks": 90,
+      "likes": 204,
+      "shares": 40,
+      "comments": 30,
+      "date": "2026-07-09"
+    },
+    {
+      "id": "soc_an_bluesky_19",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1065,
+      "posts": 8,
+      "engagement": 486,
+      "clicks": 90,
+      "likes": 204,
+      "shares": 40,
+      "comments": 30,
+      "date": "2026-07-09"
+    },
+    {
+      "id": "soc_an_mastodon_19",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 1998,
+      "posts": 15,
+      "engagement": 911,
+      "clicks": 169,
+      "likes": 382,
+      "shares": 76,
+      "comments": 57,
+      "date": "2026-07-09"
+    },
+    {
+      "id": "soc_an_dev.to_19",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 1998,
+      "posts": 15,
+      "engagement": 911,
+      "clicks": 169,
+      "likes": 382,
+      "shares": 76,
+      "comments": 57,
+      "date": "2026-07-09"
+    },
+    {
+      "id": "soc_an_linkedin_18",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2016,
+      "posts": 16,
+      "engagement": 933,
+      "clicks": 174,
+      "likes": 390,
+      "shares": 78,
+      "comments": 58,
+      "date": "2026-07-10"
+    },
+    {
+      "id": "soc_an_facebook_18",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1075,
+      "posts": 8,
+      "engagement": 496,
+      "clicks": 92,
+      "likes": 208,
+      "shares": 41,
+      "comments": 31,
+      "date": "2026-07-10"
+    },
+    {
+      "id": "soc_an_instagram_18",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1075,
+      "posts": 8,
+      "engagement": 496,
+      "clicks": 92,
+      "likes": 208,
+      "shares": 41,
+      "comments": 31,
+      "date": "2026-07-10"
+    },
+    {
+      "id": "soc_an_bluesky_18",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1075,
+      "posts": 8,
+      "engagement": 496,
+      "clicks": 92,
+      "likes": 208,
+      "shares": 41,
+      "comments": 31,
+      "date": "2026-07-10"
+    },
+    {
+      "id": "soc_an_mastodon_18",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2016,
+      "posts": 16,
+      "engagement": 933,
+      "clicks": 174,
+      "likes": 390,
+      "shares": 78,
+      "comments": 58,
+      "date": "2026-07-10"
+    },
+    {
+      "id": "soc_an_dev.to_18",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2016,
+      "posts": 16,
+      "engagement": 933,
+      "clicks": 174,
+      "likes": 390,
+      "shares": 78,
+      "comments": 58,
+      "date": "2026-07-10"
+    },
+    {
+      "id": "soc_an_linkedin_17",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2034,
+      "posts": 17,
+      "engagement": 951.5,
+      "clicks": 178,
+      "likes": 397,
+      "shares": 79,
+      "comments": 59,
+      "date": "2026-07-11"
+    },
+    {
+      "id": "soc_an_facebook_17",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1084,
+      "posts": 9,
+      "engagement": 508,
+      "clicks": 95,
+      "likes": 212,
+      "shares": 42,
+      "comments": 31,
+      "date": "2026-07-11"
+    },
+    {
+      "id": "soc_an_instagram_17",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1084,
+      "posts": 9,
+      "engagement": 508,
+      "clicks": 95,
+      "likes": 212,
+      "shares": 42,
+      "comments": 31,
+      "date": "2026-07-11"
+    },
+    {
+      "id": "soc_an_bluesky_17",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1084,
+      "posts": 9,
+      "engagement": 508,
+      "clicks": 95,
+      "likes": 212,
+      "shares": 42,
+      "comments": 31,
+      "date": "2026-07-11"
+    },
+    {
+      "id": "soc_an_mastodon_17",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2034,
+      "posts": 17,
+      "engagement": 951.5,
+      "clicks": 178,
+      "likes": 397,
+      "shares": 79,
+      "comments": 59,
+      "date": "2026-07-11"
+    },
+    {
+      "id": "soc_an_dev.to_17",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2034,
+      "posts": 17,
+      "engagement": 951.5,
+      "clicks": 178,
+      "likes": 397,
+      "shares": 79,
+      "comments": 59,
+      "date": "2026-07-11"
+    },
+    {
+      "id": "soc_an_linkedin_16",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2052,
+      "posts": 18,
+      "engagement": 973.5,
+      "clicks": 183,
+      "likes": 405,
+      "shares": 81,
+      "comments": 60,
+      "date": "2026-07-12"
+    },
+    {
+      "id": "soc_an_facebook_16",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1094,
+      "posts": 9,
+      "engagement": 518,
+      "clicks": 97,
+      "likes": 216,
+      "shares": 43,
+      "comments": 32,
+      "date": "2026-07-12"
+    },
+    {
+      "id": "soc_an_instagram_16",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1094,
+      "posts": 9,
+      "engagement": 518,
+      "clicks": 97,
+      "likes": 216,
+      "shares": 43,
+      "comments": 32,
+      "date": "2026-07-12"
+    },
+    {
+      "id": "soc_an_bluesky_16",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1094,
+      "posts": 9,
+      "engagement": 518,
+      "clicks": 97,
+      "likes": 216,
+      "shares": 43,
+      "comments": 32,
+      "date": "2026-07-12"
+    },
+    {
+      "id": "soc_an_mastodon_16",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2052,
+      "posts": 18,
+      "engagement": 973.5,
+      "clicks": 183,
+      "likes": 405,
+      "shares": 81,
+      "comments": 60,
+      "date": "2026-07-12"
+    },
+    {
+      "id": "soc_an_dev.to_16",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2052,
+      "posts": 18,
+      "engagement": 973.5,
+      "clicks": 183,
+      "likes": 405,
+      "shares": 81,
+      "comments": 60,
+      "date": "2026-07-12"
+    },
+    {
+      "id": "soc_an_linkedin_15",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2070,
+      "posts": 18,
+      "engagement": 992,
+      "clicks": 187,
+      "likes": 412,
+      "shares": 82,
+      "comments": 61,
+      "date": "2026-07-13"
+    },
+    {
+      "id": "soc_an_facebook_15",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1104,
+      "posts": 10,
+      "engagement": 530,
+      "clicks": 100,
+      "likes": 220,
+      "shares": 44,
+      "comments": 33,
+      "date": "2026-07-13"
+    },
+    {
+      "id": "soc_an_instagram_15",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1104,
+      "posts": 10,
+      "engagement": 530,
+      "clicks": 100,
+      "likes": 220,
+      "shares": 44,
+      "comments": 33,
+      "date": "2026-07-13"
+    },
+    {
+      "id": "soc_an_bluesky_15",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1104,
+      "posts": 10,
+      "engagement": 530,
+      "clicks": 100,
+      "likes": 220,
+      "shares": 44,
+      "comments": 33,
+      "date": "2026-07-13"
+    },
+    {
+      "id": "soc_an_mastodon_15",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2070,
+      "posts": 18,
+      "engagement": 992,
+      "clicks": 187,
+      "likes": 412,
+      "shares": 82,
+      "comments": 61,
+      "date": "2026-07-13"
+    },
+    {
+      "id": "soc_an_dev.to_15",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2070,
+      "posts": 18,
+      "engagement": 992,
+      "clicks": 187,
+      "likes": 412,
+      "shares": 82,
+      "comments": 61,
+      "date": "2026-07-13"
+    },
+    {
+      "id": "soc_an_linkedin_14",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2088,
+      "posts": 19,
+      "engagement": 1014,
+      "clicks": 192,
+      "likes": 420,
+      "shares": 84,
+      "comments": 63,
+      "date": "2026-07-14"
+    },
+    {
+      "id": "soc_an_facebook_14",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1113,
+      "posts": 10,
+      "engagement": 540,
+      "clicks": 102,
+      "likes": 224,
+      "shares": 44,
+      "comments": 33,
+      "date": "2026-07-14"
+    },
+    {
+      "id": "soc_an_instagram_14",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1113,
+      "posts": 10,
+      "engagement": 540,
+      "clicks": 102,
+      "likes": 224,
+      "shares": 44,
+      "comments": 33,
+      "date": "2026-07-14"
+    },
+    {
+      "id": "soc_an_bluesky_14",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1113,
+      "posts": 10,
+      "engagement": 540,
+      "clicks": 102,
+      "likes": 224,
+      "shares": 44,
+      "comments": 33,
+      "date": "2026-07-14"
+    },
+    {
+      "id": "soc_an_mastodon_14",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2088,
+      "posts": 19,
+      "engagement": 1014,
+      "clicks": 192,
+      "likes": 420,
+      "shares": 84,
+      "comments": 63,
+      "date": "2026-07-14"
+    },
+    {
+      "id": "soc_an_dev.to_14",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2088,
+      "posts": 19,
+      "engagement": 1014,
+      "clicks": 192,
+      "likes": 420,
+      "shares": 84,
+      "comments": 63,
+      "date": "2026-07-14"
+    },
+    {
+      "id": "soc_an_linkedin_13",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2106,
+      "posts": 20,
+      "engagement": 1032.5,
+      "clicks": 196,
+      "likes": 427,
+      "shares": 85,
+      "comments": 64,
+      "date": "2026-07-15"
+    },
+    {
+      "id": "soc_an_facebook_13",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1123,
+      "posts": 10,
+      "engagement": 550,
+      "clicks": 104,
+      "likes": 228,
+      "shares": 45,
+      "comments": 34,
+      "date": "2026-07-15"
+    },
+    {
+      "id": "soc_an_instagram_13",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1123,
+      "posts": 10,
+      "engagement": 550,
+      "clicks": 104,
+      "likes": 228,
+      "shares": 45,
+      "comments": 34,
+      "date": "2026-07-15"
+    },
+    {
+      "id": "soc_an_bluesky_13",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1123,
+      "posts": 10,
+      "engagement": 550,
+      "clicks": 104,
+      "likes": 228,
+      "shares": 45,
+      "comments": 34,
+      "date": "2026-07-15"
+    },
+    {
+      "id": "soc_an_mastodon_13",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2106,
+      "posts": 20,
+      "engagement": 1032.5,
+      "clicks": 196,
+      "likes": 427,
+      "shares": 85,
+      "comments": 64,
+      "date": "2026-07-15"
+    },
+    {
+      "id": "soc_an_dev.to_13",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2106,
+      "posts": 20,
+      "engagement": 1032.5,
+      "clicks": 196,
+      "likes": 427,
+      "shares": 85,
+      "comments": 64,
+      "date": "2026-07-15"
+    },
+    {
+      "id": "soc_an_linkedin_12",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2124,
+      "posts": 21,
+      "engagement": 1054.5,
+      "clicks": 201,
+      "likes": 435,
+      "shares": 87,
+      "comments": 65,
+      "date": "2026-07-16"
+    },
+    {
+      "id": "soc_an_facebook_12",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1132,
+      "posts": 11,
+      "engagement": 562,
+      "clicks": 107,
+      "likes": 232,
+      "shares": 46,
+      "comments": 34,
+      "date": "2026-07-16"
+    },
+    {
+      "id": "soc_an_instagram_12",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1132,
+      "posts": 11,
+      "engagement": 562,
+      "clicks": 107,
+      "likes": 232,
+      "shares": 46,
+      "comments": 34,
+      "date": "2026-07-16"
+    },
+    {
+      "id": "soc_an_bluesky_12",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1132,
+      "posts": 11,
+      "engagement": 562,
+      "clicks": 107,
+      "likes": 232,
+      "shares": 46,
+      "comments": 34,
+      "date": "2026-07-16"
+    },
+    {
+      "id": "soc_an_mastodon_12",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2124,
+      "posts": 21,
+      "engagement": 1054.5,
+      "clicks": 201,
+      "likes": 435,
+      "shares": 87,
+      "comments": 65,
+      "date": "2026-07-16"
+    },
+    {
+      "id": "soc_an_dev.to_12",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2124,
+      "posts": 21,
+      "engagement": 1054.5,
+      "clicks": 201,
+      "likes": 435,
+      "shares": 87,
+      "comments": 65,
+      "date": "2026-07-16"
+    },
+    {
+      "id": "soc_an_linkedin_11",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2142,
+      "posts": 21,
+      "engagement": 1073,
+      "clicks": 205,
+      "likes": 442,
+      "shares": 88,
+      "comments": 66,
+      "date": "2026-07-17"
+    },
+    {
+      "id": "soc_an_facebook_11",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1142,
+      "posts": 11,
+      "engagement": 572,
+      "clicks": 109,
+      "likes": 236,
+      "shares": 47,
+      "comments": 35,
+      "date": "2026-07-17"
+    },
+    {
+      "id": "soc_an_instagram_11",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1142,
+      "posts": 11,
+      "engagement": 572,
+      "clicks": 109,
+      "likes": 236,
+      "shares": 47,
+      "comments": 35,
+      "date": "2026-07-17"
+    },
+    {
+      "id": "soc_an_bluesky_11",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1142,
+      "posts": 11,
+      "engagement": 572,
+      "clicks": 109,
+      "likes": 236,
+      "shares": 47,
+      "comments": 35,
+      "date": "2026-07-17"
+    },
+    {
+      "id": "soc_an_mastodon_11",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2142,
+      "posts": 21,
+      "engagement": 1073,
+      "clicks": 205,
+      "likes": 442,
+      "shares": 88,
+      "comments": 66,
+      "date": "2026-07-17"
+    },
+    {
+      "id": "soc_an_dev.to_11",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2142,
+      "posts": 21,
+      "engagement": 1073,
+      "clicks": 205,
+      "likes": 442,
+      "shares": 88,
+      "comments": 66,
+      "date": "2026-07-17"
+    },
+    {
+      "id": "soc_an_linkedin_10",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2160,
+      "posts": 22,
+      "engagement": 1095,
+      "clicks": 210,
+      "likes": 450,
+      "shares": 90,
+      "comments": 67,
+      "date": "2026-07-18"
+    },
+    {
+      "id": "soc_an_facebook_10",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1152,
+      "posts": 12,
+      "engagement": 584,
+      "clicks": 112,
+      "likes": 240,
+      "shares": 48,
+      "comments": 36,
+      "date": "2026-07-18"
+    },
+    {
+      "id": "soc_an_instagram_10",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1152,
+      "posts": 12,
+      "engagement": 584,
+      "clicks": 112,
+      "likes": 240,
+      "shares": 48,
+      "comments": 36,
+      "date": "2026-07-18"
+    },
+    {
+      "id": "soc_an_bluesky_10",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1152,
+      "posts": 12,
+      "engagement": 584,
+      "clicks": 112,
+      "likes": 240,
+      "shares": 48,
+      "comments": 36,
+      "date": "2026-07-18"
+    },
+    {
+      "id": "soc_an_mastodon_10",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2160,
+      "posts": 22,
+      "engagement": 1095,
+      "clicks": 210,
+      "likes": 450,
+      "shares": 90,
+      "comments": 67,
+      "date": "2026-07-18"
+    },
+    {
+      "id": "soc_an_dev.to_10",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2160,
+      "posts": 22,
+      "engagement": 1095,
+      "clicks": 210,
+      "likes": 450,
+      "shares": 90,
+      "comments": 67,
+      "date": "2026-07-18"
+    },
+    {
+      "id": "soc_an_linkedin_9",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2178,
+      "posts": 23,
+      "engagement": 1113.5,
+      "clicks": 214,
+      "likes": 457,
+      "shares": 91,
+      "comments": 68,
+      "date": "2026-07-19"
+    },
+    {
+      "id": "soc_an_facebook_9",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1161,
+      "posts": 12,
+      "engagement": 594,
+      "clicks": 114,
+      "likes": 244,
+      "shares": 48,
+      "comments": 36,
+      "date": "2026-07-19"
+    },
+    {
+      "id": "soc_an_instagram_9",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1161,
+      "posts": 12,
+      "engagement": 594,
+      "clicks": 114,
+      "likes": 244,
+      "shares": 48,
+      "comments": 36,
+      "date": "2026-07-19"
+    },
+    {
+      "id": "soc_an_bluesky_9",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1161,
+      "posts": 12,
+      "engagement": 594,
+      "clicks": 114,
+      "likes": 244,
+      "shares": 48,
+      "comments": 36,
+      "date": "2026-07-19"
+    },
+    {
+      "id": "soc_an_mastodon_9",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2178,
+      "posts": 23,
+      "engagement": 1113.5,
+      "clicks": 214,
+      "likes": 457,
+      "shares": 91,
+      "comments": 68,
+      "date": "2026-07-19"
+    },
+    {
+      "id": "soc_an_dev.to_9",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2178,
+      "posts": 23,
+      "engagement": 1113.5,
+      "clicks": 214,
+      "likes": 457,
+      "shares": 91,
+      "comments": 68,
+      "date": "2026-07-19"
+    },
+    {
+      "id": "soc_an_linkedin_8",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2196,
+      "posts": 24,
+      "engagement": 1135.5,
+      "clicks": 219,
+      "likes": 465,
+      "shares": 93,
+      "comments": 69,
+      "date": "2026-07-20"
+    },
+    {
+      "id": "soc_an_facebook_8",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1171,
+      "posts": 12,
+      "engagement": 604,
+      "clicks": 116,
+      "likes": 248,
+      "shares": 49,
+      "comments": 37,
+      "date": "2026-07-20"
+    },
+    {
+      "id": "soc_an_instagram_8",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1171,
+      "posts": 12,
+      "engagement": 604,
+      "clicks": 116,
+      "likes": 248,
+      "shares": 49,
+      "comments": 37,
+      "date": "2026-07-20"
+    },
+    {
+      "id": "soc_an_bluesky_8",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1171,
+      "posts": 12,
+      "engagement": 604,
+      "clicks": 116,
+      "likes": 248,
+      "shares": 49,
+      "comments": 37,
+      "date": "2026-07-20"
+    },
+    {
+      "id": "soc_an_mastodon_8",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2196,
+      "posts": 24,
+      "engagement": 1135.5,
+      "clicks": 219,
+      "likes": 465,
+      "shares": 93,
+      "comments": 69,
+      "date": "2026-07-20"
+    },
+    {
+      "id": "soc_an_dev.to_8",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2196,
+      "posts": 24,
+      "engagement": 1135.5,
+      "clicks": 219,
+      "likes": 465,
+      "shares": 93,
+      "comments": 69,
+      "date": "2026-07-20"
+    },
+    {
+      "id": "soc_an_linkedin_7",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2214,
+      "posts": 24,
+      "engagement": 1154,
+      "clicks": 223,
+      "likes": 472,
+      "shares": 94,
+      "comments": 70,
+      "date": "2026-07-21"
+    },
+    {
+      "id": "soc_an_facebook_7",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1180,
+      "posts": 13,
+      "engagement": 616,
+      "clicks": 119,
+      "likes": 252,
+      "shares": 50,
+      "comments": 37,
+      "date": "2026-07-21"
+    },
+    {
+      "id": "soc_an_instagram_7",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1180,
+      "posts": 13,
+      "engagement": 616,
+      "clicks": 119,
+      "likes": 252,
+      "shares": 50,
+      "comments": 37,
+      "date": "2026-07-21"
+    },
+    {
+      "id": "soc_an_bluesky_7",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1180,
+      "posts": 13,
+      "engagement": 616,
+      "clicks": 119,
+      "likes": 252,
+      "shares": 50,
+      "comments": 37,
+      "date": "2026-07-21"
+    },
+    {
+      "id": "soc_an_mastodon_7",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2214,
+      "posts": 24,
+      "engagement": 1154,
+      "clicks": 223,
+      "likes": 472,
+      "shares": 94,
+      "comments": 70,
+      "date": "2026-07-21"
+    },
+    {
+      "id": "soc_an_dev.to_7",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2214,
+      "posts": 24,
+      "engagement": 1154,
+      "clicks": 223,
+      "likes": 472,
+      "shares": 94,
+      "comments": 70,
+      "date": "2026-07-21"
+    },
+    {
+      "id": "soc_an_linkedin_6",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2232,
+      "posts": 25,
+      "engagement": 1176,
+      "clicks": 228,
+      "likes": 480,
+      "shares": 96,
+      "comments": 72,
+      "date": "2026-07-22"
+    },
+    {
+      "id": "soc_an_facebook_6",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1190,
+      "posts": 13,
+      "engagement": 626,
+      "clicks": 121,
+      "likes": 256,
+      "shares": 51,
+      "comments": 38,
+      "date": "2026-07-22"
+    },
+    {
+      "id": "soc_an_instagram_6",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1190,
+      "posts": 13,
+      "engagement": 626,
+      "clicks": 121,
+      "likes": 256,
+      "shares": 51,
+      "comments": 38,
+      "date": "2026-07-22"
+    },
+    {
+      "id": "soc_an_bluesky_6",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1190,
+      "posts": 13,
+      "engagement": 626,
+      "clicks": 121,
+      "likes": 256,
+      "shares": 51,
+      "comments": 38,
+      "date": "2026-07-22"
+    },
+    {
+      "id": "soc_an_mastodon_6",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2232,
+      "posts": 25,
+      "engagement": 1176,
+      "clicks": 228,
+      "likes": 480,
+      "shares": 96,
+      "comments": 72,
+      "date": "2026-07-22"
+    },
+    {
+      "id": "soc_an_dev.to_6",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2232,
+      "posts": 25,
+      "engagement": 1176,
+      "clicks": 228,
+      "likes": 480,
+      "shares": 96,
+      "comments": 72,
+      "date": "2026-07-22"
+    },
+    {
+      "id": "soc_an_linkedin_5",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2250,
+      "posts": 26,
+      "engagement": 1194.5,
+      "clicks": 232,
+      "likes": 487,
+      "shares": 97,
+      "comments": 73,
+      "date": "2026-07-23"
+    },
+    {
+      "id": "soc_an_facebook_5",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1200,
+      "posts": 14,
+      "engagement": 638,
+      "clicks": 124,
+      "likes": 260,
+      "shares": 52,
+      "comments": 39,
+      "date": "2026-07-23"
+    },
+    {
+      "id": "soc_an_instagram_5",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1200,
+      "posts": 14,
+      "engagement": 638,
+      "clicks": 124,
+      "likes": 260,
+      "shares": 52,
+      "comments": 39,
+      "date": "2026-07-23"
+    },
+    {
+      "id": "soc_an_bluesky_5",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1200,
+      "posts": 14,
+      "engagement": 638,
+      "clicks": 124,
+      "likes": 260,
+      "shares": 52,
+      "comments": 39,
+      "date": "2026-07-23"
+    },
+    {
+      "id": "soc_an_mastodon_5",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2250,
+      "posts": 26,
+      "engagement": 1194.5,
+      "clicks": 232,
+      "likes": 487,
+      "shares": 97,
+      "comments": 73,
+      "date": "2026-07-23"
+    },
+    {
+      "id": "soc_an_dev.to_5",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2250,
+      "posts": 26,
+      "engagement": 1194.5,
+      "clicks": 232,
+      "likes": 487,
+      "shares": 97,
+      "comments": 73,
+      "date": "2026-07-23"
+    },
+    {
+      "id": "soc_an_linkedin_4",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2268,
+      "posts": 27,
+      "engagement": 1216.5,
+      "clicks": 237,
+      "likes": 495,
+      "shares": 99,
+      "comments": 74,
+      "date": "2026-07-24"
+    },
+    {
+      "id": "soc_an_facebook_4",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1209,
+      "posts": 14,
+      "engagement": 648,
+      "clicks": 126,
+      "likes": 264,
+      "shares": 52,
+      "comments": 39,
+      "date": "2026-07-24"
+    },
+    {
+      "id": "soc_an_instagram_4",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1209,
+      "posts": 14,
+      "engagement": 648,
+      "clicks": 126,
+      "likes": 264,
+      "shares": 52,
+      "comments": 39,
+      "date": "2026-07-24"
+    },
+    {
+      "id": "soc_an_bluesky_4",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1209,
+      "posts": 14,
+      "engagement": 648,
+      "clicks": 126,
+      "likes": 264,
+      "shares": 52,
+      "comments": 39,
+      "date": "2026-07-24"
+    },
+    {
+      "id": "soc_an_mastodon_4",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2268,
+      "posts": 27,
+      "engagement": 1216.5,
+      "clicks": 237,
+      "likes": 495,
+      "shares": 99,
+      "comments": 74,
+      "date": "2026-07-24"
+    },
+    {
+      "id": "soc_an_dev.to_4",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2268,
+      "posts": 27,
+      "engagement": 1216.5,
+      "clicks": 237,
+      "likes": 495,
+      "shares": 99,
+      "comments": 74,
+      "date": "2026-07-24"
+    },
+    {
+      "id": "soc_an_linkedin_3",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2286,
+      "posts": 27,
+      "engagement": 1235,
+      "clicks": 241,
+      "likes": 502,
+      "shares": 100,
+      "comments": 75,
+      "date": "2026-07-25"
+    },
+    {
+      "id": "soc_an_facebook_3",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1219,
+      "posts": 14,
+      "engagement": 658,
+      "clicks": 128,
+      "likes": 268,
+      "shares": 53,
+      "comments": 40,
+      "date": "2026-07-25"
+    },
+    {
+      "id": "soc_an_instagram_3",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1219,
+      "posts": 14,
+      "engagement": 658,
+      "clicks": 128,
+      "likes": 268,
+      "shares": 53,
+      "comments": 40,
+      "date": "2026-07-25"
+    },
+    {
+      "id": "soc_an_bluesky_3",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1219,
+      "posts": 14,
+      "engagement": 658,
+      "clicks": 128,
+      "likes": 268,
+      "shares": 53,
+      "comments": 40,
+      "date": "2026-07-25"
+    },
+    {
+      "id": "soc_an_mastodon_3",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2286,
+      "posts": 27,
+      "engagement": 1235,
+      "clicks": 241,
+      "likes": 502,
+      "shares": 100,
+      "comments": 75,
+      "date": "2026-07-25"
+    },
+    {
+      "id": "soc_an_dev.to_3",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2286,
+      "posts": 27,
+      "engagement": 1235,
+      "clicks": 241,
+      "likes": 502,
+      "shares": 100,
+      "comments": 75,
+      "date": "2026-07-25"
+    },
+    {
+      "id": "soc_an_linkedin_2",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2304,
+      "posts": 28,
+      "engagement": 1257,
+      "clicks": 246,
+      "likes": 510,
+      "shares": 102,
+      "comments": 76,
+      "date": "2026-07-26"
+    },
+    {
+      "id": "soc_an_facebook_2",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1228,
+      "posts": 15,
+      "engagement": 670,
+      "clicks": 131,
+      "likes": 272,
+      "shares": 54,
+      "comments": 40,
+      "date": "2026-07-26"
+    },
+    {
+      "id": "soc_an_instagram_2",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1228,
+      "posts": 15,
+      "engagement": 670,
+      "clicks": 131,
+      "likes": 272,
+      "shares": 54,
+      "comments": 40,
+      "date": "2026-07-26"
+    },
+    {
+      "id": "soc_an_bluesky_2",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1228,
+      "posts": 15,
+      "engagement": 670,
+      "clicks": 131,
+      "likes": 272,
+      "shares": 54,
+      "comments": 40,
+      "date": "2026-07-26"
+    },
+    {
+      "id": "soc_an_mastodon_2",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2304,
+      "posts": 28,
+      "engagement": 1257,
+      "clicks": 246,
+      "likes": 510,
+      "shares": 102,
+      "comments": 76,
+      "date": "2026-07-26"
+    },
+    {
+      "id": "soc_an_dev.to_2",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2304,
+      "posts": 28,
+      "engagement": 1257,
+      "clicks": 246,
+      "likes": 510,
+      "shares": 102,
+      "comments": 76,
+      "date": "2026-07-26"
+    },
+    {
+      "id": "soc_an_linkedin_1",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2322,
+      "posts": 29,
+      "engagement": 1275.5,
+      "clicks": 250,
+      "likes": 517,
+      "shares": 103,
+      "comments": 77,
+      "date": "2026-07-27"
+    },
+    {
+      "id": "soc_an_facebook_1",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1238,
+      "posts": 15,
+      "engagement": 680,
+      "clicks": 133,
+      "likes": 276,
+      "shares": 55,
+      "comments": 41,
+      "date": "2026-07-27"
+    },
+    {
+      "id": "soc_an_instagram_1",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1238,
+      "posts": 15,
+      "engagement": 680,
+      "clicks": 133,
+      "likes": 276,
+      "shares": 55,
+      "comments": 41,
+      "date": "2026-07-27"
+    },
+    {
+      "id": "soc_an_bluesky_1",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1238,
+      "posts": 15,
+      "engagement": 680,
+      "clicks": 133,
+      "likes": 276,
+      "shares": 55,
+      "comments": 41,
+      "date": "2026-07-27"
+    },
+    {
+      "id": "soc_an_mastodon_1",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2322,
+      "posts": 29,
+      "engagement": 1275.5,
+      "clicks": 250,
+      "likes": 517,
+      "shares": 103,
+      "comments": 77,
+      "date": "2026-07-27"
+    },
+    {
+      "id": "soc_an_dev.to_1",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2322,
+      "posts": 29,
+      "engagement": 1275.5,
+      "clicks": 250,
+      "likes": 517,
+      "shares": 103,
+      "comments": 77,
+      "date": "2026-07-27"
+    },
+    {
+      "id": "soc_an_linkedin_0",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "linkedin",
+      "followers": 2340,
+      "posts": 30,
+      "engagement": 1297.5,
+      "clicks": 255,
+      "likes": 525,
+      "shares": 105,
+      "comments": 78,
+      "date": "2026-07-28"
+    },
+    {
+      "id": "soc_an_facebook_0",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "facebook",
+      "followers": 1248,
+      "posts": 16,
+      "engagement": 692,
+      "clicks": 136,
+      "likes": 280,
+      "shares": 56,
+      "comments": 42,
+      "date": "2026-07-28"
+    },
+    {
+      "id": "soc_an_instagram_0",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "instagram",
+      "followers": 1248,
+      "posts": 16,
+      "engagement": 692,
+      "clicks": 136,
+      "likes": 280,
+      "shares": 56,
+      "comments": 42,
+      "date": "2026-07-28"
+    },
+    {
+      "id": "soc_an_bluesky_0",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "bluesky",
+      "followers": 1248,
+      "posts": 16,
+      "engagement": 692,
+      "clicks": 136,
+      "likes": 280,
+      "shares": 56,
+      "comments": 42,
+      "date": "2026-07-28"
+    },
+    {
+      "id": "soc_an_mastodon_0",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "mastodon",
+      "followers": 2340,
+      "posts": 30,
+      "engagement": 1297.5,
+      "clicks": 255,
+      "likes": 525,
+      "shares": 105,
+      "comments": 78,
+      "date": "2026-07-28"
+    },
+    {
+      "id": "soc_an_dev.to_0",
+      "user_id": "usr_fiverr_pro_001",
+      "provider": "dev.to",
+      "followers": 2340,
+      "posts": 30,
+      "engagement": 1297.5,
+      "clicks": 255,
+      "likes": 525,
+      "shares": 105,
+      "comments": 78,
+      "date": "2026-07-28"
+    }
+  ],
+  "api_logs": [
+    {
+      "id": "id_api_logs_2ow9q5tsp",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.967Z",
+      "updated_at": "2026-07-28T10:36:51.967Z",
+      "endpoint": "/api/social/accounts",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_01eqti04a",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.974Z",
+      "updated_at": "2026-07-28T10:36:51.974Z",
+      "endpoint": "/api/social/connect",
+      "status_code": 200,
+      "response_time_ms": 5
+    },
+    {
+      "id": "id_api_logs_x0hniz10z",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.978Z",
+      "updated_at": "2026-07-28T10:36:51.978Z",
+      "endpoint": "/api/social/posts",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_ai4677gaj",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.981Z",
+      "updated_at": "2026-07-28T10:36:51.981Z",
+      "endpoint": "/api/social/posts",
+      "status_code": 200,
+      "response_time_ms": 2
+    },
+    {
+      "id": "id_api_logs_ieiikvk65",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.989Z",
+      "updated_at": "2026-07-28T10:36:51.989Z",
+      "endpoint": "/api/social/connect",
+      "status_code": 200,
+      "response_time_ms": 5
+    },
+    {
+      "id": "id_api_logs_1a4qyg8fz",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:51.996Z",
+      "updated_at": "2026-07-28T10:36:51.996Z",
+      "endpoint": "/api/social/publish",
+      "status_code": 200,
+      "response_time_ms": 5
+    },
+    {
+      "id": "id_api_logs_m7u68vebx",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.001Z",
+      "updated_at": "2026-07-28T10:36:52.001Z",
+      "endpoint": "/api/social/connect",
+      "status_code": 200,
+      "response_time_ms": 4
+    },
+    {
+      "id": "id_api_logs_tx5azpjxw",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.006Z",
+      "updated_at": "2026-07-28T10:36:52.006Z",
+      "endpoint": "/api/social/schedule",
+      "status_code": 200,
+      "response_time_ms": 4
+    },
+    {
+      "id": "id_api_logs_x79v3dvo9",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.013Z",
+      "updated_at": "2026-07-28T10:36:52.013Z",
+      "endpoint": "/api/social/connect",
+      "status_code": 200,
+      "response_time_ms": 3
+    },
+    {
+      "id": "id_api_logs_yf4jxoh4g",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.018Z",
+      "updated_at": "2026-07-28T10:36:52.018Z",
+      "endpoint": "/api/social/schedule",
+      "status_code": 200,
+      "response_time_ms": 3
+    },
+    {
+      "id": "id_api_logs_4v0qm9tod",
+      "user_id": "anonymous",
+      "created_at": "2026-07-28T10:36:52.027Z",
+      "updated_at": "2026-07-28T10:36:52.027Z",
+      "endpoint": "/api/social/scheduler/run",
+      "status_code": 200,
+      "response_time_ms": 8
+    },
+    {
+      "id": "id_api_logs_t134olsxz",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.029Z",
+      "updated_at": "2026-07-28T10:36:52.029Z",
+      "endpoint": "/api/social/analytics",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_7yr4ah6ji",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.034Z",
+      "updated_at": "2026-07-28T10:36:52.034Z",
+      "endpoint": "/api/social/media",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_uskzbyb2f",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.037Z",
+      "updated_at": "2026-07-28T10:36:52.037Z",
+      "endpoint": "/api/social/media",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_7go5tnhv0",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.039Z",
+      "updated_at": "2026-07-28T10:36:52.039Z",
+      "endpoint": "/api/social/media/id_media_library_plallsjkh",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_1l1zxro4c",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.042Z",
+      "updated_at": "2026-07-28T10:36:52.042Z",
+      "endpoint": "/api/social/campaigns",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_wsie8j8n0",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.044Z",
+      "updated_at": "2026-07-28T10:36:52.044Z",
+      "endpoint": "/api/social/campaigns",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_w0gvqi8rt",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.047Z",
+      "updated_at": "2026-07-28T10:36:52.047Z",
+      "endpoint": "/api/social/campaigns/id_campaigns_j985eemw6",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_flz1mbjw8",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:36:52.050Z",
+      "updated_at": "2026-07-28T10:36:52.050Z",
+      "endpoint": "/api/social/ai/generate",
+      "status_code": 200,
+      "response_time_ms": 2
+    },
+    {
+      "id": "id_api_logs_3b4s4u1gm",
+      "user_id": "anonymous",
+      "created_at": "2026-07-28T10:37:02.186Z",
+      "updated_at": "2026-07-28T10:37:02.186Z",
+      "endpoint": "/api/auth/login",
+      "status_code": 200,
+      "response_time_ms": 4
+    },
+    {
+      "id": "id_api_logs_ldo5446gt",
+      "user_id": "anonymous",
+      "created_at": "2026-07-28T10:37:02.191Z",
+      "updated_at": "2026-07-28T10:37:02.191Z",
+      "endpoint": "/api/auth/login",
+      "status_code": 200,
+      "response_time_ms": 3
+    },
+    {
+      "id": "id_api_logs_errijl112",
+      "user_id": "id_users_r8t4c2fo1",
+      "created_at": "2026-07-28T10:37:02.196Z",
+      "updated_at": "2026-07-28T10:37:02.196Z",
+      "endpoint": "/api/gig/generate",
+      "status_code": 200,
+      "response_time_ms": 4
+    },
+    {
+      "id": "id_api_logs_eh35tjy2w",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.198Z",
+      "updated_at": "2026-07-28T10:37:02.198Z",
+      "endpoint": "/api/social/posts",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_9tj96vxrw",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.203Z",
+      "updated_at": "2026-07-28T10:37:02.203Z",
+      "endpoint": "/api/social/posts",
+      "status_code": 200,
+      "response_time_ms": 2
+    },
+    {
+      "id": "id_api_logs_i7oj4bupx",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.209Z",
+      "updated_at": "2026-07-28T10:37:02.209Z",
+      "endpoint": "/api/social/connect",
+      "status_code": 200,
+      "response_time_ms": 4
+    },
+    {
+      "id": "id_api_logs_crbdcnmpo",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.217Z",
+      "updated_at": "2026-07-28T10:37:02.217Z",
+      "endpoint": "/api/social/publish",
+      "status_code": 200,
+      "response_time_ms": 6
+    },
+    {
+      "id": "id_api_logs_d0cvgy45t",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.223Z",
+      "updated_at": "2026-07-28T10:37:02.223Z",
+      "endpoint": "/api/social/connect",
+      "status_code": 200,
+      "response_time_ms": 4
+    },
+    {
+      "id": "id_api_logs_bme2wv10s",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.228Z",
+      "updated_at": "2026-07-28T10:37:02.228Z",
+      "endpoint": "/api/social/schedule",
+      "status_code": 200,
+      "response_time_ms": 4
+    },
+    {
+      "id": "id_api_logs_l3x00f9i9",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.236Z",
+      "updated_at": "2026-07-28T10:37:02.236Z",
+      "endpoint": "/api/social/connect",
+      "status_code": 200,
+      "response_time_ms": 4
+    },
+    {
+      "id": "id_api_logs_izxkqvnzk",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.240Z",
+      "updated_at": "2026-07-28T10:37:02.240Z",
+      "endpoint": "/api/social/schedule",
+      "status_code": 200,
+      "response_time_ms": 3
+    },
+    {
+      "id": "id_api_logs_ivrez4ytl",
+      "user_id": "anonymous",
+      "created_at": "2026-07-28T10:37:02.249Z",
+      "updated_at": "2026-07-28T10:37:02.249Z",
+      "endpoint": "/api/social/scheduler/run",
+      "status_code": 200,
+      "response_time_ms": 7
+    },
+    {
+      "id": "id_api_logs_offhdwiq5",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.252Z",
+      "updated_at": "2026-07-28T10:37:02.252Z",
+      "endpoint": "/api/social/analytics",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_fxz2htpb4",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.256Z",
+      "updated_at": "2026-07-28T10:37:02.256Z",
+      "endpoint": "/api/social/media",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_z8olmg72s",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.258Z",
+      "updated_at": "2026-07-28T10:37:02.258Z",
+      "endpoint": "/api/social/media",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_ajoiyawp2",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.261Z",
+      "updated_at": "2026-07-28T10:37:02.261Z",
+      "endpoint": "/api/social/media/id_media_library_d8ul8fzxz",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_3eoz85wgi",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.266Z",
+      "updated_at": "2026-07-28T10:37:02.266Z",
+      "endpoint": "/api/social/campaigns",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_2a4gi7b13",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.269Z",
+      "updated_at": "2026-07-28T10:37:02.269Z",
+      "endpoint": "/api/social/campaigns",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_eudrnxifx",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.271Z",
+      "updated_at": "2026-07-28T10:37:02.271Z",
+      "endpoint": "/api/social/campaigns/id_campaigns_8bdvqjzq9",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_0pbzj5d4c",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-28T10:37:02.275Z",
+      "updated_at": "2026-07-28T10:37:02.275Z",
+      "endpoint": "/api/social/ai/generate",
+      "status_code": 200,
+      "response_time_ms": 2
+    },
+    {
+      "id": "id_api_logs_ebu7ediew",
+      "user_id": "anonymous",
+      "created_at": "2026-07-29T06:25:52.992Z",
+      "updated_at": "2026-07-29T06:25:52.992Z",
+      "endpoint": "/api/auth/login",
+      "status_code": 200,
+      "response_time_ms": 3
+    },
+    {
+      "id": "id_api_logs_6xdc7k61m",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:52.997Z",
+      "updated_at": "2026-07-29T06:25:52.997Z",
+      "endpoint": "/api/social/accounts",
+      "status_code": 200,
+      "response_time_ms": 2
+    },
+    {
+      "id": "id_api_logs_qquhv9b7y",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.004Z",
+      "updated_at": "2026-07-29T06:25:53.004Z",
+      "endpoint": "/api/social/connect",
+      "status_code": 200,
+      "response_time_ms": 5
+    },
+    {
+      "id": "id_api_logs_i7jhkn1f0",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.008Z",
+      "updated_at": "2026-07-29T06:25:53.008Z",
+      "endpoint": "/api/social/posts",
+      "status_code": 200,
+      "response_time_ms": 2
+    },
+    {
+      "id": "id_api_logs_mxhuduwcq",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.011Z",
+      "updated_at": "2026-07-29T06:25:53.011Z",
+      "endpoint": "/api/social/posts",
+      "status_code": 200,
+      "response_time_ms": 2
+    },
+    {
+      "id": "id_api_logs_m9mx81qny",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.016Z",
+      "updated_at": "2026-07-29T06:25:53.016Z",
+      "endpoint": "/api/social/connect",
+      "status_code": 200,
+      "response_time_ms": 4
+    },
+    {
+      "id": "id_api_logs_s2bm7mnwc",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.023Z",
+      "updated_at": "2026-07-29T06:25:53.023Z",
+      "endpoint": "/api/social/publish",
+      "status_code": 200,
+      "response_time_ms": 5
+    },
+    {
+      "id": "id_api_logs_3jffw2ihk",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.029Z",
+      "updated_at": "2026-07-29T06:25:53.029Z",
+      "endpoint": "/api/social/connect",
+      "status_code": 200,
+      "response_time_ms": 4
+    },
+    {
+      "id": "id_api_logs_mn4mvjigi",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.035Z",
+      "updated_at": "2026-07-29T06:25:53.035Z",
+      "endpoint": "/api/social/schedule",
+      "status_code": 200,
+      "response_time_ms": 5
+    },
+    {
+      "id": "id_api_logs_dte13jagy",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.040Z",
+      "updated_at": "2026-07-29T06:25:53.040Z",
+      "endpoint": "/api/social/connect",
+      "status_code": 200,
+      "response_time_ms": 4
+    },
+    {
+      "id": "id_api_logs_w7p21wa2v",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.045Z",
+      "updated_at": "2026-07-29T06:25:53.045Z",
+      "endpoint": "/api/social/schedule",
+      "status_code": 200,
+      "response_time_ms": 3
+    },
+    {
+      "id": "id_api_logs_xiqzii8rh",
+      "user_id": "anonymous",
+      "created_at": "2026-07-29T06:25:53.063Z",
+      "updated_at": "2026-07-29T06:25:53.063Z",
+      "endpoint": "/api/social/scheduler/run",
+      "status_code": 200,
+      "response_time_ms": 17
+    },
+    {
+      "id": "id_api_logs_tdh1pw9u9",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.067Z",
+      "updated_at": "2026-07-29T06:25:53.067Z",
+      "endpoint": "/api/social/analytics",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_h2avg7z3j",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.075Z",
+      "updated_at": "2026-07-29T06:25:53.075Z",
+      "endpoint": "/api/social/media",
+      "status_code": 200,
+      "response_time_ms": 6
+    },
+    {
+      "id": "id_api_logs_gtw0govvc",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.078Z",
+      "updated_at": "2026-07-29T06:25:53.078Z",
+      "endpoint": "/api/social/media",
+      "status_code": 200,
+      "response_time_ms": 2
+    },
+    {
+      "id": "id_api_logs_9uu076oh9",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.081Z",
+      "updated_at": "2026-07-29T06:25:53.081Z",
+      "endpoint": "/api/social/media/id_media_library_b7vnmtpqc",
+      "status_code": 200,
+      "response_time_ms": 2
+    },
+    {
+      "id": "id_api_logs_f0r0senc8",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.084Z",
+      "updated_at": "2026-07-29T06:25:53.084Z",
+      "endpoint": "/api/social/campaigns",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_428s1a97c",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.087Z",
+      "updated_at": "2026-07-29T06:25:53.087Z",
+      "endpoint": "/api/social/campaigns",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_0t6nn2i0t",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.090Z",
+      "updated_at": "2026-07-29T06:25:53.090Z",
+      "endpoint": "/api/social/campaigns/id_campaigns_duw1yqkmb",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_wct3qr8jc",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T06:25:53.094Z",
+      "updated_at": "2026-07-29T06:25:53.094Z",
+      "endpoint": "/api/social/ai/generate",
+      "status_code": 200,
+      "response_time_ms": 3
+    },
+    {
+      "id": "id_api_logs_ato31zjns",
+      "user_id": "anonymous",
+      "created_at": "2026-07-29T06:25:53.150Z",
+      "updated_at": "2026-07-29T06:25:53.150Z",
+      "endpoint": "/api/health",
+      "status_code": 200,
+      "response_time_ms": 1
+    },
+    {
+      "id": "id_api_logs_uclmhs8kt",
+      "user_id": "anonymous",
+      "created_at": "2026-07-29T06:25:53.154Z",
+      "updated_at": "2026-07-29T06:25:53.154Z",
+      "endpoint": "/api/auth/login",
+      "status_code": 200,
+      "response_time_ms": 2
+    },
+    {
+      "id": "id_api_logs_t860xkz4q",
+      "user_id": "id_users_r8t4c2fo1",
+      "created_at": "2026-07-29T06:25:53.160Z",
+      "updated_at": "2026-07-29T06:25:53.160Z",
+      "endpoint": "/api/gig/generate",
+      "status_code": 200,
+      "response_time_ms": 5
+    }
+  ]
+}

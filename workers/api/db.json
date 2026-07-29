@@ -1,0 +1,1715 @@
+{
+  "users": [
+    {
+      "id": "usr_fiverr_pro_001",
+      "email": "alex@gigpilot.ai",
+      "full_name": "Alex Vance",
+      "fullName": "Alex Vance",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+      "role": "Pro",
+      "credits_remaining": 450,
+      "creditsRemaining": 450,
+      "monthly_quota": 500,
+      "monthlyQuota": 500,
+      "created_at": "2026-07-28T10:10:18.251Z",
+      "updated_at": "2026-07-28T10:10:18.251Z"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub_001",
+      "user_id": "usr_fiverr_pro_001",
+      "plan": "Pro",
+      "status": "active",
+      "razorpay_subscription_id": "sub_prod_12891391",
+      "current_period_start": "2026-07-28T10:10:18.251Z",
+      "current_period_end": "2026-08-27T10:10:18.251Z",
+      "created_at": "2026-07-28T10:10:18.251Z"
+    }
+  ],
+  "templates": [
+    {
+      "id": "tmpl_01",
+      "user_id": "usr_fiverr_pro_001",
+      "title": "Premium Next.js Web Development description",
+      "category": "Programming & Tech",
+      "type": "gig",
+      "content": "Are you looking to build a blazing-fast, SEO-optimized website? I specialize in React, Next.js, and Tailwind CSS templates...",
+      "is_custom": false,
+      "isCustom": false,
+      "is_favorite": true,
+      "isFavorite": true,
+      "created_at": "2026-07-23T10:10:18.251Z"
+    },
+    {
+      "id": "tmpl_02",
+      "user_id": "usr_fiverr_pro_001",
+      "title": "Winning Custom Proposal for Figma Rebrand",
+      "category": "Graphics & Design",
+      "type": "proposal",
+      "content": "Hi [Buyer Name], I saw your request for a modern brand overhaul. I have designed logos and complete kits for 50+ startups...",
+      "is_custom": true,
+      "isCustom": true,
+      "is_favorite": true,
+      "isFavorite": true,
+      "created_at": "2026-07-24T10:10:18.251Z"
+    },
+    {
+      "id": "tmpl_03",
+      "user_id": "usr_fiverr_pro_001",
+      "title": "Out of Office - Project Delivery Message",
+      "category": "Client Messages",
+      "type": "reply",
+      "content": "Hi there, thank you for placing the order. I have started working on your requirements and will keep you posted with updates!",
+      "is_custom": false,
+      "isCustom": false,
+      "is_favorite": false,
+      "isFavorite": false,
+      "created_at": "2026-07-25T10:10:18.251Z"
+    }
+  ],
+  "generations": [
+    {
+      "id": "gen_001",
+      "user_id": "usr_fiverr_pro_001",
+      "module": "Proposal Generator",
+      "input": {
+        "type": "buyer_request",
+        "buyerName": "David K.",
+        "jobDescription": "Need a developer to convert my landing page mockup into a fully operational Next.js site.",
+        "myService": "Full-stack Web Developer specialized in Next.js, React and CSS",
+        "tone": "Professional & Assertive",
+        "pricingEstimate": "$300",
+        "deliveryTime": "3 Days"
+      },
+      "output": {
+        "subjectLine": "Convert Landing Page mockup to Next.js in 3 days",
+        "proposalText": "Hi David K.,\n\nI reviewed your request to convert your landing page mockup into a high-performance Next.js site. I specialize in exact PSD/Figma-to-code conversions using modular React structures and pixel-perfect styling.\n\nWhy me:\n- 100% Responsive layout\n- SEO optimized metadata\n- Blazing fast performance (95+ page speed score)\n\nI can deliver this within 3 days for $300. Let's discuss details in chat!\n\nBest,\nAlex",
+        "keyHighlights": [
+          "Figma-to-Next.js exact match",
+          "Lighthouse PageSpeed 95+",
+          "Fully interactive components"
+        ],
+        "suggestedQuestions": [
+          "Can you share the link to your current mockups/Figma design?"
+        ],
+        "callToAction": "Send me a message in chat to get started!"
+      },
+      "tokens_used": 480,
+      "provider": "Gemini",
+      "is_favorite": true,
+      "isFavorite": true,
+      "created_at": "2026-07-28T08:10:18.251Z"
+    },
+    {
+      "id": "gen_002",
+      "user_id": "usr_fiverr_pro_001",
+      "module": "Keyword Finder",
+      "input": {
+        "service": "Logo Design"
+      },
+      "output": {
+        "primaryKeywords": [
+          {
+            "keyword": "logo designer",
+            "type": "primary",
+            "estimatedSearchVolume": 45000,
+            "competitionLevel": "High",
+            "difficultyScore": 82,
+            "opportunityScore": 68,
+            "trend": "Stable",
+            "intent": "Transactional"
+          },
+          {
+            "keyword": "professional logo design",
+            "type": "primary",
+            "estimatedSearchVolume": 12500,
+            "competitionLevel": "High",
+            "difficultyScore": 74,
+            "opportunityScore": 55,
+            "trend": "Rising",
+            "intent": "Transactional"
+          }
+        ],
+        "longTailKeywords": [
+          {
+            "keyword": "minimalist business logo",
+            "type": "long-tail",
+            "estimatedSearchVolume": 8500,
+            "competitionLevel": "Medium",
+            "difficultyScore": 42,
+            "opportunityScore": 88,
+            "trend": "Rising",
+            "intent": "Transactional"
+          },
+          {
+            "keyword": "tech startup branding logo design",
+            "type": "long-tail",
+            "estimatedSearchVolume": 2400,
+            "competitionLevel": "Low",
+            "difficultyScore": 18,
+            "opportunityScore": 95,
+            "trend": "Rising",
+            "intent": "Transactional"
+          }
+        ],
+        "relatedSearches": [
+          {
+            "keyword": "modern minimalist logo design",
+            "type": "related",
+            "estimatedSearchVolume": 15400,
+            "competitionLevel": "Medium",
+            "difficultyScore": 48,
+            "opportunityScore": 82,
+            "trend": "Stable",
+            "intent": "Commercial"
+          }
+        ],
+        "competitorKeywords": [
+          {
+            "keyword": "vector brand identity logo",
+            "type": "competitor",
+            "estimatedSearchVolume": 6700,
+            "competitionLevel": "Medium",
+            "difficultyScore": 35,
+            "opportunityScore": 79,
+            "trend": "Stable",
+            "intent": "Commercial"
+          }
+        ],
+        "summary": {
+          "avgDifficulty": 49,
+          "avgOpportunity": 77,
+          "recommendedFocus": [
+            "Target long-tail keywords in your Fiverr tags",
+            "Optimize description with \"minimalist business logo\""
+          ]
+        }
+      },
+      "tokens_used": 620,
+      "provider": "OpenAI",
+      "is_favorite": false,
+      "isFavorite": false,
+      "created_at": "2026-07-28T05:10:18.251Z"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "fav_01",
+      "user_id": "usr_fiverr_pro_001",
+      "item_type": "template",
+      "target_id": "tmpl_01",
+      "payload": {
+        "title": "Premium Next.js Web Development description",
+        "type": "gig",
+        "content": "Are you looking to build a blazing-fast, SEO-optimized website? I specialize in React, Next.js, and Tailwind CSS templates..."
+      },
+      "created_at": "2026-07-28T10:10:18.251Z"
+    }
+  ],
+  "settings": [
+    {
+      "id": "set_001",
+      "user_id": "usr_fiverr_pro_001",
+      "default_provider": "gemini",
+      "default_tone": "Professional",
+      "email_notifications": true,
+      "dark_mode": true,
+      "updated_at": "2026-07-28T10:10:18.251Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "hist_01",
+      "user_id": "usr_fiverr_pro_001",
+      "action": "AI Proposal Generation",
+      "details": {
+        "client": "David K.",
+        "type": "buyer_request"
+      },
+      "created_at": "2026-07-28T08:10:18.251Z"
+    },
+    {
+      "id": "hist_02",
+      "user_id": "usr_fiverr_pro_001",
+      "action": "AI Keyword Search",
+      "details": {
+        "query": "Logo Design"
+      },
+      "created_at": "2026-07-28T05:10:18.251Z"
+    }
+  ],
+  "billing": [
+    {
+      "id": "bill_inv_001",
+      "user_id": "usr_fiverr_pro_001",
+      "invoice_id": "INV-2026-0728",
+      "amount": 29,
+      "currency": "USD",
+      "status": "Paid",
+      "pdf_url": "#",
+      "created_at": "2026-07-28T09:10:18.251Z"
+    }
+  ],
+  "analytics": [
+    {
+      "id": "log_29",
+      "date": "2026-06-29",
+      "day": "Mon",
+      "creditsUsed": 7,
+      "wordsGenerated": 4655,
+      "timeSavedMinutes": 105,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_28",
+      "date": "2026-06-30",
+      "day": "Tue",
+      "creditsUsed": 5,
+      "wordsGenerated": 3905,
+      "timeSavedMinutes": 75,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 1
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_27",
+      "date": "2026-07-01",
+      "day": "Wed",
+      "creditsUsed": 1,
+      "wordsGenerated": 988,
+      "timeSavedMinutes": 15,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 2
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_26",
+      "date": "2026-07-02",
+      "day": "Thu",
+      "creditsUsed": 7,
+      "wordsGenerated": 6223,
+      "timeSavedMinutes": 105,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_25",
+      "date": "2026-07-03",
+      "day": "Fri",
+      "creditsUsed": 1,
+      "wordsGenerated": 855,
+      "timeSavedMinutes": 15,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "log_24",
+      "date": "2026-07-04",
+      "day": "Sat",
+      "creditsUsed": 7,
+      "wordsGenerated": 4886,
+      "timeSavedMinutes": 105,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 1
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_23",
+      "date": "2026-07-05",
+      "day": "Sun",
+      "creditsUsed": 5,
+      "wordsGenerated": 3545,
+      "timeSavedMinutes": 75,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 2
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 2
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_22",
+      "date": "2026-07-06",
+      "day": "Mon",
+      "creditsUsed": 8,
+      "wordsGenerated": 5096,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 1
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 2
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_21",
+      "date": "2026-07-07",
+      "day": "Tue",
+      "creditsUsed": 7,
+      "wordsGenerated": 5075,
+      "timeSavedMinutes": 105,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_20",
+      "date": "2026-07-08",
+      "day": "Wed",
+      "creditsUsed": 7,
+      "wordsGenerated": 5271,
+      "timeSavedMinutes": 105,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_19",
+      "date": "2026-07-09",
+      "day": "Thu",
+      "creditsUsed": 3,
+      "wordsGenerated": 2934,
+      "timeSavedMinutes": 45,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_18",
+      "date": "2026-07-10",
+      "day": "Fri",
+      "creditsUsed": 3,
+      "wordsGenerated": 2025,
+      "timeSavedMinutes": 45,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "log_17",
+      "date": "2026-07-11",
+      "day": "Sat",
+      "creditsUsed": 1,
+      "wordsGenerated": 784,
+      "timeSavedMinutes": 15,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 2
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_16",
+      "date": "2026-07-12",
+      "day": "Sun",
+      "creditsUsed": 3,
+      "wordsGenerated": 2496,
+      "timeSavedMinutes": 45,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_15",
+      "date": "2026-07-13",
+      "day": "Mon",
+      "creditsUsed": 4,
+      "wordsGenerated": 2632,
+      "timeSavedMinutes": 60,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 1
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 2
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 1
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_14",
+      "date": "2026-07-14",
+      "day": "Tue",
+      "creditsUsed": 8,
+      "wordsGenerated": 6304,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 2
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 2
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_13",
+      "date": "2026-07-15",
+      "day": "Wed",
+      "creditsUsed": 3,
+      "wordsGenerated": 1860,
+      "timeSavedMinutes": 45,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 2
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_12",
+      "date": "2026-07-16",
+      "day": "Thu",
+      "creditsUsed": 7,
+      "wordsGenerated": 6489,
+      "timeSavedMinutes": 105,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_11",
+      "date": "2026-07-17",
+      "day": "Fri",
+      "creditsUsed": 8,
+      "wordsGenerated": 7208,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 2
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_10",
+      "date": "2026-07-18",
+      "day": "Sat",
+      "creditsUsed": 8,
+      "wordsGenerated": 7760,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 2
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 1
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 1
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_9",
+      "date": "2026-07-19",
+      "day": "Sun",
+      "creditsUsed": 8,
+      "wordsGenerated": 5440,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 1
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_8",
+      "date": "2026-07-20",
+      "day": "Mon",
+      "creditsUsed": 1,
+      "wordsGenerated": 706,
+      "timeSavedMinutes": 15,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_7",
+      "date": "2026-07-21",
+      "day": "Tue",
+      "creditsUsed": 6,
+      "wordsGenerated": 4476,
+      "timeSavedMinutes": 90,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_6",
+      "date": "2026-07-22",
+      "day": "Wed",
+      "creditsUsed": 5,
+      "wordsGenerated": 3575,
+      "timeSavedMinutes": 75,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_5",
+      "date": "2026-07-23",
+      "day": "Thu",
+      "creditsUsed": 6,
+      "wordsGenerated": 5178,
+      "timeSavedMinutes": 90,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 1
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_4",
+      "date": "2026-07-24",
+      "day": "Fri",
+      "creditsUsed": 3,
+      "wordsGenerated": 2292,
+      "timeSavedMinutes": 45,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 1
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 2
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_3",
+      "date": "2026-07-25",
+      "day": "Sat",
+      "creditsUsed": 1,
+      "wordsGenerated": 865,
+      "timeSavedMinutes": 15,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 1
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_2",
+      "date": "2026-07-26",
+      "day": "Sun",
+      "creditsUsed": 8,
+      "wordsGenerated": 5496,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 1
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 2
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "log_1",
+      "date": "2026-07-27",
+      "day": "Mon",
+      "creditsUsed": 1,
+      "wordsGenerated": 776,
+      "timeSavedMinutes": 15,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 1
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 2
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 2
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_0",
+      "date": "2026-07-28",
+      "day": "Tue",
+      "creditsUsed": 1,
+      "wordsGenerated": 776,
+      "timeSavedMinutes": 15,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "gigs": [
+    {
+      "id": "gig_draft_01",
+      "user_id": "usr_fiverr_pro_001",
+      "title": "I will build high converting Next js website and Tailwind CSS application",
+      "category": "Programming & Tech",
+      "content": {
+        "seoTitle": "I will build high converting Next js website and Tailwind CSS application",
+        "description": "Looking for a custom site? I will build optimized frontend pages using React, Next.js, and Tailwind CSS.\n\nWhat is included:\n- Clean modular code\n- Fully responsive layout\n- SEO-optimized tags and speed settings",
+        "packages": {
+          "basic": {
+            "name": "Basic Starter",
+            "title": "Single Page Setup",
+            "description": "Core Layout built in Next.js",
+            "deliveryDays": 2,
+            "revisions": "2 Revisions",
+            "price": 45,
+            "features": [
+              "1 Page",
+              "Tailwind integration",
+              "Source Code"
+            ]
+          },
+          "standard": {
+            "name": "Standard Pro",
+            "title": "Complete Web App",
+            "description": "Up to 5 Pages with API link",
+            "deliveryDays": 4,
+            "revisions": "5 Revisions",
+            "price": 95,
+            "features": [
+              "Everything in Basic",
+              "API integration",
+              "Custom design"
+            ]
+          },
+          "premium": {
+            "name": "Premium Empire",
+            "title": "Enterprise Portal",
+            "description": "Full application with admin setup",
+            "deliveryDays": 7,
+            "revisions": "Unlimited",
+            "price": 250,
+            "features": [
+              "Everything in Standard",
+              "Supabase integration",
+              "Multi-role layout"
+            ]
+          }
+        },
+        "faqs": [
+          {
+            "question": "Do you design or just write code?",
+            "answer": "I specialize in both custom Tailwind layout design and clean Next.js coding."
+          }
+        ],
+        "requirements": [
+          "Brand preferred style guidelines",
+          "Wireframes / references"
+        ],
+        "tags": [
+          "nextjs",
+          "tailwindcss",
+          "web-development",
+          "react",
+          "api-integration"
+        ],
+        "callToAction": "Order today to unlock elite performance!",
+        "imagePrompt": "Isometric 3D workspace graphic showing purple neon grids and code screens for gig thumbnail.",
+        "videoScript": "[Intro 0:00-0:05] Fast websites sell. I build Next.js apps...",
+        "upsellSuggestions": [
+          "Fast 24-hr express (+$30)"
+        ]
+      },
+      "status": "draft",
+      "created_at": "2026-07-27T10:10:18.251Z"
+    }
+  ],
+  "portfolios": []
+}

@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports:
+      - "4321:4321"
+    environment:
+      - PORT=4321
+      - PUBLIC_API_URL=http://localhost:3000
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      - api
+
+  api:
+    build:
+      context: .
+      dockerfile: workers/api/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - SUPABASE_URL=https://mock.supabase.co
+      - SUPABASE_ANON_KEY=mock-key
+      - JWT_SECRET=gigpilot-secret-jwt-key-2026
+    volumes:
+      - .:/app
+      - /app/node_modules

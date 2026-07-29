@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GigPilot AI</title>
+  <style>
+    body {
+      width: 320px;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0b0f17;
+      color: #f1f5f9;
+      padding: 16px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    .brand {
+      font-weight: 700;
+      font-size: 16px;
+      background: linear-gradient(135deg, #a855f7, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card {
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      background: linear-gradient(135deg, #9333ea, #2563eb);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    .status {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="brand">GigPilot AI Companion</div>
+    <div class="status" id="fiverrStatus">Checking page...</div>
+  </div>
+
+  <div class="card">
+    <div style="font-weight: 600; font-size: 14px; margin-bottom: 6px;">Saved Drafts & AI Outputs</div>
+    <div class="status">Sync your generated Gigs & Proposals from GigPilot AI workspace.</div>
+    <button class="btn" id="openDashboardBtn">Open GigPilot Dashboard</button>
+  </div>
+
+  <div class="card">
+    <div style="font-weight: 600; font-size: 14px; margin-bottom: 6px;">Safe Publish Assistant</div>
+    <div class="status">Copy fields easily into Fiverr form inputs. Note: Publishing is always manual.</div>
+    <button class="btn" style="background: #1e293b; border: 1px solid #475569;" id="copyDraftBtn">Copy Current Draft</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

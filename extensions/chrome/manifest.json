@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "GigPilot AI - Fiverr Freelancer Companion",
+  "version": "1.0.0",
+  "description": "AI Assistant for Fiverr freelancers. Optimize gigs, draft proposals, and copy AI content directly into your browser.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://*.fiverr.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "GigPilot AI"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.fiverr.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
