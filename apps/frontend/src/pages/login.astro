@@ -473,6 +473,7 @@ const supabaseAnonKey = import.meta.env.SUPABASE_ANON_KEY || process.env.SUPABAS
           email,
           password,
           options: {
+            emailRedirectTo: `${window.location.origin}/auth/callback`,
             data: {
               full_name: fullName,
             }

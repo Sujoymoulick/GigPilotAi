@@ -9,7 +9,7 @@ dotenv.config();
 
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
-  PORT: z.coerce.number().default(3000),
+  PORT: z.coerce.number().default(3001),
   SUPABASE_URL: z.string().url().default('https://mock.supabase.co'),
   SUPABASE_ANON_KEY: z.string().default('mock-anon-key'),
   SUPABASE_SERVICE_ROLE_KEY: z.string().optional().default('mock-service-role-key'),

@@ -4,6 +4,9 @@ import tailwind from '@astrojs/tailwind';
 import cloudflare from '@astrojs/cloudflare';
 
 export default defineConfig({
+  server: {
+    port: 3000,
+  },
   output: 'server',
   adapter: cloudflare(),
   integrations: [
