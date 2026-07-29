@@ -9,16 +9,13 @@ GigPilot AI is a modern SaaS platform designed to help Fiverr freelancers optimi
 
 ## 🏗️ Architecture Overview
 
-GigPilot AI uses a scalable, modular monorepo architecture powered by **npm workspaces**. 
+GigPilot AI uses a scalable, modular Clean Architecture monorepo powered by **npm workspaces**. The backend has been completely refactored from Hono into a production-grade **Fastify** server using clean layered patterns.
 
 ```mermaid
 graph TD
     subgraph Apps
-        web[apps/web - Astro 5 + React]
-    end
-
-    subgraph Workers
-        api[workers/api - Hono API Worker]
+        web[apps/frontend - Astro 5 + React]
+        api[apps/backend - Fastify Server]
     end
 
     subgraph Packages
@@ -51,14 +48,24 @@ graph TD
 
 ### Monorepo Workspaces
 
-*   **`apps/web/`**: Astro 5 frontend with React 19 interactive components, styled using Tailwind CSS and a custom Vercel-like premium glassmorphic UI.
-*   **`workers/api/`**: Secure, edge-compatible REST API built with Hono and running on Cloudflare Workers / Node server adapters.
+*   **`apps/frontend/`**: Astro 5 frontend with React 19 interactive components, styled using Tailwind CSS. Deployed to **Cloudflare Workers** (via `@astrojs/cloudflare`).
+*   **`apps/backend/`**: Secure, production-grade REST API built with Fastify, deployed to **Render** web services. Redirection is handled via `src/index.ts -> src/server.ts` for script compatibility.
 *   **`packages/shared/`**: Common TypeScript schemas and interfaces mapping API request/response envelopes.
-*   **`packages/ai/`**: Provider-agnostic LLM interface supporting OpenAI, Google Gemini, Anthropic Claude, Groq, and OpenRouter. Features reliable simulation fallbacks.
+*   **`packages/ai/`**: Provider-agnostic LLM interface supporting OpenAI, Google Gemini, Anthropic Claude, Groq, and OpenRouter.
 *   **`packages/auth/`**: JWT session utilities, Google OAuth URL generation, and role authorization helpers (Free, Pro, Agency, Admin).
 *   **`packages/database/`**: Supabase PostgreSQL connection bindings and RLS migrations.
 *   **`packages/analytics/`**: Tracks credit consumption, words generated, and time saved metrics.
 *   **`packages/ui/`**: Common styles, utility classes, and glassmorphic UI layout primitives.
+
+### 📚 Project Documentation Guides
+
+Detailed manuals for the new backend can be found in the [docs](./docs) folder:
+*   [Architecture Documentation](./docs/ARCHITECTURE.md) - Layered structure, database caching, and queue design.
+*   [API Documentation](./docs/API_DOCUMENTATION.md) - Envelopes, endpoints, validation, headers.
+*   [Deployment Guide](./docs/DEPLOYMENT_GUIDE.md) - Step-by-step staging setup for Supabase, Render, Cloudflare, and Upstash.
+*   [Environment Setup Guide](./docs/ENVIRONMENT_SETUP.md) - Variable schemas, validation rules, local development variables.
+*   [Folder Documentation](./docs/FOLDER_DOCUMENTATION.md) - Directory layout mapping.
+*   [Developer Guide](./docs/DEVELOPER_GUIDE.md) - Extension rules, feature addition walkthroughs, and testing.
 
 ---
 
@@ -81,13 +88,11 @@ Copy the example environment file and configure variables:
 ```bash
 cp .env.example .env
 ```
-*Note: If no AI API keys are configured, the platform operates seamlessly using simulated LLM responders.*
-
 ### 3. Local Development
 
 Start the frontend and backend servers concurrently:
 ```bash
-# Starts Astro frontend (port 4321/4322) & Hono API (port 3000)
+# Starts Astro frontend (port 4321) & Fastify API (port 3000)
 npm run dev
 npm run dev:api
 ```
@@ -99,7 +104,7 @@ npm run dev:api
 | Command | Action |
 | :--- | :--- |
 | `npm run dev` | Runs the Astro web development server in the background |
-| `npm run dev:api` | Runs the Node Hono API backend server |
+| `npm run dev:api` | Runs the Fastify API backend server |
 | `npm run build` | Compiles the Astro site assets and TypeScript packages |
 | `npm test` | Runs the test suites using Node's native test runner (`--import tsx`) |
 | `npm run lint` | Assures clean source styling |
@@ -108,7 +113,7 @@ npm run dev:api
 
 ## 🧪 Testing
 
-We use the built-in Node.js test runner with `tsx` to test our packages. 
+We use the built-in Node.js test runner with `tsx` to test our packages and backend server. 
 
 Run all tests:
 ```bash
@@ -118,76 +123,57 @@ npm test
 Our test suite covers:
 1.  **AI Service Abstraction (`packages/ai`)**: Resolver mappings for OpenAI, Gemini, and Groq, plus prompt compilation audits.
 2.  **Auth Utilities (`packages/auth`)**: JWT generation, decoding, validity verification, and role permissions checks.
-3.  **API Integration (`workers/api`)**: End-to-end endpoint validations for `/api/health`, `/api/auth/login`, and `/api/gig/generate`.
+3.  **API Integration (`apps/backend`)**: End-to-end integration validations for `/api/health`, `/api/auth/login`, and `/api/gig/generate` using Fastify mock request injection.
 
 ---
 
-## 🐳 Docker Container Support
+## 🚀 Cloudflare Workers & Render Deployment
 
-You can run the entire monorepo locally inside Docker containers.
+This project is configured to run serverless on Cloudflare Workers for the frontend, and as a Node.js web service on Render for the backend.
+
+### 1. Frontend (Cloudflare Workers / Pages)
+
+The frontend uses Astro's `@astrojs/cloudflare` adapter. To deploy it:
 
 ```bash
-# Build and run containers
-docker-compose up --build
+# Build the frontend project
+npm run build --workspace=@gigpilot/frontend
 
-# Run in background
-docker-compose up -d
+# Deploy via Wrangler (Cloudflare CLI)
+npx wrangler pages deploy apps/frontend/dist
 ```
 
-Services exposed:
-*   **Web Frontend**: `http://localhost:4321`
-*   **Backend API**: `http://localhost:3000`
+Make sure to configure the `PUBLIC_API_URL` environment variable in your Cloudflare Pages dashboard pointing to your backend URL on Render.
+
+### 2. Backend (Render)
+
+The backend is built with Fastify. To deploy it on Render:
+1. Create a new **Web Service** on Render.
+2. Select your repository.
+3. Configure the following build settings:
+   - **Root Directory**: `apps/backend`
+   - **Build Command**: `npm install && npm run build`
+   - **Start Command**: `npm start`
+4. Add your Environment Variables (e.g. `PORT`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `JWT_SECRET`, etc.).
 
 ---
 
 ## 📡 API Documentation
 
-### 1. Health Checks
-*   **Endpoint**: `GET /api/health`
-*   **Response**:
-    ```json
-    {
-      "status": "online",
-      "system": "GigPilot AI Operating System API Worker",
-      "version": "1.0.0-production"
-    }
-    ```
-
-### 2. Authentication Login
-*   **Endpoint**: `POST /api/auth/login`
-*   **Payload**: `{ "email": "user@example.com", "password": "securepassword" }`
-*   **Response**: Returns user metadata and JWT session token.
-
-### 3. AI Gig Generator
-*   **Endpoint**: `POST /api/gig/generate`
-*   **Payload**:
-    ```json
-    {
-      "category": "Programming & Tech",
-      "subcategory": "Web Development",
-      "service": "Next.js Web App Design",
-      "experience": "Expert",
-      "tone": "Persuasive"
-    }
-    ```
-*   **Response**: Returns structured SEO title, description copy, basic/standard/premium packages, FAQs, requirements checklist, search tags, image prompts, and upsells.
+For the complete API references, payloads, and envelopes, see the [API Documentation Guide](./docs/API_DOCUMENTATION.md).
 
 ---
 
 ## 🛡️ Database & Security Rules
 
-*   **Supabase PostgreSQL**: Configured under `packages/database/migrations`.
-*   **Row Level Security (RLS)**: Enabled across all 15 tables (`users`, `subscriptions`, `generations`, `gigs`, `history`, `favorites`, etc.).
-*   **Sample Policy**:
-    ```sql
-    CREATE POLICY "Users can access their own generations" 
-    ON public.generations FOR ALL USING (auth.uid() = user_id);
-    ```
+*   **Supabase PostgreSQL**: Table migrations and security rules are configured in [supabase_schema.sql](./apps/backend/supabase_schema.sql).
+*   **Row Level Security (RLS)**: Enabled across all 13 tables (`profiles`, `projects`, `gigs`, `social_accounts`, etc.) to enforce strict user tenant isolation.
 
 ---
 
 ## 🤝 Contribution Guidelines
 
 1.  **Workspaces**: Keep domain logic separated inside correct packages (e.g. LLM alterations in `packages/ai`, styles in `packages/ui`).
-2.  **Testing**: Write accompanying tests in the corresponding package `test/` directory before proposing pull requests.
-3.  **ToS Safety**: Under no circumstances should automation scripts simulate direct publishing clicks on fiverr.com.
+2.  **Clean Architecture**: Always preserve clean architecture boundaries (Controllers -> Services -> Repositories). Never query database layers directly from controllers.
+3.  **Testing**: Write accompanying integration tests under `apps/backend/test/` before proposing modifications.
+

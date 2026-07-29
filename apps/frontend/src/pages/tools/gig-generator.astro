@@ -1,0 +1,452 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Sidebar } from '../../components/Sidebar';
+import { 
+  Bot, Cpu, Sparkles, Send, Copy, Bookmark, Download, RefreshCw, 
+  HelpCircle, CheckCircle2, ChevronDown, Check, ArrowRight, ShieldCheck
+} from 'lucide-react';
+---
+
+<Layout title="AI Gig Generator - GigPilot AI">
+  <div class="flex min-h-screen bg-[#0B0F17]">
+    <!-- Sidebar Navigation -->
+    <Sidebar currentPath="/tools/gig-generator" client:load />
+
+    <!-- Main Content Area -->
+    <main class="flex-1 flex flex-col min-w-0 overflow-y-auto">
+      <!-- Top Navbar -->
+      <header class="h-16 border-b border-slate-800/80 bg-slate-950/40 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-30">
+        <div class="flex items-center gap-2">
+          <Sparkles class="w-5 h-5 text-emerald-400" />
+          <h1 class="text-sm font-bold text-white">AI Gig Generator</h1>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <!-- Credits Remaining Pill -->
+          <div class="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-[10px] font-bold tracking-wide flex items-center gap-1.5">
+            <Cpu class="w-3.5 h-3.5 text-emerald-400" />
+            <span>450 Credits Left</span>
+          </div>
+
+          <!-- Provider Select -->
+          <select id="providerSelect" class="bg-slate-900 border border-slate-800 rounded-lg px-2 py-1 text-xs text-white focus:outline-none focus:border-emerald-500/50">
+            <option value="openai">GPT-4o mini (OpenAI)</option>
+            <option value="gemini">Gemini Pro (Google)</option>
+            <option value="claude">Claude 3.5 Sonnet (Anthropic)</option>
+            <option value="groq">Llama 3 (Groq - Fast)</option>
+            <option value="openrouter">DeepSeek V3 (OpenRouter)</option>
+          </select>
+        </div>
+      </header>
+
+      <!-- Main Layout Pane -->
+      <div class="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6">
+        <!-- Input Form Side -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-4">
+            <div>
+              <h2 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">Configure Parameters</h2>
+              <p class="text-[10px] text-slate-500 font-medium">Input your service profile details to generate optimized, high-CTR copywriting.</p>
+            </div>
+
+            <!-- Form -->
+            <form id="gigGeneratorForm" class="space-y-3.5">
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Category</label>
+                  <select id="category" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50">
+                    <option value="Programming & Tech">Programming & Tech</option>
+                    <option value="Graphics & Design">Graphics & Design</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Writing & Translation">Writing & Translation</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Subcategory</label>
+                  <select id="subcategory" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50">
+                    <option value="Web Development">Web Development</option>
+                    <option value="Mobile App Development">Mobile App Dev</option>
+                    <option value="Logo Design">Logo Design</option>
+                    <option value="SEO Services">SEO Services</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-400 mb-1">Specific Service Name</label>
+                <input
+                  type="text"
+                  id="service"
+                  required
+                  placeholder="e.g. Next.js Web Development, Modern Minimalism Logo"
+                  class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                />
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Experience Level</label>
+                  <select id="experience" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50">
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Expert" selected>Expert</option>
+                    <option value="Master">Master</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Tone of voice</label>
+                  <select id="tone" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50">
+                    <option value="Professional" selected>Professional</option>
+                    <option value="Friendly">Friendly</option>
+                    <option value="Persuasive">Persuasive</option>
+                    <option value="Authoritative">Authoritative</option>
+                    <option value="Creative">Creative</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Target Country</label>
+                  <input
+                    type="text"
+                    id="country"
+                    placeholder="e.g. USA, UK"
+                    class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                  />
+                </div>
+                <div>
+                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Language</label>
+                  <input
+                    type="text"
+                    id="language"
+                    placeholder="e.g. English"
+                    class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-400 mb-1">Competitor Gig URLs (optional)</label>
+                <textarea
+                  id="competitorUrls"
+                  placeholder="Paste URL links here (one per line)..."
+                  class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-14"
+                ></textarea>
+              </div>
+
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-400 mb-1">Additional requirements / details</label>
+                <textarea
+                  id="additionalNotes"
+                  placeholder="Enter details about what files you deliver, source code options, extra page layouts, etc..."
+                  class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-20"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                id="submitBtn"
+                class="w-full py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold text-xs shadow-lg shadow-emerald-500/15 flex items-center justify-center gap-1.5 transition-all mt-4"
+              >
+                <Sparkles class="w-3.5 h-3.5 animate-pulse" /> Generate Fiverr Gig Content
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Output Preview Side -->
+        <div class="lg:col-span-3 flex flex-col min-h-[400px]">
+          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl flex-1 flex flex-col">
+            <!-- Pane Header -->
+            <div class="px-5 py-4 bg-slate-950/60 border-b border-slate-800/60 flex items-center justify-between flex-shrink-0 flex-wrap gap-2">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-slate-500" id="statusDot"></span>
+                <span class="text-xs font-bold text-slate-300" id="statusText">Awaiting generation parameters</span>
+              </div>
+              
+              <div class="flex items-center gap-2" id="actionControls" style="display: none;">
+                <button id="copyBtn" class="px-2.5 py-1.5 rounded-lg border border-slate-800 hover:bg-slate-800 text-slate-400 hover:text-white transition-all text-[10px] font-semibold flex items-center gap-1.5">
+                  <Copy class="w-3 h-3" /> Copy Full
+                </button>
+                <button id="favoriteBtn" class="px-2.5 py-1.5 rounded-lg border border-slate-800 hover:bg-slate-800 text-slate-400 hover:text-white transition-all text-[10px] font-semibold flex items-center gap-1.5">
+                  <Bookmark class="w-3 h-3" /> Save Draft
+                </button>
+                <button id="exportBtn" class="px-2.5 py-1.5 rounded-lg border border-slate-800 hover:bg-slate-800 text-slate-400 hover:text-white transition-all text-[10px] font-semibold flex items-center gap-1.5">
+                  <Download class="w-3 h-3" /> Export JSON
+                </button>
+              </div>
+            </div>
+
+            <!-- Output Body -->
+            <div class="p-6 flex-1 overflow-y-auto max-h-[600px] space-y-6" id="outputArea">
+              <div class="text-center py-20 text-slate-500 space-y-3">
+                <Bot class="w-12 h-12 text-slate-700 mx-auto" />
+                <p class="text-xs font-medium max-w-xs mx-auto">Fill in the parameters on the left and click generate to build a Fiverr Gig draft conforming to top SEO rules.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Frontend logic for Gig generation
+    const form = document.getElementById('gigGeneratorForm') as HTMLFormElement;
+    const submitBtn = document.getElementById('submitBtn') as HTMLButtonElement;
+    const outputArea = document.getElementById('outputArea');
+    const statusDot = document.getElementById('statusDot');
+    const statusText = document.getElementById('statusText');
+    const actionControls = document.getElementById('actionControls');
+    const providerSelect = document.getElementById('providerSelect') as HTMLSelectElement;
+
+    // Controls
+    const copyBtn = document.getElementById('copyBtn');
+    const favoriteBtn = document.getElementById('favoriteBtn');
+    const exportBtn = document.getElementById('exportBtn');
+
+    let activeData: any = null;
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const category = (document.getElementById('category') as HTMLSelectElement).value;
+      const subcategory = (document.getElementById('subcategory') as HTMLSelectElement).value;
+      const service = (document.getElementById('service') as HTMLInputElement).value;
+      const experience = (document.getElementById('experience') as HTMLSelectElement).value;
+      const tone = (document.getElementById('tone') as HTMLSelectElement).value;
+      const country = (document.getElementById('country') as HTMLInputElement).value;
+      const language = (document.getElementById('language') as HTMLInputElement).value;
+      const competitorUrlsRaw = (document.getElementById('competitorUrls') as HTMLTextAreaElement).value;
+      const additionalNotes = (document.getElementById('additionalNotes') as HTMLTextAreaElement).value;
+
+      const competitorUrls = competitorUrlsRaw.split('\n').map(l => l.trim()).filter(Boolean);
+
+      // Loading state
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="animate-spin mr-1.5"><svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" stroke-width="4" class="opacity-25" /><path d="M4 12a8 8 0 018-8" stroke-width="4" class="opacity-75" /></svg></span> Generating Content...';
+      if (statusDot) statusDot.className = 'w-2 h-2 rounded-full bg-yellow-500 animate-pulse';
+      if (statusText) statusText.textContent = 'Generating Gig structure via AI Service layer...';
+      if (actionControls) actionControls.style.display = 'none';
+
+      try {
+        const payload = {
+          category,
+          subcategory,
+          service,
+          experience,
+          targetAudience: 'Global / Enterprise',
+          tone,
+          country,
+          language,
+          competitorUrls,
+          additionalNotes,
+          provider: providerSelect.value
+        };
+
+        const res = await fetch((import.meta.env.PUBLIC_API_URL || 'http://localhost:3000') + '/api/gig/generate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await res.json();
+        
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span class="mr-1.5">✨</span> Generate Fiverr Gig Content';
+
+        if (result.success && result.data) {
+          activeData = result.data;
+          
+          if (statusDot) statusDot.className = 'w-2 h-2 rounded-full bg-green-500';
+          if (statusText) statusText.textContent = `Generated using ${result.meta?.provider || providerSelect.value} (${result.meta?.model || 'Simulated'})`;
+          if (actionControls) actionControls.style.display = 'flex';
+
+          renderOutput(result.data);
+        } else {
+          throw new Error(result.error || 'Server error');
+        }
+      } catch (err: any) {
+        console.error(err);
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span class="mr-1.5">✨</span> Generate Fiverr Gig Content';
+        
+        // Mock fallback to keep working if server is not fully started
+        const mockFallbackData = {
+          seoTitle: `I will build high converting Next.js website and Tailwind CSS application`,
+          description: `Looking for a custom site? I will build optimized frontend pages using React, Next.js, and Tailwind CSS.\n\nWhat is included:\n- Clean modular code\n- Fully responsive layout\n- SEO-optimized tags and speed settings`,
+          packages: {
+            basic: { name: 'Basic Starter', title: 'Single Page Setup', description: 'Core Layout built in Next.js', deliveryDays: 2, revisions: '2 Revisions', price: 45, features: ['1 Page', 'Tailwind integration', 'Source Code'] },
+            standard: { name: 'Standard Pro', title: 'Complete Web App', description: 'Up to 5 Pages with API link', deliveryDays: 4, revisions: '5 Revisions', price: 95, features: ['Everything in Basic', 'API integration', 'Custom design'] },
+            premium: { name: 'Premium Empire', title: 'Enterprise Portal', description: 'Full application with admin setup', deliveryDays: 7, revisions: 'Unlimited', price: 250, features: ['Everything in Standard', 'Supabase integration', 'Multi-role layout'] }
+          },
+          faqs: [
+            { question: 'Do you design or just write code?', answer: 'I specialize in both custom Tailwind layout design and clean Next.js coding.' }
+          ],
+          requirements: ['Brand preferred style guidelines', 'Wireframes / references'],
+          tags: ['nextjs', 'tailwindcss', 'web-development', 'react', 'api-integration'],
+          callToAction: 'Order today to unlock elite performance!',
+          imagePrompt: 'Isometric 3D workspace graphic showing purple neon grids and code screens for gig thumbnail.',
+          videoScript: '[Intro 0:00-0:05] Fast websites sell. I build Next.js apps...',
+          upsellSuggestions: ['Fast 24-hr express (+$30)']
+        };
+
+        activeData = mockFallbackData;
+        if (statusDot) statusDot.className = 'w-2 h-2 rounded-full bg-yellow-500';
+        if (statusText) statusText.textContent = 'Simulated Fallback Content Loaded';
+        if (actionControls) actionControls.style.display = 'flex';
+        
+        renderOutput(mockFallbackData);
+      }
+    });
+
+    // Render Output JSON dynamically
+    function renderOutput(data: any) {
+      if (!outputArea) return;
+
+      let html = `
+        <div class="space-y-6 text-xs text-slate-300 font-sans">
+          <!-- Title -->
+          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">SEO Optimized Title (starts with 'I will')</span>
+              <span class="text-[9px] text-slate-500">Must be under 80 characters</span>
+            </div>
+            <p class="text-sm font-extrabold text-white border-l-2 border-emerald-500 pl-2.5 py-0.5">${data.seoTitle}</p>
+          </div>
+
+          <!-- Description -->
+          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
+            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Gig Description</span>
+            <p class="text-xs leading-relaxed text-slate-300 whitespace-pre-wrap">${data.description}</p>
+          </div>
+
+          <!-- Packages Grid -->
+          <div class="space-y-2">
+            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">3-Tier Pricing Packages</span>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              ${['basic', 'standard', 'premium'].map((key) => {
+                const tier = data.packages[key];
+                if (!tier) return '';
+                return `
+                  <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 flex flex-col justify-between">
+                    <div>
+                      <div class="flex items-center justify-between mb-1.5">
+                        <span class="font-bold text-white uppercase tracking-wider text-[10px]">${tier.name}</span>
+                        <span class="text-xs font-extrabold text-emerald-400">$${tier.price}</span>
+                      </div>
+                      <p class="font-semibold text-white text-[11px] mb-1">${tier.title}</p>
+                      <p class="text-[10px] text-slate-400 mb-3.5 leading-normal">${tier.description}</p>
+                      
+                      <div class="text-[10px] text-slate-400 mb-3 space-y-1">
+                        <div>Delivery: <strong>${tier.deliveryDays} Days</strong></div>
+                        <div>Revisions: <strong>${tier.revisions}</strong></div>
+                      </div>
+                      
+                      <ul class="space-y-1 text-[10px] text-slate-300 border-t border-slate-900 pt-2.5">
+                        ${tier.features.map((f: string) => `<li class="flex items-center gap-1.5"><span class="text-emerald-400">✓</span> ${f}</li>`).join('')}
+                      </ul>
+                    </div>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
+            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Fiverr Search Tags (Max 5)</span>
+            <div class="flex flex-wrap gap-2">
+              ${data.tags.map((tag: string) => `<span class="bg-slate-900 border border-slate-800 text-[10px] text-slate-300 px-2.5 py-1 rounded-lg font-mono">${tag}</span>`).join('')}
+            </div>
+          </div>
+
+          <!-- FAQ Accordions -->
+          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-3">
+            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Fiverr Gig FAQ List</span>
+            <div class="space-y-2.5">
+              ${data.faqs.map((faq: any) => `
+                <div class="border-b border-slate-900 pb-2">
+                  <p class="font-bold text-white mb-0.5">Q: ${faq.question}</p>
+                  <p class="text-slate-400 leading-normal text-[11px]">A: ${faq.answer}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Requirements -->
+          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
+            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Requirements Needed from Buyer</span>
+            <ul class="list-disc pl-4 space-y-1 text-slate-300 text-[11px]">
+              ${data.requirements.map((r: string) => `<li>${r}</li>`).join('')}
+            </ul>
+          </div>
+
+          <!-- Media Prompts -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Image Prompt -->
+            <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
+              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Thumbnail Image Prompt</span>
+              <p class="text-[11px] text-slate-400 leading-relaxed italic">"${data.imagePrompt}"</p>
+            </div>
+            
+            <!-- Video Script -->
+            <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
+              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Fiverr Video Script Outline</span>
+              <p class="text-[11px] text-slate-400 leading-relaxed">${data.videoScript}</p>
+            </div>
+          </div>
+
+          <!-- Call to Action & Upsells -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- CTA -->
+            <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
+              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Call To Action</span>
+              <p class="font-bold text-white text-[11px]">${data.callToAction}</p>
+            </div>
+            
+            <!-- Upsells -->
+            <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
+              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Upsell Suggestions</span>
+              <ul class="list-disc pl-4 space-y-1 text-slate-400 text-[11px]">
+                ${data.upsellSuggestions.map((u: string) => `<li>${u}</li>`).join('')}
+              </ul>
+            </div>
+          </div>
+          
+          <div class="p-3.5 rounded-xl border border-teal-500/20 bg-teal-500/5 text-[11px] text-slate-400 leading-normal flex items-start gap-2">
+            <ShieldCheck class="w-4 h-4 text-teal-400 flex-shrink-0 mt-0.5" />
+            <span>This content is generated as an optimized draft template. Use the Copy button to capture the text, review it for personal alignment, and then paste it manually into the Fiverr seller panel.</span>
+          </div>
+        </div>
+      `;
+      outputArea.innerHTML = html;
+    }
+
+    // Controls
+    copyBtn?.addEventListener('click', () => {
+      if (!activeData) return;
+      
+      const fullText = `Title: ${activeData.seoTitle}\n\nDescription:\n${activeData.description}\n\nTags: ${activeData.tags.join(', ')}\n\nBasic Package:\n- Price: $${activeData.packages?.basic?.price || 35}\n- Features: ${activeData.packages?.basic?.features.join(', ')}\n\nStandard Package:\n- Price: $${activeData.packages?.standard?.price || 95}\n- Features: ${activeData.packages?.standard?.features.join(', ')}\n\nPremium Package:\n- Price: $${activeData.packages?.premium?.price || 250}\n- Features: ${activeData.packages?.premium?.features.join(', ')}`;
+      
+      navigator.clipboard.writeText(fullText);
+      alert('Fiverr Gig Content copied to clipboard!');
+    });
+
+    favoriteBtn?.addEventListener('click', () => {
+      alert('Draft saved to history folder!');
+    });
+
+    exportBtn?.addEventListener('click', () => {
+      if (!activeData) return;
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(activeData, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", "fiverr_gig_draft.json");
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    });
+  </script>
+</Layout>

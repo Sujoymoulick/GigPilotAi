@@ -4,17 +4,16 @@
   "workspaces": [
     "apps/*",
     "packages/*",
-    "workers/*",
     "extensions/*"
   ],
   "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "dev": "ASTRO_TELEMETRY_DISABLED=1 npm --prefix apps/web run dev -- --background",
-    "dev:web": "ASTRO_TELEMETRY_DISABLED=1 npm --prefix apps/web run dev",
-    "dev:api": "npm --prefix workers/api run dev",
-    "build": "ASTRO_TELEMETRY_DISABLED=1 npm --prefix apps/web run build && npm --prefix workers/api run build",
-    "test": "NODE_ENV=test node --import tsx --test packages/*/test/*.test.js workers/api/test/*.test.js",
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 npm --prefix apps/frontend run dev -- --background",
+    "dev:web": "ASTRO_TELEMETRY_DISABLED=1 npm --prefix apps/frontend run dev",
+    "dev:api": "npm --prefix apps/backend run dev",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 npm --prefix apps/frontend run build && npm --prefix apps/backend run build",
+    "test": "NODE_ENV=test node --import tsx --test packages/*/test/*.test.js apps/backend/test/*.test.js",
     "lint": "echo \"Linting clean\""
   },
   "engines": {

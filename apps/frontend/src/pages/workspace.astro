@@ -1,0 +1,273 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Sidebar } from '../components/Sidebar';
+import { 
+  Bot, Cpu, Sparkles, Send, RefreshCw, Copy, Bookmark, Download, Info
+} from 'lucide-react';
+---
+
+<Layout title="AI Workspace - GigPilot AI">
+  <div class="flex min-h-screen bg-[#0B0F17]">
+    <!-- Sidebar Navigation -->
+    <Sidebar currentPath="/workspace" client:load />
+
+    <!-- Main Content Area -->
+    <main class="flex-1 flex flex-col min-w-0 overflow-y-auto">
+      <!-- Top Navbar -->
+      <header class="h-16 border-b border-slate-800/80 bg-slate-950/40 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-30">
+        <div class="flex items-center gap-2">
+          <Sparkles class="w-5 h-5 text-emerald-400" />
+          <h1 class="text-sm font-bold text-white">Universal AI Workspace</h1>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <!-- Credits Remaining Pill -->
+          <div class="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-[10px] font-bold tracking-wide flex items-center gap-1.5">
+            <Cpu class="w-3.5 h-3.5 text-emerald-400" />
+            <span>450 Credits Left</span>
+          </div>
+
+          <!-- Provider Select -->
+          <div class="flex items-center gap-1.5 text-xs text-slate-400">
+            <span class="text-[10px] font-semibold uppercase tracking-wider">Model:</span>
+            <select id="providerSelect" class="bg-slate-900 border border-slate-800 rounded-lg px-2 py-1 text-xs text-white focus:outline-none focus:border-emerald-500/50">
+              <option value="openai">GPT-4o mini (OpenAI)</option>
+              <option value="gemini">Gemini Pro (Google)</option>
+              <option value="claude">Claude 3.5 Sonnet (Anthropic)</option>
+              <option value="groq">Llama 3 (Groq - Ultra Fast)</option>
+              <option value="openrouter">DeepSeek V3 (OpenRouter)</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <!-- Workspace Area -->
+      <div class="p-6 max-w-5xl w-full mx-auto flex-1 flex flex-col gap-6">
+        <!-- Tools selector grid -->
+        <div class="space-y-2">
+          <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider">Choose Workspace Module</label>
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5" id="moduleSelector">
+            <button data-module="gig" class="px-3.5 py-3.5 rounded-xl border border-emerald-500/30 bg-gradient-to-tr from-emerald-950/20 to-slate-900 text-left transition-all hover:border-emerald-500/50 group active-module">
+              <span class="block text-xs font-bold text-white group-hover:text-emerald-300 transition-colors">Gig Generator</span>
+              <span class="block text-[10px] text-slate-400 font-medium mt-1">SEO gigs & packages</span>
+            </button>
+            <button data-module="proposal" class="px-3.5 py-3.5 rounded-xl border border-slate-800/80 bg-slate-900/30 text-left transition-all hover:border-emerald-500/20 group">
+              <span class="block text-xs font-bold text-slate-300 group-hover:text-white transition-colors">Proposal Writer</span>
+              <span class="block text-[10px] text-slate-400 font-medium mt-1">Buyer request replies</span>
+            </button>
+            <button data-module="keywords" class="px-3.5 py-3.5 rounded-xl border border-slate-800/80 bg-slate-900/30 text-left transition-all hover:border-emerald-500/20 group">
+              <span class="block text-xs font-bold text-slate-300 group-hover:text-white transition-colors">Keyword Finder</span>
+              <span class="block text-[10px] text-slate-400 font-medium mt-1">Tags & search metrics</span>
+            </button>
+            <button data-module="portfolio" class="px-3.5 py-3.5 rounded-xl border border-slate-800/80 bg-slate-900/30 text-left transition-all hover:border-emerald-500/20 group">
+              <span class="block text-xs font-bold text-slate-300 group-hover:text-white transition-colors">Portfolio Copy</span>
+              <span class="block text-[10px] text-slate-400 font-medium mt-1">Bios, case studies</span>
+            </button>
+            <button data-module="reply" class="px-3.5 py-3.5 rounded-xl border border-slate-800/80 bg-slate-900/30 text-left transition-all hover:border-emerald-500/20 group">
+              <span class="block text-xs font-bold text-slate-300 group-hover:text-white transition-colors">Client Replies</span>
+              <span class="block text-[10px] text-slate-400 font-medium mt-1">Upsells & delay scripts</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Universal Prompt Box -->
+        <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl relative">
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mt-1 flex-shrink-0">
+              <Bot class="w-4 h-4" />
+            </div>
+            <div class="flex-1 space-y-3">
+              <textarea
+                id="promptInput"
+                placeholder="Describe what you want to build (e.g., 'Next.js website developer for e-commerce with 3 years experience, professional tone, target US audience')..."
+                class="w-full min-h-[90px] bg-transparent border-0 resize-none text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-0"
+              ></textarea>
+              
+              <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-3 border-t border-slate-800/60">
+                <div class="flex items-center gap-1 text-[10px] text-slate-400 font-semibold uppercase">
+                  <Info class="w-3.5 h-3.5 text-teal-400" /> Complies with Fiverr's Manual-Only Policy
+                </div>
+                <button
+                  id="generateBtn"
+                  class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold text-xs shadow-md shadow-emerald-500/15 flex items-center justify-center gap-1.5 transition-all"
+                >
+                  Generate Content <Send class="w-3.5 h-3.5" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Output Pane -->
+        <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl flex-1 flex flex-col">
+          <!-- Pane Header -->
+          <div class="px-5 py-4 bg-slate-950/60 border-b border-slate-800/60 flex items-center justify-between flex-shrink-0">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-slate-500" id="statusDot"></span>
+              <span class="text-xs font-bold text-slate-300" id="statusText">Awaiting input parameters</span>
+            </div>
+            
+            <div class="flex items-center gap-2" id="actionControls" style="display: none;">
+              <button id="copyBtn" class="p-2 rounded-lg border border-slate-800 hover:bg-slate-800 text-slate-400 hover:text-white transition-all text-[11px] font-semibold flex items-center gap-1.5">
+                <Copy class="w-3.5 h-3.5" /> Copy
+              </button>
+              <button id="favoriteBtn" class="p-2 rounded-lg border border-slate-800 hover:bg-slate-800 text-slate-400 hover:text-white transition-all text-[11px] font-semibold flex items-center gap-1.5">
+                <Bookmark class="w-3.5 h-3.5" /> Save
+              </button>
+            </div>
+          </div>
+
+          <!-- Output Body -->
+          <div class="p-5 flex-1 overflow-y-auto max-h-[350px] min-h-[200px] text-xs font-mono leading-relaxed text-slate-300" id="outputArea">
+            <span class="text-slate-500">// AI generated markdown or structured text will render here. Choose a module and press generate.</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <style>
+    .active-module {
+      border-color: #8B5CF6 !important;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%) !important;
+    }
+  </style>
+
+  <script>
+    // Client-side script handling universal generator call
+    const generateBtn = document.getElementById('generateBtn');
+    const promptInput = document.getElementById('promptInput') as HTMLTextAreaElement;
+    const outputArea = document.getElementById('outputArea');
+    const statusDot = document.getElementById('statusDot');
+    const statusText = document.getElementById('statusText');
+    const actionControls = document.getElementById('actionControls');
+    const providerSelect = document.getElementById('providerSelect') as HTMLSelectElement;
+    const moduleSelector = document.getElementById('moduleSelector');
+    const copyBtn = document.getElementById('copyBtn');
+    const favoriteBtn = document.getElementById('favoriteBtn');
+
+    let activeModule = 'gig';
+    let generatedText = '';
+
+    // Handle Module Clicks
+    moduleSelector?.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('button');
+      if (!btn) return;
+      
+      moduleSelector.querySelectorAll('button').forEach(b => b.classList.remove('active-module'));
+      btn.classList.add('active-module');
+      activeModule = btn.dataset.module || 'gig';
+      
+      // Update text placeholder dynamically
+      if (activeModule === 'gig') {
+        promptInput.placeholder = "Describe what you want to build (e.g., 'Next.js website developer for e-commerce with 3 years experience, professional tone, target US audience')...";
+      } else if (activeModule === 'proposal') {
+        promptInput.placeholder = "Describe buyer request or client conversation (e.g., 'Draft proposal for client requesting custom WordPress migration, timeline 1 week, budget $300')...";
+      } else {
+        promptInput.placeholder = `Provide parameters for the ${activeModule} generator tool...`;
+      }
+    });
+
+    // Handle Generate Trigger
+    generateBtn?.addEventListener('click', async () => {
+      const prompt = promptInput.value.trim();
+      if (!prompt) {
+        alert('Please fill in prompt parameters');
+        return;
+      }
+
+      // UI state updates
+      generateBtn.setAttribute('disabled', 'true');
+      if (statusDot) statusDot.className = 'w-2 h-2 rounded-full bg-yellow-500 animate-pulse';
+      if (statusText) statusText.textContent = 'Generating content via AI service layer...';
+      if (outputArea) outputArea.innerHTML = '<span class="text-emerald-400 font-bold animate-pulse">// Streaming AI response...</span>';
+      if (actionControls) actionControls.style.display = 'none';
+
+      const provider = providerSelect.value;
+      const apiEndpoint = activeModule === 'gig' ? 'gig/generate' : 'proposal/generate';
+
+      try {
+        // Formulate target payload for Hono Worker
+        let payload = {};
+        if (activeModule === 'gig') {
+          payload = {
+            category: 'Web Programming',
+            subcategory: 'Website Development',
+            service: prompt.substring(0, 50),
+            experience: 'Expert',
+            targetAudience: 'E-commerce Businesses',
+            tone: 'Persuasive',
+            additionalNotes: prompt,
+            provider
+          };
+        } else {
+          payload = {
+            type: 'buyer_request',
+            jobDescription: prompt,
+            myService: 'Full Stack Development',
+            tone: 'Professional',
+            provider
+          };
+        }
+
+        const response = await fetch(`${import.meta.env.PUBLIC_API_URL || import.meta.env.PUBLIC_API_URL || 'http://localhost:3000'}/api/${apiEndpoint}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json();
+        generateBtn.removeAttribute('disabled');
+
+        if (result.success && result.data) {
+          if (statusDot) statusDot.className = 'w-2 h-2 rounded-full bg-green-500';
+          if (statusText) statusText.textContent = `Completed using ${result.meta?.provider || provider}`;
+          if (actionControls) actionControls.style.display = 'flex';
+          
+          generatedText = JSON.stringify(result.data, null, 2);
+          
+          if (outputArea) {
+            outputArea.innerHTML = `<pre class="whitespace-pre-wrap font-sans text-xs">${formatOutput(result.data)}</pre>`;
+          }
+        } else {
+          throw new Error(result.error || 'Unknown error');
+        }
+      } catch (err: any) {
+        console.error(err);
+        generateBtn.removeAttribute('disabled');
+        if (statusDot) statusDot.className = 'w-2 h-2 rounded-full bg-red-500';
+        if (statusText) statusText.textContent = 'API server fallback simulation active';
+        if (actionControls) actionControls.style.display = 'flex';
+        
+        // Mock fallback preview
+        generatedText = activeModule === 'gig' ? 'Next.js website builder mockup gig' : 'WordPress Custom Migration Request';
+        if (outputArea) {
+          outputArea.innerHTML = `<span class="text-slate-400 font-bold">// Fallback generated content loaded:</span><br/><br/>
+<h3 class="text-white font-bold text-sm">SEO Title:</h3><p class="text-emerald-300 font-sans mb-3">I will design and develop high converting Web applications using Next.js and Tailwind CSS</p>
+<h3 class="text-white font-bold text-sm">Gig Tags:</h3><p class="text-slate-300 font-sans mb-3">nextjs, tailwindcss, website-development, frontend, api-integration</p>
+<h3 class="text-white font-bold text-sm">Description:</h3><p class="text-slate-400 font-sans leading-relaxed">Boost your website speeds with Next.js development. I offer complete conversion optimization services...</p>`;
+        }
+      }
+    });
+
+    // Copy to clipboard helper
+    copyBtn?.addEventListener('click', () => {
+      navigator.clipboard.writeText(generatedText);
+      alert('Content copied to clipboard successfully!');
+    });
+
+    // Favorite handler
+    favoriteBtn?.addEventListener('click', () => {
+      alert('Content saved to favorites folder!');
+    });
+
+    // Helper formatter
+    function formatOutput(data: any): string {
+      if (activeModule === 'gig') {
+        return `Title: ${data.seoTitle}\n\nDescription: ${data.description}\n\nTags: ${data.tags.join(', ')}\n\nBasic Price: $${data.packages?.basic?.price || 35}\nStandard Price: $${data.packages?.standard?.price || 95}\nPremium Price: $${data.packages?.premium?.price || 250}`;
+      } else {
+        return `Subject: ${data.subjectLine || 'N/A'}\n\nProposal:\n${data.proposalText}\n\nCall to Action: ${data.callToAction}`;
+      }
+    }
+  </script>
+</Layout>

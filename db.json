@@ -7,16 +7,16 @@
       "fullName": "Alex Vance",
       "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
       "role": "Pro",
-      "credits_remaining": 447,
+      "credits_remaining": 446,
       "creditsRemaining": 450,
       "monthly_quota": 500,
       "monthlyQuota": 500,
-      "created_at": "2026-07-28T10:36:51.966Z",
-      "updated_at": "2026-07-29T06:25:53.093Z",
+      "created_at": "2026-07-29T17:43:31.901Z",
+      "updated_at": "2026-07-29T17:53:10.544Z",
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-28T10:36:51.966Z",
+          "updated_at": "2026-07-29T17:43:31.901Z",
           "payload": {
             "id": "usr_fiverr_pro_001",
             "email": "alex@gigpilot.ai",
@@ -28,13 +28,13 @@
             "creditsRemaining": 450,
             "monthly_quota": 500,
             "monthlyQuota": 500,
-            "created_at": "2026-07-28T10:36:51.966Z",
-            "updated_at": "2026-07-28T10:36:51.966Z"
+            "created_at": "2026-07-29T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:43:31.901Z"
           }
         },
         {
           "version": 2,
-          "updated_at": "2026-07-28T10:36:52.049Z",
+          "updated_at": "2026-07-29T17:43:31.977Z",
           "payload": {
             "id": "usr_fiverr_pro_001",
             "email": "alex@gigpilot.ai",
@@ -46,13 +46,13 @@
             "creditsRemaining": 450,
             "monthly_quota": 500,
             "monthlyQuota": 500,
-            "created_at": "2026-07-28T10:36:51.966Z",
-            "updated_at": "2026-07-28T10:36:52.049Z"
+            "created_at": "2026-07-29T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:43:31.977Z"
           }
         },
         {
           "version": 3,
-          "updated_at": "2026-07-28T10:37:02.274Z",
+          "updated_at": "2026-07-29T17:52:03.118Z",
           "payload": {
             "id": "usr_fiverr_pro_001",
             "email": "alex@gigpilot.ai",
@@ -64,35 +64,53 @@
             "creditsRemaining": 450,
             "monthly_quota": 500,
             "monthlyQuota": 500,
-            "created_at": "2026-07-28T10:36:51.966Z",
-            "updated_at": "2026-07-28T10:37:02.274Z"
+            "created_at": "2026-07-29T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:52:03.118Z"
+          }
+        },
+        {
+          "version": 4,
+          "updated_at": "2026-07-29T17:52:26.882Z",
+          "payload": {
+            "id": "usr_fiverr_pro_001",
+            "email": "alex@gigpilot.ai",
+            "full_name": "Alex Vance",
+            "fullName": "Alex Vance",
+            "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "role": "Pro",
+            "credits_remaining": 447,
+            "creditsRemaining": 450,
+            "monthly_quota": 500,
+            "monthlyQuota": 500,
+            "created_at": "2026-07-29T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:52:26.882Z"
           }
         }
       ]
     },
     {
-      "id": "id_users_r8t4c2fo1",
+      "id": "id_users_gchr0f6h0",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.189Z",
-      "updated_at": "2026-07-29T06:25:53.157Z",
+      "created_at": "2026-07-29T17:52:02.999Z",
+      "updated_at": "2026-07-29T17:53:10.442Z",
       "email": "test@gigpilot.ai",
       "full_name": "test",
-      "fullName": "test",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
       "role": "Pro",
-      "credits_remaining": 446,
+      "credits_remaining": 444,
       "monthly_quota": 500,
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-28T10:37:02.189Z",
+          "updated_at": "2026-07-29T17:52:02.999Z",
           "payload": {
-            "id": "id_users_r8t4c2fo1",
+            "id": "id_users_gchr0f6h0",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-28T10:37:02.189Z",
-            "updated_at": "2026-07-28T10:37:02.189Z",
+            "created_at": "2026-07-29T17:52:02.999Z",
+            "updated_at": "2026-07-29T17:52:02.999Z",
             "email": "test@gigpilot.ai",
             "full_name": "test",
-            "fullName": "test",
+            "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
             "role": "Pro",
             "credits_remaining": 450,
             "monthly_quota": 500
@@ -100,17 +118,33 @@
         },
         {
           "version": 2,
-          "updated_at": "2026-07-28T10:37:02.194Z",
+          "updated_at": "2026-07-29T17:52:03.019Z",
           "payload": {
-            "id": "id_users_r8t4c2fo1",
+            "id": "id_users_gchr0f6h0",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-28T10:37:02.189Z",
-            "updated_at": "2026-07-28T10:37:02.194Z",
+            "created_at": "2026-07-29T17:52:02.999Z",
+            "updated_at": "2026-07-29T17:52:03.019Z",
             "email": "test@gigpilot.ai",
             "full_name": "test",
-            "fullName": "test",
+            "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
             "role": "Pro",
             "credits_remaining": 448,
+            "monthly_quota": 500
+          }
+        },
+        {
+          "version": 3,
+          "updated_at": "2026-07-29T17:52:26.763Z",
+          "payload": {
+            "id": "id_users_gchr0f6h0",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:52:02.999Z",
+            "updated_at": "2026-07-29T17:52:26.763Z",
+            "email": "test@gigpilot.ai",
+            "full_name": "test",
+            "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "role": "Pro",
+            "credits_remaining": 446,
             "monthly_quota": 500
           }
         }
@@ -124,9 +158,9 @@
       "plan": "Pro",
       "status": "active",
       "razorpay_subscription_id": "sub_prod_12891391",
-      "current_period_start": "2026-07-28T10:36:51.966Z",
-      "current_period_end": "2026-08-27T10:36:51.966Z",
-      "created_at": "2026-07-28T10:36:51.966Z"
+      "current_period_start": "2026-07-29T17:43:31.901Z",
+      "current_period_end": "2026-08-28T17:43:31.901Z",
+      "created_at": "2026-07-29T17:43:31.901Z"
     }
   ],
   "templates": [
@@ -141,7 +175,7 @@
       "isCustom": false,
       "is_favorite": true,
       "isFavorite": true,
-      "created_at": "2026-07-23T10:36:51.966Z"
+      "created_at": "2026-07-24T17:43:31.901Z"
     },
     {
       "id": "tmpl_02",
@@ -154,7 +188,7 @@
       "isCustom": true,
       "is_favorite": true,
       "isFavorite": true,
-      "created_at": "2026-07-24T10:36:51.966Z"
+      "created_at": "2026-07-25T17:43:31.901Z"
     },
     {
       "id": "tmpl_03",
@@ -167,7 +201,7 @@
       "isCustom": false,
       "is_favorite": false,
       "isFavorite": false,
-      "created_at": "2026-07-25T10:36:51.966Z"
+      "created_at": "2026-07-26T17:43:31.901Z"
     }
   ],
   "generations": [
@@ -201,7 +235,7 @@
       "provider": "Gemini",
       "is_favorite": true,
       "isFavorite": true,
-      "created_at": "2026-07-28T08:36:51.966Z"
+      "created_at": "2026-07-29T15:43:31.901Z"
     },
     {
       "id": "gen_002",
@@ -292,7 +326,279 @@
       "provider": "OpenAI",
       "is_favorite": false,
       "isFavorite": false,
-      "created_at": "2026-07-28T05:36:51.966Z"
+      "created_at": "2026-07-29T12:43:31.901Z"
+    },
+    {
+      "id": "id_generations_j4yk7fvjf",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:43:31.978Z",
+      "updated_at": "2026-07-29T17:43:31.978Z",
+      "module": "Social Post Assistant",
+      "input": {
+        "action": "generate",
+        "prompt": "Create a LinkedIn post promoting GigPilot",
+        "platform": "linkedin",
+        "tone": "Professional"
+      },
+      "output": {
+        "title": "Shared Insight",
+        "content": "Just launched some amazing new features. Check out the latest updates!",
+        "hashtags": [
+          "automation",
+          "productivity"
+        ],
+        "mentions": [],
+        "cta": "Learn more at gigpilot.ai"
+      },
+      "tokens_used": 239,
+      "provider": "OpenAI",
+      "is_favorite": false
+    },
+    {
+      "id": "id_generations_ucy8x28sd",
+      "user_id": "id_users_gchr0f6h0",
+      "created_at": "2026-07-29T17:52:03.021Z",
+      "updated_at": "2026-07-29T17:52:03.021Z",
+      "module": "Gig Generator",
+      "input": {
+        "service": "Next.js developer",
+        "category": "Tech"
+      },
+      "output": {
+        "seoTitle": "I will do expert Next.js developer",
+        "description": "Need expert help with Next.js developer? I provide premium layouts, clean files and commercial rights.",
+        "packages": {
+          "basic": {
+            "name": "Basic",
+            "title": "Starter setup",
+            "description": "Essential deliverables",
+            "price": 25,
+            "deliveryDays": 3,
+            "revisions": "3",
+            "features": []
+          },
+          "standard": {
+            "name": "Standard",
+            "title": "Pro setup",
+            "description": "Recommended deliverables",
+            "price": 65,
+            "deliveryDays": 5,
+            "revisions": "5",
+            "features": []
+          },
+          "premium": {
+            "name": "Premium",
+            "title": "Enterprise setup",
+            "description": "Full business solutions",
+            "price": 150,
+            "deliveryDays": 7,
+            "revisions": "Unlimited",
+            "features": []
+          }
+        },
+        "faqs": [],
+        "requirements": [],
+        "tags": [
+          "next.js-developer"
+        ],
+        "callToAction": "Order now!",
+        "imagePrompt": "A glowing desk with code mockups for gig cover image.",
+        "videoScript": "Hi there, need this gig? I will deliver it fast.",
+        "upsellSuggestions": []
+      },
+      "tokens_used": 625,
+      "provider": "OpenAI",
+      "is_favorite": false
+    },
+    {
+      "id": "id_generations_n18ncqkk5",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:52:03.119Z",
+      "updated_at": "2026-07-29T17:52:03.119Z",
+      "module": "Social Post Assistant",
+      "input": {
+        "action": "generate",
+        "prompt": "Create a LinkedIn post promoting GigPilot",
+        "platform": "linkedin",
+        "tone": "Professional"
+      },
+      "output": {
+        "title": "Shared Insight",
+        "content": "Just launched some amazing new features. Check out the latest updates!",
+        "hashtags": [
+          "automation",
+          "productivity"
+        ],
+        "mentions": [],
+        "cta": "Learn more at gigpilot.ai"
+      },
+      "tokens_used": 239,
+      "provider": "OpenAI",
+      "is_favorite": false
+    },
+    {
+      "id": "id_generations_52x8hu6qg",
+      "user_id": "id_users_gchr0f6h0",
+      "created_at": "2026-07-29T17:52:26.765Z",
+      "updated_at": "2026-07-29T17:52:26.765Z",
+      "module": "Gig Generator",
+      "input": {
+        "service": "Next.js developer",
+        "category": "Tech"
+      },
+      "output": {
+        "seoTitle": "I will do expert Next.js developer",
+        "description": "Need expert help with Next.js developer? I provide premium layouts, clean files and commercial rights.",
+        "packages": {
+          "basic": {
+            "name": "Basic",
+            "title": "Starter setup",
+            "description": "Essential deliverables",
+            "price": 25,
+            "deliveryDays": 3,
+            "revisions": "3",
+            "features": []
+          },
+          "standard": {
+            "name": "Standard",
+            "title": "Pro setup",
+            "description": "Recommended deliverables",
+            "price": 65,
+            "deliveryDays": 5,
+            "revisions": "5",
+            "features": []
+          },
+          "premium": {
+            "name": "Premium",
+            "title": "Enterprise setup",
+            "description": "Full business solutions",
+            "price": 150,
+            "deliveryDays": 7,
+            "revisions": "Unlimited",
+            "features": []
+          }
+        },
+        "faqs": [],
+        "requirements": [],
+        "tags": [
+          "next.js-developer"
+        ],
+        "callToAction": "Order now!",
+        "imagePrompt": "A glowing desk with code mockups for gig cover image.",
+        "videoScript": "Hi there, need this gig? I will deliver it fast.",
+        "upsellSuggestions": []
+      },
+      "tokens_used": 625,
+      "provider": "OpenAI",
+      "is_favorite": false
+    },
+    {
+      "id": "id_generations_452pp18jf",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:52:26.884Z",
+      "updated_at": "2026-07-29T17:52:26.884Z",
+      "module": "Social Post Assistant",
+      "input": {
+        "action": "generate",
+        "prompt": "Create a LinkedIn post promoting GigPilot",
+        "platform": "linkedin",
+        "tone": "Professional"
+      },
+      "output": {
+        "title": "Shared Insight",
+        "content": "Just launched some amazing new features. Check out the latest updates!",
+        "hashtags": [
+          "automation",
+          "productivity"
+        ],
+        "mentions": [],
+        "cta": "Learn more at gigpilot.ai"
+      },
+      "tokens_used": 239,
+      "provider": "OpenAI",
+      "is_favorite": false
+    },
+    {
+      "id": "id_generations_7gr15lusa",
+      "user_id": "id_users_gchr0f6h0",
+      "created_at": "2026-07-29T17:53:10.444Z",
+      "updated_at": "2026-07-29T17:53:10.444Z",
+      "module": "Gig Generator",
+      "input": {
+        "service": "Next.js developer",
+        "category": "Tech"
+      },
+      "output": {
+        "seoTitle": "I will do expert Next.js developer",
+        "description": "Need expert help with Next.js developer? I provide premium layouts, clean files and commercial rights.",
+        "packages": {
+          "basic": {
+            "name": "Basic",
+            "title": "Starter setup",
+            "description": "Essential deliverables",
+            "price": 25,
+            "deliveryDays": 3,
+            "revisions": "3",
+            "features": []
+          },
+          "standard": {
+            "name": "Standard",
+            "title": "Pro setup",
+            "description": "Recommended deliverables",
+            "price": 65,
+            "deliveryDays": 5,
+            "revisions": "5",
+            "features": []
+          },
+          "premium": {
+            "name": "Premium",
+            "title": "Enterprise setup",
+            "description": "Full business solutions",
+            "price": 150,
+            "deliveryDays": 7,
+            "revisions": "Unlimited",
+            "features": []
+          }
+        },
+        "faqs": [],
+        "requirements": [],
+        "tags": [
+          "next.js-developer"
+        ],
+        "callToAction": "Order now!",
+        "imagePrompt": "A glowing desk with code mockups for gig cover image.",
+        "videoScript": "Hi there, need this gig? I will deliver it fast.",
+        "upsellSuggestions": []
+      },
+      "tokens_used": 625,
+      "provider": "OpenAI",
+      "is_favorite": false
+    },
+    {
+      "id": "id_generations_1e6f9dren",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:53:10.546Z",
+      "updated_at": "2026-07-29T17:53:10.546Z",
+      "module": "Social Post Assistant",
+      "input": {
+        "action": "generate",
+        "prompt": "Create a LinkedIn post promoting GigPilot",
+        "platform": "linkedin",
+        "tone": "Professional"
+      },
+      "output": {
+        "title": "Shared Insight",
+        "content": "Just launched some amazing new features. Check out the latest updates!",
+        "hashtags": [
+          "automation",
+          "productivity"
+        ],
+        "mentions": [],
+        "cta": "Learn more at gigpilot.ai"
+      },
+      "tokens_used": 239,
+      "provider": "OpenAI",
+      "is_favorite": false
     }
   ],
   "favorites": [
@@ -306,7 +612,7 @@
         "type": "gig",
         "content": "Are you looking to build a blazing-fast, SEO-optimized website? I specialize in React, Next.js, and Tailwind CSS templates..."
       },
-      "created_at": "2026-07-28T10:36:51.966Z"
+      "created_at": "2026-07-29T17:43:31.901Z"
     }
   ],
   "settings": [
@@ -317,7 +623,7 @@
       "default_tone": "Professional",
       "email_notifications": true,
       "dark_mode": true,
-      "updated_at": "2026-07-28T10:36:51.966Z"
+      "updated_at": "2026-07-29T17:43:31.901Z"
     }
   ],
   "history": [
@@ -329,7 +635,7 @@
         "client": "David K.",
         "type": "buyer_request"
       },
-      "created_at": "2026-07-28T08:36:51.966Z"
+      "created_at": "2026-07-29T15:43:31.901Z"
     },
     {
       "id": "hist_02",
@@ -338,33 +644,33 @@
       "details": {
         "query": "Logo Design"
       },
-      "created_at": "2026-07-28T05:36:51.966Z"
+      "created_at": "2026-07-29T12:43:31.901Z"
     },
     {
-      "id": "id_history_zn08lmhw0",
+      "id": "id_history_izlpl086l",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.972Z",
-      "updated_at": "2026-07-28T10:36:51.972Z",
+      "created_at": "2026-07-29T17:43:31.902Z",
+      "updated_at": "2026-07-29T17:43:31.902Z",
       "action": "Connected bluesky Account",
       "details": {
         "username": "gigpilot.bsky.social"
       }
     },
     {
-      "id": "id_history_28kjzikw8",
+      "id": "id_history_xi5lodlpa",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.988Z",
-      "updated_at": "2026-07-28T10:36:51.988Z",
+      "created_at": "2026-07-29T17:43:31.915Z",
+      "updated_at": "2026-07-29T17:43:31.915Z",
       "action": "Connected linkedin Account",
       "details": {
         "username": "alexvance_linkedin"
       }
     },
     {
-      "id": "id_history_837yt6hmo",
+      "id": "id_history_p4kz79occ",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.995Z",
-      "updated_at": "2026-07-28T10:36:51.995Z",
+      "created_at": "2026-07-29T17:43:31.922Z",
+      "updated_at": "2026-07-29T17:43:31.922Z",
       "action": "Published Post",
       "details": {
         "results": [
@@ -372,47 +678,47 @@
             "accountId": "acc_li_001",
             "provider": "linkedin",
             "success": true,
-            "url": "https://www.linkedin.com/feed/update/urn:li:share:203591963",
-            "providerPostId": "urn:li:share:203591963"
+            "url": "https://www.linkedin.com/feed/update/urn:li:share:421706636",
+            "providerPostId": "urn:li:share:421706636"
           }
         ]
       }
     },
     {
-      "id": "id_history_sxoo56gha",
+      "id": "id_history_nzhrnyki2",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.000Z",
-      "updated_at": "2026-07-28T10:36:52.000Z",
+      "created_at": "2026-07-29T17:43:31.927Z",
+      "updated_at": "2026-07-29T17:43:31.927Z",
       "action": "Connected mastodon Account",
       "details": {
         "username": "alexvance_mastodon"
       }
     },
     {
-      "id": "id_history_vjiier7ob",
+      "id": "id_history_wpvjs3qrp",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.012Z",
-      "updated_at": "2026-07-28T10:36:52.012Z",
+      "created_at": "2026-07-29T17:43:31.937Z",
+      "updated_at": "2026-07-29T17:43:31.937Z",
       "action": "Connected linkedin Account",
       "details": {
         "username": "alexvance_linkedin"
       }
     },
     {
-      "id": "id_history_dqwag1gvc",
+      "id": "id_history_29gin52nw",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.208Z",
-      "updated_at": "2026-07-28T10:37:02.208Z",
+      "created_at": "2026-07-29T17:52:03.033Z",
+      "updated_at": "2026-07-29T17:52:03.033Z",
       "action": "Connected linkedin Account",
       "details": {
         "username": "alexvance_linkedin"
       }
     },
     {
-      "id": "id_history_x1emv4x32",
+      "id": "id_history_sq1p4qmmx",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.216Z",
-      "updated_at": "2026-07-28T10:37:02.216Z",
+      "created_at": "2026-07-29T17:52:03.041Z",
+      "updated_at": "2026-07-29T17:52:03.041Z",
       "action": "Published Post",
       "details": {
         "results": [
@@ -420,57 +726,57 @@
             "accountId": "acc_li_001",
             "provider": "linkedin",
             "success": true,
-            "url": "https://www.linkedin.com/feed/update/urn:li:share:40147807",
-            "providerPostId": "urn:li:share:40147807"
+            "url": "https://www.linkedin.com/feed/update/urn:li:share:67375517",
+            "providerPostId": "urn:li:share:67375517"
           }
         ]
       }
     },
     {
-      "id": "id_history_6ewejdr6a",
+      "id": "id_history_ekwvyjjlo",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.222Z",
-      "updated_at": "2026-07-28T10:37:02.222Z",
+      "created_at": "2026-07-29T17:52:03.051Z",
+      "updated_at": "2026-07-29T17:52:03.051Z",
       "action": "Connected mastodon Account",
       "details": {
         "username": "alexvance_mastodon"
       }
     },
     {
-      "id": "id_history_a5135011n",
+      "id": "id_history_ggekm9se5",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.232Z",
-      "updated_at": "2026-07-28T10:37:02.232Z",
+      "created_at": "2026-07-29T17:52:03.068Z",
+      "updated_at": "2026-07-29T17:52:03.068Z",
       "action": "Connected linkedin Account",
       "details": {
         "username": "alexvance_linkedin"
       }
     },
     {
-      "id": "id_history_dhah8d2ff",
+      "id": "id_history_121w9it2q",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.003Z",
-      "updated_at": "2026-07-29T06:25:53.003Z",
+      "created_at": "2026-07-29T17:52:26.769Z",
+      "updated_at": "2026-07-29T17:52:26.769Z",
       "action": "Connected bluesky Account",
       "details": {
         "username": "gigpilot.bsky.social"
       }
     },
     {
-      "id": "id_history_6sn9ivvbf",
+      "id": "id_history_fq4ftqjo5",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.015Z",
-      "updated_at": "2026-07-29T06:25:53.015Z",
+      "created_at": "2026-07-29T17:52:26.788Z",
+      "updated_at": "2026-07-29T17:52:26.788Z",
       "action": "Connected linkedin Account",
       "details": {
         "username": "alexvance_linkedin"
       }
     },
     {
-      "id": "id_history_azmyxe5b4",
+      "id": "id_history_rdgyovute",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.022Z",
-      "updated_at": "2026-07-29T06:25:53.022Z",
+      "created_at": "2026-07-29T17:52:26.799Z",
+      "updated_at": "2026-07-29T17:52:26.799Z",
       "action": "Published Post",
       "details": {
         "results": [
@@ -478,27 +784,75 @@
             "accountId": "acc_li_001",
             "provider": "linkedin",
             "success": true,
-            "url": "https://www.linkedin.com/feed/update/urn:li:share:623854322",
-            "providerPostId": "urn:li:share:623854322"
+            "url": "https://www.linkedin.com/feed/update/urn:li:share:170173743",
+            "providerPostId": "urn:li:share:170173743"
           }
         ]
       }
     },
     {
-      "id": "id_history_q9bwdfjlo",
+      "id": "id_history_0k0rt7fl1",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.027Z",
-      "updated_at": "2026-07-29T06:25:53.027Z",
+      "created_at": "2026-07-29T17:52:26.805Z",
+      "updated_at": "2026-07-29T17:52:26.805Z",
       "action": "Connected mastodon Account",
       "details": {
         "username": "alexvance_mastodon"
       }
     },
     {
-      "id": "id_history_y9b1q4544",
+      "id": "id_history_uhzzslld2",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.039Z",
-      "updated_at": "2026-07-29T06:25:53.039Z",
+      "created_at": "2026-07-29T17:52:26.821Z",
+      "updated_at": "2026-07-29T17:52:26.821Z",
+      "action": "Connected linkedin Account",
+      "details": {
+        "username": "alexvance_linkedin"
+      }
+    },
+    {
+      "id": "id_history_yc7too7er",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:53:10.459Z",
+      "updated_at": "2026-07-29T17:53:10.459Z",
+      "action": "Connected linkedin Account",
+      "details": {
+        "username": "alexvance_linkedin"
+      }
+    },
+    {
+      "id": "id_history_z2dk9c1br",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:53:10.468Z",
+      "updated_at": "2026-07-29T17:53:10.468Z",
+      "action": "Published Post",
+      "details": {
+        "results": [
+          {
+            "accountId": "acc_li_001",
+            "provider": "linkedin",
+            "success": true,
+            "url": "https://www.linkedin.com/feed/update/urn:li:share:685783836",
+            "providerPostId": "urn:li:share:685783836"
+          }
+        ]
+      }
+    },
+    {
+      "id": "id_history_cw6944kwn",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:53:10.475Z",
+      "updated_at": "2026-07-29T17:53:10.475Z",
+      "action": "Connected mastodon Account",
+      "details": {
+        "username": "alexvance_mastodon"
+      }
+    },
+    {
+      "id": "id_history_viuwtdmal",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:53:10.490Z",
+      "updated_at": "2026-07-29T17:53:10.490Z",
       "action": "Connected linkedin Account",
       "details": {
         "username": "alexvance_linkedin"
@@ -514,21 +868,21 @@
       "currency": "USD",
       "status": "Paid",
       "pdf_url": "#",
-      "created_at": "2026-07-28T09:36:51.966Z"
+      "created_at": "2026-07-29T16:43:31.901Z"
     }
   ],
   "analytics": [
     {
       "id": "log_29",
-      "date": "2026-06-29",
-      "day": "Mon",
-      "creditsUsed": 5,
-      "wordsGenerated": 4955,
-      "timeSavedMinutes": 75,
+      "date": "2026-06-30",
+      "day": "Tue",
+      "creditsUsed": 2,
+      "wordsGenerated": 1802,
+      "timeSavedMinutes": 30,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Keyword Finder",
@@ -536,11 +890,11 @@
         },
         {
           "tool": "Pricing Optimizer",
-          "count": 0
+          "count": 1
         },
         {
           "tool": "Gig Health Checker",
-          "count": 0
+          "count": 1
         },
         {
           "tool": "Portfolio Builder",
@@ -548,11 +902,11 @@
         },
         {
           "tool": "Client Messages",
-          "count": 1
+          "count": 2
         },
         {
           "tool": "Review Analyzer",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "SEO Audit",
@@ -566,15 +920,15 @@
     },
     {
       "id": "log_28",
-      "date": "2026-06-30",
-      "day": "Tue",
-      "creditsUsed": 7,
-      "wordsGenerated": 4928,
-      "timeSavedMinutes": 105,
+      "date": "2026-07-01",
+      "day": "Wed",
+      "creditsUsed": 3,
+      "wordsGenerated": 2781,
+      "timeSavedMinutes": 45,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Keyword Finder",
@@ -586,11 +940,11 @@
         },
         {
           "tool": "Gig Health Checker",
-          "count": 0
+          "count": 1
         },
         {
           "tool": "Portfolio Builder",
-          "count": 0
+          "count": 2
         },
         {
           "tool": "Client Messages",
@@ -598,7 +952,7 @@
         },
         {
           "tool": "Review Analyzer",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "SEO Audit",
@@ -606,17 +960,17 @@
         },
         {
           "tool": "Publish Assistant",
-          "count": 1
+          "count": 0
         }
       ]
     },
     {
       "id": "log_27",
-      "date": "2026-07-01",
-      "day": "Wed",
-      "creditsUsed": 4,
-      "wordsGenerated": 2592,
-      "timeSavedMinutes": 60,
+      "date": "2026-07-02",
+      "day": "Thu",
+      "creditsUsed": 7,
+      "wordsGenerated": 6608,
+      "timeSavedMinutes": 105,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
@@ -640,7 +994,7 @@
         },
         {
           "tool": "Client Messages",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Review Analyzer",
@@ -648,7 +1002,7 @@
         },
         {
           "tool": "SEO Audit",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Publish Assistant",
@@ -658,15 +1012,15 @@
     },
     {
       "id": "log_26",
-      "date": "2026-07-02",
-      "day": "Thu",
+      "date": "2026-07-03",
+      "day": "Fri",
       "creditsUsed": 7,
-      "wordsGenerated": 5523,
+      "wordsGenerated": 5404,
       "timeSavedMinutes": 105,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
-          "count": 0
+          "count": 2
         },
         {
           "tool": "Keyword Finder",
@@ -686,11 +1040,11 @@
         },
         {
           "tool": "Client Messages",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Review Analyzer",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "SEO Audit",
@@ -698,37 +1052,37 @@
         },
         {
           "tool": "Publish Assistant",
-          "count": 0
+          "count": 1
         }
       ]
     },
     {
       "id": "log_25",
-      "date": "2026-07-03",
-      "day": "Fri",
-      "creditsUsed": 4,
-      "wordsGenerated": 2704,
-      "timeSavedMinutes": 60,
+      "date": "2026-07-04",
+      "day": "Sat",
+      "creditsUsed": 8,
+      "wordsGenerated": 6960,
+      "timeSavedMinutes": 120,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Keyword Finder",
-          "count": 0
+          "count": 1
         },
         {
           "tool": "Pricing Optimizer",
-          "count": 1
-        },
-        {
-          "tool": "Gig Health Checker",
           "count": 0
         },
         {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
           "tool": "Portfolio Builder",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Client Messages",
@@ -736,53 +1090,53 @@
         },
         {
           "tool": "Review Analyzer",
-          "count": 0
+          "count": 2
         },
         {
           "tool": "SEO Audit",
-          "count": 0
+          "count": 1
         },
         {
           "tool": "Publish Assistant",
-          "count": 0
+          "count": 1
         }
       ]
     },
     {
       "id": "log_24",
-      "date": "2026-07-04",
-      "day": "Sat",
+      "date": "2026-07-05",
+      "day": "Sun",
       "creditsUsed": 7,
-      "wordsGenerated": 6685,
+      "wordsGenerated": 6895,
       "timeSavedMinutes": 105,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
-          "count": 1
-        },
-        {
-          "tool": "Keyword Finder",
-          "count": 1
-        },
-        {
-          "tool": "Pricing Optimizer",
-          "count": 1
-        },
-        {
-          "tool": "Gig Health Checker",
           "count": 0
         },
         {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
           "tool": "Portfolio Builder",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Client Messages",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Review Analyzer",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "SEO Audit",
@@ -796,11 +1150,11 @@
     },
     {
       "id": "log_23",
-      "date": "2026-07-05",
-      "day": "Sun",
-      "creditsUsed": 2,
-      "wordsGenerated": 1726,
-      "timeSavedMinutes": 30,
+      "date": "2026-07-06",
+      "day": "Mon",
+      "creditsUsed": 6,
+      "wordsGenerated": 4440,
+      "timeSavedMinutes": 90,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
@@ -808,7 +1162,7 @@
         },
         {
           "tool": "Keyword Finder",
-          "count": 0
+          "count": 1
         },
         {
           "tool": "Pricing Optimizer",
@@ -816,7 +1170,7 @@
         },
         {
           "tool": "Gig Health Checker",
-          "count": 0
+          "count": 1
         },
         {
           "tool": "Portfolio Builder",
@@ -824,29 +1178,29 @@
         },
         {
           "tool": "Client Messages",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Review Analyzer",
-          "count": 2
+          "count": 1
         },
         {
           "tool": "SEO Audit",
-          "count": 2
+          "count": 1
         },
         {
           "tool": "Publish Assistant",
-          "count": 1
+          "count": 0
         }
       ]
     },
     {
       "id": "log_22",
-      "date": "2026-07-06",
-      "day": "Mon",
-      "creditsUsed": 4,
-      "wordsGenerated": 3792,
-      "timeSavedMinutes": 60,
+      "date": "2026-07-07",
+      "day": "Tue",
+      "creditsUsed": 8,
+      "wordsGenerated": 5968,
+      "timeSavedMinutes": 120,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
@@ -858,11 +1212,11 @@
         },
         {
           "tool": "Pricing Optimizer",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Gig Health Checker",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Portfolio Builder",
@@ -870,7 +1224,7 @@
         },
         {
           "tool": "Client Messages",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Review Analyzer",
@@ -888,11 +1242,11 @@
     },
     {
       "id": "log_21",
-      "date": "2026-07-07",
-      "day": "Tue",
-      "creditsUsed": 5,
-      "wordsGenerated": 3225,
-      "timeSavedMinutes": 75,
+      "date": "2026-07-08",
+      "day": "Wed",
+      "creditsUsed": 7,
+      "wordsGenerated": 6384,
+      "timeSavedMinutes": 105,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
@@ -900,7 +1254,7 @@
         },
         {
           "tool": "Keyword Finder",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Pricing Optimizer",
@@ -908,23 +1262,23 @@
         },
         {
           "tool": "Gig Health Checker",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Portfolio Builder",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Client Messages",
-          "count": 0
+          "count": 2
         },
         {
           "tool": "Review Analyzer",
-          "count": 0
+          "count": 2
         },
         {
           "tool": "SEO Audit",
-          "count": 0
+          "count": 2
         },
         {
           "tool": "Publish Assistant",
@@ -934,102 +1288,10 @@
     },
     {
       "id": "log_20",
-      "date": "2026-07-08",
-      "day": "Wed",
-      "creditsUsed": 4,
-      "wordsGenerated": 3724,
-      "timeSavedMinutes": 60,
-      "toolUsage": [
-        {
-          "tool": "Proposal Generator",
-          "count": 0
-        },
-        {
-          "tool": "Keyword Finder",
-          "count": 0
-        },
-        {
-          "tool": "Pricing Optimizer",
-          "count": 0
-        },
-        {
-          "tool": "Gig Health Checker",
-          "count": 0
-        },
-        {
-          "tool": "Portfolio Builder",
-          "count": 2
-        },
-        {
-          "tool": "Client Messages",
-          "count": 0
-        },
-        {
-          "tool": "Review Analyzer",
-          "count": 0
-        },
-        {
-          "tool": "SEO Audit",
-          "count": 0
-        },
-        {
-          "tool": "Publish Assistant",
-          "count": 0
-        }
-      ]
-    },
-    {
-      "id": "log_19",
       "date": "2026-07-09",
       "day": "Thu",
-      "creditsUsed": 2,
-      "wordsGenerated": 1746,
-      "timeSavedMinutes": 30,
-      "toolUsage": [
-        {
-          "tool": "Proposal Generator",
-          "count": 0
-        },
-        {
-          "tool": "Keyword Finder",
-          "count": 0
-        },
-        {
-          "tool": "Pricing Optimizer",
-          "count": 1
-        },
-        {
-          "tool": "Gig Health Checker",
-          "count": 0
-        },
-        {
-          "tool": "Portfolio Builder",
-          "count": 1
-        },
-        {
-          "tool": "Client Messages",
-          "count": 0
-        },
-        {
-          "tool": "Review Analyzer",
-          "count": 0
-        },
-        {
-          "tool": "SEO Audit",
-          "count": 1
-        },
-        {
-          "tool": "Publish Assistant",
-          "count": 0
-        }
-      ]
-    },
-    {
-      "id": "log_18",
-      "date": "2026-07-10",
-      "day": "Fri",
       "creditsUsed": 1,
-      "wordsGenerated": 638,
+      "wordsGenerated": 677,
       "timeSavedMinutes": 15,
       "toolUsage": [
         {
@@ -1071,12 +1333,12 @@
       ]
     },
     {
-      "id": "log_17",
-      "date": "2026-07-11",
-      "day": "Sat",
-      "creditsUsed": 7,
-      "wordsGenerated": 6321,
-      "timeSavedMinutes": 105,
+      "id": "log_19",
+      "date": "2026-07-10",
+      "day": "Fri",
+      "creditsUsed": 8,
+      "wordsGenerated": 7528,
+      "timeSavedMinutes": 120,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
@@ -1084,11 +1346,103 @@
         },
         {
           "tool": "Keyword Finder",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Pricing Optimizer",
           "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 2
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_18",
+      "date": "2026-07-11",
+      "day": "Sat",
+      "creditsUsed": 6,
+      "wordsGenerated": 4818,
+      "timeSavedMinutes": 90,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 1
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 2
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_17",
+      "date": "2026-07-12",
+      "day": "Sun",
+      "creditsUsed": 2,
+      "wordsGenerated": 1220,
+      "timeSavedMinutes": 30,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
         },
         {
           "tool": "Gig Health Checker",
@@ -1104,7 +1458,7 @@
         },
         {
           "tool": "Review Analyzer",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "SEO Audit",
@@ -1118,10 +1472,10 @@
     },
     {
       "id": "log_16",
-      "date": "2026-07-12",
-      "day": "Sun",
+      "date": "2026-07-13",
+      "day": "Mon",
       "creditsUsed": 5,
-      "wordsGenerated": 3615,
+      "wordsGenerated": 4290,
       "timeSavedMinutes": 75,
       "toolUsage": [
         {
@@ -1134,7 +1488,7 @@
         },
         {
           "tool": "Pricing Optimizer",
-          "count": 2
+          "count": 1
         },
         {
           "tool": "Gig Health Checker",
@@ -1150,7 +1504,7 @@
         },
         {
           "tool": "Review Analyzer",
-          "count": 1
+          "count": 2
         },
         {
           "tool": "SEO Audit",
@@ -1164,11 +1518,11 @@
     },
     {
       "id": "log_15",
-      "date": "2026-07-13",
-      "day": "Mon",
-      "creditsUsed": 8,
-      "wordsGenerated": 6464,
-      "timeSavedMinutes": 120,
+      "date": "2026-07-14",
+      "day": "Tue",
+      "creditsUsed": 4,
+      "wordsGenerated": 2704,
+      "timeSavedMinutes": 60,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
@@ -1176,7 +1530,7 @@
         },
         {
           "tool": "Keyword Finder",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Pricing Optimizer",
@@ -1192,7 +1546,7 @@
         },
         {
           "tool": "Client Messages",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Review Analyzer",
@@ -1200,7 +1554,7 @@
         },
         {
           "tool": "SEO Audit",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Publish Assistant",
@@ -1210,11 +1564,11 @@
     },
     {
       "id": "log_14",
-      "date": "2026-07-14",
-      "day": "Tue",
-      "creditsUsed": 6,
-      "wordsGenerated": 5832,
-      "timeSavedMinutes": 90,
+      "date": "2026-07-15",
+      "day": "Wed",
+      "creditsUsed": 8,
+      "wordsGenerated": 6112,
+      "timeSavedMinutes": 120,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
@@ -1226,15 +1580,15 @@
         },
         {
           "tool": "Pricing Optimizer",
-          "count": 0
+          "count": 2
         },
         {
           "tool": "Gig Health Checker",
-          "count": 0
+          "count": 2
         },
         {
           "tool": "Portfolio Builder",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Client Messages",
@@ -1242,7 +1596,7 @@
         },
         {
           "tool": "Review Analyzer",
-          "count": 0
+          "count": 1
         },
         {
           "tool": "SEO Audit",
@@ -1256,11 +1610,11 @@
     },
     {
       "id": "log_13",
-      "date": "2026-07-15",
-      "day": "Wed",
-      "creditsUsed": 7,
-      "wordsGenerated": 5873,
-      "timeSavedMinutes": 105,
+      "date": "2026-07-16",
+      "day": "Thu",
+      "creditsUsed": 4,
+      "wordsGenerated": 3116,
+      "timeSavedMinutes": 60,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
@@ -1268,11 +1622,11 @@
         },
         {
           "tool": "Keyword Finder",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Pricing Optimizer",
-          "count": 0
+          "count": 1
         },
         {
           "tool": "Gig Health Checker",
@@ -1280,7 +1634,7 @@
         },
         {
           "tool": "Portfolio Builder",
-          "count": 2
+          "count": 1
         },
         {
           "tool": "Client Messages",
@@ -1288,7 +1642,7 @@
         },
         {
           "tool": "Review Analyzer",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "SEO Audit",
@@ -1302,23 +1656,23 @@
     },
     {
       "id": "log_12",
-      "date": "2026-07-16",
-      "day": "Thu",
+      "date": "2026-07-17",
+      "day": "Fri",
       "creditsUsed": 2,
-      "wordsGenerated": 1642,
+      "wordsGenerated": 1410,
       "timeSavedMinutes": 30,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
-          "count": 0
+          "count": 2
         },
         {
           "tool": "Keyword Finder",
-          "count": 1
+          "count": 2
         },
         {
           "tool": "Pricing Optimizer",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Gig Health Checker",
@@ -1326,11 +1680,11 @@
         },
         {
           "tool": "Portfolio Builder",
-          "count": 0
+          "count": 1
         },
         {
           "tool": "Client Messages",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Review Analyzer",
@@ -1342,41 +1696,41 @@
         },
         {
           "tool": "Publish Assistant",
-          "count": 0
+          "count": 1
         }
       ]
     },
     {
       "id": "log_11",
-      "date": "2026-07-17",
-      "day": "Fri",
-      "creditsUsed": 8,
-      "wordsGenerated": 6464,
-      "timeSavedMinutes": 120,
+      "date": "2026-07-18",
+      "day": "Sat",
+      "creditsUsed": 6,
+      "wordsGenerated": 4842,
+      "timeSavedMinutes": 90,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
-          "count": 0
+          "count": 2
         },
         {
           "tool": "Keyword Finder",
-          "count": 0
+          "count": 1
         },
         {
           "tool": "Pricing Optimizer",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Gig Health Checker",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Portfolio Builder",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Client Messages",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Review Analyzer",
@@ -1388,17 +1742,17 @@
         },
         {
           "tool": "Publish Assistant",
-          "count": 0
+          "count": 2
         }
       ]
     },
     {
       "id": "log_10",
-      "date": "2026-07-18",
-      "day": "Sat",
-      "creditsUsed": 6,
-      "wordsGenerated": 4806,
-      "timeSavedMinutes": 90,
+      "date": "2026-07-19",
+      "day": "Sun",
+      "creditsUsed": 3,
+      "wordsGenerated": 2913,
+      "timeSavedMinutes": 45,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
@@ -1430,7 +1784,7 @@
         },
         {
           "tool": "SEO Audit",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Publish Assistant",
@@ -1440,23 +1794,23 @@
     },
     {
       "id": "log_9",
-      "date": "2026-07-19",
-      "day": "Sun",
-      "creditsUsed": 2,
-      "wordsGenerated": 1640,
-      "timeSavedMinutes": 30,
+      "date": "2026-07-20",
+      "day": "Mon",
+      "creditsUsed": 5,
+      "wordsGenerated": 3235,
+      "timeSavedMinutes": 75,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Keyword Finder",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Pricing Optimizer",
-          "count": 1
+          "count": 0
         },
         {
           "tool": "Gig Health Checker",
@@ -1486,11 +1840,11 @@
     },
     {
       "id": "log_8",
-      "date": "2026-07-20",
-      "day": "Mon",
-      "creditsUsed": 5,
-      "wordsGenerated": 3825,
-      "timeSavedMinutes": 75,
+      "date": "2026-07-21",
+      "day": "Tue",
+      "creditsUsed": 1,
+      "wordsGenerated": 817,
+      "timeSavedMinutes": 15,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
@@ -1498,7 +1852,7 @@
         },
         {
           "tool": "Keyword Finder",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Pricing Optimizer",
@@ -1506,23 +1860,23 @@
         },
         {
           "tool": "Gig Health Checker",
-          "count": 1
-        },
-        {
-          "tool": "Portfolio Builder",
-          "count": 2
-        },
-        {
-          "tool": "Client Messages",
           "count": 0
         },
         {
-          "tool": "Review Analyzer",
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
           "count": 2
         },
         {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
           "tool": "SEO Audit",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Publish Assistant",
@@ -1532,11 +1886,11 @@
     },
     {
       "id": "log_7",
-      "date": "2026-07-21",
-      "day": "Tue",
-      "creditsUsed": 5,
-      "wordsGenerated": 4770,
-      "timeSavedMinutes": 75,
+      "date": "2026-07-22",
+      "day": "Wed",
+      "creditsUsed": 4,
+      "wordsGenerated": 2860,
+      "timeSavedMinutes": 60,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
@@ -1544,7 +1898,7 @@
         },
         {
           "tool": "Keyword Finder",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Pricing Optimizer",
@@ -1552,7 +1906,7 @@
         },
         {
           "tool": "Gig Health Checker",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Portfolio Builder",
@@ -1564,7 +1918,7 @@
         },
         {
           "tool": "Review Analyzer",
-          "count": 2
+          "count": 1
         },
         {
           "tool": "SEO Audit",
@@ -1578,148 +1932,10 @@
     },
     {
       "id": "log_6",
-      "date": "2026-07-22",
-      "day": "Wed",
-      "creditsUsed": 8,
-      "wordsGenerated": 5096,
-      "timeSavedMinutes": 120,
-      "toolUsage": [
-        {
-          "tool": "Proposal Generator",
-          "count": 2
-        },
-        {
-          "tool": "Keyword Finder",
-          "count": 2
-        },
-        {
-          "tool": "Pricing Optimizer",
-          "count": 0
-        },
-        {
-          "tool": "Gig Health Checker",
-          "count": 0
-        },
-        {
-          "tool": "Portfolio Builder",
-          "count": 2
-        },
-        {
-          "tool": "Client Messages",
-          "count": 0
-        },
-        {
-          "tool": "Review Analyzer",
-          "count": 0
-        },
-        {
-          "tool": "SEO Audit",
-          "count": 0
-        },
-        {
-          "tool": "Publish Assistant",
-          "count": 2
-        }
-      ]
-    },
-    {
-      "id": "log_5",
       "date": "2026-07-23",
       "day": "Thu",
-      "creditsUsed": 8,
-      "wordsGenerated": 7248,
-      "timeSavedMinutes": 120,
-      "toolUsage": [
-        {
-          "tool": "Proposal Generator",
-          "count": 1
-        },
-        {
-          "tool": "Keyword Finder",
-          "count": 0
-        },
-        {
-          "tool": "Pricing Optimizer",
-          "count": 0
-        },
-        {
-          "tool": "Gig Health Checker",
-          "count": 0
-        },
-        {
-          "tool": "Portfolio Builder",
-          "count": 0
-        },
-        {
-          "tool": "Client Messages",
-          "count": 2
-        },
-        {
-          "tool": "Review Analyzer",
-          "count": 0
-        },
-        {
-          "tool": "SEO Audit",
-          "count": 2
-        },
-        {
-          "tool": "Publish Assistant",
-          "count": 0
-        }
-      ]
-    },
-    {
-      "id": "log_4",
-      "date": "2026-07-24",
-      "day": "Fri",
-      "creditsUsed": 5,
-      "wordsGenerated": 3325,
-      "timeSavedMinutes": 75,
-      "toolUsage": [
-        {
-          "tool": "Proposal Generator",
-          "count": 0
-        },
-        {
-          "tool": "Keyword Finder",
-          "count": 1
-        },
-        {
-          "tool": "Pricing Optimizer",
-          "count": 2
-        },
-        {
-          "tool": "Gig Health Checker",
-          "count": 0
-        },
-        {
-          "tool": "Portfolio Builder",
-          "count": 0
-        },
-        {
-          "tool": "Client Messages",
-          "count": 1
-        },
-        {
-          "tool": "Review Analyzer",
-          "count": 0
-        },
-        {
-          "tool": "SEO Audit",
-          "count": 1
-        },
-        {
-          "tool": "Publish Assistant",
-          "count": 0
-        }
-      ]
-    },
-    {
-      "id": "log_3",
-      "date": "2026-07-25",
-      "day": "Sat",
       "creditsUsed": 3,
-      "wordsGenerated": 2295,
+      "wordsGenerated": 2034,
       "timeSavedMinutes": 45,
       "toolUsage": [
         {
@@ -1732,11 +1948,11 @@
         },
         {
           "tool": "Pricing Optimizer",
-          "count": 0
+          "count": 2
         },
         {
           "tool": "Gig Health Checker",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Portfolio Builder",
@@ -1748,7 +1964,145 @@
         },
         {
           "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
           "count": 1
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "log_5",
+      "date": "2026-07-24",
+      "day": "Fri",
+      "creditsUsed": 4,
+      "wordsGenerated": 3944,
+      "timeSavedMinutes": 60,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 2
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 1
+        },
+        {
+          "tool": "Client Messages",
+          "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 2
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "log_4",
+      "date": "2026-07-25",
+      "day": "Sat",
+      "creditsUsed": 8,
+      "wordsGenerated": 7904,
+      "timeSavedMinutes": 120,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 1
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 2
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 2
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_3",
+      "date": "2026-07-26",
+      "day": "Sun",
+      "creditsUsed": 6,
+      "wordsGenerated": 4482,
+      "timeSavedMinutes": 90,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 0
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 1
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 1
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
+          "count": 2
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
         },
         {
           "tool": "SEO Audit",
@@ -1762,15 +2116,15 @@
     },
     {
       "id": "log_2",
-      "date": "2026-07-26",
-      "day": "Sun",
-      "creditsUsed": 8,
-      "wordsGenerated": 7824,
-      "timeSavedMinutes": 120,
+      "date": "2026-07-27",
+      "day": "Mon",
+      "creditsUsed": 4,
+      "wordsGenerated": 3628,
+      "timeSavedMinutes": 60,
       "toolUsage": [
         {
           "tool": "Proposal Generator",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Keyword Finder",
@@ -1782,19 +2136,19 @@
         },
         {
           "tool": "Gig Health Checker",
-          "count": 2
-        },
-        {
-          "tool": "Portfolio Builder",
           "count": 0
         },
         {
-          "tool": "Client Messages",
+          "tool": "Portfolio Builder",
           "count": 2
         },
         {
+          "tool": "Client Messages",
+          "count": 0
+        },
+        {
           "tool": "Review Analyzer",
-          "count": 2
+          "count": 1
         },
         {
           "tool": "SEO Audit",
@@ -1808,56 +2162,10 @@
     },
     {
       "id": "log_1",
-      "date": "2026-07-27",
-      "day": "Mon",
-      "creditsUsed": 2,
-      "wordsGenerated": 1204,
-      "timeSavedMinutes": 30,
-      "toolUsage": [
-        {
-          "tool": "Proposal Generator",
-          "count": 0
-        },
-        {
-          "tool": "Keyword Finder",
-          "count": 0
-        },
-        {
-          "tool": "Pricing Optimizer",
-          "count": 0
-        },
-        {
-          "tool": "Gig Health Checker",
-          "count": 0
-        },
-        {
-          "tool": "Portfolio Builder",
-          "count": 0
-        },
-        {
-          "tool": "Client Messages",
-          "count": 1
-        },
-        {
-          "tool": "Review Analyzer",
-          "count": 0
-        },
-        {
-          "tool": "SEO Audit",
-          "count": 0
-        },
-        {
-          "tool": "Publish Assistant",
-          "count": 0
-        }
-      ]
-    },
-    {
-      "id": "log_0",
       "date": "2026-07-28",
       "day": "Tue",
       "creditsUsed": 4,
-      "wordsGenerated": 2616,
+      "wordsGenerated": 2904,
       "timeSavedMinutes": 60,
       "toolUsage": [
         {
@@ -1866,7 +2174,7 @@
         },
         {
           "tool": "Keyword Finder",
-          "count": 2
+          "count": 0
         },
         {
           "tool": "Pricing Optimizer",
@@ -1874,7 +2182,53 @@
         },
         {
           "tool": "Gig Health Checker",
+          "count": 0
+        },
+        {
+          "tool": "Portfolio Builder",
+          "count": 0
+        },
+        {
+          "tool": "Client Messages",
           "count": 1
+        },
+        {
+          "tool": "Review Analyzer",
+          "count": 0
+        },
+        {
+          "tool": "SEO Audit",
+          "count": 0
+        },
+        {
+          "tool": "Publish Assistant",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "log_0",
+      "date": "2026-07-29",
+      "day": "Wed",
+      "creditsUsed": 2,
+      "wordsGenerated": 1308,
+      "timeSavedMinutes": 30,
+      "toolUsage": [
+        {
+          "tool": "Proposal Generator",
+          "count": 1
+        },
+        {
+          "tool": "Keyword Finder",
+          "count": 0
+        },
+        {
+          "tool": "Pricing Optimizer",
+          "count": 0
+        },
+        {
+          "tool": "Gig Health Checker",
+          "count": 0
         },
         {
           "tool": "Portfolio Builder",
@@ -1894,7 +2248,7 @@
         },
         {
           "tool": "Publish Assistant",
-          "count": 1
+          "count": 0
         }
       ]
     }
@@ -1974,13 +2328,13 @@
         ]
       },
       "status": "draft",
-      "created_at": "2026-07-27T10:36:51.966Z"
+      "created_at": "2026-07-28T17:43:31.901Z"
     },
     {
-      "id": "id_gigs_t74luj1c1",
-      "user_id": "id_users_bul21cktg",
-      "created_at": "2026-07-28T10:36:51.968Z",
-      "updated_at": "2026-07-28T10:36:51.968Z",
+      "id": "id_gigs_im9r5ajmk",
+      "user_id": "id_users_gchr0f6h0",
+      "created_at": "2026-07-29T17:52:03.022Z",
+      "updated_at": "2026-07-29T17:52:03.022Z",
       "title": "I will do expert Next.js developer",
       "category": "Tech",
       "content": {
@@ -2028,61 +2382,10 @@
       "status": "draft"
     },
     {
-      "id": "id_gigs_93pnkakrr",
-      "user_id": "id_users_r8t4c2fo1",
-      "created_at": "2026-07-28T10:37:02.195Z",
-      "updated_at": "2026-07-28T10:37:02.195Z",
-      "title": "I will do expert Next.js developer",
-      "category": "Tech",
-      "content": {
-        "seoTitle": "I will do expert Next.js developer",
-        "description": "Need expert help with Next.js developer? I provide premium layouts, clean files and commercial rights.",
-        "packages": {
-          "basic": {
-            "name": "Basic",
-            "title": "Starter setup",
-            "description": "Essential deliverables",
-            "price": 25,
-            "deliveryDays": 3,
-            "revisions": "3",
-            "features": []
-          },
-          "standard": {
-            "name": "Standard",
-            "title": "Pro setup",
-            "description": "Recommended deliverables",
-            "price": 65,
-            "deliveryDays": 5,
-            "revisions": "5",
-            "features": []
-          },
-          "premium": {
-            "name": "Premium",
-            "title": "Enterprise setup",
-            "description": "Full business solutions",
-            "price": 150,
-            "deliveryDays": 7,
-            "revisions": "Unlimited",
-            "features": []
-          }
-        },
-        "faqs": [],
-        "requirements": [],
-        "tags": [
-          "next.js-developer"
-        ],
-        "callToAction": "Order now!",
-        "imagePrompt": "A glowing desk with code mockups for gig cover image.",
-        "videoScript": "Hi there, need this gig? I will deliver it fast.",
-        "upsellSuggestions": []
-      },
-      "status": "draft"
-    },
-    {
-      "id": "id_gigs_vzc3e7vb4",
-      "user_id": "id_users_r8t4c2fo1",
-      "created_at": "2026-07-29T06:25:53.158Z",
-      "updated_at": "2026-07-29T06:25:53.158Z",
+      "id": "id_gigs_ifmrb271m",
+      "user_id": "id_users_gchr0f6h0",
+      "created_at": "2026-07-29T17:53:10.446Z",
+      "updated_at": "2026-07-29T17:53:10.446Z",
       "title": "I will do expert Next.js developer",
       "category": "Tech",
       "content": {
@@ -2141,18 +2444,18 @@
       "display_name": "Alex Vance",
       "email": "alex@gigpilot.ai",
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-      "access_token": "mock_linkedin_access_token_l19io00hd9o",
-      "refresh_token": "mock_linkedin_refresh_token_f1nxgj5x1of",
-      "expires_at": "2026-09-27T06:25:53.036Z",
+      "access_token": "mock_linkedin_access_token_p6pkwzzdk7",
+      "refresh_token": "mock_linkedin_refresh_token_7s573n44pqd",
+      "expires_at": "2026-09-27T17:53:10.487Z",
       "scope": "w_member_social r_liteprofile r_emailaddress",
       "status": "connected",
-      "last_sync": "2026-07-29T06:25:53.036Z",
-      "created_at": "2026-07-18T10:36:51.966Z",
-      "updated_at": "2026-07-29T06:25:53.037Z",
+      "last_sync": "2026-07-29T17:53:10.487Z",
+      "created_at": "2026-07-19T17:43:31.901Z",
+      "updated_at": "2026-07-29T17:53:10.488Z",
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-28T08:36:51.966Z",
+          "updated_at": "2026-07-29T15:43:31.901Z",
           "payload": {
             "id": "acc_li_001",
             "user_id": "usr_fiverr_pro_001",
@@ -2164,17 +2467,17 @@
             "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
             "access_token": "mock_linkedin_token_alex",
             "refresh_token": "mock_linkedin_refresh_alex",
-            "expires_at": "2026-09-26T10:36:51.966Z",
+            "expires_at": "2026-09-27T17:43:31.901Z",
             "scope": "w_member_social r_liteprofile r_emailaddress",
             "status": "connected",
-            "last_sync": "2026-07-28T08:36:51.966Z",
-            "created_at": "2026-07-18T10:36:51.966Z",
-            "updated_at": "2026-07-28T08:36:51.966Z"
+            "last_sync": "2026-07-29T15:43:31.901Z",
+            "created_at": "2026-07-19T17:43:31.901Z",
+            "updated_at": "2026-07-29T15:43:31.901Z"
           }
         },
         {
           "version": 2,
-          "updated_at": "2026-07-28T10:36:51.985Z",
+          "updated_at": "2026-07-29T17:43:31.913Z",
           "payload": {
             "id": "acc_li_001",
             "user_id": "usr_fiverr_pro_001",
@@ -2184,19 +2487,19 @@
             "display_name": "Alex Vance",
             "email": "alex@gigpilot.ai",
             "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-            "access_token": "mock_linkedin_access_token_u0xs8caod48",
-            "refresh_token": "mock_linkedin_refresh_token_z0fhzjjy1v9",
-            "expires_at": "2026-09-26T10:36:51.984Z",
+            "access_token": "mock_linkedin_access_token_9ocva380w88",
+            "refresh_token": "mock_linkedin_refresh_token_4m7k5afg21b",
+            "expires_at": "2026-09-27T17:43:31.912Z",
             "scope": "w_member_social r_liteprofile r_emailaddress",
             "status": "connected",
-            "last_sync": "2026-07-28T10:36:51.984Z",
-            "created_at": "2026-07-18T10:36:51.966Z",
-            "updated_at": "2026-07-28T10:36:51.985Z"
+            "last_sync": "2026-07-29T17:43:31.912Z",
+            "created_at": "2026-07-19T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:43:31.913Z"
           }
         },
         {
           "version": 3,
-          "updated_at": "2026-07-28T10:36:52.011Z",
+          "updated_at": "2026-07-29T17:43:31.936Z",
           "payload": {
             "id": "acc_li_001",
             "user_id": "usr_fiverr_pro_001",
@@ -2206,19 +2509,19 @@
             "display_name": "Alex Vance",
             "email": "alex@gigpilot.ai",
             "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-            "access_token": "mock_linkedin_access_token_zpokhnfgn0r",
-            "refresh_token": "mock_linkedin_refresh_token_fqca6fj2dz",
-            "expires_at": "2026-09-26T10:36:52.010Z",
+            "access_token": "mock_linkedin_access_token_75el0ffxyv6",
+            "refresh_token": "mock_linkedin_refresh_token_npnpdrj037o",
+            "expires_at": "2026-09-27T17:43:31.935Z",
             "scope": "w_member_social r_liteprofile r_emailaddress",
             "status": "connected",
-            "last_sync": "2026-07-28T10:36:52.010Z",
-            "created_at": "2026-07-18T10:36:51.966Z",
-            "updated_at": "2026-07-28T10:36:52.011Z"
+            "last_sync": "2026-07-29T17:43:31.935Z",
+            "created_at": "2026-07-19T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:43:31.936Z"
           }
         },
         {
           "version": 4,
-          "updated_at": "2026-07-28T10:37:02.206Z",
+          "updated_at": "2026-07-29T17:52:03.031Z",
           "payload": {
             "id": "acc_li_001",
             "user_id": "usr_fiverr_pro_001",
@@ -2228,19 +2531,19 @@
             "display_name": "Alex Vance",
             "email": "alex@gigpilot.ai",
             "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-            "access_token": "mock_linkedin_access_token_03n811n70jtn",
-            "refresh_token": "mock_linkedin_refresh_token_1fpcx60bjzn",
-            "expires_at": "2026-09-26T10:37:02.205Z",
+            "access_token": "mock_linkedin_access_token_msjxdtn6lg",
+            "refresh_token": "mock_linkedin_refresh_token_3yh4v3vlo8w",
+            "expires_at": "2026-09-27T17:52:03.030Z",
             "scope": "w_member_social r_liteprofile r_emailaddress",
             "status": "connected",
-            "last_sync": "2026-07-28T10:37:02.205Z",
-            "created_at": "2026-07-18T10:36:51.966Z",
-            "updated_at": "2026-07-28T10:37:02.206Z"
+            "last_sync": "2026-07-29T17:52:03.030Z",
+            "created_at": "2026-07-19T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:52:03.031Z"
           }
         },
         {
           "version": 5,
-          "updated_at": "2026-07-28T10:37:02.231Z",
+          "updated_at": "2026-07-29T17:52:03.067Z",
           "payload": {
             "id": "acc_li_001",
             "user_id": "usr_fiverr_pro_001",
@@ -2250,19 +2553,19 @@
             "display_name": "Alex Vance",
             "email": "alex@gigpilot.ai",
             "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-            "access_token": "mock_linkedin_access_token_7mqoh067lxg",
-            "refresh_token": "mock_linkedin_refresh_token_iy35k6rb8g",
-            "expires_at": "2026-09-26T10:37:02.230Z",
+            "access_token": "mock_linkedin_access_token_mduqb70b4g9",
+            "refresh_token": "mock_linkedin_refresh_token_zqywvubiyie",
+            "expires_at": "2026-09-27T17:52:03.066Z",
             "scope": "w_member_social r_liteprofile r_emailaddress",
             "status": "connected",
-            "last_sync": "2026-07-28T10:37:02.230Z",
-            "created_at": "2026-07-18T10:36:51.966Z",
-            "updated_at": "2026-07-28T10:37:02.231Z"
+            "last_sync": "2026-07-29T17:52:03.066Z",
+            "created_at": "2026-07-19T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:52:03.067Z"
           }
         },
         {
           "version": 6,
-          "updated_at": "2026-07-29T06:25:53.014Z",
+          "updated_at": "2026-07-29T17:52:26.786Z",
           "payload": {
             "id": "acc_li_001",
             "user_id": "usr_fiverr_pro_001",
@@ -2272,14 +2575,58 @@
             "display_name": "Alex Vance",
             "email": "alex@gigpilot.ai",
             "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-            "access_token": "mock_linkedin_access_token_rku3hhik3o",
-            "refresh_token": "mock_linkedin_refresh_token_d0u7rgta92s",
-            "expires_at": "2026-09-27T06:25:53.013Z",
+            "access_token": "mock_linkedin_access_token_dmdw52gye9h",
+            "refresh_token": "mock_linkedin_refresh_token_7zykb8opbek",
+            "expires_at": "2026-09-27T17:52:26.785Z",
             "scope": "w_member_social r_liteprofile r_emailaddress",
             "status": "connected",
-            "last_sync": "2026-07-29T06:25:53.013Z",
-            "created_at": "2026-07-18T10:36:51.966Z",
-            "updated_at": "2026-07-29T06:25:53.014Z"
+            "last_sync": "2026-07-29T17:52:26.785Z",
+            "created_at": "2026-07-19T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:52:26.786Z"
+          }
+        },
+        {
+          "version": 7,
+          "updated_at": "2026-07-29T17:52:26.820Z",
+          "payload": {
+            "id": "acc_li_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "linkedin",
+            "provider_user_id": "li_usr_998273",
+            "username": "alexvance_linkedin",
+            "display_name": "Alex Vance",
+            "email": "alex@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_linkedin_access_token_gnlifvara",
+            "refresh_token": "mock_linkedin_refresh_token_8o7chxxnxhm",
+            "expires_at": "2026-09-27T17:52:26.818Z",
+            "scope": "w_member_social r_liteprofile r_emailaddress",
+            "status": "connected",
+            "last_sync": "2026-07-29T17:52:26.818Z",
+            "created_at": "2026-07-19T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:52:26.820Z"
+          }
+        },
+        {
+          "version": 8,
+          "updated_at": "2026-07-29T17:53:10.457Z",
+          "payload": {
+            "id": "acc_li_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "linkedin",
+            "provider_user_id": "li_usr_998273",
+            "username": "alexvance_linkedin",
+            "display_name": "Alex Vance",
+            "email": "alex@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_linkedin_access_token_f03pn442exc",
+            "refresh_token": "mock_linkedin_refresh_token_7zxh56ug0ky",
+            "expires_at": "2026-09-27T17:53:10.456Z",
+            "scope": "w_member_social r_liteprofile r_emailaddress",
+            "status": "connected",
+            "last_sync": "2026-07-29T17:53:10.456Z",
+            "created_at": "2026-07-19T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:53:10.457Z"
           }
         }
       ]
@@ -2293,18 +2640,18 @@
       "display_name": "Alex Vance",
       "email": "mastodon@gigpilot.ai",
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-      "access_token": "mock_mastodon_token_msk5ix1yiis",
+      "access_token": "mock_mastodon_token_gaqiho5dnpq",
       "refresh_token": "mock_mastodon_refresh_token",
-      "expires_at": "",
+      "expires_at": null,
       "scope": "read write follow instance:mastodon.social",
       "status": "connected",
-      "last_sync": "2026-07-29T06:25:53.025Z",
-      "created_at": "2026-07-23T10:36:51.966Z",
-      "updated_at": "2026-07-29T06:25:53.026Z",
+      "last_sync": "2026-07-29T17:53:10.472Z",
+      "created_at": "2026-07-24T17:43:31.901Z",
+      "updated_at": "2026-07-29T17:53:10.473Z",
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-28T07:36:51.966Z",
+          "updated_at": "2026-07-29T14:43:31.901Z",
           "payload": {
             "id": "acc_ma_001",
             "user_id": "usr_fiverr_pro_001",
@@ -2319,14 +2666,14 @@
             "expires_at": "",
             "scope": "read write follow instance:mastodon.social",
             "status": "connected",
-            "last_sync": "2026-07-28T07:36:51.966Z",
-            "created_at": "2026-07-23T10:36:51.966Z",
-            "updated_at": "2026-07-28T07:36:51.966Z"
+            "last_sync": "2026-07-29T14:43:31.901Z",
+            "created_at": "2026-07-24T17:43:31.901Z",
+            "updated_at": "2026-07-29T14:43:31.901Z"
           }
         },
         {
           "version": 2,
-          "updated_at": "2026-07-28T10:36:51.999Z",
+          "updated_at": "2026-07-29T17:43:31.926Z",
           "payload": {
             "id": "acc_ma_001",
             "user_id": "usr_fiverr_pro_001",
@@ -2336,19 +2683,19 @@
             "display_name": "Alex Vance",
             "email": "mastodon@gigpilot.ai",
             "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-            "access_token": "mock_mastodon_token_zrsam8bwxbk",
+            "access_token": "mock_mastodon_token_oo1pt9h1d5k",
             "refresh_token": "mock_mastodon_refresh_token",
-            "expires_at": "",
+            "expires_at": null,
             "scope": "read write follow instance:mastodon.social",
             "status": "connected",
-            "last_sync": "2026-07-28T10:36:51.998Z",
-            "created_at": "2026-07-23T10:36:51.966Z",
-            "updated_at": "2026-07-28T10:36:51.999Z"
+            "last_sync": "2026-07-29T17:43:31.925Z",
+            "created_at": "2026-07-24T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:43:31.926Z"
           }
         },
         {
           "version": 3,
-          "updated_at": "2026-07-28T10:37:02.221Z",
+          "updated_at": "2026-07-29T17:52:03.049Z",
           "payload": {
             "id": "acc_ma_001",
             "user_id": "usr_fiverr_pro_001",
@@ -2358,14 +2705,36 @@
             "display_name": "Alex Vance",
             "email": "mastodon@gigpilot.ai",
             "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-            "access_token": "mock_mastodon_token_2f9uq3b7j54",
+            "access_token": "mock_mastodon_token_ir71fjgrvp",
             "refresh_token": "mock_mastodon_refresh_token",
-            "expires_at": "",
+            "expires_at": null,
             "scope": "read write follow instance:mastodon.social",
             "status": "connected",
-            "last_sync": "2026-07-28T10:37:02.220Z",
-            "created_at": "2026-07-23T10:36:51.966Z",
-            "updated_at": "2026-07-28T10:37:02.221Z"
+            "last_sync": "2026-07-29T17:52:03.048Z",
+            "created_at": "2026-07-24T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:52:03.049Z"
+          }
+        },
+        {
+          "version": 4,
+          "updated_at": "2026-07-29T17:52:26.804Z",
+          "payload": {
+            "id": "acc_ma_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "mastodon",
+            "provider_user_id": "mast_usr_998182",
+            "username": "alexvance_mastodon",
+            "display_name": "Alex Vance",
+            "email": "mastodon@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_mastodon_token_zdc3czix0b",
+            "refresh_token": "mock_mastodon_refresh_token",
+            "expires_at": null,
+            "scope": "read write follow instance:mastodon.social",
+            "status": "connected",
+            "last_sync": "2026-07-29T17:52:26.803Z",
+            "created_at": "2026-07-24T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:52:26.804Z"
           }
         }
       ]
@@ -2384,48 +2753,48 @@
       "expires_at": "",
       "scope": "api-key",
       "status": "connected",
-      "last_sync": "2026-07-28T09:36:51.966Z",
-      "created_at": "2026-07-20T10:36:51.966Z",
-      "updated_at": "2026-07-28T09:36:51.966Z"
+      "last_sync": "2026-07-29T16:43:31.901Z",
+      "created_at": "2026-07-21T17:43:31.901Z",
+      "updated_at": "2026-07-29T16:43:31.901Z"
     },
     {
-      "id": "id_social_accounts_j1qb24z2j",
+      "id": "id_social_accounts_dik8d97j1",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.970Z",
-      "updated_at": "2026-07-29T06:25:53.001Z",
+      "created_at": "2026-07-29T17:52:03.017Z",
+      "updated_at": "2026-07-29T17:52:26.767Z",
       "provider": "bluesky",
       "provider_user_id": "did:plc:mock_gigpilot",
       "username": "gigpilot.bsky.social",
       "display_name": "GigPilot AI",
       "email": "bluesky@gigpilot.ai",
       "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
-      "access_token": "mock_bluesky_jwt_m2mctcu01el",
+      "access_token": "mock_bluesky_jwt_qrn3abdnbkf",
       "refresh_token": "mock_bluesky_refresh_jwt",
-      "expires_at": "2026-07-29T08:25:53.000Z",
+      "expires_at": "2026-07-29T19:52:26.766Z",
       "scope": "atproto",
       "status": "connected",
-      "last_sync": "2026-07-29T06:25:53.000Z",
+      "last_sync": "2026-07-29T17:52:26.766Z",
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-28T10:36:51.970Z",
+          "updated_at": "2026-07-29T17:52:03.017Z",
           "payload": {
-            "id": "id_social_accounts_j1qb24z2j",
+            "id": "id_social_accounts_dik8d97j1",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-28T10:36:51.970Z",
-            "updated_at": "2026-07-28T10:36:51.970Z",
+            "created_at": "2026-07-29T17:52:03.017Z",
+            "updated_at": "2026-07-29T17:52:03.017Z",
             "provider": "bluesky",
             "provider_user_id": "did:plc:mock_gigpilot",
             "username": "gigpilot.bsky.social",
             "display_name": "GigPilot AI",
             "email": "bluesky@gigpilot.ai",
             "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
-            "access_token": "mock_bluesky_jwt_p7fbuq45o8l",
+            "access_token": "mock_bluesky_jwt_arirhn3ln5j",
             "refresh_token": "mock_bluesky_refresh_jwt",
-            "expires_at": "2026-07-28T12:36:51.969Z",
+            "expires_at": "2026-07-29T19:52:03.016Z",
             "scope": "atproto",
             "status": "connected",
-            "last_sync": "2026-07-28T10:36:51.969Z"
+            "last_sync": "2026-07-29T17:52:03.016Z"
           }
         }
       ]
@@ -2441,8 +2810,8 @@
       "mentions": "gigpilot_ai",
       "link": "https://gigpilot.ai/blog/productivity-nextjs",
       "status": "Published",
-      "created_at": "2026-07-27T10:36:51.966Z",
-      "updated_at": "2026-07-27T10:36:51.966Z"
+      "created_at": "2026-07-28T17:43:31.901Z",
+      "updated_at": "2026-07-28T17:43:31.901Z"
     },
     {
       "id": "post_002",
@@ -2453,8 +2822,8 @@
       "mentions": "",
       "link": "https://gigpilot.ai/social-hub",
       "status": "Scheduled",
-      "created_at": "2026-07-28T09:36:51.966Z",
-      "updated_at": "2026-07-28T09:36:51.966Z"
+      "created_at": "2026-07-29T16:43:31.901Z",
+      "updated_at": "2026-07-29T16:43:31.901Z"
     },
     {
       "id": "post_003",
@@ -2465,27 +2834,27 @@
       "mentions": "",
       "link": "",
       "status": "Draft",
-      "created_at": "2026-07-27T22:36:51.966Z",
-      "updated_at": "2026-07-27T22:36:51.966Z"
+      "created_at": "2026-07-29T05:43:31.901Z",
+      "updated_at": "2026-07-29T05:43:31.901Z"
     },
     {
-      "id": "id_posts_23m3nzev4",
+      "id": "id_posts_3t6qm1en6",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.980Z",
-      "updated_at": "2026-07-28T10:36:51.980Z",
+      "created_at": "2026-07-29T17:43:31.910Z",
+      "updated_at": "2026-07-29T17:43:31.910Z",
       "title": "Test Post Draft",
       "content": "This is a test post content",
       "hashtags": "",
       "mentions": "",
       "link": "",
-      "mediaUrls": [],
+      "media_urls": [],
       "status": "Draft"
     },
     {
-      "id": "id_posts_o9kqsv4v0",
+      "id": "id_posts_fhvnr67lr",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.991Z",
-      "updated_at": "2026-07-28T10:36:51.993Z",
+      "created_at": "2026-07-29T17:43:31.918Z",
+      "updated_at": "2026-07-29T17:43:31.921Z",
       "title": "Instant Publish Test",
       "content": "Publishing immediately to LinkedIn!",
       "hashtags": "",
@@ -2496,12 +2865,12 @@
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-28T10:36:51.991Z",
+          "updated_at": "2026-07-29T17:43:31.918Z",
           "payload": {
-            "id": "id_posts_o9kqsv4v0",
+            "id": "id_posts_fhvnr67lr",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-28T10:36:51.991Z",
-            "updated_at": "2026-07-28T10:36:51.991Z",
+            "created_at": "2026-07-29T17:43:31.918Z",
+            "updated_at": "2026-07-29T17:43:31.918Z",
             "title": "Instant Publish Test",
             "content": "Publishing immediately to LinkedIn!",
             "hashtags": "",
@@ -2514,10 +2883,10 @@
       ]
     },
     {
-      "id": "id_posts_b69wx8qmm",
+      "id": "id_posts_1x6rrov53",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.002Z",
-      "updated_at": "2026-07-28T10:36:52.002Z",
+      "created_at": "2026-07-29T17:43:31.930Z",
+      "updated_at": "2026-07-29T17:43:31.930Z",
       "title": "Scheduled Test Post",
       "content": "This post is scheduled for tomorrow",
       "hashtags": "",
@@ -2527,10 +2896,10 @@
       "status": "Scheduled"
     },
     {
-      "id": "id_posts_v662vqhcm",
+      "id": "id_posts_x0p7ve600",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.015Z",
-      "updated_at": "2026-07-28T10:36:52.025Z",
+      "created_at": "2026-07-29T17:43:31.941Z",
+      "updated_at": "2026-07-29T17:43:31.953Z",
       "title": "Past Scheduled Post",
       "content": "Should trigger right now!",
       "hashtags": "",
@@ -2541,12 +2910,12 @@
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-28T10:36:52.015Z",
+          "updated_at": "2026-07-29T17:43:31.941Z",
           "payload": {
-            "id": "id_posts_v662vqhcm",
+            "id": "id_posts_x0p7ve600",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-28T10:36:52.015Z",
-            "updated_at": "2026-07-28T10:36:52.015Z",
+            "created_at": "2026-07-29T17:43:31.941Z",
+            "updated_at": "2026-07-29T17:43:31.941Z",
             "title": "Past Scheduled Post",
             "content": "Should trigger right now!",
             "hashtags": "",
@@ -2559,23 +2928,23 @@
       ]
     },
     {
-      "id": "id_posts_6rqmle5yf",
+      "id": "id_posts_ib49sbsak",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.200Z",
-      "updated_at": "2026-07-28T10:37:02.200Z",
+      "created_at": "2026-07-29T17:52:03.026Z",
+      "updated_at": "2026-07-29T17:52:03.026Z",
       "title": "Test Post Draft",
       "content": "This is a test post content",
       "hashtags": "",
       "mentions": "",
       "link": "",
-      "mediaUrls": [],
+      "media_urls": [],
       "status": "Draft"
     },
     {
-      "id": "id_posts_16joya636",
+      "id": "id_posts_pgi7n5d5h",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.212Z",
-      "updated_at": "2026-07-28T10:37:02.215Z",
+      "created_at": "2026-07-29T17:52:03.037Z",
+      "updated_at": "2026-07-29T17:52:03.040Z",
       "title": "Instant Publish Test",
       "content": "Publishing immediately to LinkedIn!",
       "hashtags": "",
@@ -2586,12 +2955,12 @@
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-28T10:37:02.212Z",
+          "updated_at": "2026-07-29T17:52:03.037Z",
           "payload": {
-            "id": "id_posts_16joya636",
+            "id": "id_posts_pgi7n5d5h",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-28T10:37:02.212Z",
-            "updated_at": "2026-07-28T10:37:02.212Z",
+            "created_at": "2026-07-29T17:52:03.037Z",
+            "updated_at": "2026-07-29T17:52:03.037Z",
             "title": "Instant Publish Test",
             "content": "Publishing immediately to LinkedIn!",
             "hashtags": "",
@@ -2604,10 +2973,10 @@
       ]
     },
     {
-      "id": "id_posts_1tuzwx4a0",
+      "id": "id_posts_sjnrs9kbb",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.225Z",
-      "updated_at": "2026-07-28T10:37:02.225Z",
+      "created_at": "2026-07-29T17:52:03.059Z",
+      "updated_at": "2026-07-29T17:52:03.059Z",
       "title": "Scheduled Test Post",
       "content": "This post is scheduled for tomorrow",
       "hashtags": "",
@@ -2617,10 +2986,10 @@
       "status": "Scheduled"
     },
     {
-      "id": "id_posts_l8da3xt18",
+      "id": "id_posts_hcyoa565h",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.237Z",
-      "updated_at": "2026-07-28T10:37:02.248Z",
+      "created_at": "2026-07-29T17:52:03.071Z",
+      "updated_at": "2026-07-29T17:52:03.083Z",
       "title": "Past Scheduled Post",
       "content": "Should trigger right now!",
       "hashtags": "",
@@ -2631,12 +3000,12 @@
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-28T10:37:02.237Z",
+          "updated_at": "2026-07-29T17:52:03.071Z",
           "payload": {
-            "id": "id_posts_l8da3xt18",
+            "id": "id_posts_hcyoa565h",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-28T10:37:02.237Z",
-            "updated_at": "2026-07-28T10:37:02.237Z",
+            "created_at": "2026-07-29T17:52:03.071Z",
+            "updated_at": "2026-07-29T17:52:03.071Z",
             "title": "Past Scheduled Post",
             "content": "Should trigger right now!",
             "hashtags": "",
@@ -2649,23 +3018,23 @@
       ]
     },
     {
-      "id": "id_posts_xtk03r3rd",
+      "id": "id_posts_6pj2yogyd",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.010Z",
-      "updated_at": "2026-07-29T06:25:53.010Z",
+      "created_at": "2026-07-29T17:52:26.781Z",
+      "updated_at": "2026-07-29T17:52:26.781Z",
       "title": "Test Post Draft",
       "content": "This is a test post content",
       "hashtags": "",
       "mentions": "",
       "link": "",
-      "mediaUrls": [],
+      "media_urls": [],
       "status": "Draft"
     },
     {
-      "id": "id_posts_6vdra6krz",
+      "id": "id_posts_d6mj8hh9n",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.018Z",
-      "updated_at": "2026-07-29T06:25:53.020Z",
+      "created_at": "2026-07-29T17:52:26.795Z",
+      "updated_at": "2026-07-29T17:52:26.797Z",
       "title": "Instant Publish Test",
       "content": "Publishing immediately to LinkedIn!",
       "hashtags": "",
@@ -2676,12 +3045,12 @@
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-29T06:25:53.018Z",
+          "updated_at": "2026-07-29T17:52:26.795Z",
           "payload": {
-            "id": "id_posts_6vdra6krz",
+            "id": "id_posts_d6mj8hh9n",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-29T06:25:53.018Z",
-            "updated_at": "2026-07-29T06:25:53.018Z",
+            "created_at": "2026-07-29T17:52:26.795Z",
+            "updated_at": "2026-07-29T17:52:26.795Z",
             "title": "Instant Publish Test",
             "content": "Publishing immediately to LinkedIn!",
             "hashtags": "",
@@ -2694,10 +3063,10 @@
       ]
     },
     {
-      "id": "id_posts_dfnueaoke",
+      "id": "id_posts_f1p8yd9l0",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.031Z",
-      "updated_at": "2026-07-29T06:25:53.031Z",
+      "created_at": "2026-07-29T17:52:26.811Z",
+      "updated_at": "2026-07-29T17:52:26.811Z",
       "title": "Scheduled Test Post",
       "content": "This post is scheduled for tomorrow",
       "hashtags": "",
@@ -2707,10 +3076,10 @@
       "status": "Scheduled"
     },
     {
-      "id": "id_posts_wr3eh2yju",
+      "id": "id_posts_thg3fj4uj",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.042Z",
-      "updated_at": "2026-07-29T06:25:53.061Z",
+      "created_at": "2026-07-29T17:52:26.828Z",
+      "updated_at": "2026-07-29T17:52:26.844Z",
       "title": "Past Scheduled Post",
       "content": "Should trigger right now!",
       "hashtags": "",
@@ -2721,12 +3090,102 @@
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-29T06:25:53.042Z",
+          "updated_at": "2026-07-29T17:52:26.828Z",
           "payload": {
-            "id": "id_posts_wr3eh2yju",
+            "id": "id_posts_thg3fj4uj",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-29T06:25:53.042Z",
-            "updated_at": "2026-07-29T06:25:53.042Z",
+            "created_at": "2026-07-29T17:52:26.828Z",
+            "updated_at": "2026-07-29T17:52:26.828Z",
+            "title": "Past Scheduled Post",
+            "content": "Should trigger right now!",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Scheduled"
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_posts_jfg6gllf7",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:53:10.452Z",
+      "updated_at": "2026-07-29T17:53:10.452Z",
+      "title": "Test Post Draft",
+      "content": "This is a test post content",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "media_urls": [],
+      "status": "Draft"
+    },
+    {
+      "id": "id_posts_v458dnlvp",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:53:10.463Z",
+      "updated_at": "2026-07-29T17:53:10.466Z",
+      "title": "Instant Publish Test",
+      "content": "Publishing immediately to LinkedIn!",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T17:53:10.463Z",
+          "payload": {
+            "id": "id_posts_v458dnlvp",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:53:10.463Z",
+            "updated_at": "2026-07-29T17:53:10.463Z",
+            "title": "Instant Publish Test",
+            "content": "Publishing immediately to LinkedIn!",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Publishing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_posts_hdy117kj2",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:53:10.478Z",
+      "updated_at": "2026-07-29T17:53:10.478Z",
+      "title": "Scheduled Test Post",
+      "content": "This post is scheduled for tomorrow",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Scheduled"
+    },
+    {
+      "id": "id_posts_071upwcj0",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:53:10.493Z",
+      "updated_at": "2026-07-29T17:53:10.507Z",
+      "title": "Past Scheduled Post",
+      "content": "Should trigger right now!",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T17:53:10.493Z",
+          "payload": {
+            "id": "id_posts_071upwcj0",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:53:10.493Z",
+            "updated_at": "2026-07-29T17:53:10.493Z",
             "title": "Past Scheduled Post",
             "content": "Should trigger right now!",
             "hashtags": "",
@@ -2745,78 +3204,38 @@
       "user_id": "usr_fiverr_pro_001",
       "post_id": "post_002",
       "provider": "linkedin",
-      "scheduled_time": "2026-07-29T04:36:51.966Z",
+      "scheduled_time": "2026-07-30T11:43:31.901Z",
       "timezone": "UTC",
-      "status": "Failed",
+      "status": "Scheduled",
       "retry_count": 0,
       "published_at": null,
-      "error_message": "Post or connected social account details not found",
-      "created_at": "2026-07-28T09:36:51.966Z",
-      "updated_at": "2026-07-29T06:25:53.049Z",
-      "versions": [
-        {
-          "version": 1,
-          "updated_at": "2026-07-28T09:36:51.966Z",
-          "payload": {
-            "id": "sched_001",
-            "user_id": "usr_fiverr_pro_001",
-            "post_id": "post_002",
-            "provider": "linkedin",
-            "scheduled_time": "2026-07-29T04:36:51.966Z",
-            "timezone": "UTC",
-            "status": "Scheduled",
-            "retry_count": 0,
-            "published_at": null,
-            "error_message": null,
-            "created_at": "2026-07-28T09:36:51.966Z",
-            "updated_at": "2026-07-28T09:36:51.966Z"
-          }
-        }
-      ]
+      "error_message": null,
+      "created_at": "2026-07-29T16:43:31.901Z",
+      "updated_at": "2026-07-29T16:43:31.901Z"
     },
     {
       "id": "sched_002",
       "user_id": "usr_fiverr_pro_001",
       "post_id": "post_002",
       "provider": "mastodon",
-      "scheduled_time": "2026-07-29T04:36:51.966Z",
+      "scheduled_time": "2026-07-30T11:43:31.901Z",
       "timezone": "UTC",
-      "status": "Failed",
+      "status": "Scheduled",
       "retry_count": 0,
       "published_at": null,
-      "error_message": "Post or connected social account details not found",
-      "created_at": "2026-07-28T09:36:51.966Z",
-      "updated_at": "2026-07-29T06:25:53.053Z",
-      "versions": [
-        {
-          "version": 1,
-          "updated_at": "2026-07-28T09:36:51.966Z",
-          "payload": {
-            "id": "sched_002",
-            "user_id": "usr_fiverr_pro_001",
-            "post_id": "post_002",
-            "provider": "mastodon",
-            "scheduled_time": "2026-07-29T04:36:51.966Z",
-            "timezone": "UTC",
-            "status": "Scheduled",
-            "retry_count": 0,
-            "published_at": null,
-            "error_message": null,
-            "created_at": "2026-07-28T09:36:51.966Z",
-            "updated_at": "2026-07-28T09:36:51.966Z"
-          }
-        }
-      ]
+      "error_message": null,
+      "created_at": "2026-07-29T16:43:31.901Z",
+      "updated_at": "2026-07-29T16:43:31.901Z"
     },
     {
-      "id": "id_scheduled_posts_z4qhwndq2",
+      "id": "id_scheduled_posts_51o8mvm5o",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.005Z",
-      "updated_at": "2026-07-28T10:36:52.005Z",
-      "post_id": "id_posts_b69wx8qmm",
+      "created_at": "2026-07-29T17:43:31.932Z",
+      "updated_at": "2026-07-29T17:43:31.932Z",
+      "post_id": "id_posts_1x6rrov53",
       "provider": "mastodon",
       "social_account_id": "acc_ma_001",
-      "scheduled_time": "2026-07-29T10:36:52.001Z",
+      "scheduled_time": "2026-07-30T17:43:31.928Z",
       "timezone": "UTC",
       "status": "Scheduled",
       "retry_count": 0,
@@ -2824,32 +3243,32 @@
       "error_message": null
     },
     {
-      "id": "id_scheduled_posts_xukaxz615",
+      "id": "id_scheduled_posts_jyli3gtbp",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.017Z",
-      "updated_at": "2026-07-28T10:36:52.023Z",
-      "post_id": "id_posts_v662vqhcm",
+      "created_at": "2026-07-29T17:43:31.944Z",
+      "updated_at": "2026-07-29T17:43:31.951Z",
+      "post_id": "id_posts_x0p7ve600",
       "provider": "linkedin",
       "social_account_id": "acc_li_001",
-      "scheduled_time": "2026-07-28T10:36:47.014Z",
+      "scheduled_time": "2026-07-29T17:43:26.938Z",
       "timezone": "UTC",
       "status": "Published",
       "retry_count": 0,
-      "published_at": "2026-07-28T10:36:52.022Z",
+      "published_at": "2026-07-29T17:43:31.950Z",
       "error_message": null,
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-28T10:36:52.017Z",
+          "updated_at": "2026-07-29T17:43:31.944Z",
           "payload": {
-            "id": "id_scheduled_posts_xukaxz615",
+            "id": "id_scheduled_posts_jyli3gtbp",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-28T10:36:52.017Z",
-            "updated_at": "2026-07-28T10:36:52.017Z",
-            "post_id": "id_posts_v662vqhcm",
+            "created_at": "2026-07-29T17:43:31.944Z",
+            "updated_at": "2026-07-29T17:43:31.944Z",
+            "post_id": "id_posts_x0p7ve600",
             "provider": "linkedin",
             "social_account_id": "acc_li_001",
-            "scheduled_time": "2026-07-28T10:36:47.014Z",
+            "scheduled_time": "2026-07-29T17:43:26.938Z",
             "timezone": "UTC",
             "status": "Scheduled",
             "retry_count": 0,
@@ -2859,16 +3278,16 @@
         },
         {
           "version": 2,
-          "updated_at": "2026-07-28T10:36:52.022Z",
+          "updated_at": "2026-07-29T17:43:31.949Z",
           "payload": {
-            "id": "id_scheduled_posts_xukaxz615",
+            "id": "id_scheduled_posts_jyli3gtbp",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-28T10:36:52.017Z",
-            "updated_at": "2026-07-28T10:36:52.022Z",
-            "post_id": "id_posts_v662vqhcm",
+            "created_at": "2026-07-29T17:43:31.944Z",
+            "updated_at": "2026-07-29T17:43:31.949Z",
+            "post_id": "id_posts_x0p7ve600",
             "provider": "linkedin",
             "social_account_id": "acc_li_001",
-            "scheduled_time": "2026-07-28T10:36:47.014Z",
+            "scheduled_time": "2026-07-29T17:43:26.938Z",
             "timezone": "UTC",
             "status": "Publishing",
             "retry_count": 0,
@@ -2879,14 +3298,14 @@
       ]
     },
     {
-      "id": "id_scheduled_posts_scw8hpg6x",
+      "id": "id_scheduled_posts_kbzu0rqm2",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.227Z",
-      "updated_at": "2026-07-28T10:37:02.227Z",
-      "post_id": "id_posts_1tuzwx4a0",
+      "created_at": "2026-07-29T17:52:03.062Z",
+      "updated_at": "2026-07-29T17:52:03.062Z",
+      "post_id": "id_posts_sjnrs9kbb",
       "provider": "mastodon",
       "social_account_id": "acc_ma_001",
-      "scheduled_time": "2026-07-29T10:37:02.223Z",
+      "scheduled_time": "2026-07-30T17:52:03.052Z",
       "timezone": "UTC",
       "status": "Scheduled",
       "retry_count": 0,
@@ -2894,32 +3313,32 @@
       "error_message": null
     },
     {
-      "id": "id_scheduled_posts_zc14wiihq",
+      "id": "id_scheduled_posts_x9ke1pdyq",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.239Z",
-      "updated_at": "2026-07-28T10:37:02.246Z",
-      "post_id": "id_posts_l8da3xt18",
+      "created_at": "2026-07-29T17:52:03.074Z",
+      "updated_at": "2026-07-29T17:52:03.081Z",
+      "post_id": "id_posts_hcyoa565h",
       "provider": "linkedin",
       "social_account_id": "acc_li_001",
-      "scheduled_time": "2026-07-28T10:36:57.236Z",
+      "scheduled_time": "2026-07-29T17:51:58.069Z",
       "timezone": "UTC",
       "status": "Published",
       "retry_count": 0,
-      "published_at": "2026-07-28T10:37:02.245Z",
+      "published_at": "2026-07-29T17:52:03.080Z",
       "error_message": null,
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-28T10:37:02.239Z",
+          "updated_at": "2026-07-29T17:52:03.074Z",
           "payload": {
-            "id": "id_scheduled_posts_zc14wiihq",
+            "id": "id_scheduled_posts_x9ke1pdyq",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-28T10:37:02.239Z",
-            "updated_at": "2026-07-28T10:37:02.239Z",
-            "post_id": "id_posts_l8da3xt18",
+            "created_at": "2026-07-29T17:52:03.074Z",
+            "updated_at": "2026-07-29T17:52:03.074Z",
+            "post_id": "id_posts_hcyoa565h",
             "provider": "linkedin",
             "social_account_id": "acc_li_001",
-            "scheduled_time": "2026-07-28T10:36:57.236Z",
+            "scheduled_time": "2026-07-29T17:51:58.069Z",
             "timezone": "UTC",
             "status": "Scheduled",
             "retry_count": 0,
@@ -2929,16 +3348,16 @@
         },
         {
           "version": 2,
-          "updated_at": "2026-07-28T10:37:02.244Z",
+          "updated_at": "2026-07-29T17:52:03.080Z",
           "payload": {
-            "id": "id_scheduled_posts_zc14wiihq",
+            "id": "id_scheduled_posts_x9ke1pdyq",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-28T10:37:02.239Z",
-            "updated_at": "2026-07-28T10:37:02.244Z",
-            "post_id": "id_posts_l8da3xt18",
+            "created_at": "2026-07-29T17:52:03.074Z",
+            "updated_at": "2026-07-29T17:52:03.080Z",
+            "post_id": "id_posts_hcyoa565h",
             "provider": "linkedin",
             "social_account_id": "acc_li_001",
-            "scheduled_time": "2026-07-28T10:36:57.236Z",
+            "scheduled_time": "2026-07-29T17:51:58.069Z",
             "timezone": "UTC",
             "status": "Publishing",
             "retry_count": 0,
@@ -2949,14 +3368,14 @@
       ]
     },
     {
-      "id": "id_scheduled_posts_t0fgs65on",
+      "id": "id_scheduled_posts_x125uj918",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.033Z",
-      "updated_at": "2026-07-29T06:25:53.033Z",
-      "post_id": "id_posts_dfnueaoke",
+      "created_at": "2026-07-29T17:52:26.814Z",
+      "updated_at": "2026-07-29T17:52:26.814Z",
+      "post_id": "id_posts_f1p8yd9l0",
       "provider": "mastodon",
       "social_account_id": "acc_ma_001",
-      "scheduled_time": "2026-07-30T06:25:53.029Z",
+      "scheduled_time": "2026-07-30T17:52:26.806Z",
       "timezone": "UTC",
       "status": "Scheduled",
       "retry_count": 0,
@@ -2964,32 +3383,32 @@
       "error_message": null
     },
     {
-      "id": "id_scheduled_posts_89lgrzf12",
+      "id": "id_scheduled_posts_alu5tvap8",
       "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.044Z",
-      "updated_at": "2026-07-29T06:25:53.059Z",
-      "post_id": "id_posts_wr3eh2yju",
+      "created_at": "2026-07-29T17:52:26.832Z",
+      "updated_at": "2026-07-29T17:52:26.840Z",
+      "post_id": "id_posts_thg3fj4uj",
       "provider": "linkedin",
       "social_account_id": "acc_li_001",
-      "scheduled_time": "2026-07-29T06:25:48.040Z",
+      "scheduled_time": "2026-07-29T17:52:21.822Z",
       "timezone": "UTC",
       "status": "Published",
       "retry_count": 0,
-      "published_at": "2026-07-29T06:25:53.058Z",
+      "published_at": "2026-07-29T17:52:26.839Z",
       "error_message": null,
       "versions": [
         {
           "version": 1,
-          "updated_at": "2026-07-29T06:25:53.044Z",
+          "updated_at": "2026-07-29T17:52:26.832Z",
           "payload": {
-            "id": "id_scheduled_posts_89lgrzf12",
+            "id": "id_scheduled_posts_alu5tvap8",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-29T06:25:53.044Z",
-            "updated_at": "2026-07-29T06:25:53.044Z",
-            "post_id": "id_posts_wr3eh2yju",
+            "created_at": "2026-07-29T17:52:26.832Z",
+            "updated_at": "2026-07-29T17:52:26.832Z",
+            "post_id": "id_posts_thg3fj4uj",
             "provider": "linkedin",
             "social_account_id": "acc_li_001",
-            "scheduled_time": "2026-07-29T06:25:48.040Z",
+            "scheduled_time": "2026-07-29T17:52:21.822Z",
             "timezone": "UTC",
             "status": "Scheduled",
             "retry_count": 0,
@@ -2999,16 +3418,86 @@
         },
         {
           "version": 2,
-          "updated_at": "2026-07-29T06:25:53.057Z",
+          "updated_at": "2026-07-29T17:52:26.839Z",
           "payload": {
-            "id": "id_scheduled_posts_89lgrzf12",
+            "id": "id_scheduled_posts_alu5tvap8",
             "user_id": "usr_fiverr_pro_001",
-            "created_at": "2026-07-29T06:25:53.044Z",
-            "updated_at": "2026-07-29T06:25:53.057Z",
-            "post_id": "id_posts_wr3eh2yju",
+            "created_at": "2026-07-29T17:52:26.832Z",
+            "updated_at": "2026-07-29T17:52:26.839Z",
+            "post_id": "id_posts_thg3fj4uj",
             "provider": "linkedin",
             "social_account_id": "acc_li_001",
-            "scheduled_time": "2026-07-29T06:25:48.040Z",
+            "scheduled_time": "2026-07-29T17:52:21.822Z",
+            "timezone": "UTC",
+            "status": "Publishing",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_scheduled_posts_ylugentm6",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:53:10.481Z",
+      "updated_at": "2026-07-29T17:53:10.481Z",
+      "post_id": "id_posts_hdy117kj2",
+      "provider": "mastodon",
+      "social_account_id": "acc_ma_001",
+      "scheduled_time": "2026-07-30T17:53:10.475Z",
+      "timezone": "UTC",
+      "status": "Scheduled",
+      "retry_count": 0,
+      "published_at": null,
+      "error_message": null
+    },
+    {
+      "id": "id_scheduled_posts_27v885x34",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-29T17:53:10.496Z",
+      "updated_at": "2026-07-29T17:53:10.504Z",
+      "post_id": "id_posts_071upwcj0",
+      "provider": "linkedin",
+      "social_account_id": "acc_li_001",
+      "scheduled_time": "2026-07-29T17:53:05.490Z",
+      "timezone": "UTC",
+      "status": "Published",
+      "retry_count": 0,
+      "published_at": "2026-07-29T17:53:10.503Z",
+      "error_message": null,
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T17:53:10.496Z",
+          "payload": {
+            "id": "id_scheduled_posts_27v885x34",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:53:10.496Z",
+            "updated_at": "2026-07-29T17:53:10.496Z",
+            "post_id": "id_posts_071upwcj0",
+            "provider": "linkedin",
+            "social_account_id": "acc_li_001",
+            "scheduled_time": "2026-07-29T17:53:05.490Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-29T17:53:10.502Z",
+          "payload": {
+            "id": "id_scheduled_posts_27v885x34",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:53:10.496Z",
+            "updated_at": "2026-07-29T17:53:10.502Z",
+            "post_id": "id_posts_071upwcj0",
+            "provider": "linkedin",
+            "social_account_id": "acc_li_001",
+            "scheduled_time": "2026-07-29T17:53:05.490Z",
             "timezone": "UTC",
             "status": "Publishing",
             "retry_count": 0,
@@ -3027,7 +3516,7 @@
       "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
       "filename": "workspace_setup.jpg",
       "size": 245310,
-      "created_at": "2026-07-25T10:36:51.966Z"
+      "created_at": "2026-07-26T17:43:31.901Z"
     },
     {
       "id": "med_002",
@@ -3036,7 +3525,7 @@
       "url": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80",
       "filename": "analytics_charts.jpg",
       "size": 182400,
-      "created_at": "2026-07-26T10:36:51.966Z"
+      "created_at": "2026-07-27T17:43:31.901Z"
     },
     {
       "id": "med_003",
@@ -3045,7 +3534,7 @@
       "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
       "filename": "freelance_strategy.pdf",
       "size": 104523,
-      "created_at": "2026-07-27T10:36:51.966Z"
+      "created_at": "2026-07-28T17:43:31.901Z"
     }
   ],
   "campaigns": [
@@ -3055,13 +3544,13 @@
       "name": "Launch Promo Q3",
       "description": "Promotional postings and outreach campaign for GigPilot Social Hub release.",
       "color": "#10B981",
-      "start_date": "2026-07-23",
-      "end_date": "2026-08-27",
+      "start_date": "2026-07-24",
+      "end_date": "2026-08-28",
       "budget": 500,
       "goal": "Get 1,000 trial sign-ups",
       "status": "Active",
-      "created_at": "2026-07-23T10:36:51.966Z",
-      "updated_at": "2026-07-23T10:36:51.966Z"
+      "created_at": "2026-07-24T17:43:31.901Z",
+      "updated_at": "2026-07-24T17:43:31.901Z"
     },
     {
       "id": "camp_002",
@@ -3069,13 +3558,13 @@
       "name": "Fiverr Success Tips",
       "description": "Weekly tutorials sharing gig setup tips and branding guides.",
       "color": "#8B5CF6",
-      "start_date": "2026-07-28",
-      "end_date": "2026-09-26",
+      "start_date": "2026-07-29",
+      "end_date": "2026-09-27",
       "budget": 200,
       "goal": "Increase profile engagement",
       "status": "Active",
-      "created_at": "2026-07-28T10:36:51.966Z",
-      "updated_at": "2026-07-28T10:36:51.966Z"
+      "created_at": "2026-07-29T17:43:31.901Z",
+      "updated_at": "2026-07-29T17:43:31.901Z"
     }
   ],
   "social_analytics": [
@@ -3090,7 +3579,7 @@
       "likes": 307,
       "shares": 61,
       "comments": 46,
-      "date": "2026-06-29"
+      "date": "2026-06-30"
     },
     {
       "id": "soc_an_facebook_29",
@@ -3103,7 +3592,7 @@
       "likes": 164,
       "shares": 32,
       "comments": 24,
-      "date": "2026-06-29"
+      "date": "2026-06-30"
     },
     {
       "id": "soc_an_instagram_29",
@@ -3116,7 +3605,7 @@
       "likes": 164,
       "shares": 32,
       "comments": 24,
-      "date": "2026-06-29"
+      "date": "2026-06-30"
     },
     {
       "id": "soc_an_bluesky_29",
@@ -3129,7 +3618,7 @@
       "likes": 164,
       "shares": 32,
       "comments": 24,
-      "date": "2026-06-29"
+      "date": "2026-06-30"
     },
     {
       "id": "soc_an_mastodon_29",
@@ -3142,7 +3631,7 @@
       "likes": 307,
       "shares": 61,
       "comments": 46,
-      "date": "2026-06-29"
+      "date": "2026-06-30"
     },
     {
       "id": "soc_an_dev.to_29",
@@ -3155,7 +3644,7 @@
       "likes": 307,
       "shares": 61,
       "comments": 46,
-      "date": "2026-06-29"
+      "date": "2026-06-30"
     },
     {
       "id": "soc_an_linkedin_28",
@@ -3168,7 +3657,7 @@
       "likes": 315,
       "shares": 63,
       "comments": 47,
-      "date": "2026-06-30"
+      "date": "2026-07-01"
     },
     {
       "id": "soc_an_facebook_28",
@@ -3181,7 +3670,7 @@
       "likes": 168,
       "shares": 33,
       "comments": 25,
-      "date": "2026-06-30"
+      "date": "2026-07-01"
     },
     {
       "id": "soc_an_instagram_28",
@@ -3194,7 +3683,7 @@
       "likes": 168,
       "shares": 33,
       "comments": 25,
-      "date": "2026-06-30"
+      "date": "2026-07-01"
     },
     {
       "id": "soc_an_bluesky_28",
@@ -3207,7 +3696,7 @@
       "likes": 168,
       "shares": 33,
       "comments": 25,
-      "date": "2026-06-30"
+      "date": "2026-07-01"
     },
     {
       "id": "soc_an_mastodon_28",
@@ -3220,7 +3709,7 @@
       "likes": 315,
       "shares": 63,
       "comments": 47,
-      "date": "2026-06-30"
+      "date": "2026-07-01"
     },
     {
       "id": "soc_an_dev.to_28",
@@ -3233,7 +3722,7 @@
       "likes": 315,
       "shares": 63,
       "comments": 47,
-      "date": "2026-06-30"
+      "date": "2026-07-01"
     },
     {
       "id": "soc_an_linkedin_27",
@@ -3246,7 +3735,7 @@
       "likes": 322,
       "shares": 64,
       "comments": 48,
-      "date": "2026-07-01"
+      "date": "2026-07-02"
     },
     {
       "id": "soc_an_facebook_27",
@@ -3259,7 +3748,7 @@
       "likes": 172,
       "shares": 34,
       "comments": 25,
-      "date": "2026-07-01"
+      "date": "2026-07-02"
     },
     {
       "id": "soc_an_instagram_27",
@@ -3272,7 +3761,7 @@
       "likes": 172,
       "shares": 34,
       "comments": 25,
-      "date": "2026-07-01"
+      "date": "2026-07-02"
     },
     {
       "id": "soc_an_bluesky_27",
@@ -3285,7 +3774,7 @@
       "likes": 172,
       "shares": 34,
       "comments": 25,
-      "date": "2026-07-01"
+      "date": "2026-07-02"
     },
     {
       "id": "soc_an_mastodon_27",
@@ -3298,7 +3787,7 @@
       "likes": 322,
       "shares": 64,
       "comments": 48,
-      "date": "2026-07-01"
+      "date": "2026-07-02"
     },
     {
       "id": "soc_an_dev.to_27",
@@ -3311,7 +3800,7 @@
       "likes": 322,
       "shares": 64,
       "comments": 48,
-      "date": "2026-07-01"
+      "date": "2026-07-02"
     },
     {
       "id": "soc_an_linkedin_26",
@@ -3324,7 +3813,7 @@
       "likes": 330,
       "shares": 66,
       "comments": 49,
-      "date": "2026-07-02"
+      "date": "2026-07-03"
     },
     {
       "id": "soc_an_facebook_26",
@@ -3337,7 +3826,7 @@
       "likes": 176,
       "shares": 35,
       "comments": 26,
-      "date": "2026-07-02"
+      "date": "2026-07-03"
     },
     {
       "id": "soc_an_instagram_26",
@@ -3350,7 +3839,7 @@
       "likes": 176,
       "shares": 35,
       "comments": 26,
-      "date": "2026-07-02"
+      "date": "2026-07-03"
     },
     {
       "id": "soc_an_bluesky_26",
@@ -3363,7 +3852,7 @@
       "likes": 176,
       "shares": 35,
       "comments": 26,
-      "date": "2026-07-02"
+      "date": "2026-07-03"
     },
     {
       "id": "soc_an_mastodon_26",
@@ -3376,7 +3865,7 @@
       "likes": 330,
       "shares": 66,
       "comments": 49,
-      "date": "2026-07-02"
+      "date": "2026-07-03"
     },
     {
       "id": "soc_an_dev.to_26",
@@ -3389,7 +3878,7 @@
       "likes": 330,
       "shares": 66,
       "comments": 49,
-      "date": "2026-07-02"
+      "date": "2026-07-03"
     },
     {
       "id": "soc_an_linkedin_25",
@@ -3402,7 +3891,7 @@
       "likes": 337,
       "shares": 67,
       "comments": 50,
-      "date": "2026-07-03"
+      "date": "2026-07-04"
     },
     {
       "id": "soc_an_facebook_25",
@@ -3415,7 +3904,7 @@
       "likes": 180,
       "shares": 36,
       "comments": 27,
-      "date": "2026-07-03"
+      "date": "2026-07-04"
     },
     {
       "id": "soc_an_instagram_25",
@@ -3428,7 +3917,7 @@
       "likes": 180,
       "shares": 36,
       "comments": 27,
-      "date": "2026-07-03"
+      "date": "2026-07-04"
     },
     {
       "id": "soc_an_bluesky_25",
@@ -3441,7 +3930,7 @@
       "likes": 180,
       "shares": 36,
       "comments": 27,
-      "date": "2026-07-03"
+      "date": "2026-07-04"
     },
     {
       "id": "soc_an_mastodon_25",
@@ -3454,7 +3943,7 @@
       "likes": 337,
       "shares": 67,
       "comments": 50,
-      "date": "2026-07-03"
+      "date": "2026-07-04"
     },
     {
       "id": "soc_an_dev.to_25",
@@ -3467,7 +3956,7 @@
       "likes": 337,
       "shares": 67,
       "comments": 50,
-      "date": "2026-07-03"
+      "date": "2026-07-04"
     },
     {
       "id": "soc_an_linkedin_24",
@@ -3480,7 +3969,7 @@
       "likes": 345,
       "shares": 69,
       "comments": 51,
-      "date": "2026-07-04"
+      "date": "2026-07-05"
     },
     {
       "id": "soc_an_facebook_24",
@@ -3493,7 +3982,7 @@
       "likes": 184,
       "shares": 36,
       "comments": 27,
-      "date": "2026-07-04"
+      "date": "2026-07-05"
     },
     {
       "id": "soc_an_instagram_24",
@@ -3506,7 +3995,7 @@
       "likes": 184,
       "shares": 36,
       "comments": 27,
-      "date": "2026-07-04"
+      "date": "2026-07-05"
     },
     {
       "id": "soc_an_bluesky_24",
@@ -3519,7 +4008,7 @@
       "likes": 184,
       "shares": 36,
       "comments": 27,
-      "date": "2026-07-04"
+      "date": "2026-07-05"
     },
     {
       "id": "soc_an_mastodon_24",
@@ -3532,7 +4021,7 @@
       "likes": 345,
       "shares": 69,
       "comments": 51,
-      "date": "2026-07-04"
+      "date": "2026-07-05"
     },
     {
       "id": "soc_an_dev.to_24",
@@ -3545,7 +4034,7 @@
       "likes": 345,
       "shares": 69,
       "comments": 51,
-      "date": "2026-07-04"
+      "date": "2026-07-05"
     },
     {
       "id": "soc_an_linkedin_23",
@@ -3558,7 +4047,7 @@
       "likes": 352,
       "shares": 70,
       "comments": 52,
-      "date": "2026-07-05"
+      "date": "2026-07-06"
     },
     {
       "id": "soc_an_facebook_23",
@@ -3571,7 +4060,7 @@
       "likes": 188,
       "shares": 37,
       "comments": 28,
-      "date": "2026-07-05"
+      "date": "2026-07-06"
     },
     {
       "id": "soc_an_instagram_23",
@@ -3584,7 +4073,7 @@
       "likes": 188,
       "shares": 37,
       "comments": 28,
-      "date": "2026-07-05"
+      "date": "2026-07-06"
     },
     {
       "id": "soc_an_bluesky_23",
@@ -3597,7 +4086,7 @@
       "likes": 188,
       "shares": 37,
       "comments": 28,
-      "date": "2026-07-05"
+      "date": "2026-07-06"
     },
     {
       "id": "soc_an_mastodon_23",
@@ -3610,7 +4099,7 @@
       "likes": 352,
       "shares": 70,
       "comments": 52,
-      "date": "2026-07-05"
+      "date": "2026-07-06"
     },
     {
       "id": "soc_an_dev.to_23",
@@ -3623,7 +4112,7 @@
       "likes": 352,
       "shares": 70,
       "comments": 52,
-      "date": "2026-07-05"
+      "date": "2026-07-06"
     },
     {
       "id": "soc_an_linkedin_22",
@@ -3636,7 +4125,7 @@
       "likes": 360,
       "shares": 72,
       "comments": 54,
-      "date": "2026-07-06"
+      "date": "2026-07-07"
     },
     {
       "id": "soc_an_facebook_22",
@@ -3649,7 +4138,7 @@
       "likes": 192,
       "shares": 38,
       "comments": 28,
-      "date": "2026-07-06"
+      "date": "2026-07-07"
     },
     {
       "id": "soc_an_instagram_22",
@@ -3662,7 +4151,7 @@
       "likes": 192,
       "shares": 38,
       "comments": 28,
-      "date": "2026-07-06"
+      "date": "2026-07-07"
     },
     {
       "id": "soc_an_bluesky_22",
@@ -3675,7 +4164,7 @@
       "likes": 192,
       "shares": 38,
       "comments": 28,
-      "date": "2026-07-06"
+      "date": "2026-07-07"
     },
     {
       "id": "soc_an_mastodon_22",
@@ -3688,7 +4177,7 @@
       "likes": 360,
       "shares": 72,
       "comments": 54,
-      "date": "2026-07-06"
+      "date": "2026-07-07"
     },
     {
       "id": "soc_an_dev.to_22",
@@ -3701,7 +4190,7 @@
       "likes": 360,
       "shares": 72,
       "comments": 54,
-      "date": "2026-07-06"
+      "date": "2026-07-07"
     },
     {
       "id": "soc_an_linkedin_21",
@@ -3714,7 +4203,7 @@
       "likes": 367,
       "shares": 73,
       "comments": 55,
-      "date": "2026-07-07"
+      "date": "2026-07-08"
     },
     {
       "id": "soc_an_facebook_21",
@@ -3727,7 +4216,7 @@
       "likes": 196,
       "shares": 39,
       "comments": 29,
-      "date": "2026-07-07"
+      "date": "2026-07-08"
     },
     {
       "id": "soc_an_instagram_21",
@@ -3740,7 +4229,7 @@
       "likes": 196,
       "shares": 39,
       "comments": 29,
-      "date": "2026-07-07"
+      "date": "2026-07-08"
     },
     {
       "id": "soc_an_bluesky_21",
@@ -3753,7 +4242,7 @@
       "likes": 196,
       "shares": 39,
       "comments": 29,
-      "date": "2026-07-07"
+      "date": "2026-07-08"
     },
     {
       "id": "soc_an_mastodon_21",
@@ -3766,7 +4255,7 @@
       "likes": 367,
       "shares": 73,
       "comments": 55,
-      "date": "2026-07-07"
+      "date": "2026-07-08"
     },
     {
       "id": "soc_an_dev.to_21",
@@ -3779,7 +4268,7 @@
       "likes": 367,
       "shares": 73,
       "comments": 55,
-      "date": "2026-07-07"
+      "date": "2026-07-08"
     },
     {
       "id": "soc_an_linkedin_20",
@@ -3792,7 +4281,7 @@
       "likes": 375,
       "shares": 75,
       "comments": 56,
-      "date": "2026-07-08"
+      "date": "2026-07-09"
     },
     {
       "id": "soc_an_facebook_20",
@@ -3805,7 +4294,7 @@
       "likes": 200,
       "shares": 40,
       "comments": 30,
-      "date": "2026-07-08"
+      "date": "2026-07-09"
     },
     {
       "id": "soc_an_instagram_20",
@@ -3818,7 +4307,7 @@
       "likes": 200,
       "shares": 40,
       "comments": 30,
-      "date": "2026-07-08"
+      "date": "2026-07-09"
     },
     {
       "id": "soc_an_bluesky_20",
@@ -3831,7 +4320,7 @@
       "likes": 200,
       "shares": 40,
       "comments": 30,
-      "date": "2026-07-08"
+      "date": "2026-07-09"
     },
     {
       "id": "soc_an_mastodon_20",
@@ -3844,7 +4333,7 @@
       "likes": 375,
       "shares": 75,
       "comments": 56,
-      "date": "2026-07-08"
+      "date": "2026-07-09"
     },
     {
       "id": "soc_an_dev.to_20",
@@ -3857,7 +4346,7 @@
       "likes": 375,
       "shares": 75,
       "comments": 56,
-      "date": "2026-07-08"
+      "date": "2026-07-09"
     },
     {
       "id": "soc_an_linkedin_19",
@@ -3870,7 +4359,7 @@
       "likes": 382,
       "shares": 76,
       "comments": 57,
-      "date": "2026-07-09"
+      "date": "2026-07-10"
     },
     {
       "id": "soc_an_facebook_19",
@@ -3883,7 +4372,7 @@
       "likes": 204,
       "shares": 40,
       "comments": 30,
-      "date": "2026-07-09"
+      "date": "2026-07-10"
     },
     {
       "id": "soc_an_instagram_19",
@@ -3896,7 +4385,7 @@
       "likes": 204,
       "shares": 40,
       "comments": 30,
-      "date": "2026-07-09"
+      "date": "2026-07-10"
     },
     {
       "id": "soc_an_bluesky_19",
@@ -3909,7 +4398,7 @@
       "likes": 204,
       "shares": 40,
       "comments": 30,
-      "date": "2026-07-09"
+      "date": "2026-07-10"
     },
     {
       "id": "soc_an_mastodon_19",
@@ -3922,7 +4411,7 @@
       "likes": 382,
       "shares": 76,
       "comments": 57,
-      "date": "2026-07-09"
+      "date": "2026-07-10"
     },
     {
       "id": "soc_an_dev.to_19",
@@ -3935,7 +4424,7 @@
       "likes": 382,
       "shares": 76,
       "comments": 57,
-      "date": "2026-07-09"
+      "date": "2026-07-10"
     },
     {
       "id": "soc_an_linkedin_18",
@@ -3948,7 +4437,7 @@
       "likes": 390,
       "shares": 78,
       "comments": 58,
-      "date": "2026-07-10"
+      "date": "2026-07-11"
     },
     {
       "id": "soc_an_facebook_18",
@@ -3961,7 +4450,7 @@
       "likes": 208,
       "shares": 41,
       "comments": 31,
-      "date": "2026-07-10"
+      "date": "2026-07-11"
     },
     {
       "id": "soc_an_instagram_18",
@@ -3974,7 +4463,7 @@
       "likes": 208,
       "shares": 41,
       "comments": 31,
-      "date": "2026-07-10"
+      "date": "2026-07-11"
     },
     {
       "id": "soc_an_bluesky_18",
@@ -3987,7 +4476,7 @@
       "likes": 208,
       "shares": 41,
       "comments": 31,
-      "date": "2026-07-10"
+      "date": "2026-07-11"
     },
     {
       "id": "soc_an_mastodon_18",
@@ -4000,7 +4489,7 @@
       "likes": 390,
       "shares": 78,
       "comments": 58,
-      "date": "2026-07-10"
+      "date": "2026-07-11"
     },
     {
       "id": "soc_an_dev.to_18",
@@ -4013,7 +4502,7 @@
       "likes": 390,
       "shares": 78,
       "comments": 58,
-      "date": "2026-07-10"
+      "date": "2026-07-11"
     },
     {
       "id": "soc_an_linkedin_17",
@@ -4026,7 +4515,7 @@
       "likes": 397,
       "shares": 79,
       "comments": 59,
-      "date": "2026-07-11"
+      "date": "2026-07-12"
     },
     {
       "id": "soc_an_facebook_17",
@@ -4039,7 +4528,7 @@
       "likes": 212,
       "shares": 42,
       "comments": 31,
-      "date": "2026-07-11"
+      "date": "2026-07-12"
     },
     {
       "id": "soc_an_instagram_17",
@@ -4052,7 +4541,7 @@
       "likes": 212,
       "shares": 42,
       "comments": 31,
-      "date": "2026-07-11"
+      "date": "2026-07-12"
     },
     {
       "id": "soc_an_bluesky_17",
@@ -4065,7 +4554,7 @@
       "likes": 212,
       "shares": 42,
       "comments": 31,
-      "date": "2026-07-11"
+      "date": "2026-07-12"
     },
     {
       "id": "soc_an_mastodon_17",
@@ -4078,7 +4567,7 @@
       "likes": 397,
       "shares": 79,
       "comments": 59,
-      "date": "2026-07-11"
+      "date": "2026-07-12"
     },
     {
       "id": "soc_an_dev.to_17",
@@ -4091,7 +4580,7 @@
       "likes": 397,
       "shares": 79,
       "comments": 59,
-      "date": "2026-07-11"
+      "date": "2026-07-12"
     },
     {
       "id": "soc_an_linkedin_16",
@@ -4104,7 +4593,7 @@
       "likes": 405,
       "shares": 81,
       "comments": 60,
-      "date": "2026-07-12"
+      "date": "2026-07-13"
     },
     {
       "id": "soc_an_facebook_16",
@@ -4117,7 +4606,7 @@
       "likes": 216,
       "shares": 43,
       "comments": 32,
-      "date": "2026-07-12"
+      "date": "2026-07-13"
     },
     {
       "id": "soc_an_instagram_16",
@@ -4130,7 +4619,7 @@
       "likes": 216,
       "shares": 43,
       "comments": 32,
-      "date": "2026-07-12"
+      "date": "2026-07-13"
     },
     {
       "id": "soc_an_bluesky_16",
@@ -4143,7 +4632,7 @@
       "likes": 216,
       "shares": 43,
       "comments": 32,
-      "date": "2026-07-12"
+      "date": "2026-07-13"
     },
     {
       "id": "soc_an_mastodon_16",
@@ -4156,7 +4645,7 @@
       "likes": 405,
       "shares": 81,
       "comments": 60,
-      "date": "2026-07-12"
+      "date": "2026-07-13"
     },
     {
       "id": "soc_an_dev.to_16",
@@ -4169,7 +4658,7 @@
       "likes": 405,
       "shares": 81,
       "comments": 60,
-      "date": "2026-07-12"
+      "date": "2026-07-13"
     },
     {
       "id": "soc_an_linkedin_15",
@@ -4182,7 +4671,7 @@
       "likes": 412,
       "shares": 82,
       "comments": 61,
-      "date": "2026-07-13"
+      "date": "2026-07-14"
     },
     {
       "id": "soc_an_facebook_15",
@@ -4195,7 +4684,7 @@
       "likes": 220,
       "shares": 44,
       "comments": 33,
-      "date": "2026-07-13"
+      "date": "2026-07-14"
     },
     {
       "id": "soc_an_instagram_15",
@@ -4208,7 +4697,7 @@
       "likes": 220,
       "shares": 44,
       "comments": 33,
-      "date": "2026-07-13"
+      "date": "2026-07-14"
     },
     {
       "id": "soc_an_bluesky_15",
@@ -4221,7 +4710,7 @@
       "likes": 220,
       "shares": 44,
       "comments": 33,
-      "date": "2026-07-13"
+      "date": "2026-07-14"
     },
     {
       "id": "soc_an_mastodon_15",
@@ -4234,7 +4723,7 @@
       "likes": 412,
       "shares": 82,
       "comments": 61,
-      "date": "2026-07-13"
+      "date": "2026-07-14"
     },
     {
       "id": "soc_an_dev.to_15",
@@ -4247,7 +4736,7 @@
       "likes": 412,
       "shares": 82,
       "comments": 61,
-      "date": "2026-07-13"
+      "date": "2026-07-14"
     },
     {
       "id": "soc_an_linkedin_14",
@@ -4260,7 +4749,7 @@
       "likes": 420,
       "shares": 84,
       "comments": 63,
-      "date": "2026-07-14"
+      "date": "2026-07-15"
     },
     {
       "id": "soc_an_facebook_14",
@@ -4273,7 +4762,7 @@
       "likes": 224,
       "shares": 44,
       "comments": 33,
-      "date": "2026-07-14"
+      "date": "2026-07-15"
     },
     {
       "id": "soc_an_instagram_14",
@@ -4286,7 +4775,7 @@
       "likes": 224,
       "shares": 44,
       "comments": 33,
-      "date": "2026-07-14"
+      "date": "2026-07-15"
     },
     {
       "id": "soc_an_bluesky_14",
@@ -4299,7 +4788,7 @@
       "likes": 224,
       "shares": 44,
       "comments": 33,
-      "date": "2026-07-14"
+      "date": "2026-07-15"
     },
     {
       "id": "soc_an_mastodon_14",
@@ -4312,7 +4801,7 @@
       "likes": 420,
       "shares": 84,
       "comments": 63,
-      "date": "2026-07-14"
+      "date": "2026-07-15"
     },
     {
       "id": "soc_an_dev.to_14",
@@ -4325,7 +4814,7 @@
       "likes": 420,
       "shares": 84,
       "comments": 63,
-      "date": "2026-07-14"
+      "date": "2026-07-15"
     },
     {
       "id": "soc_an_linkedin_13",
@@ -4338,7 +4827,7 @@
       "likes": 427,
       "shares": 85,
       "comments": 64,
-      "date": "2026-07-15"
+      "date": "2026-07-16"
     },
     {
       "id": "soc_an_facebook_13",
@@ -4351,7 +4840,7 @@
       "likes": 228,
       "shares": 45,
       "comments": 34,
-      "date": "2026-07-15"
+      "date": "2026-07-16"
     },
     {
       "id": "soc_an_instagram_13",
@@ -4364,7 +4853,7 @@
       "likes": 228,
       "shares": 45,
       "comments": 34,
-      "date": "2026-07-15"
+      "date": "2026-07-16"
     },
     {
       "id": "soc_an_bluesky_13",
@@ -4377,7 +4866,7 @@
       "likes": 228,
       "shares": 45,
       "comments": 34,
-      "date": "2026-07-15"
+      "date": "2026-07-16"
     },
     {
       "id": "soc_an_mastodon_13",
@@ -4390,7 +4879,7 @@
       "likes": 427,
       "shares": 85,
       "comments": 64,
-      "date": "2026-07-15"
+      "date": "2026-07-16"
     },
     {
       "id": "soc_an_dev.to_13",
@@ -4403,7 +4892,7 @@
       "likes": 427,
       "shares": 85,
       "comments": 64,
-      "date": "2026-07-15"
+      "date": "2026-07-16"
     },
     {
       "id": "soc_an_linkedin_12",
@@ -4416,7 +4905,7 @@
       "likes": 435,
       "shares": 87,
       "comments": 65,
-      "date": "2026-07-16"
+      "date": "2026-07-17"
     },
     {
       "id": "soc_an_facebook_12",
@@ -4429,7 +4918,7 @@
       "likes": 232,
       "shares": 46,
       "comments": 34,
-      "date": "2026-07-16"
+      "date": "2026-07-17"
     },
     {
       "id": "soc_an_instagram_12",
@@ -4442,7 +4931,7 @@
       "likes": 232,
       "shares": 46,
       "comments": 34,
-      "date": "2026-07-16"
+      "date": "2026-07-17"
     },
     {
       "id": "soc_an_bluesky_12",
@@ -4455,7 +4944,7 @@
       "likes": 232,
       "shares": 46,
       "comments": 34,
-      "date": "2026-07-16"
+      "date": "2026-07-17"
     },
     {
       "id": "soc_an_mastodon_12",
@@ -4468,7 +4957,7 @@
       "likes": 435,
       "shares": 87,
       "comments": 65,
-      "date": "2026-07-16"
+      "date": "2026-07-17"
     },
     {
       "id": "soc_an_dev.to_12",
@@ -4481,7 +4970,7 @@
       "likes": 435,
       "shares": 87,
       "comments": 65,
-      "date": "2026-07-16"
+      "date": "2026-07-17"
     },
     {
       "id": "soc_an_linkedin_11",
@@ -4494,7 +4983,7 @@
       "likes": 442,
       "shares": 88,
       "comments": 66,
-      "date": "2026-07-17"
+      "date": "2026-07-18"
     },
     {
       "id": "soc_an_facebook_11",
@@ -4507,7 +4996,7 @@
       "likes": 236,
       "shares": 47,
       "comments": 35,
-      "date": "2026-07-17"
+      "date": "2026-07-18"
     },
     {
       "id": "soc_an_instagram_11",
@@ -4520,7 +5009,7 @@
       "likes": 236,
       "shares": 47,
       "comments": 35,
-      "date": "2026-07-17"
+      "date": "2026-07-18"
     },
     {
       "id": "soc_an_bluesky_11",
@@ -4533,7 +5022,7 @@
       "likes": 236,
       "shares": 47,
       "comments": 35,
-      "date": "2026-07-17"
+      "date": "2026-07-18"
     },
     {
       "id": "soc_an_mastodon_11",
@@ -4546,7 +5035,7 @@
       "likes": 442,
       "shares": 88,
       "comments": 66,
-      "date": "2026-07-17"
+      "date": "2026-07-18"
     },
     {
       "id": "soc_an_dev.to_11",
@@ -4559,7 +5048,7 @@
       "likes": 442,
       "shares": 88,
       "comments": 66,
-      "date": "2026-07-17"
+      "date": "2026-07-18"
     },
     {
       "id": "soc_an_linkedin_10",
@@ -4572,7 +5061,7 @@
       "likes": 450,
       "shares": 90,
       "comments": 67,
-      "date": "2026-07-18"
+      "date": "2026-07-19"
     },
     {
       "id": "soc_an_facebook_10",
@@ -4585,7 +5074,7 @@
       "likes": 240,
       "shares": 48,
       "comments": 36,
-      "date": "2026-07-18"
+      "date": "2026-07-19"
     },
     {
       "id": "soc_an_instagram_10",
@@ -4598,7 +5087,7 @@
       "likes": 240,
       "shares": 48,
       "comments": 36,
-      "date": "2026-07-18"
+      "date": "2026-07-19"
     },
     {
       "id": "soc_an_bluesky_10",
@@ -4611,7 +5100,7 @@
       "likes": 240,
       "shares": 48,
       "comments": 36,
-      "date": "2026-07-18"
+      "date": "2026-07-19"
     },
     {
       "id": "soc_an_mastodon_10",
@@ -4624,7 +5113,7 @@
       "likes": 450,
       "shares": 90,
       "comments": 67,
-      "date": "2026-07-18"
+      "date": "2026-07-19"
     },
     {
       "id": "soc_an_dev.to_10",
@@ -4637,7 +5126,7 @@
       "likes": 450,
       "shares": 90,
       "comments": 67,
-      "date": "2026-07-18"
+      "date": "2026-07-19"
     },
     {
       "id": "soc_an_linkedin_9",
@@ -4650,7 +5139,7 @@
       "likes": 457,
       "shares": 91,
       "comments": 68,
-      "date": "2026-07-19"
+      "date": "2026-07-20"
     },
     {
       "id": "soc_an_facebook_9",
@@ -4663,7 +5152,7 @@
       "likes": 244,
       "shares": 48,
       "comments": 36,
-      "date": "2026-07-19"
+      "date": "2026-07-20"
     },
     {
       "id": "soc_an_instagram_9",
@@ -4676,7 +5165,7 @@
       "likes": 244,
       "shares": 48,
       "comments": 36,
-      "date": "2026-07-19"
+      "date": "2026-07-20"
     },
     {
       "id": "soc_an_bluesky_9",
@@ -4689,7 +5178,7 @@
       "likes": 244,
       "shares": 48,
       "comments": 36,
-      "date": "2026-07-19"
+      "date": "2026-07-20"
     },
     {
       "id": "soc_an_mastodon_9",
@@ -4702,7 +5191,7 @@
       "likes": 457,
       "shares": 91,
       "comments": 68,
-      "date": "2026-07-19"
+      "date": "2026-07-20"
     },
     {
       "id": "soc_an_dev.to_9",
@@ -4715,7 +5204,7 @@
       "likes": 457,
       "shares": 91,
       "comments": 68,
-      "date": "2026-07-19"
+      "date": "2026-07-20"
     },
     {
       "id": "soc_an_linkedin_8",
@@ -4728,7 +5217,7 @@
       "likes": 465,
       "shares": 93,
       "comments": 69,
-      "date": "2026-07-20"
+      "date": "2026-07-21"
     },
     {
       "id": "soc_an_facebook_8",
@@ -4741,7 +5230,7 @@
       "likes": 248,
       "shares": 49,
       "comments": 37,
-      "date": "2026-07-20"
+      "date": "2026-07-21"
     },
     {
       "id": "soc_an_instagram_8",
@@ -4754,7 +5243,7 @@
       "likes": 248,
       "shares": 49,
       "comments": 37,
-      "date": "2026-07-20"
+      "date": "2026-07-21"
     },
     {
       "id": "soc_an_bluesky_8",
@@ -4767,7 +5256,7 @@
       "likes": 248,
       "shares": 49,
       "comments": 37,
-      "date": "2026-07-20"
+      "date": "2026-07-21"
     },
     {
       "id": "soc_an_mastodon_8",
@@ -4780,7 +5269,7 @@
       "likes": 465,
       "shares": 93,
       "comments": 69,
-      "date": "2026-07-20"
+      "date": "2026-07-21"
     },
     {
       "id": "soc_an_dev.to_8",
@@ -4793,7 +5282,7 @@
       "likes": 465,
       "shares": 93,
       "comments": 69,
-      "date": "2026-07-20"
+      "date": "2026-07-21"
     },
     {
       "id": "soc_an_linkedin_7",
@@ -4806,7 +5295,7 @@
       "likes": 472,
       "shares": 94,
       "comments": 70,
-      "date": "2026-07-21"
+      "date": "2026-07-22"
     },
     {
       "id": "soc_an_facebook_7",
@@ -4819,7 +5308,7 @@
       "likes": 252,
       "shares": 50,
       "comments": 37,
-      "date": "2026-07-21"
+      "date": "2026-07-22"
     },
     {
       "id": "soc_an_instagram_7",
@@ -4832,7 +5321,7 @@
       "likes": 252,
       "shares": 50,
       "comments": 37,
-      "date": "2026-07-21"
+      "date": "2026-07-22"
     },
     {
       "id": "soc_an_bluesky_7",
@@ -4845,7 +5334,7 @@
       "likes": 252,
       "shares": 50,
       "comments": 37,
-      "date": "2026-07-21"
+      "date": "2026-07-22"
     },
     {
       "id": "soc_an_mastodon_7",
@@ -4858,7 +5347,7 @@
       "likes": 472,
       "shares": 94,
       "comments": 70,
-      "date": "2026-07-21"
+      "date": "2026-07-22"
     },
     {
       "id": "soc_an_dev.to_7",
@@ -4871,7 +5360,7 @@
       "likes": 472,
       "shares": 94,
       "comments": 70,
-      "date": "2026-07-21"
+      "date": "2026-07-22"
     },
     {
       "id": "soc_an_linkedin_6",
@@ -4884,7 +5373,7 @@
       "likes": 480,
       "shares": 96,
       "comments": 72,
-      "date": "2026-07-22"
+      "date": "2026-07-23"
     },
     {
       "id": "soc_an_facebook_6",
@@ -4897,7 +5386,7 @@
       "likes": 256,
       "shares": 51,
       "comments": 38,
-      "date": "2026-07-22"
+      "date": "2026-07-23"
     },
     {
       "id": "soc_an_instagram_6",
@@ -4910,7 +5399,7 @@
       "likes": 256,
       "shares": 51,
       "comments": 38,
-      "date": "2026-07-22"
+      "date": "2026-07-23"
     },
     {
       "id": "soc_an_bluesky_6",
@@ -4923,7 +5412,7 @@
       "likes": 256,
       "shares": 51,
       "comments": 38,
-      "date": "2026-07-22"
+      "date": "2026-07-23"
     },
     {
       "id": "soc_an_mastodon_6",
@@ -4936,7 +5425,7 @@
       "likes": 480,
       "shares": 96,
       "comments": 72,
-      "date": "2026-07-22"
+      "date": "2026-07-23"
     },
     {
       "id": "soc_an_dev.to_6",
@@ -4949,7 +5438,7 @@
       "likes": 480,
       "shares": 96,
       "comments": 72,
-      "date": "2026-07-22"
+      "date": "2026-07-23"
     },
     {
       "id": "soc_an_linkedin_5",
@@ -4962,7 +5451,7 @@
       "likes": 487,
       "shares": 97,
       "comments": 73,
-      "date": "2026-07-23"
+      "date": "2026-07-24"
     },
     {
       "id": "soc_an_facebook_5",
@@ -4975,7 +5464,7 @@
       "likes": 260,
       "shares": 52,
       "comments": 39,
-      "date": "2026-07-23"
+      "date": "2026-07-24"
     },
     {
       "id": "soc_an_instagram_5",
@@ -4988,7 +5477,7 @@
       "likes": 260,
       "shares": 52,
       "comments": 39,
-      "date": "2026-07-23"
+      "date": "2026-07-24"
     },
     {
       "id": "soc_an_bluesky_5",
@@ -5001,7 +5490,7 @@
       "likes": 260,
       "shares": 52,
       "comments": 39,
-      "date": "2026-07-23"
+      "date": "2026-07-24"
     },
     {
       "id": "soc_an_mastodon_5",
@@ -5014,7 +5503,7 @@
       "likes": 487,
       "shares": 97,
       "comments": 73,
-      "date": "2026-07-23"
+      "date": "2026-07-24"
     },
     {
       "id": "soc_an_dev.to_5",
@@ -5027,7 +5516,7 @@
       "likes": 487,
       "shares": 97,
       "comments": 73,
-      "date": "2026-07-23"
+      "date": "2026-07-24"
     },
     {
       "id": "soc_an_linkedin_4",
@@ -5040,7 +5529,7 @@
       "likes": 495,
       "shares": 99,
       "comments": 74,
-      "date": "2026-07-24"
+      "date": "2026-07-25"
     },
     {
       "id": "soc_an_facebook_4",
@@ -5053,7 +5542,7 @@
       "likes": 264,
       "shares": 52,
       "comments": 39,
-      "date": "2026-07-24"
+      "date": "2026-07-25"
     },
     {
       "id": "soc_an_instagram_4",
@@ -5066,7 +5555,7 @@
       "likes": 264,
       "shares": 52,
       "comments": 39,
-      "date": "2026-07-24"
+      "date": "2026-07-25"
     },
     {
       "id": "soc_an_bluesky_4",
@@ -5079,7 +5568,7 @@
       "likes": 264,
       "shares": 52,
       "comments": 39,
-      "date": "2026-07-24"
+      "date": "2026-07-25"
     },
     {
       "id": "soc_an_mastodon_4",
@@ -5092,7 +5581,7 @@
       "likes": 495,
       "shares": 99,
       "comments": 74,
-      "date": "2026-07-24"
+      "date": "2026-07-25"
     },
     {
       "id": "soc_an_dev.to_4",
@@ -5105,7 +5594,7 @@
       "likes": 495,
       "shares": 99,
       "comments": 74,
-      "date": "2026-07-24"
+      "date": "2026-07-25"
     },
     {
       "id": "soc_an_linkedin_3",
@@ -5118,7 +5607,7 @@
       "likes": 502,
       "shares": 100,
       "comments": 75,
-      "date": "2026-07-25"
+      "date": "2026-07-26"
     },
     {
       "id": "soc_an_facebook_3",
@@ -5131,7 +5620,7 @@
       "likes": 268,
       "shares": 53,
       "comments": 40,
-      "date": "2026-07-25"
+      "date": "2026-07-26"
     },
     {
       "id": "soc_an_instagram_3",
@@ -5144,7 +5633,7 @@
       "likes": 268,
       "shares": 53,
       "comments": 40,
-      "date": "2026-07-25"
+      "date": "2026-07-26"
     },
     {
       "id": "soc_an_bluesky_3",
@@ -5157,7 +5646,7 @@
       "likes": 268,
       "shares": 53,
       "comments": 40,
-      "date": "2026-07-25"
+      "date": "2026-07-26"
     },
     {
       "id": "soc_an_mastodon_3",
@@ -5170,7 +5659,7 @@
       "likes": 502,
       "shares": 100,
       "comments": 75,
-      "date": "2026-07-25"
+      "date": "2026-07-26"
     },
     {
       "id": "soc_an_dev.to_3",
@@ -5183,7 +5672,7 @@
       "likes": 502,
       "shares": 100,
       "comments": 75,
-      "date": "2026-07-25"
+      "date": "2026-07-26"
     },
     {
       "id": "soc_an_linkedin_2",
@@ -5196,7 +5685,7 @@
       "likes": 510,
       "shares": 102,
       "comments": 76,
-      "date": "2026-07-26"
+      "date": "2026-07-27"
     },
     {
       "id": "soc_an_facebook_2",
@@ -5209,7 +5698,7 @@
       "likes": 272,
       "shares": 54,
       "comments": 40,
-      "date": "2026-07-26"
+      "date": "2026-07-27"
     },
     {
       "id": "soc_an_instagram_2",
@@ -5222,7 +5711,7 @@
       "likes": 272,
       "shares": 54,
       "comments": 40,
-      "date": "2026-07-26"
+      "date": "2026-07-27"
     },
     {
       "id": "soc_an_bluesky_2",
@@ -5235,7 +5724,7 @@
       "likes": 272,
       "shares": 54,
       "comments": 40,
-      "date": "2026-07-26"
+      "date": "2026-07-27"
     },
     {
       "id": "soc_an_mastodon_2",
@@ -5248,7 +5737,7 @@
       "likes": 510,
       "shares": 102,
       "comments": 76,
-      "date": "2026-07-26"
+      "date": "2026-07-27"
     },
     {
       "id": "soc_an_dev.to_2",
@@ -5261,7 +5750,7 @@
       "likes": 510,
       "shares": 102,
       "comments": 76,
-      "date": "2026-07-26"
+      "date": "2026-07-27"
     },
     {
       "id": "soc_an_linkedin_1",
@@ -5274,7 +5763,7 @@
       "likes": 517,
       "shares": 103,
       "comments": 77,
-      "date": "2026-07-27"
+      "date": "2026-07-28"
     },
     {
       "id": "soc_an_facebook_1",
@@ -5287,7 +5776,7 @@
       "likes": 276,
       "shares": 55,
       "comments": 41,
-      "date": "2026-07-27"
+      "date": "2026-07-28"
     },
     {
       "id": "soc_an_instagram_1",
@@ -5300,7 +5789,7 @@
       "likes": 276,
       "shares": 55,
       "comments": 41,
-      "date": "2026-07-27"
+      "date": "2026-07-28"
     },
     {
       "id": "soc_an_bluesky_1",
@@ -5313,7 +5802,7 @@
       "likes": 276,
       "shares": 55,
       "comments": 41,
-      "date": "2026-07-27"
+      "date": "2026-07-28"
     },
     {
       "id": "soc_an_mastodon_1",
@@ -5326,7 +5815,7 @@
       "likes": 517,
       "shares": 103,
       "comments": 77,
-      "date": "2026-07-27"
+      "date": "2026-07-28"
     },
     {
       "id": "soc_an_dev.to_1",
@@ -5339,7 +5828,7 @@
       "likes": 517,
       "shares": 103,
       "comments": 77,
-      "date": "2026-07-27"
+      "date": "2026-07-28"
     },
     {
       "id": "soc_an_linkedin_0",
@@ -5352,7 +5841,7 @@
       "likes": 525,
       "shares": 105,
       "comments": 78,
-      "date": "2026-07-28"
+      "date": "2026-07-29"
     },
     {
       "id": "soc_an_facebook_0",
@@ -5365,7 +5854,7 @@
       "likes": 280,
       "shares": 56,
       "comments": 42,
-      "date": "2026-07-28"
+      "date": "2026-07-29"
     },
     {
       "id": "soc_an_instagram_0",
@@ -5378,7 +5867,7 @@
       "likes": 280,
       "shares": 56,
       "comments": 42,
-      "date": "2026-07-28"
+      "date": "2026-07-29"
     },
     {
       "id": "soc_an_bluesky_0",
@@ -5391,7 +5880,7 @@
       "likes": 280,
       "shares": 56,
       "comments": 42,
-      "date": "2026-07-28"
+      "date": "2026-07-29"
     },
     {
       "id": "soc_an_mastodon_0",
@@ -5404,7 +5893,7 @@
       "likes": 525,
       "shares": 105,
       "comments": 78,
-      "date": "2026-07-28"
+      "date": "2026-07-29"
     },
     {
       "id": "soc_an_dev.to_0",
@@ -5417,567 +5906,7 @@
       "likes": 525,
       "shares": 105,
       "comments": 78,
-      "date": "2026-07-28"
-    }
-  ],
-  "api_logs": [
-    {
-      "id": "id_api_logs_2ow9q5tsp",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.967Z",
-      "updated_at": "2026-07-28T10:36:51.967Z",
-      "endpoint": "/api/social/accounts",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_01eqti04a",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.974Z",
-      "updated_at": "2026-07-28T10:36:51.974Z",
-      "endpoint": "/api/social/connect",
-      "status_code": 200,
-      "response_time_ms": 5
-    },
-    {
-      "id": "id_api_logs_x0hniz10z",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.978Z",
-      "updated_at": "2026-07-28T10:36:51.978Z",
-      "endpoint": "/api/social/posts",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_ai4677gaj",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.981Z",
-      "updated_at": "2026-07-28T10:36:51.981Z",
-      "endpoint": "/api/social/posts",
-      "status_code": 200,
-      "response_time_ms": 2
-    },
-    {
-      "id": "id_api_logs_ieiikvk65",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.989Z",
-      "updated_at": "2026-07-28T10:36:51.989Z",
-      "endpoint": "/api/social/connect",
-      "status_code": 200,
-      "response_time_ms": 5
-    },
-    {
-      "id": "id_api_logs_1a4qyg8fz",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:51.996Z",
-      "updated_at": "2026-07-28T10:36:51.996Z",
-      "endpoint": "/api/social/publish",
-      "status_code": 200,
-      "response_time_ms": 5
-    },
-    {
-      "id": "id_api_logs_m7u68vebx",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.001Z",
-      "updated_at": "2026-07-28T10:36:52.001Z",
-      "endpoint": "/api/social/connect",
-      "status_code": 200,
-      "response_time_ms": 4
-    },
-    {
-      "id": "id_api_logs_tx5azpjxw",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.006Z",
-      "updated_at": "2026-07-28T10:36:52.006Z",
-      "endpoint": "/api/social/schedule",
-      "status_code": 200,
-      "response_time_ms": 4
-    },
-    {
-      "id": "id_api_logs_x79v3dvo9",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.013Z",
-      "updated_at": "2026-07-28T10:36:52.013Z",
-      "endpoint": "/api/social/connect",
-      "status_code": 200,
-      "response_time_ms": 3
-    },
-    {
-      "id": "id_api_logs_yf4jxoh4g",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.018Z",
-      "updated_at": "2026-07-28T10:36:52.018Z",
-      "endpoint": "/api/social/schedule",
-      "status_code": 200,
-      "response_time_ms": 3
-    },
-    {
-      "id": "id_api_logs_4v0qm9tod",
-      "user_id": "anonymous",
-      "created_at": "2026-07-28T10:36:52.027Z",
-      "updated_at": "2026-07-28T10:36:52.027Z",
-      "endpoint": "/api/social/scheduler/run",
-      "status_code": 200,
-      "response_time_ms": 8
-    },
-    {
-      "id": "id_api_logs_t134olsxz",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.029Z",
-      "updated_at": "2026-07-28T10:36:52.029Z",
-      "endpoint": "/api/social/analytics",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_7yr4ah6ji",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.034Z",
-      "updated_at": "2026-07-28T10:36:52.034Z",
-      "endpoint": "/api/social/media",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_uskzbyb2f",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.037Z",
-      "updated_at": "2026-07-28T10:36:52.037Z",
-      "endpoint": "/api/social/media",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_7go5tnhv0",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.039Z",
-      "updated_at": "2026-07-28T10:36:52.039Z",
-      "endpoint": "/api/social/media/id_media_library_plallsjkh",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_1l1zxro4c",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.042Z",
-      "updated_at": "2026-07-28T10:36:52.042Z",
-      "endpoint": "/api/social/campaigns",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_wsie8j8n0",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.044Z",
-      "updated_at": "2026-07-28T10:36:52.044Z",
-      "endpoint": "/api/social/campaigns",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_w0gvqi8rt",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.047Z",
-      "updated_at": "2026-07-28T10:36:52.047Z",
-      "endpoint": "/api/social/campaigns/id_campaigns_j985eemw6",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_flz1mbjw8",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:36:52.050Z",
-      "updated_at": "2026-07-28T10:36:52.050Z",
-      "endpoint": "/api/social/ai/generate",
-      "status_code": 200,
-      "response_time_ms": 2
-    },
-    {
-      "id": "id_api_logs_3b4s4u1gm",
-      "user_id": "anonymous",
-      "created_at": "2026-07-28T10:37:02.186Z",
-      "updated_at": "2026-07-28T10:37:02.186Z",
-      "endpoint": "/api/auth/login",
-      "status_code": 200,
-      "response_time_ms": 4
-    },
-    {
-      "id": "id_api_logs_ldo5446gt",
-      "user_id": "anonymous",
-      "created_at": "2026-07-28T10:37:02.191Z",
-      "updated_at": "2026-07-28T10:37:02.191Z",
-      "endpoint": "/api/auth/login",
-      "status_code": 200,
-      "response_time_ms": 3
-    },
-    {
-      "id": "id_api_logs_errijl112",
-      "user_id": "id_users_r8t4c2fo1",
-      "created_at": "2026-07-28T10:37:02.196Z",
-      "updated_at": "2026-07-28T10:37:02.196Z",
-      "endpoint": "/api/gig/generate",
-      "status_code": 200,
-      "response_time_ms": 4
-    },
-    {
-      "id": "id_api_logs_eh35tjy2w",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.198Z",
-      "updated_at": "2026-07-28T10:37:02.198Z",
-      "endpoint": "/api/social/posts",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_9tj96vxrw",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.203Z",
-      "updated_at": "2026-07-28T10:37:02.203Z",
-      "endpoint": "/api/social/posts",
-      "status_code": 200,
-      "response_time_ms": 2
-    },
-    {
-      "id": "id_api_logs_i7oj4bupx",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.209Z",
-      "updated_at": "2026-07-28T10:37:02.209Z",
-      "endpoint": "/api/social/connect",
-      "status_code": 200,
-      "response_time_ms": 4
-    },
-    {
-      "id": "id_api_logs_crbdcnmpo",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.217Z",
-      "updated_at": "2026-07-28T10:37:02.217Z",
-      "endpoint": "/api/social/publish",
-      "status_code": 200,
-      "response_time_ms": 6
-    },
-    {
-      "id": "id_api_logs_d0cvgy45t",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.223Z",
-      "updated_at": "2026-07-28T10:37:02.223Z",
-      "endpoint": "/api/social/connect",
-      "status_code": 200,
-      "response_time_ms": 4
-    },
-    {
-      "id": "id_api_logs_bme2wv10s",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.228Z",
-      "updated_at": "2026-07-28T10:37:02.228Z",
-      "endpoint": "/api/social/schedule",
-      "status_code": 200,
-      "response_time_ms": 4
-    },
-    {
-      "id": "id_api_logs_l3x00f9i9",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.236Z",
-      "updated_at": "2026-07-28T10:37:02.236Z",
-      "endpoint": "/api/social/connect",
-      "status_code": 200,
-      "response_time_ms": 4
-    },
-    {
-      "id": "id_api_logs_izxkqvnzk",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.240Z",
-      "updated_at": "2026-07-28T10:37:02.240Z",
-      "endpoint": "/api/social/schedule",
-      "status_code": 200,
-      "response_time_ms": 3
-    },
-    {
-      "id": "id_api_logs_ivrez4ytl",
-      "user_id": "anonymous",
-      "created_at": "2026-07-28T10:37:02.249Z",
-      "updated_at": "2026-07-28T10:37:02.249Z",
-      "endpoint": "/api/social/scheduler/run",
-      "status_code": 200,
-      "response_time_ms": 7
-    },
-    {
-      "id": "id_api_logs_offhdwiq5",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.252Z",
-      "updated_at": "2026-07-28T10:37:02.252Z",
-      "endpoint": "/api/social/analytics",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_fxz2htpb4",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.256Z",
-      "updated_at": "2026-07-28T10:37:02.256Z",
-      "endpoint": "/api/social/media",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_z8olmg72s",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.258Z",
-      "updated_at": "2026-07-28T10:37:02.258Z",
-      "endpoint": "/api/social/media",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_ajoiyawp2",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.261Z",
-      "updated_at": "2026-07-28T10:37:02.261Z",
-      "endpoint": "/api/social/media/id_media_library_d8ul8fzxz",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_3eoz85wgi",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.266Z",
-      "updated_at": "2026-07-28T10:37:02.266Z",
-      "endpoint": "/api/social/campaigns",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_2a4gi7b13",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.269Z",
-      "updated_at": "2026-07-28T10:37:02.269Z",
-      "endpoint": "/api/social/campaigns",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_eudrnxifx",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.271Z",
-      "updated_at": "2026-07-28T10:37:02.271Z",
-      "endpoint": "/api/social/campaigns/id_campaigns_8bdvqjzq9",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_0pbzj5d4c",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-28T10:37:02.275Z",
-      "updated_at": "2026-07-28T10:37:02.275Z",
-      "endpoint": "/api/social/ai/generate",
-      "status_code": 200,
-      "response_time_ms": 2
-    },
-    {
-      "id": "id_api_logs_ebu7ediew",
-      "user_id": "anonymous",
-      "created_at": "2026-07-29T06:25:52.992Z",
-      "updated_at": "2026-07-29T06:25:52.992Z",
-      "endpoint": "/api/auth/login",
-      "status_code": 200,
-      "response_time_ms": 3
-    },
-    {
-      "id": "id_api_logs_6xdc7k61m",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:52.997Z",
-      "updated_at": "2026-07-29T06:25:52.997Z",
-      "endpoint": "/api/social/accounts",
-      "status_code": 200,
-      "response_time_ms": 2
-    },
-    {
-      "id": "id_api_logs_qquhv9b7y",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.004Z",
-      "updated_at": "2026-07-29T06:25:53.004Z",
-      "endpoint": "/api/social/connect",
-      "status_code": 200,
-      "response_time_ms": 5
-    },
-    {
-      "id": "id_api_logs_i7jhkn1f0",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.008Z",
-      "updated_at": "2026-07-29T06:25:53.008Z",
-      "endpoint": "/api/social/posts",
-      "status_code": 200,
-      "response_time_ms": 2
-    },
-    {
-      "id": "id_api_logs_mxhuduwcq",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.011Z",
-      "updated_at": "2026-07-29T06:25:53.011Z",
-      "endpoint": "/api/social/posts",
-      "status_code": 200,
-      "response_time_ms": 2
-    },
-    {
-      "id": "id_api_logs_m9mx81qny",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.016Z",
-      "updated_at": "2026-07-29T06:25:53.016Z",
-      "endpoint": "/api/social/connect",
-      "status_code": 200,
-      "response_time_ms": 4
-    },
-    {
-      "id": "id_api_logs_s2bm7mnwc",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.023Z",
-      "updated_at": "2026-07-29T06:25:53.023Z",
-      "endpoint": "/api/social/publish",
-      "status_code": 200,
-      "response_time_ms": 5
-    },
-    {
-      "id": "id_api_logs_3jffw2ihk",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.029Z",
-      "updated_at": "2026-07-29T06:25:53.029Z",
-      "endpoint": "/api/social/connect",
-      "status_code": 200,
-      "response_time_ms": 4
-    },
-    {
-      "id": "id_api_logs_mn4mvjigi",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.035Z",
-      "updated_at": "2026-07-29T06:25:53.035Z",
-      "endpoint": "/api/social/schedule",
-      "status_code": 200,
-      "response_time_ms": 5
-    },
-    {
-      "id": "id_api_logs_dte13jagy",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.040Z",
-      "updated_at": "2026-07-29T06:25:53.040Z",
-      "endpoint": "/api/social/connect",
-      "status_code": 200,
-      "response_time_ms": 4
-    },
-    {
-      "id": "id_api_logs_w7p21wa2v",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.045Z",
-      "updated_at": "2026-07-29T06:25:53.045Z",
-      "endpoint": "/api/social/schedule",
-      "status_code": 200,
-      "response_time_ms": 3
-    },
-    {
-      "id": "id_api_logs_xiqzii8rh",
-      "user_id": "anonymous",
-      "created_at": "2026-07-29T06:25:53.063Z",
-      "updated_at": "2026-07-29T06:25:53.063Z",
-      "endpoint": "/api/social/scheduler/run",
-      "status_code": 200,
-      "response_time_ms": 17
-    },
-    {
-      "id": "id_api_logs_tdh1pw9u9",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.067Z",
-      "updated_at": "2026-07-29T06:25:53.067Z",
-      "endpoint": "/api/social/analytics",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_h2avg7z3j",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.075Z",
-      "updated_at": "2026-07-29T06:25:53.075Z",
-      "endpoint": "/api/social/media",
-      "status_code": 200,
-      "response_time_ms": 6
-    },
-    {
-      "id": "id_api_logs_gtw0govvc",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.078Z",
-      "updated_at": "2026-07-29T06:25:53.078Z",
-      "endpoint": "/api/social/media",
-      "status_code": 200,
-      "response_time_ms": 2
-    },
-    {
-      "id": "id_api_logs_9uu076oh9",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.081Z",
-      "updated_at": "2026-07-29T06:25:53.081Z",
-      "endpoint": "/api/social/media/id_media_library_b7vnmtpqc",
-      "status_code": 200,
-      "response_time_ms": 2
-    },
-    {
-      "id": "id_api_logs_f0r0senc8",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.084Z",
-      "updated_at": "2026-07-29T06:25:53.084Z",
-      "endpoint": "/api/social/campaigns",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_428s1a97c",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.087Z",
-      "updated_at": "2026-07-29T06:25:53.087Z",
-      "endpoint": "/api/social/campaigns",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_0t6nn2i0t",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.090Z",
-      "updated_at": "2026-07-29T06:25:53.090Z",
-      "endpoint": "/api/social/campaigns/id_campaigns_duw1yqkmb",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_wct3qr8jc",
-      "user_id": "usr_fiverr_pro_001",
-      "created_at": "2026-07-29T06:25:53.094Z",
-      "updated_at": "2026-07-29T06:25:53.094Z",
-      "endpoint": "/api/social/ai/generate",
-      "status_code": 200,
-      "response_time_ms": 3
-    },
-    {
-      "id": "id_api_logs_ato31zjns",
-      "user_id": "anonymous",
-      "created_at": "2026-07-29T06:25:53.150Z",
-      "updated_at": "2026-07-29T06:25:53.150Z",
-      "endpoint": "/api/health",
-      "status_code": 200,
-      "response_time_ms": 1
-    },
-    {
-      "id": "id_api_logs_uclmhs8kt",
-      "user_id": "anonymous",
-      "created_at": "2026-07-29T06:25:53.154Z",
-      "updated_at": "2026-07-29T06:25:53.154Z",
-      "endpoint": "/api/auth/login",
-      "status_code": 200,
-      "response_time_ms": 2
-    },
-    {
-      "id": "id_api_logs_t860xkz4q",
-      "user_id": "id_users_r8t4c2fo1",
-      "created_at": "2026-07-29T06:25:53.160Z",
-      "updated_at": "2026-07-29T06:25:53.160Z",
-      "endpoint": "/api/gig/generate",
-      "status_code": 200,
-      "response_time_ms": 5
+      "date": "2026-07-29"
     }
   ]
 }

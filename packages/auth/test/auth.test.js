@@ -21,18 +21,18 @@ test('AuthService Token Operations', async (t) => {
     assert.ok(token.length > 10);
   });
 
-  await t.test('should verify a valid token and return payload', () => {
+  await t.test('should verify a valid token and return payload', async () => {
     const token = authService.createToken(mockUser);
-    const payload = authService.verifyToken(token);
+    const payload = await authService.verifyToken(token);
     assert.ok(payload);
     assert.strictEqual(payload.userId, 'usr_test_123');
     assert.strictEqual(payload.email, 'test@gigpilot.ai');
     assert.strictEqual(payload.role, 'Pro');
   });
 
-  await t.test('should fail verification for expired or modified tokens', () => {
+  await t.test('should fail verification for expired or modified tokens', async () => {
     const invalidToken = 'this-is-not-a-valid-jwt-token';
-    const payload = authService.verifyToken(invalidToken);
+    const payload = await authService.verifyToken(invalidToken);
     assert.strictEqual(payload, null);
   });
 });

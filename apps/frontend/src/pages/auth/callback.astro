@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Loader2 } from 'lucide-react';
+
+const supabaseUrl = import.meta.env.SUPABASE_URL || process.env.SUPABASE_URL || 'https://mock.supabase.co';
+const supabaseAnonKey = import.meta.env.SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || 'mock-key';
+---
+
+<Layout title="Authenticating... - GigPilot AI">
+  <div class="min-h-screen bg-[#0B0A11] flex flex-col items-center justify-center font-sans relative">
+    <div id="auth-config" data-url={supabaseUrl} data-key={supabaseAnonKey} class="hidden"></div>
+    
+    <!-- Glow blobs -->
+    <div class="absolute top-[30%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] rounded-full bg-purple-600/10 blur-[100px] pointer-events-none" />
+    <div class="absolute bottom-[30%] left-[50%] -translate-x-1/2 translate-y-1/2 w-[300px] h-[300px] rounded-full bg-emerald-600/5 blur-[100px] pointer-events-none" />
+
+    <div class="relative z-10 text-center space-y-6 max-w-sm px-4">
+      <div class="inline-flex p-4 rounded-2xl bg-white/5 border border-white/10 shadow-xl backdrop-blur-md animate-pulse">
+        <Loader2 class="w-8 h-8 text-indigo-400 animate-spin" />
+      </div>
+      <div class="space-y-2">
+        <h3 class="text-xl font-semibold text-white">Completing login</h3>
+        <p class="text-sm text-slate-400">Please wait while we finalize your secure session...</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import { createClient } from '@supabase/supabase-js';
+
+    // Retrieve config from DOM
+    const configEl = document.getElementById('auth-config');
+    const supabaseUrl = configEl?.getAttribute('data-url') || 'https://mock.supabase.co';
+    const supabaseAnonKey = configEl?.getAttribute('data-key') || 'mock-key';
+
+    const API_URL = import.meta.env.PUBLIC_API_URL || 'http://localhost:3000'; // Target API port
+
+    async function handleCallback() {
+      // Initialize Supabase Client
+      const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+      try {
+        // Supabase auto-handles OAuth redirects and parses access token/hash/code parameter.
+        // It'll exchange code/hash for session automatically.
+        const { data: { session }, error } = await supabase.auth.getSession();
+        
+        if (error) throw error;
+
+        if (session) {
+          const userMetadata = session.user.user_metadata || {};
+          const userObj = {
+            id: session.user.id,
+            email: session.user.email,
+            fullName: userMetadata.full_name || session.user.email?.split('@')[0],
+            role: 'Pro'
+          };
+
+          localStorage.setItem('gp_token', session.access_token);
+          localStorage.setItem('gp_user', JSON.stringify(userObj));
+
+          // Sync user with backend
+          try {
+            await fetch(`${API_URL}/api/auth/login`, {
+              method: 'POST',
+              headers: { 
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${session.access_token}`
+              },
+              body: JSON.stringify({ email: userObj.email, fullName: userObj.fullName })
+            });
+          } catch (syncErr) {
+            console.warn('Backend sync failed', syncErr);
+          }
+
+          window.location.href = '/dashboard';
+        } else {
+          // If no session exists, maybe the redirect URL contains code to be exchanged.
+          // Wait briefly in case supabase client is still processing it
+          setTimeout(async () => {
+            const { data: { session: retrySession } } = await supabase.auth.getSession();
+            if (retrySession) {
+              const userMetadata = retrySession.user.user_metadata || {};
+              const userObj = {
+                id: retrySession.user.id,
+                email: retrySession.user.email,
+                fullName: userMetadata.full_name || retrySession.user.email?.split('@')[0],
+                role: 'Pro'
+              };
+              localStorage.setItem('gp_token', retrySession.access_token);
+              localStorage.setItem('gp_user', JSON.stringify(userObj));
+              
+              try {
+                await fetch(`${API_URL}/api/auth/login`, {
+                  method: 'POST',
+                  headers: { 
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${retrySession.access_token}`
+                  },
+                  body: JSON.stringify({ email: userObj.email, fullName: userObj.fullName })
+                });
+              } catch (syncErr) {
+                console.warn('Backend sync failed on retry', syncErr);
+              }
+              window.location.href = '/dashboard';
+            } else {
+              window.location.href = '/login?error=Session not found';
+            }
+          }, 1500);
+        }
+      } catch (err: any) {
+        console.error('Callback error', err);
+        window.location.href = `/login?error=${encodeURIComponent(err.message || 'Authentication callback failed')}`;
+      }
+    }
+
+    // Run callback handler on load
+    handleCallback();
+  </script>
+</Layout>
