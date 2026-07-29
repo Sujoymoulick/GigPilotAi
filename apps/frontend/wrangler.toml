@@ -1,3 +1,8 @@
 name = "gigpilot-frontend"
 compatibility_date = "2024-05-01"
 pages_build_output_dir = "./dist"
+
+[vars]
+PUBLIC_API_URL = "https://gigpilot-api.onrender.com"
+PUBLIC_SUPABASE_URL = "https://nmcmazrduhitfojirdmb.supabase.co"
+PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5tY21henJkdWhpdGZvamlyZG1iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODUyMjg1MjksImV4cCI6MjEwMDgwNDUyOX0.xsLRBaMBTI9OLWR4vflu8Q44dcc6c1wjHgwZ2_Jeok8"
