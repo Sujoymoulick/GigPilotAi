@@ -20,6 +20,7 @@ const supabaseAnonKey = import.meta.env.SUPABASE_ANON_KEY || process.env.SUPABAS
     <div class="hidden md:flex md:w-[45%] lg:w-[42%] relative flex-col justify-between overflow-hidden h-screen select-none">
       <!-- Background video -->
       <video
+        id="login-video"
         autoplay
         loop
         muted
@@ -629,6 +630,15 @@ const supabaseAnonKey = import.meta.env.SUPABASE_ANON_KEY || process.env.SUPABAS
 
       // Start the auto-rotation carousel
       window.carouselInterval = window.setInterval(nextSlide, 2000);
+
+      // Ensure video plays correctly after client-side router transition
+      const videoEl = document.getElementById('login-video') as HTMLVideoElement;
+      if (videoEl) {
+        videoEl.load();
+        videoEl.play().catch(err => {
+          console.warn("Video autoplay blocked or failed: ", err);
+        });
+      }
     }
 
     // Set up listeners for page transitions via ClientRouter
