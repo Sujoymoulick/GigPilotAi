@@ -46,7 +46,7 @@ const faqItems = [
 
   <!-- Top Navbar -->
   <header class="sticky top-0 z-50 w-full bg-transparent border-b border-transparent transition-all duration-300" id="main-header">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between transition-all duration-300" id="header-inner">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between transition-all duration-300" id="header-inner">
       <a href="/" class="flex items-center gap-2.5 group">
         <div class="w-9 h-9 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
           <Image src={logoBlack} alt="GigPilot Logo" width={36} height={36} class="w-9 h-9 object-contain" />
@@ -256,13 +256,13 @@ const faqItems = [
       if (window.scrollY > 10) {
         header.classList.remove('bg-transparent', 'border-transparent');
         header.classList.add('bg-white', 'border-slate-200/60', 'shadow-md', 'shadow-slate-100/80');
-        headerInner.classList.remove('h-20');
-        headerInner.classList.add('h-16', 'py-2');
+        headerInner.classList.remove('py-5');
+        headerInner.classList.add('py-3');
       } else {
         header.classList.add('bg-transparent', 'border-transparent');
         header.classList.remove('bg-white', 'border-slate-200/60', 'shadow-md', 'shadow-slate-100/80');
-        headerInner.classList.add('h-20');
-        headerInner.classList.remove('h-16', 'py-2');
+        headerInner.classList.add('py-5');
+        headerInner.classList.remove('py-3');
       }
     }
 
