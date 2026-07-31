@@ -216,7 +216,7 @@ export const ReviewAnalyzer: React.FC = () => {
   };
 
   return (
-    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-300 font-sans">
+    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-700 font-sans">
       <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 pointer-events-none">
         {toasts.map((t) => (
           <div 
@@ -231,21 +231,21 @@ export const ReviewAnalyzer: React.FC = () => {
 
       {/* Left Input Configuration Column */}
       <div className="lg:col-span-2 space-y-4">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-4">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  space-y-4">
           <div>
-            <h2 className="text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">Sentiment analyzer</h2>
+            <h2 className="text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Sentiment analyzer</h2>
             <p className="text-[10px] text-slate-500 font-medium font-semibold">Paste raw Fiverr order reviews or feedback lines to audit client satisfaction metrics.</p>
           </div>
 
           <form onSubmit={handleAnalyze} className="space-y-4">
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Pasted Reviews Content</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Pasted Reviews Content</label>
               <textarea 
                 required
                 value={reviewsText}
                 onChange={(e) => setReviewsText(e.target.value)}
                 placeholder="Paste reviews here (e.g. 'He delivered standard code very fast but communication on sunday was slightly delayed. Overall highly recommended! 5 stars') (one review per line or raw paragraph block)..."
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-44 leading-relaxed"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2.5 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50 h-44 leading-relaxed"
               />
             </div>
 
@@ -271,15 +271,15 @@ export const ReviewAnalyzer: React.FC = () => {
 
       {/* Right Column Workspace */}
       <div className="lg:col-span-3 flex flex-col min-h-[500px]">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl flex-1 flex flex-col">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden  flex-1 flex flex-col">
           {/* Header */}
-          <div className="px-5 py-4 bg-slate-950/60 border-b border-slate-800/60 flex items-center justify-between flex-wrap gap-2">
-            <span className="text-xs font-bold text-slate-300">Sentiment Audit Report</span>
+          <div className="px-5 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between flex-wrap gap-2">
+            <span className="text-xs font-bold text-slate-700">Sentiment Audit Report</span>
 
             {activeRun && (
               <button 
                 onClick={() => copyReport(activeRun)}
-                className="px-2.5 py-1.5 rounded bg-slate-900 border border-slate-800 text-[10px] text-slate-400 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
+                className="px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 text-[10px] text-slate-500 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
               >
                 <Copy className="w-3.5 h-3.5" /> Copy Report
               </button>
@@ -296,18 +296,18 @@ export const ReviewAnalyzer: React.FC = () => {
                 </div>
               </div>
             ) : activeRun ? (
-              <div className="space-y-6 text-xs text-slate-300">
+              <div className="space-y-6 text-xs text-slate-700">
                 {/* Score panel */}
                 <div className="grid grid-cols-3 gap-4">
-                  <div className="bg-slate-950/50 p-4 border border-slate-850 rounded-xl text-center">
+                  <div className="bg-slate-50/50 p-4 border border-slate-850 rounded-xl text-center">
                     <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">Positive Ratings</span>
                     <span className="text-xl font-extrabold text-emerald-400 mt-1 block">{activeRun.output.positiveCount} Orders</span>
                   </div>
-                  <div className="bg-slate-950/50 p-4 border border-slate-850 rounded-xl text-center">
+                  <div className="bg-slate-50/50 p-4 border border-slate-850 rounded-xl text-center">
                     <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">Overall Sentiment</span>
                     <span className="text-xl font-extrabold text-white mt-1 block">{activeRun.output.overallSentimentScore}%</span>
                   </div>
-                  <div className="bg-slate-950/50 p-4 border border-slate-850 rounded-xl text-center">
+                  <div className="bg-slate-50/50 p-4 border border-slate-850 rounded-xl text-center">
                     <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">Critical / Concerns</span>
                     <span className="text-xl font-extrabold text-rose-400 mt-1 block">{activeRun.output.negativeCount} Issues</span>
                   </div>
@@ -316,7 +316,7 @@ export const ReviewAnalyzer: React.FC = () => {
                 {/* Donut & Frequency charts */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {/* Sentiment Donut */}
-                  <div className="bg-slate-950/50 p-4 border border-slate-850 rounded-xl flex items-center justify-between gap-4">
+                  <div className="bg-slate-50/50 p-4 border border-slate-850 rounded-xl flex items-center justify-between gap-4">
                     <div>
                       <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block mb-2"><PieChart className="w-3.5 h-3.5 inline mr-1" /> Sentiment Share</span>
                       <div className="space-y-1 text-[10px] font-mono">
@@ -325,7 +325,7 @@ export const ReviewAnalyzer: React.FC = () => {
                           return (
                             <div key={idx} className="flex items-center gap-1.5">
                               <span className={`w-2 h-2 rounded-full ${dotColors[idx % dotColors.length]}`}></span>
-                              <span className="text-slate-400">{item.label}:</span>
+                              <span className="text-slate-500">{item.label}:</span>
                               <span className="font-bold text-white">{item.percentage}%</span>
                             </div>
                           );
@@ -336,7 +336,7 @@ export const ReviewAnalyzer: React.FC = () => {
                   </div>
 
                   {/* Keyword Frequencies bar */}
-                  <div className="bg-slate-950/50 p-4 border border-slate-850 rounded-xl space-y-2">
+                  <div className="bg-slate-50/50 p-4 border border-slate-850 rounded-xl space-y-2">
                     <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block"><BarChart3 className="w-3.5 h-3.5 inline mr-1" /> Keyword Density</span>
                     <div className="space-y-2 pt-1">
                       {activeRun.output.topKeywords.map((k, idx) => {
@@ -344,8 +344,8 @@ export const ReviewAnalyzer: React.FC = () => {
                         const widthPct = Math.round((k.count / maxCount) * 100);
                         return (
                           <div key={idx} className="flex items-center gap-2 font-mono text-[10px]">
-                            <span className="w-16 truncate text-slate-400">{k.word}</span>
-                            <div className="flex-1 bg-slate-900 rounded-full h-2 overflow-hidden relative border border-slate-850">
+                            <span className="w-16 truncate text-slate-500">{k.word}</span>
+                            <div className="flex-1 bg-slate-50 rounded-full h-2 overflow-hidden relative border border-slate-850">
                               <div className="bg-gradient-to-r from-emerald-500 to-teal-500 h-full rounded-full" style={{ width: `${widthPct}%` }} />
                             </div>
                             <span className="w-4 text-right font-bold text-white">{k.count}</span>
@@ -358,18 +358,18 @@ export const ReviewAnalyzer: React.FC = () => {
 
                 {/* Strengths & Weaknesses tables */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-slate-950/40 p-4 border border-slate-850 rounded-xl space-y-2">
+                  <div className="bg-white p-4 border border-slate-850 rounded-xl space-y-2">
                     <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Frequent Strengths</span>
-                    <ul className="list-disc pl-4 space-y-1.5 text-slate-300 leading-relaxed">
+                    <ul className="list-disc pl-4 space-y-1.5 text-slate-700 leading-relaxed">
                       {activeRun.output.strengths.map((s, idx) => (
                         <li key={idx}>{s}</li>
                       ))}
                     </ul>
                   </div>
                   
-                  <div className="bg-slate-950/40 p-4 border border-slate-850 rounded-xl space-y-2">
+                  <div className="bg-white p-4 border border-slate-850 rounded-xl space-y-2">
                     <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Identified Weaknesses</span>
-                    <ul className="list-disc pl-4 space-y-1.5 text-slate-300 leading-relaxed">
+                    <ul className="list-disc pl-4 space-y-1.5 text-slate-700 leading-relaxed">
                       {activeRun.output.weaknesses.map((w, idx) => (
                         <li key={idx}>{w}</li>
                       ))}
@@ -378,11 +378,11 @@ export const ReviewAnalyzer: React.FC = () => {
                 </div>
 
                 {/* Action recommendations */}
-                <div className="bg-slate-950/40 p-4 border border-slate-855 rounded-xl space-y-2">
+                <div className="bg-white p-4 border border-slate-855 rounded-xl space-y-2">
                   <span className="text-[10px] font-bold text-emerald-400 uppercase block mb-1">Actionable recommendations</span>
-                  <ul className="list-disc pl-4 space-y-1.5 text-slate-400 leading-relaxed">
+                  <ul className="list-disc pl-4 space-y-1.5 text-slate-500 leading-relaxed">
                     {activeRun.output.recommendations.map((r, idx) => (
-                      <li key={idx} className="text-slate-300">{r}</li>
+                      <li key={idx} className="text-slate-700">{r}</li>
                     ))}
                   </ul>
                 </div>
@@ -398,19 +398,19 @@ export const ReviewAnalyzer: React.FC = () => {
       </div>
 
       {/* History section */}
-      <div className="lg:col-span-5 border-t border-slate-800/80 pt-6 space-y-4">
+      <div className="lg:col-span-5 border-t border-slate-200 pt-6 space-y-4">
         <div>
-          <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+          <h3 className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
             <TrendingUp className="w-4 h-4 text-emerald-400" /> Sentiment History Logs
           </h3>
           <p className="text-[10px] text-slate-500 mt-0.5">Explore saved order satisfaction analyses.</p>
         </div>
 
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
           {historyList.length > 0 ? (
             <div className="divide-y divide-slate-850">
               {historyList.map((run) => (
-                <div key={run.id} className="p-4 hover:bg-slate-950/20 transition-all flex items-center justify-between gap-4">
+                <div key={run.id} className="p-4 hover:bg-slate-50/20 transition-all flex items-center justify-between gap-4">
                   <div>
                     <p className="text-xs font-bold text-white">Niche feedback check</p>
                     <p className="text-[10px] text-slate-500">Audited on {new Date(run.created_at).toLocaleDateString()} · Overall sentiment: {run.output.overallSentimentScore}%</p>
@@ -425,7 +425,7 @@ export const ReviewAnalyzer: React.FC = () => {
                     </button>
                     <button 
                       onClick={() => handleDelete(run.id)}
-                      className="p-2 rounded bg-slate-950 border border-slate-800 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
+                      className="p-2 rounded bg-slate-50 border border-slate-200 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </button>

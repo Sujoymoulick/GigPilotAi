@@ -182,7 +182,7 @@ export const GigHealthChecker: React.FC = () => {
   };
 
   return (
-    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-300 font-sans">
+    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-700 font-sans">
       <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 pointer-events-none">
         {toasts.map((t) => (
           <div 
@@ -197,54 +197,54 @@ export const GigHealthChecker: React.FC = () => {
 
       {/* Left Input Column */}
       <div className="lg:col-span-2 space-y-4">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-4">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  space-y-4">
           <div>
-            <h2 className="text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">Gig Quality Audit</h2>
+            <h2 className="text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Gig Quality Audit</h2>
             <p className="text-[10px] text-slate-500 font-medium">Paste your Fiverr Gig draft copy to perform an A9 algorithm compliance health check.</p>
           </div>
 
           <form onSubmit={handleAudit} className="space-y-3.5">
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Gig Title (starts with 'I will')</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Gig Title (starts with 'I will')</label>
               <input 
                 type="text" 
                 required
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 placeholder="e.g. I will design a modern minimalist startup logo"
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50"
               />
             </div>
 
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Gig Description</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Gig Description</label>
               <textarea 
                 required
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 placeholder="Paste the complete description text..."
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-28"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50 h-28"
               />
             </div>
 
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Pricing Tiers (optional)</label>
+                <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Pricing Tiers (optional)</label>
                 <textarea 
                   value={packages}
                   onChange={(e) => setPackages(e.target.value)}
                   placeholder="Basic: $10, Standard: $50..."
-                  className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-16"
+                  className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50 h-16"
                 />
               </div>
               
               <div>
-                <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Search Tags / FAQs (optional)</label>
+                <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Search Tags / FAQs (optional)</label>
                 <textarea 
                   value={tags}
                   onChange={(e) => setTags(e.target.value)}
                   placeholder="modern-logo, minimal-logo..."
-                  className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-16"
+                  className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50 h-16"
                 />
               </div>
             </div>
@@ -271,16 +271,16 @@ export const GigHealthChecker: React.FC = () => {
 
       {/* Right Column Workspace */}
       <div className="lg:col-span-3 flex flex-col min-h-[500px]">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl flex-1 flex flex-col">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden  flex-1 flex flex-col">
           {/* Header */}
-          <div className="px-5 py-4 bg-slate-950/60 border-b border-slate-800/60 flex items-center justify-between flex-wrap gap-2">
-            <span className="text-xs font-bold text-slate-300">Quality Analysis Workspace</span>
+          <div className="px-5 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between flex-wrap gap-2">
+            <span className="text-xs font-bold text-slate-700">Quality Analysis Workspace</span>
 
             {activeRun && (
               <div className="flex items-center gap-2">
                 <button 
                   onClick={() => copyReport(activeRun)}
-                  className="px-2.5 py-1.5 rounded bg-slate-900 border border-slate-800 text-[10px] text-slate-400 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
+                  className="px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 text-[10px] text-slate-500 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
                 >
                   <Copy className="w-3.5 h-3.5" /> Copy Report
                 </button>
@@ -296,9 +296,9 @@ export const GigHealthChecker: React.FC = () => {
                 <div className="h-28 bg-slate-850 rounded"></div>
               </div>
             ) : activeRun ? (
-              <div className="space-y-6 text-xs text-slate-300">
+              <div className="space-y-6 text-xs text-slate-700">
                 {/* Overall Score Badge */}
-                <div className="flex items-center gap-4 bg-slate-950/50 p-4 border border-slate-850 rounded-xl">
+                <div className="flex items-center gap-4 bg-slate-50/50 p-4 border border-slate-850 rounded-xl">
                   <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center font-extrabold text-xl ${getScoreColor(activeRun.output.overallScore)}`}>
                     {activeRun.output.overallScore}%
                   </div>
@@ -309,7 +309,7 @@ export const GigHealthChecker: React.FC = () => {
                 </div>
 
                 {/* Progress bars matrix */}
-                <div className="bg-slate-950/40 p-4 border border-slate-850 rounded-xl space-y-3.5">
+                <div className="bg-white p-4 border border-slate-850 rounded-xl space-y-3.5">
                   <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Fiverr Compliance Breakdown</span>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -323,11 +323,11 @@ export const GigHealthChecker: React.FC = () => {
                       { label: 'Buyer conversion rating', value: activeRun.output.conversionScore }
                     ].map((metric, idx) => (
                       <div key={idx} className="space-y-1.5">
-                        <div className="flex justify-between text-[10px] font-medium text-slate-400">
+                        <div className="flex justify-between text-[10px] font-medium text-slate-500">
                           <span>{metric.label}</span>
                           <span className="font-bold text-white">{metric.value}%</span>
                         </div>
-                        <div className="w-full bg-slate-950 rounded-full h-2 overflow-hidden border border-slate-900">
+                        <div className="w-full bg-slate-50 rounded-full h-2 overflow-hidden border border-slate-200">
                           <div 
                             className={`h-full rounded-full transition-all duration-500 ${getBarColor(metric.value)}`} 
                             style={{ width: `${metric.value}%` }}
@@ -339,11 +339,11 @@ export const GigHealthChecker: React.FC = () => {
                 </div>
 
                 {/* Fix Suggestions */}
-                <div className="bg-slate-950/40 p-4 border border-slate-850 rounded-xl space-y-3">
+                <div className="bg-white p-4 border border-slate-850 rounded-xl space-y-3">
                   <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Actionable fixes required</span>
                   <div className="space-y-3">
                     {activeRun.output.suggestions.map((s, idx) => (
-                      <div key={idx} className="p-3 bg-slate-900/60 border border-slate-850 rounded-xl flex gap-3">
+                      <div key={idx} className="p-3 bg-white border border-slate-850 rounded-xl flex gap-3">
                         <AlertTriangle className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
                           s.severity === 'High' ? 'text-rose-400' :
                           s.severity === 'Medium' ? 'text-yellow-400' : 'text-blue-400'
@@ -356,7 +356,7 @@ export const GigHealthChecker: React.FC = () => {
                               s.severity === 'Medium' ? 'bg-yellow-500/10 text-yellow-400' : 'bg-blue-500/10 text-blue-400'
                             }`}>{s.severity}</span>
                           </div>
-                          <p className="text-slate-400 mt-1 text-[11px] leading-relaxed">{s.issue}</p>
+                          <p className="text-slate-500 mt-1 text-[11px] leading-relaxed">{s.issue}</p>
                           <p className="text-emerald-400 mt-1.5 font-semibold text-[10px] bg-emerald-500/5 px-2 py-1 rounded border border-emerald-500/10"><strong>Fix:</strong> {s.actionableFix}</p>
                         </div>
                       </div>
@@ -375,19 +375,19 @@ export const GigHealthChecker: React.FC = () => {
       </div>
 
       {/* History table */}
-      <div className="lg:col-span-5 border-t border-slate-800/80 pt-6 space-y-4">
+      <div className="lg:col-span-5 border-t border-slate-200 pt-6 space-y-4">
         <div>
-          <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+          <h3 className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
             <TrendingUp className="w-4 h-4 text-emerald-400" /> Saved Audits
           </h3>
           <p className="text-[10px] text-slate-500 mt-0.5">Explore your historical Gig health records.</p>
         </div>
 
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
           {historyList.length > 0 ? (
             <div className="divide-y divide-slate-850">
               {historyList.map((run) => (
-                <div key={run.id} className="p-4 hover:bg-slate-950/20 transition-all flex items-center justify-between gap-4">
+                <div key={run.id} className="p-4 hover:bg-slate-50/20 transition-all flex items-center justify-between gap-4">
                   <div>
                     <p className="text-xs font-bold text-white">Gig: {run.input.title}</p>
                     <p className="text-[10px] text-slate-500">Audited on {new Date(run.created_at).toLocaleDateString()} · Overall compliance: {run.output.overallScore}%</p>
@@ -402,7 +402,7 @@ export const GigHealthChecker: React.FC = () => {
                     </button>
                     <button 
                       onClick={() => handleDelete(run.id)}
-                      className="p-2 rounded bg-slate-950 border border-slate-800 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
+                      className="p-2 rounded bg-slate-50 border border-slate-200 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </button>

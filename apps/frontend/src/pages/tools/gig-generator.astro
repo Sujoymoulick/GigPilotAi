@@ -8,28 +8,28 @@ import {
 ---
 
 <Layout title="AI Gig Generator - GigPilot AI">
-  <div class="flex min-h-screen bg-[#0B0F17]">
+  <div class="flex min-h-screen bg-[#F8F9FA]">
     <!-- Sidebar Navigation -->
     <Sidebar currentPath="/tools/gig-generator" client:load />
 
     <!-- Main Content Area -->
     <main class="flex-1 flex flex-col min-w-0 overflow-y-auto">
       <!-- Top Navbar -->
-      <header class="h-16 border-b border-slate-800/80 bg-slate-950/40 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-30">
+      <header class="h-16 border-b border-slate-200 bg-white/95 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-30">
         <div class="flex items-center gap-2">
-          <Sparkles class="w-5 h-5 text-emerald-400" />
-          <h1 class="text-sm font-bold text-white">AI Gig Generator</h1>
+          <Sparkles class="w-5 h-5 text-emerald-500" />
+          <h1 class="text-sm font-bold text-slate-900">AI Gig Generator</h1>
         </div>
 
         <div class="flex items-center gap-4">
           <!-- Credits Remaining Pill -->
-          <div class="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-[10px] font-bold tracking-wide flex items-center gap-1.5">
-            <Cpu class="w-3.5 h-3.5 text-emerald-400" />
+          <div class="px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-[10px] font-bold tracking-wide flex items-center gap-1.5">
+            <Cpu class="w-3.5 h-3.5 text-emerald-600" />
             <span>450 Credits Left</span>
           </div>
 
           <!-- Provider Select -->
-          <select id="providerSelect" class="bg-slate-900 border border-slate-800 rounded-lg px-2 py-1 text-xs text-white focus:outline-none focus:border-emerald-500/50">
+          <select id="providerSelect" class="bg-slate-50 border border-slate-200 rounded-lg px-2 py-1 text-xs text-slate-900 focus:outline-none focus:border-emerald-500/50">
             <option value="openai">GPT-4o mini (OpenAI)</option>
             <option value="gemini">Gemini Pro (Google)</option>
             <option value="claude">Claude 3.5 Sonnet (Anthropic)</option>
@@ -43,27 +43,27 @@ import {
       <div class="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6">
         <!-- Input Form Side -->
         <div class="lg:col-span-2 space-y-4">
-          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-4">
+          <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-4">
             <div>
-              <h2 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">Configure Parameters</h2>
-              <p class="text-[10px] text-slate-500 font-medium">Input your service profile details to generate optimized, high-CTR copywriting.</p>
+              <h2 class="text-xs font-bold text-slate-600 uppercase tracking-wider mb-1">Configure Parameters</h2>
+              <p class="text-[10px] text-slate-400 font-medium">Input your service profile details to generate optimized, high-CTR copywriting.</p>
             </div>
 
             <!-- Form -->
             <form id="gigGeneratorForm" class="space-y-3.5">
               <div class="grid grid-cols-2 gap-3">
                 <div>
-                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Category</label>
-                  <select id="category" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50">
-                    <option value="Programming & Tech">Programming & Tech</option>
-                    <option value="Graphics & Design">Graphics & Design</option>
+                  <label class="block text-[11px] font-semibold text-slate-500 mb-1">Category</label>
+                  <select id="category" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-emerald-500/50">
+                    <option value="Programming &amp; Tech">Programming &amp; Tech</option>
+                    <option value="Graphics &amp; Design">Graphics &amp; Design</option>
                     <option value="Digital Marketing">Digital Marketing</option>
-                    <option value="Writing & Translation">Writing & Translation</option>
+                    <option value="Writing &amp; Translation">Writing &amp; Translation</option>
                   </select>
                 </div>
                 <div>
-                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Subcategory</label>
-                  <select id="subcategory" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50">
+                  <label class="block text-[11px] font-semibold text-slate-500 mb-1">Subcategory</label>
+                  <select id="subcategory" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-emerald-500/50">
                     <option value="Web Development">Web Development</option>
                     <option value="Mobile App Development">Mobile App Dev</option>
                     <option value="Logo Design">Logo Design</option>
@@ -73,20 +73,20 @@ import {
               </div>
 
               <div>
-                <label class="block text-[11px] font-semibold text-slate-400 mb-1">Specific Service Name</label>
+                <label class="block text-[11px] font-semibold text-slate-500 mb-1">Specific Service Name</label>
                 <input
                   type="text"
                   id="service"
                   required
                   placeholder="e.g. Next.js Web Development, Modern Minimalism Logo"
-                  class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                  class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500/50"
                 />
               </div>
 
               <div class="grid grid-cols-2 gap-3">
                 <div>
-                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Experience Level</label>
-                  <select id="experience" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50">
+                  <label class="block text-[11px] font-semibold text-slate-500 mb-1">Experience Level</label>
+                  <select id="experience" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-emerald-500/50">
                     <option value="Beginner">Beginner</option>
                     <option value="Intermediate">Intermediate</option>
                     <option value="Expert" selected>Expert</option>
@@ -94,8 +94,8 @@ import {
                   </select>
                 </div>
                 <div>
-                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Tone of voice</label>
-                  <select id="tone" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50">
+                  <label class="block text-[11px] font-semibold text-slate-500 mb-1">Tone of voice</label>
+                  <select id="tone" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-emerald-500/50">
                     <option value="Professional" selected>Professional</option>
                     <option value="Friendly">Friendly</option>
                     <option value="Persuasive">Persuasive</option>
@@ -107,47 +107,47 @@ import {
 
               <div class="grid grid-cols-2 gap-3">
                 <div>
-                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Target Country</label>
+                  <label class="block text-[11px] font-semibold text-slate-500 mb-1">Target Country</label>
                   <input
                     type="text"
                     id="country"
                     placeholder="e.g. USA, UK"
-                    class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                    class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500/50"
                   />
                 </div>
                 <div>
-                  <label class="block text-[11px] font-semibold text-slate-400 mb-1">Language</label>
+                  <label class="block text-[11px] font-semibold text-slate-500 mb-1">Language</label>
                   <input
                     type="text"
                     id="language"
                     placeholder="e.g. English"
-                    class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                    class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500/50"
                   />
                 </div>
               </div>
 
               <div>
-                <label class="block text-[11px] font-semibold text-slate-400 mb-1">Competitor Gig URLs (optional)</label>
+                <label class="block text-[11px] font-semibold text-slate-500 mb-1">Competitor Gig URLs (optional)</label>
                 <textarea
                   id="competitorUrls"
                   placeholder="Paste URL links here (one per line)..."
-                  class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-14"
+                  class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500/50 h-14"
                 ></textarea>
               </div>
 
               <div>
-                <label class="block text-[11px] font-semibold text-slate-400 mb-1">Additional requirements / details</label>
+                <label class="block text-[11px] font-semibold text-slate-500 mb-1">Additional requirements / details</label>
                 <textarea
                   id="additionalNotes"
                   placeholder="Enter details about what files you deliver, source code options, extra page layouts, etc..."
-                  class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-20"
+                  class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500/50 h-20"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
                 id="submitBtn"
-                class="w-full py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold text-xs shadow-lg shadow-emerald-500/15 flex items-center justify-center gap-1.5 transition-all mt-4"
+                class="w-full py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold text-xs shadow-md shadow-emerald-500/15 flex items-center justify-center gap-1.5 transition-all mt-4"
               >
                 <Sparkles class="w-3.5 h-3.5 animate-pulse" /> Generate Fiverr Gig Content
               </button>
@@ -157,22 +157,22 @@ import {
 
         <!-- Output Preview Side -->
         <div class="lg:col-span-3 flex flex-col min-h-[400px]">
-          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl flex-1 flex flex-col">
+          <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex-1 flex flex-col">
             <!-- Pane Header -->
-            <div class="px-5 py-4 bg-slate-950/60 border-b border-slate-800/60 flex items-center justify-between flex-shrink-0 flex-wrap gap-2">
+            <div class="px-5 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between flex-shrink-0 flex-wrap gap-2">
               <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-slate-500" id="statusDot"></span>
-                <span class="text-xs font-bold text-slate-300" id="statusText">Awaiting generation parameters</span>
+                <span class="w-2 h-2 rounded-full bg-slate-400" id="statusDot"></span>
+                <span class="text-xs font-bold text-slate-500" id="statusText">Awaiting generation parameters</span>
               </div>
               
               <div class="flex items-center gap-2" id="actionControls" style="display: none;">
-                <button id="copyBtn" class="px-2.5 py-1.5 rounded-lg border border-slate-800 hover:bg-slate-800 text-slate-400 hover:text-white transition-all text-[10px] font-semibold flex items-center gap-1.5">
+                <button id="copyBtn" class="px-2.5 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-500 hover:text-slate-900 transition-all text-[10px] font-semibold flex items-center gap-1.5">
                   <Copy class="w-3 h-3" /> Copy Full
                 </button>
-                <button id="favoriteBtn" class="px-2.5 py-1.5 rounded-lg border border-slate-800 hover:bg-slate-800 text-slate-400 hover:text-white transition-all text-[10px] font-semibold flex items-center gap-1.5">
+                <button id="favoriteBtn" class="px-2.5 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-500 hover:text-slate-900 transition-all text-[10px] font-semibold flex items-center gap-1.5">
                   <Bookmark class="w-3 h-3" /> Save Draft
                 </button>
-                <button id="exportBtn" class="px-2.5 py-1.5 rounded-lg border border-slate-800 hover:bg-slate-800 text-slate-400 hover:text-white transition-all text-[10px] font-semibold flex items-center gap-1.5">
+                <button id="exportBtn" class="px-2.5 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-500 hover:text-slate-900 transition-all text-[10px] font-semibold flex items-center gap-1.5">
                   <Download class="w-3 h-3" /> Export JSON
                 </button>
               </div>
@@ -180,8 +180,8 @@ import {
 
             <!-- Output Body -->
             <div class="p-6 flex-1 overflow-y-auto max-h-[600px] space-y-6" id="outputArea">
-              <div class="text-center py-20 text-slate-500 space-y-3">
-                <Bot class="w-12 h-12 text-slate-700 mx-auto" />
+              <div class="text-center py-20 text-slate-400 space-y-3">
+                <Bot class="w-12 h-12 text-slate-300 mx-auto" />
                 <p class="text-xs font-medium max-w-xs mx-auto">Fill in the parameters on the left and click generate to build a Fiverr Gig draft conforming to top SEO rules.</p>
               </div>
             </div>
@@ -306,46 +306,46 @@ import {
       if (!outputArea) return;
 
       let html = `
-        <div class="space-y-6 text-xs text-slate-300 font-sans">
+        <div class="space-y-6 text-xs text-slate-700 font-sans">
           <!-- Title -->
-          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
             <div class="flex items-center justify-between">
-              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">SEO Optimized Title (starts with 'I will')</span>
-              <span class="text-[9px] text-slate-500">Must be under 80 characters</span>
+              <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider">SEO Optimized Title (starts with 'I will')</span>
+              <span class="text-[9px] text-slate-400">Must be under 80 characters</span>
             </div>
-            <p class="text-sm font-extrabold text-white border-l-2 border-emerald-500 pl-2.5 py-0.5">${data.seoTitle}</p>
+            <p class="text-sm font-extrabold text-slate-900 border-l-2 border-emerald-500 pl-2.5 py-0.5">${data.seoTitle}</p>
           </div>
 
           <!-- Description -->
-          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
-            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Gig Description</span>
-            <p class="text-xs leading-relaxed text-slate-300 whitespace-pre-wrap">${data.description}</p>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+            <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Gig Description</span>
+            <p class="text-xs leading-relaxed text-slate-700 whitespace-pre-wrap">${data.description}</p>
           </div>
 
           <!-- Packages Grid -->
           <div class="space-y-2">
-            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">3-Tier Pricing Packages</span>
+            <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">3-Tier Pricing Packages</span>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
               ${['basic', 'standard', 'premium'].map((key) => {
                 const tier = data.packages[key];
                 if (!tier) return '';
                 return `
-                  <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 flex flex-col justify-between">
+                  <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col justify-between shadow-sm">
                     <div>
                       <div class="flex items-center justify-between mb-1.5">
-                        <span class="font-bold text-white uppercase tracking-wider text-[10px]">${tier.name}</span>
-                        <span class="text-xs font-extrabold text-emerald-400">$${tier.price}</span>
+                        <span class="font-bold text-slate-700 uppercase tracking-wider text-[10px]">${tier.name}</span>
+                        <span class="text-xs font-extrabold text-emerald-600">$${tier.price}</span>
                       </div>
-                      <p class="font-semibold text-white text-[11px] mb-1">${tier.title}</p>
-                      <p class="text-[10px] text-slate-400 mb-3.5 leading-normal">${tier.description}</p>
+                      <p class="font-semibold text-slate-900 text-[11px] mb-1">${tier.title}</p>
+                      <p class="text-[10px] text-slate-500 mb-3.5 leading-normal">${tier.description}</p>
                       
-                      <div class="text-[10px] text-slate-400 mb-3 space-y-1">
+                      <div class="text-[10px] text-slate-500 mb-3 space-y-1">
                         <div>Delivery: <strong>${tier.deliveryDays} Days</strong></div>
                         <div>Revisions: <strong>${tier.revisions}</strong></div>
                       </div>
                       
-                      <ul class="space-y-1 text-[10px] text-slate-300 border-t border-slate-900 pt-2.5">
-                        ${tier.features.map((f: string) => `<li class="flex items-center gap-1.5"><span class="text-emerald-400">✓</span> ${f}</li>`).join('')}
+                      <ul class="space-y-1 text-[10px] text-slate-600 border-t border-slate-100 pt-2.5">
+                        ${tier.features.map((f: string) => `<li class="flex items-center gap-1.5"><span class="text-emerald-600">✓</span> ${f}</li>`).join('')}
                       </ul>
                     </div>
                   </div>
@@ -355,30 +355,30 @@ import {
           </div>
 
           <!-- Tags -->
-          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
-            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Fiverr Search Tags (Max 5)</span>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+            <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Fiverr Search Tags (Max 5)</span>
             <div class="flex flex-wrap gap-2">
-              ${data.tags.map((tag: string) => `<span class="bg-slate-900 border border-slate-800 text-[10px] text-slate-300 px-2.5 py-1 rounded-lg font-mono">${tag}</span>`).join('')}
+              ${data.tags.map((tag: string) => `<span class="bg-white border border-slate-200 text-[10px] text-slate-700 px-2.5 py-1 rounded-lg font-mono">${tag}</span>`).join('')}
             </div>
           </div>
 
           <!-- FAQ Accordions -->
-          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-3">
-            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Fiverr Gig FAQ List</span>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
+            <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Fiverr Gig FAQ List</span>
             <div class="space-y-2.5">
               ${data.faqs.map((faq: any) => `
-                <div class="border-b border-slate-900 pb-2">
-                  <p class="font-bold text-white mb-0.5">Q: ${faq.question}</p>
-                  <p class="text-slate-400 leading-normal text-[11px]">A: ${faq.answer}</p>
+                <div class="border-b border-slate-200 pb-2">
+                  <p class="font-bold text-slate-900 mb-0.5">Q: ${faq.question}</p>
+                  <p class="text-slate-500 leading-normal text-[11px]">A: ${faq.answer}</p>
                 </div>
               `).join('')}
             </div>
           </div>
 
           <!-- Requirements -->
-          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
-            <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Requirements Needed from Buyer</span>
-            <ul class="list-disc pl-4 space-y-1 text-slate-300 text-[11px]">
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+            <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Requirements Needed from Buyer</span>
+            <ul class="list-disc pl-4 space-y-1 text-slate-600 text-[11px]">
               ${data.requirements.map((r: string) => `<li>${r}</li>`).join('')}
             </ul>
           </div>
@@ -386,37 +386,37 @@ import {
           <!-- Media Prompts -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <!-- Image Prompt -->
-            <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
-              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Thumbnail Image Prompt</span>
-              <p class="text-[11px] text-slate-400 leading-relaxed italic">"${data.imagePrompt}"</p>
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+              <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Thumbnail Image Prompt</span>
+              <p class="text-[11px] text-slate-500 leading-relaxed italic">"${data.imagePrompt}"</p>
             </div>
             
             <!-- Video Script -->
-            <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
-              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Fiverr Video Script Outline</span>
-              <p class="text-[11px] text-slate-400 leading-relaxed">${data.videoScript}</p>
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+              <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Fiverr Video Script Outline</span>
+              <p class="text-[11px] text-slate-500 leading-relaxed">${data.videoScript}</p>
             </div>
           </div>
 
           <!-- Call to Action & Upsells -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <!-- CTA -->
-            <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
-              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Call To Action</span>
-              <p class="font-bold text-white text-[11px]">${data.callToAction}</p>
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+              <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Call To Action</span>
+              <p class="font-bold text-slate-900 text-[11px]">${data.callToAction}</p>
             </div>
             
             <!-- Upsells -->
-            <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2">
-              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Upsell Suggestions</span>
-              <ul class="list-disc pl-4 space-y-1 text-slate-400 text-[11px]">
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+              <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Upsell Suggestions</span>
+              <ul class="list-disc pl-4 space-y-1 text-slate-500 text-[11px]">
                 ${data.upsellSuggestions.map((u: string) => `<li>${u}</li>`).join('')}
               </ul>
             </div>
           </div>
           
-          <div class="p-3.5 rounded-xl border border-teal-500/20 bg-teal-500/5 text-[11px] text-slate-400 leading-normal flex items-start gap-2">
-            <ShieldCheck class="w-4 h-4 text-teal-400 flex-shrink-0 mt-0.5" />
+          <div class="p-3.5 rounded-xl border border-teal-200 bg-teal-50 text-[11px] text-slate-600 leading-normal flex items-start gap-2">
+            <ShieldCheck class="w-4 h-4 text-teal-500 flex-shrink-0 mt-0.5" />
             <span>This content is generated as an optimized draft template. Use the Copy button to capture the text, review it for personal alignment, and then paste it manually into the Fiverr seller panel.</span>
           </div>
         </div>

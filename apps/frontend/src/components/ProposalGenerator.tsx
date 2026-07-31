@@ -416,7 +416,7 @@ export const ProposalGenerator: React.FC = () => {
   const paginatedList = filteredList.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
-    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-300 font-sans">
+    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-700 font-sans">
       {/* Toast Notification Stack */}
       <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 pointer-events-none">
         {toasts.map((t) => (
@@ -425,7 +425,7 @@ export const ProposalGenerator: React.FC = () => {
             className={`px-4 py-3 rounded-xl border shadow-xl flex items-center gap-2 pointer-events-auto animate-slide-in text-xs font-semibold ${
               t.type === 'success' ? 'bg-emerald-950/90 border-emerald-500/40 text-emerald-400' :
               t.type === 'error' ? 'bg-rose-950/90 border-rose-500/40 text-rose-400' :
-              'bg-slate-900/90 border-slate-800 text-slate-300'
+              'bg-slate-50/90 border-slate-200 text-slate-700'
             }`}
           >
             <CheckCircle className="w-4 h-4 flex-shrink-0" />
@@ -436,14 +436,14 @@ export const ProposalGenerator: React.FC = () => {
 
       {/* Left Input Configuration Column */}
       <div className="lg:col-span-2 space-y-4">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-4">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  space-y-4">
           <div>
             <div className="flex items-center justify-between mb-1">
-              <h2 className="text-xs font-bold text-slate-300 uppercase tracking-wider">Configure Proposal</h2>
+              <h2 className="text-xs font-bold text-slate-700 uppercase tracking-wider">Configure Proposal</h2>
               <select 
                 value={provider} 
                 onChange={(e) => setProvider(e.target.value)}
-                className="bg-slate-950 border border-slate-800 rounded-lg px-2 py-0.5 text-[10px] text-emerald-400 focus:outline-none"
+                className="bg-white border border-slate-200 rounded-lg px-2 py-0.5 text-[10px] text-emerald-400 focus:outline-none"
               >
                 <option value="gemini">Gemini Pro</option>
                 <option value="openai">GPT-4o mini</option>
@@ -457,11 +457,11 @@ export const ProposalGenerator: React.FC = () => {
           <form onSubmit={handleGenerate} className="space-y-3.5">
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Proposal Type</label>
+                <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Proposal Type</label>
                 <select 
                   value={proposalType} 
                   onChange={(e) => setProposalType(e.target.value)}
-                  className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50"
+                  className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50"
                 >
                   <option value="buyer_request">Buyer Request Response</option>
                   <option value="custom_offer">Custom Offer Draft</option>
@@ -473,71 +473,71 @@ export const ProposalGenerator: React.FC = () => {
               </div>
               
               <div>
-                <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Client Name (optional)</label>
+                <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Client Name (optional)</label>
                 <input 
                   type="text" 
                   value={clientName}
                   onChange={(e) => setClientName(e.target.value)}
                   placeholder="e.g. David K."
-                  className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                  className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Service Offered</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Service Offered</label>
               <input 
                 type="text" 
                 required
                 value={service}
                 onChange={(e) => setService(e.target.value)}
                 placeholder="e.g. Modern Full-stack Next.js Development"
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50"
               />
             </div>
 
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Estimated Budget</label>
+                <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Estimated Budget</label>
                 <input 
                   type="text" 
                   value={budget}
                   onChange={(e) => setBudget(e.target.value)}
                   placeholder="e.g. $150 USD"
-                  className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                  className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50"
                 />
               </div>
               
               <div>
-                <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Delivery Deadline</label>
+                <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Delivery Deadline</label>
                 <input 
                   type="text" 
                   value={deadline}
                   onChange={(e) => setDeadline(e.target.value)}
                   placeholder="e.g. 3 Days"
-                  className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                  className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Client Brief & Job Details</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Client Brief & Job Details</label>
               <textarea 
                 required
                 value={requirements}
                 onChange={(e) => setRequirements(e.target.value)}
                 placeholder="Paste the buyer request requirements or inbox dialogue context..."
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-24"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50 h-24"
               />
             </div>
 
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Communication Tone</label>
+                <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Communication Tone</label>
                 <select 
                   value={tone} 
                   onChange={(e) => setTone(e.target.value)}
-                  className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50"
+                  className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50"
                 >
                   <option value="Professional">Professional & Direct</option>
                   <option value="Friendly">Friendly & Enthusiastic</option>
@@ -551,7 +551,7 @@ export const ProposalGenerator: React.FC = () => {
                   type="button"
                   onClick={() => setShowPromptEditor(!showPromptEditor)}
                   className={`w-full py-2 px-3 border rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
-                    showPromptEditor ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400' : 'bg-slate-950 border-slate-850 hover:bg-slate-900 text-slate-400 hover:text-white'
+                    showPromptEditor ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400' : 'bg-slate-50 border-slate-850 hover:bg-slate-50 text-slate-500 hover:text-white'
                   }`}
                 >
                   <Edit3 className="w-3.5 h-3.5" /> Prompt Template
@@ -560,12 +560,12 @@ export const ProposalGenerator: React.FC = () => {
             </div>
 
             {showPromptEditor && (
-              <div className="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
+              <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-2">
                 <span className="text-[9px] font-bold text-emerald-400 uppercase tracking-wider block">Custom Prompt Layout</span>
                 <textarea 
                   value={promptTemplate}
                   onChange={(e) => setPromptTemplate(e.target.value)}
-                  className="w-full bg-slate-900 border border-slate-800 rounded px-2.5 py-1.5 text-[10px] text-slate-300 font-mono h-24 focus:outline-none"
+                  className="w-full bg-white border border-slate-200 rounded px-2.5 py-1.5 text-[10px] text-slate-700 font-mono h-24 focus:outline-none"
                 />
                 <span className="text-[8px] text-slate-500">Variables available: [TYPE], [BUYER_NAME], [REQUIREMENTS], [SERVICE], [TONE], [BUDGET], [DEADLINE]</span>
               </div>
@@ -593,12 +593,12 @@ export const ProposalGenerator: React.FC = () => {
 
       {/* Right Preview Output Column */}
       <div ref={outputRef} className="lg:col-span-3 flex flex-col min-h-[500px]">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl flex-1 flex flex-col">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden  flex-1 flex flex-col">
           {/* Header toolbar */}
-          <div className="px-5 py-4 bg-slate-950/60 border-b border-slate-800/60 flex items-center justify-between flex-wrap gap-3">
+          <div className="px-5 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between flex-wrap gap-3">
             <div className="flex items-center gap-2">
               <span className={`w-2 h-2 rounded-full ${activeProposal ? 'bg-emerald-500' : 'bg-slate-700'}`}></span>
-              <span className="text-xs font-bold text-slate-300">
+              <span className="text-xs font-bold text-slate-700">
                 {loading ? 'AI Engine Writing...' : activeProposal ? 'Proposal Output Workspace' : 'Waiting for parameters'}
               </span>
             </div>
@@ -608,14 +608,14 @@ export const ProposalGenerator: React.FC = () => {
                 <button 
                   onClick={triggerUndo} 
                   disabled={historyIndex <= 0}
-                  className="p-1.5 rounded bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed"
+                  className="p-1.5 rounded bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-500 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed"
                 >
                   <Undo className="w-3.5 h-3.5" />
                 </button>
                 <button 
                   onClick={triggerRedo} 
                   disabled={historyIndex >= textHistory.length - 1}
-                  className="p-1.5 rounded bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed"
+                  className="p-1.5 rounded bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-500 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed"
                 >
                   <Redo className="w-3.5 h-3.5" />
                 </button>
@@ -627,7 +627,7 @@ export const ProposalGenerator: React.FC = () => {
                   className={`p-1.5 rounded border ${
                     activeProposal.isFavorite 
                       ? 'bg-amber-500/10 border-amber-500/30 text-amber-400' 
-                      : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'
+                      : 'bg-slate-50 border-slate-200 text-slate-500 hover:text-white'
                   }`}
                 >
                   <Star className="w-3.5 h-3.5 fill-current" />
@@ -635,21 +635,21 @@ export const ProposalGenerator: React.FC = () => {
 
                 <button 
                   onClick={() => copyToClipboard(proposalText)}
-                  className="px-2 py-1.5 rounded bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 text-[10px] font-bold flex items-center gap-1"
+                  className="px-2 py-1.5 rounded bg-slate-50 border border-slate-200 text-slate-500 hover:text-white hover:border-slate-700 text-[10px] font-bold flex items-center gap-1"
                 >
                   <Copy className="w-3 h-3" /> Copy
                 </button>
 
                 <button 
                   onClick={() => handleExportDoc(subjectLine || 'Proposal', proposalText)}
-                  className="px-2 py-1.5 rounded bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 text-[10px] font-bold flex items-center gap-1"
+                  className="px-2 py-1.5 rounded bg-slate-50 border border-slate-200 text-slate-500 hover:text-white hover:border-slate-700 text-[10px] font-bold flex items-center gap-1"
                 >
                   <Download className="w-3 h-3" /> DOCX
                 </button>
 
                 <button 
                   onClick={handlePrint}
-                  className="p-1.5 rounded bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-400 hover:text-white"
+                  className="p-1.5 rounded bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-500 hover:text-white"
                 >
                   <Printer className="w-3.5 h-3.5" />
                 </button>
@@ -674,10 +674,10 @@ export const ProposalGenerator: React.FC = () => {
                 <div className="h-12 bg-slate-850 rounded w-2/3 mt-6"></div>
               </div>
             ) : activeProposal ? (
-              <div className="space-y-5 text-xs text-slate-300">
+              <div className="space-y-5 text-xs text-slate-700">
                 {/* Subject / Title */}
                 {subjectLine && (
-                  <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-850">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-850">
                     <span className="text-[9px] font-bold text-emerald-400 uppercase tracking-wider block mb-1">Subject Header</span>
                     <input 
                       type="text" 
@@ -689,7 +689,7 @@ export const ProposalGenerator: React.FC = () => {
                 )}
 
                 {/* Edit Area / Rich Text */}
-                <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-850 space-y-2 relative">
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-850 space-y-2 relative">
                   <div className="flex justify-between items-center mb-1">
                     <span className="text-[9px] font-bold text-emerald-400 uppercase tracking-wider">Proposal Pitch Copy</span>
                     <span className="text-[8px] text-slate-500">Auto-saves to database history</span>
@@ -698,7 +698,7 @@ export const ProposalGenerator: React.FC = () => {
                   <textarea 
                     value={proposalText}
                     onChange={(e) => handleTextChange(e.target.value)}
-                    className="w-full bg-transparent min-h-[220px] focus:outline-none leading-relaxed text-slate-300 font-sans text-xs resize-y"
+                    className="w-full bg-transparent min-h-[220px] focus:outline-none leading-relaxed text-slate-700 font-sans text-xs resize-y"
                     style={{ whiteSpace: 'pre-wrap' }}
                   />
                 </div>
@@ -706,9 +706,9 @@ export const ProposalGenerator: React.FC = () => {
                 {/* Highlights and Questions */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {highlights.length > 0 && (
-                    <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-850">
+                    <div className="p-4 rounded-xl bg-slate-50 border border-slate-850">
                       <span className="text-[9px] font-bold text-emerald-400 uppercase tracking-wider block mb-2">Key Highlights</span>
-                      <ul className="list-disc pl-4 space-y-1.5 text-slate-400">
+                      <ul className="list-disc pl-4 space-y-1.5 text-slate-500">
                         {highlights.map((h, i) => (
                           <li key={i}>{h}</li>
                         ))}
@@ -717,9 +717,9 @@ export const ProposalGenerator: React.FC = () => {
                   )}
 
                   {questions.length > 0 && (
-                    <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-850">
+                    <div className="p-4 rounded-xl bg-slate-50 border border-slate-850">
                       <span className="text-[9px] font-bold text-emerald-400 uppercase tracking-wider block mb-2">Dialogue Starters</span>
-                      <ul className="list-disc pl-4 space-y-1.5 text-slate-400">
+                      <ul className="list-disc pl-4 space-y-1.5 text-slate-500">
                         {questions.map((q, i) => (
                           <li key={i}>{q}</li>
                         ))}
@@ -740,10 +740,10 @@ export const ProposalGenerator: React.FC = () => {
       </div>
 
       {/* Database History Section & Favorites list */}
-      <div className="lg:col-span-5 border-t border-slate-800/80 pt-6 space-y-4">
+      <div className="lg:col-span-5 border-t border-slate-200 pt-6 space-y-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
-            <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+            <h3 className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
               <HistoryIcon className="w-4 h-4 text-emerald-400" /> Saved Proposals & Workspace History
             </h3>
             <p className="text-[10px] text-slate-500 mt-0.5">Explore your generated proposal list, filter by favorite flag or type.</p>
@@ -760,14 +760,14 @@ export const ProposalGenerator: React.FC = () => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search history..." 
-                className="bg-slate-950 border border-slate-850 rounded-lg pl-8 pr-3 py-1.5 text-[10px] text-white focus:outline-none"
+                className="bg-slate-50 border border-slate-850 rounded-lg pl-8 pr-3 py-1.5 text-[10px] text-white focus:outline-none"
               />
             </div>
 
             <select 
               value={typeFilter} 
               onChange={(e) => setTypeFilter(e.target.value)}
-              className="bg-slate-950 border border-slate-850 rounded-lg px-2.5 py-1.5 text-[10px] text-slate-400 focus:outline-none"
+              className="bg-slate-50 border border-slate-850 rounded-lg px-2.5 py-1.5 text-[10px] text-slate-500 focus:outline-none"
             >
               <option value="all">All Types</option>
               <option value="buyer_request">Buyer Request</option>
@@ -782,7 +782,7 @@ export const ProposalGenerator: React.FC = () => {
               className={`px-3 py-1.5 rounded-lg border text-[10px] font-bold flex items-center gap-1.5 transition-all ${
                 favoriteFilter 
                   ? 'bg-amber-500/10 border-amber-500/30 text-amber-400' 
-                  : 'bg-slate-950 border-slate-850 text-slate-400 hover:text-white'
+                  : 'bg-slate-50 border-slate-850 text-slate-500 hover:text-white'
               }`}
             >
               <Star className="w-3 h-3 fill-current" /> Favorites
@@ -791,21 +791,21 @@ export const ProposalGenerator: React.FC = () => {
         </div>
 
         {/* History table */}
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden ">
           {paginatedList.length > 0 ? (
             <div className="divide-y divide-slate-850">
               {paginatedList.map((item) => (
-                <div key={item.id} className="p-4 hover:bg-slate-950/20 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div key={item.id} className="p-4 hover:bg-slate-50/20 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div className="space-y-1 max-w-xl">
                     <div className="flex items-center gap-2 flex-wrap">
-                      <span className="text-[10px] font-bold text-white bg-slate-950 px-2 py-0.5 border border-slate-800 rounded">
+                      <span className="text-[10px] font-bold text-white bg-slate-50 px-2 py-0.5 border border-slate-200 rounded">
                         {item.input.type.replace('_', ' ').toUpperCase()}
                       </span>
                       <span className="text-[10px] text-slate-500">{new Date(item.created_at).toLocaleDateString()}</span>
                       {item.isFavorite && <Star className="w-3.5 h-3.5 text-amber-400 fill-current" />}
                     </div>
                     <p className="text-xs font-bold text-white">For: {item.input.myService}</p>
-                    <p className="text-[10px] text-slate-400 line-clamp-1 italic">"{item.output.proposalText}"</p>
+                    <p className="text-[10px] text-slate-500 line-clamp-1 italic">"{item.output.proposalText}"</p>
                   </div>
                   
                   <div className="flex items-center gap-2">
@@ -817,13 +817,13 @@ export const ProposalGenerator: React.FC = () => {
                     </button>
                     <button 
                       onClick={() => handleFavorite(item)}
-                      className="p-2 rounded bg-slate-950 border border-slate-800 hover:bg-slate-900 text-slate-400 hover:text-white"
+                      className="p-2 rounded bg-slate-50 border border-slate-200 hover:bg-slate-50 text-slate-500 hover:text-white"
                     >
                       <Star className="w-3.5 h-3.5" />
                     </button>
                     <button 
                       onClick={() => handleDelete(item.id)}
-                      className="p-2 rounded bg-slate-950 border border-slate-800 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
+                      className="p-2 rounded bg-slate-50 border border-slate-200 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </button>
@@ -839,20 +839,20 @@ export const ProposalGenerator: React.FC = () => {
 
           {/* Pagination */}
           {totalPages > 1 && (
-            <div className="px-4 py-3 bg-slate-950/60 border-t border-slate-800/60 flex items-center justify-between">
+            <div className="px-4 py-3 bg-slate-50 border-t border-slate-200 flex items-center justify-between">
               <span className="text-[10px] text-slate-500">Page {currentPage} of {totalPages}</span>
               <div className="flex gap-1">
                 <button 
                   onClick={() => setCurrentPage(c => Math.max(1, c - 1))}
                   disabled={currentPage === 1}
-                  className="p-1 rounded bg-slate-900 border border-slate-800 text-slate-400 disabled:opacity-40"
+                  className="p-1 rounded bg-slate-50 border border-slate-200 text-slate-500 disabled:opacity-40"
                 >
                   <ChevronLeft className="w-3.5 h-3.5" />
                 </button>
                 <button 
                   onClick={() => setCurrentPage(c => Math.min(totalPages, c + 1))}
                   disabled={currentPage === totalPages}
-                  className="p-1 rounded bg-slate-900 border border-slate-800 text-slate-400 disabled:opacity-40"
+                  className="p-1 rounded bg-slate-50 border border-slate-200 text-slate-500 disabled:opacity-40"
                 >
                   <ChevronRight className="w-3.5 h-3.5" />
                 </button>

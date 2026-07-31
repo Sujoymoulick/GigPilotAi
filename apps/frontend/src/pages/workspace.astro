@@ -7,30 +7,30 @@ import {
 ---
 
 <Layout title="AI Workspace - GigPilot AI">
-  <div class="flex min-h-screen bg-[#0B0F17]">
+  <div class="flex min-h-screen bg-[#F8F9FA]">
     <!-- Sidebar Navigation -->
     <Sidebar currentPath="/workspace" client:load />
 
     <!-- Main Content Area -->
     <main class="flex-1 flex flex-col min-w-0 overflow-y-auto">
       <!-- Top Navbar -->
-      <header class="h-16 border-b border-slate-800/80 bg-slate-950/40 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-30">
+      <header class="h-16 border-b border-slate-200 bg-white/95 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-30">
         <div class="flex items-center gap-2">
-          <Sparkles class="w-5 h-5 text-emerald-400" />
-          <h1 class="text-sm font-bold text-white">Universal AI Workspace</h1>
+          <Sparkles class="w-5 h-5 text-emerald-500" />
+          <h1 class="text-sm font-bold text-slate-900">Universal AI Workspace</h1>
         </div>
 
         <div class="flex items-center gap-4">
           <!-- Credits Remaining Pill -->
-          <div class="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-[10px] font-bold tracking-wide flex items-center gap-1.5">
-            <Cpu class="w-3.5 h-3.5 text-emerald-400" />
+          <div class="px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-[10px] font-bold tracking-wide flex items-center gap-1.5">
+            <Cpu class="w-3.5 h-3.5 text-emerald-600" />
             <span>450 Credits Left</span>
           </div>
 
           <!-- Provider Select -->
-          <div class="flex items-center gap-1.5 text-xs text-slate-400">
+          <div class="flex items-center gap-1.5 text-xs text-slate-600">
             <span class="text-[10px] font-semibold uppercase tracking-wider">Model:</span>
-            <select id="providerSelect" class="bg-slate-900 border border-slate-800 rounded-lg px-2 py-1 text-xs text-white focus:outline-none focus:border-emerald-500/50">
+            <select id="providerSelect" class="bg-slate-50 border border-slate-200 rounded-lg px-2 py-1 text-xs text-slate-900 focus:outline-none focus:border-emerald-500/50">
               <option value="openai">GPT-4o mini (OpenAI)</option>
               <option value="gemini">Gemini Pro (Google)</option>
               <option value="claude">Claude 3.5 Sonnet (Anthropic)</option>
@@ -45,47 +45,47 @@ import {
       <div class="p-6 max-w-5xl w-full mx-auto flex-1 flex flex-col gap-6">
         <!-- Tools selector grid -->
         <div class="space-y-2">
-          <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider">Choose Workspace Module</label>
+          <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider">Choose Workspace Module</label>
           <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5" id="moduleSelector">
-            <button data-module="gig" class="px-3.5 py-3.5 rounded-xl border border-emerald-500/30 bg-gradient-to-tr from-emerald-950/20 to-slate-900 text-left transition-all hover:border-emerald-500/50 group active-module">
-              <span class="block text-xs font-bold text-white group-hover:text-emerald-300 transition-colors">Gig Generator</span>
-              <span class="block text-[10px] text-slate-400 font-medium mt-1">SEO gigs & packages</span>
+            <button data-module="gig" class="px-3.5 py-3.5 rounded-xl border border-emerald-300 bg-emerald-50 text-left transition-all hover:border-emerald-400 group active-module">
+              <span class="block text-xs font-bold text-emerald-800 transition-colors">Gig Generator</span>
+              <span class="block text-[10px] text-emerald-600 font-medium mt-1">SEO gigs &amp; packages</span>
             </button>
-            <button data-module="proposal" class="px-3.5 py-3.5 rounded-xl border border-slate-800/80 bg-slate-900/30 text-left transition-all hover:border-emerald-500/20 group">
-              <span class="block text-xs font-bold text-slate-300 group-hover:text-white transition-colors">Proposal Writer</span>
+            <button data-module="proposal" class="px-3.5 py-3.5 rounded-xl border border-slate-200 bg-white text-left transition-all hover:border-emerald-300 hover:bg-emerald-50/50 group">
+              <span class="block text-xs font-bold text-slate-700 group-hover:text-slate-900 transition-colors">Proposal Writer</span>
               <span class="block text-[10px] text-slate-400 font-medium mt-1">Buyer request replies</span>
             </button>
-            <button data-module="keywords" class="px-3.5 py-3.5 rounded-xl border border-slate-800/80 bg-slate-900/30 text-left transition-all hover:border-emerald-500/20 group">
-              <span class="block text-xs font-bold text-slate-300 group-hover:text-white transition-colors">Keyword Finder</span>
-              <span class="block text-[10px] text-slate-400 font-medium mt-1">Tags & search metrics</span>
+            <button data-module="keywords" class="px-3.5 py-3.5 rounded-xl border border-slate-200 bg-white text-left transition-all hover:border-emerald-300 hover:bg-emerald-50/50 group">
+              <span class="block text-xs font-bold text-slate-700 group-hover:text-slate-900 transition-colors">Keyword Finder</span>
+              <span class="block text-[10px] text-slate-400 font-medium mt-1">Tags &amp; search metrics</span>
             </button>
-            <button data-module="portfolio" class="px-3.5 py-3.5 rounded-xl border border-slate-800/80 bg-slate-900/30 text-left transition-all hover:border-emerald-500/20 group">
-              <span class="block text-xs font-bold text-slate-300 group-hover:text-white transition-colors">Portfolio Copy</span>
+            <button data-module="portfolio" class="px-3.5 py-3.5 rounded-xl border border-slate-200 bg-white text-left transition-all hover:border-emerald-300 hover:bg-emerald-50/50 group">
+              <span class="block text-xs font-bold text-slate-700 group-hover:text-slate-900 transition-colors">Portfolio Copy</span>
               <span class="block text-[10px] text-slate-400 font-medium mt-1">Bios, case studies</span>
             </button>
-            <button data-module="reply" class="px-3.5 py-3.5 rounded-xl border border-slate-800/80 bg-slate-900/30 text-left transition-all hover:border-emerald-500/20 group">
-              <span class="block text-xs font-bold text-slate-300 group-hover:text-white transition-colors">Client Replies</span>
-              <span class="block text-[10px] text-slate-400 font-medium mt-1">Upsells & delay scripts</span>
+            <button data-module="reply" class="px-3.5 py-3.5 rounded-xl border border-slate-200 bg-white text-left transition-all hover:border-emerald-300 hover:bg-emerald-50/50 group">
+              <span class="block text-xs font-bold text-slate-700 group-hover:text-slate-900 transition-colors">Client Replies</span>
+              <span class="block text-[10px] text-slate-400 font-medium mt-1">Upsells &amp; delay scripts</span>
             </button>
           </div>
         </div>
 
         <!-- Universal Prompt Box -->
-        <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl relative">
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative">
           <div class="flex items-start gap-3">
-            <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mt-1 flex-shrink-0">
+            <div class="w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 mt-1 flex-shrink-0">
               <Bot class="w-4 h-4" />
             </div>
             <div class="flex-1 space-y-3">
               <textarea
                 id="promptInput"
                 placeholder="Describe what you want to build (e.g., 'Next.js website developer for e-commerce with 3 years experience, professional tone, target US audience')..."
-                class="w-full min-h-[90px] bg-transparent border-0 resize-none text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-0"
+                class="w-full min-h-[90px] bg-transparent border-0 resize-none text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-0"
               ></textarea>
               
-              <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-3 border-t border-slate-800/60">
-                <div class="flex items-center gap-1 text-[10px] text-slate-400 font-semibold uppercase">
-                  <Info class="w-3.5 h-3.5 text-teal-400" /> Complies with Fiverr's Manual-Only Policy
+              <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-3 border-t border-slate-200">
+                <div class="flex items-center gap-1 text-[10px] text-slate-500 font-semibold uppercase">
+                  <Info class="w-3.5 h-3.5 text-teal-500" /> Complies with Fiverr's Manual-Only Policy
                 </div>
                 <button
                   id="generateBtn"
@@ -99,27 +99,27 @@ import {
         </div>
 
         <!-- Output Pane -->
-        <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl flex-1 flex flex-col">
+        <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex-1 flex flex-col">
           <!-- Pane Header -->
-          <div class="px-5 py-4 bg-slate-950/60 border-b border-slate-800/60 flex items-center justify-between flex-shrink-0">
+          <div class="px-5 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between flex-shrink-0">
             <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-slate-500" id="statusDot"></span>
-              <span class="text-xs font-bold text-slate-300" id="statusText">Awaiting input parameters</span>
+              <span class="w-2 h-2 rounded-full bg-slate-400" id="statusDot"></span>
+              <span class="text-xs font-bold text-slate-500" id="statusText">Awaiting input parameters</span>
             </div>
             
             <div class="flex items-center gap-2" id="actionControls" style="display: none;">
-              <button id="copyBtn" class="p-2 rounded-lg border border-slate-800 hover:bg-slate-800 text-slate-400 hover:text-white transition-all text-[11px] font-semibold flex items-center gap-1.5">
+              <button id="copyBtn" class="p-2 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-500 hover:text-slate-900 transition-all text-[11px] font-semibold flex items-center gap-1.5">
                 <Copy class="w-3.5 h-3.5" /> Copy
               </button>
-              <button id="favoriteBtn" class="p-2 rounded-lg border border-slate-800 hover:bg-slate-800 text-slate-400 hover:text-white transition-all text-[11px] font-semibold flex items-center gap-1.5">
+              <button id="favoriteBtn" class="p-2 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-500 hover:text-slate-900 transition-all text-[11px] font-semibold flex items-center gap-1.5">
                 <Bookmark class="w-3.5 h-3.5" /> Save
               </button>
             </div>
           </div>
 
           <!-- Output Body -->
-          <div class="p-5 flex-1 overflow-y-auto max-h-[350px] min-h-[200px] text-xs font-mono leading-relaxed text-slate-300" id="outputArea">
-            <span class="text-slate-500">// AI generated markdown or structured text will render here. Choose a module and press generate.</span>
+          <div class="p-5 flex-1 overflow-y-auto max-h-[350px] min-h-[200px] text-xs font-mono leading-relaxed text-slate-700" id="outputArea">
+            <span class="text-slate-400">// AI generated markdown or structured text will render here. Choose a module and press generate.</span>
           </div>
         </div>
       </div>
@@ -128,8 +128,8 @@ import {
 
   <style>
     .active-module {
-      border-color: #8B5CF6 !important;
-      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%) !important;
+      border-color: #10b981 !important;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(209, 250, 229, 0.5) 100%) !important;
     }
   </style>
 

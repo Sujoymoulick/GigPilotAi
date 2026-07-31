@@ -145,7 +145,7 @@ export const AnalyticsDashboard: React.FC = () => {
   };
 
   return (
-    <div className="p-6 max-w-7xl w-full mx-auto space-y-6 text-slate-300 font-sans">
+    <div className="p-6 max-w-7xl w-full mx-auto space-y-6 text-slate-700 font-sans">
       <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 pointer-events-none">
         {toasts.map((t) => (
           <div 
@@ -162,16 +162,16 @@ export const AnalyticsDashboard: React.FC = () => {
       {data && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Card 1 */}
-          <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+          <div className="bg-white border border-slate-200 rounded-2xl p-5  flex flex-col justify-between">
             <div className="flex items-center justify-between mb-3">
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Credits Remaining</span>
+              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Credits Remaining</span>
               <Cpu className="w-4 h-4 text-emerald-400" />
             </div>
             <div className="flex items-baseline gap-1.5 mb-2">
               <span className="text-2xl font-extrabold text-white">{data.creditsRemaining}</span>
               <span className="text-xs text-slate-500">/ 500 total</span>
             </div>
-            <div className="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden">
+            <div className="w-full bg-slate-50 rounded-full h-1.5 overflow-hidden">
               <div 
                 className="bg-gradient-to-r from-emerald-500 to-teal-500 h-full transition-all duration-500" 
                 style={{ width: `${(data.creditsRemaining / 500) * 100}%` }}
@@ -180,9 +180,9 @@ export const AnalyticsDashboard: React.FC = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+          <div className="bg-white border border-slate-200 rounded-2xl p-5  flex flex-col justify-between">
             <div className="flex items-center justify-between mb-3">
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Words Generated</span>
+              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Words Generated</span>
               <Sparkles className="w-4 h-4 text-teal-400" />
             </div>
             <div className="flex items-baseline gap-1.5 mb-2">
@@ -193,9 +193,9 @@ export const AnalyticsDashboard: React.FC = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+          <div className="bg-white border border-slate-200 rounded-2xl p-5  flex flex-col justify-between">
             <div className="flex items-center justify-between mb-3">
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Estimated Time Saved</span>
+              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Estimated Time Saved</span>
               <Clock className="w-4 h-4 text-emerald-400" />
             </div>
             <div className="flex items-baseline gap-1.5 mb-2">
@@ -206,9 +206,9 @@ export const AnalyticsDashboard: React.FC = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+          <div className="bg-white border border-slate-200 rounded-2xl p-5  flex flex-col justify-between">
             <div className="flex items-center justify-between mb-3">
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Primary Tool Module</span>
+              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Primary Tool Module</span>
               <Award className="w-4 h-4 text-teal-400" />
             </div>
             <div className="flex items-baseline gap-1.5 mb-2">
@@ -223,15 +223,15 @@ export const AnalyticsDashboard: React.FC = () => {
       {data && (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Daily Usage Chart */}
-          <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl lg:col-span-2 space-y-4">
+          <div className="bg-white border border-slate-200 rounded-2xl p-5  lg:col-span-2 space-y-4">
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="text-sm font-bold text-white">Credit Consumption (Line Chart)</h3>
-                <p className="text-[10px] text-slate-400 font-medium">Daily credit usage analysis this week</p>
+                <p className="text-[10px] text-slate-500 font-medium">Daily credit usage analysis this week</p>
               </div>
               <button 
                 onClick={handleExportCsv}
-                className="px-2.5 py-1.5 rounded-lg border border-slate-800 hover:bg-slate-850 text-slate-400 hover:text-white transition-all text-[10px] font-semibold flex items-center gap-1.5"
+                className="px-2.5 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-850 text-slate-500 hover:text-white transition-all text-[10px] font-semibold flex items-center gap-1.5"
               >
                 <Download className="w-3.5 h-3.5" /> Export CSV
               </button>
@@ -264,10 +264,10 @@ export const AnalyticsDashboard: React.FC = () => {
           </div>
 
           {/* Tool Allocation bar chart */}
-          <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between space-y-4">
+          <div className="bg-white border border-slate-200 rounded-2xl p-5  flex flex-col justify-between space-y-4">
             <div>
               <h3 className="text-sm font-bold text-white">Tool Popularity (Bar Chart)</h3>
-              <p className="text-[10px] text-slate-400 font-medium">Generation metrics breakdown per workspace</p>
+              <p className="text-[10px] text-slate-500 font-medium">Generation metrics breakdown per workspace</p>
             </div>
 
             <div className="space-y-3.5">
@@ -276,11 +276,11 @@ export const AnalyticsDashboard: React.FC = () => {
                 const widthPct = Math.max(10, Math.round((tool.count / maxCount) * 100));
                 return (
                   <div key={idx} className="space-y-1">
-                    <div className="flex justify-between text-[10px] text-slate-300">
+                    <div className="flex justify-between text-[10px] text-slate-700">
                       <span className="truncate pr-4 font-medium">{tool.tool}</span>
                       <span className="font-bold font-mono">{tool.count} runs</span>
                     </div>
-                    <div className="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden border border-slate-900">
+                    <div className="w-full bg-slate-50 rounded-full h-1.5 overflow-hidden border border-slate-200">
                       <div className="bg-gradient-to-r from-emerald-500 to-teal-500 h-full" style={{ width: `${widthPct}%` }} />
                     </div>
                   </div>

@@ -7,12 +7,12 @@
       "fullName": "Alex Vance",
       "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
       "role": "Pro",
-      "credits_remaining": 446,
+      "credits_remaining": 445,
       "creditsRemaining": 450,
       "monthly_quota": 500,
       "monthlyQuota": 500,
       "created_at": "2026-07-29T17:43:31.901Z",
-      "updated_at": "2026-07-29T17:53:10.544Z",
+      "updated_at": "2026-07-31T18:10:43.754Z",
       "versions": [
         {
           "version": 1,
@@ -85,6 +85,24 @@
             "created_at": "2026-07-29T17:43:31.901Z",
             "updated_at": "2026-07-29T17:52:26.882Z"
           }
+        },
+        {
+          "version": 5,
+          "updated_at": "2026-07-29T17:53:10.544Z",
+          "payload": {
+            "id": "usr_fiverr_pro_001",
+            "email": "alex@gigpilot.ai",
+            "full_name": "Alex Vance",
+            "fullName": "Alex Vance",
+            "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "role": "Pro",
+            "credits_remaining": 446,
+            "creditsRemaining": 450,
+            "monthly_quota": 500,
+            "monthlyQuota": 500,
+            "created_at": "2026-07-29T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:53:10.544Z"
+          }
         }
       ]
     },
@@ -92,12 +110,12 @@
       "id": "id_users_gchr0f6h0",
       "user_id": "usr_fiverr_pro_001",
       "created_at": "2026-07-29T17:52:02.999Z",
-      "updated_at": "2026-07-29T17:53:10.442Z",
+      "updated_at": "2026-07-31T18:10:43.598Z",
       "email": "test@gigpilot.ai",
       "full_name": "test",
       "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
       "role": "Pro",
-      "credits_remaining": 444,
+      "credits_remaining": 442,
       "monthly_quota": 500,
       "versions": [
         {
@@ -145,6 +163,22 @@
             "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
             "role": "Pro",
             "credits_remaining": 446,
+            "monthly_quota": 500
+          }
+        },
+        {
+          "version": 4,
+          "updated_at": "2026-07-29T17:53:10.442Z",
+          "payload": {
+            "id": "id_users_gchr0f6h0",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:52:02.999Z",
+            "updated_at": "2026-07-29T17:53:10.442Z",
+            "email": "test@gigpilot.ai",
+            "full_name": "test",
+            "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "role": "Pro",
+            "credits_remaining": 444,
             "monthly_quota": 500
           }
         }
@@ -599,6 +633,32 @@
       "tokens_used": 239,
       "provider": "OpenAI",
       "is_favorite": false
+    },
+    {
+      "id": "id_generations_pzh6k2lp3",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.756Z",
+      "updated_at": "2026-07-31T18:10:43.756Z",
+      "module": "Social Post Assistant",
+      "input": {
+        "action": "generate",
+        "prompt": "Create a LinkedIn post promoting GigPilot",
+        "platform": "linkedin",
+        "tone": "Professional"
+      },
+      "output": {
+        "title": "Shared Insight",
+        "content": "Just launched some amazing new features. Check out the latest updates!",
+        "hashtags": [
+          "automation",
+          "productivity"
+        ],
+        "mentions": [],
+        "cta": "Learn more at gigpilot.ai"
+      },
+      "tokens_used": 239,
+      "provider": "OpenAI",
+      "is_favorite": false
     }
   ],
   "favorites": [
@@ -853,6 +913,64 @@
       "user_id": "usr_fiverr_pro_001",
       "created_at": "2026-07-29T17:53:10.490Z",
       "updated_at": "2026-07-29T17:53:10.490Z",
+      "action": "Connected linkedin Account",
+      "details": {
+        "username": "alexvance_linkedin"
+      }
+    },
+    {
+      "id": "id_history_o4nhntsu6",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.602Z",
+      "updated_at": "2026-07-31T18:10:43.602Z",
+      "action": "Connected bluesky Account",
+      "details": {
+        "username": "gigpilot.bsky.social"
+      }
+    },
+    {
+      "id": "id_history_2wsgd5svd",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.619Z",
+      "updated_at": "2026-07-31T18:10:43.619Z",
+      "action": "Connected linkedin Account",
+      "details": {
+        "username": "alexvance_linkedin"
+      }
+    },
+    {
+      "id": "id_history_q3dna5enn",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.628Z",
+      "updated_at": "2026-07-31T18:10:43.628Z",
+      "action": "Published Post",
+      "details": {
+        "results": [
+          {
+            "accountId": "acc_li_001",
+            "provider": "linkedin",
+            "success": true,
+            "url": "https://www.linkedin.com/feed/update/urn:li:share:949476137",
+            "providerPostId": "urn:li:share:949476137"
+          }
+        ]
+      }
+    },
+    {
+      "id": "id_history_gol9lnkqq",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.635Z",
+      "updated_at": "2026-07-31T18:10:43.635Z",
+      "action": "Connected mastodon Account",
+      "details": {
+        "username": "alexvance_mastodon"
+      }
+    },
+    {
+      "id": "id_history_jrh2q0pcl",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.655Z",
+      "updated_at": "2026-07-31T18:10:43.655Z",
       "action": "Connected linkedin Account",
       "details": {
         "username": "alexvance_linkedin"
@@ -2444,14 +2562,14 @@
       "display_name": "Alex Vance",
       "email": "alex@gigpilot.ai",
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-      "access_token": "mock_linkedin_access_token_p6pkwzzdk7",
-      "refresh_token": "mock_linkedin_refresh_token_7s573n44pqd",
-      "expires_at": "2026-09-27T17:53:10.487Z",
+      "access_token": "mock_linkedin_access_token_13zz64qjjy4d",
+      "refresh_token": "mock_linkedin_refresh_token_r1jwzw08i4",
+      "expires_at": "2026-09-29T18:10:43.652Z",
       "scope": "w_member_social r_liteprofile r_emailaddress",
       "status": "connected",
-      "last_sync": "2026-07-29T17:53:10.487Z",
+      "last_sync": "2026-07-31T18:10:43.652Z",
       "created_at": "2026-07-19T17:43:31.901Z",
-      "updated_at": "2026-07-29T17:53:10.488Z",
+      "updated_at": "2026-07-31T18:10:43.654Z",
       "versions": [
         {
           "version": 1,
@@ -2628,6 +2746,50 @@
             "created_at": "2026-07-19T17:43:31.901Z",
             "updated_at": "2026-07-29T17:53:10.457Z"
           }
+        },
+        {
+          "version": 9,
+          "updated_at": "2026-07-29T17:53:10.488Z",
+          "payload": {
+            "id": "acc_li_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "linkedin",
+            "provider_user_id": "li_usr_998273",
+            "username": "alexvance_linkedin",
+            "display_name": "Alex Vance",
+            "email": "alex@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_linkedin_access_token_p6pkwzzdk7",
+            "refresh_token": "mock_linkedin_refresh_token_7s573n44pqd",
+            "expires_at": "2026-09-27T17:53:10.487Z",
+            "scope": "w_member_social r_liteprofile r_emailaddress",
+            "status": "connected",
+            "last_sync": "2026-07-29T17:53:10.487Z",
+            "created_at": "2026-07-19T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:53:10.488Z"
+          }
+        },
+        {
+          "version": 10,
+          "updated_at": "2026-07-31T18:10:43.617Z",
+          "payload": {
+            "id": "acc_li_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "linkedin",
+            "provider_user_id": "li_usr_998273",
+            "username": "alexvance_linkedin",
+            "display_name": "Alex Vance",
+            "email": "alex@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_linkedin_access_token_514wk87xzf",
+            "refresh_token": "mock_linkedin_refresh_token_02tx466bx6d8",
+            "expires_at": "2026-09-29T18:10:43.616Z",
+            "scope": "w_member_social r_liteprofile r_emailaddress",
+            "status": "connected",
+            "last_sync": "2026-07-31T18:10:43.616Z",
+            "created_at": "2026-07-19T17:43:31.901Z",
+            "updated_at": "2026-07-31T18:10:43.617Z"
+          }
         }
       ]
     },
@@ -2640,14 +2802,14 @@
       "display_name": "Alex Vance",
       "email": "mastodon@gigpilot.ai",
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
-      "access_token": "mock_mastodon_token_gaqiho5dnpq",
+      "access_token": "mock_mastodon_token_ymzkp5gznx",
       "refresh_token": "mock_mastodon_refresh_token",
       "expires_at": null,
       "scope": "read write follow instance:mastodon.social",
       "status": "connected",
-      "last_sync": "2026-07-29T17:53:10.472Z",
+      "last_sync": "2026-07-31T18:10:43.632Z",
       "created_at": "2026-07-24T17:43:31.901Z",
-      "updated_at": "2026-07-29T17:53:10.473Z",
+      "updated_at": "2026-07-31T18:10:43.633Z",
       "versions": [
         {
           "version": 1,
@@ -2736,6 +2898,28 @@
             "created_at": "2026-07-24T17:43:31.901Z",
             "updated_at": "2026-07-29T17:52:26.804Z"
           }
+        },
+        {
+          "version": 5,
+          "updated_at": "2026-07-29T17:53:10.473Z",
+          "payload": {
+            "id": "acc_ma_001",
+            "user_id": "usr_fiverr_pro_001",
+            "provider": "mastodon",
+            "provider_user_id": "mast_usr_998182",
+            "username": "alexvance_mastodon",
+            "display_name": "Alex Vance",
+            "email": "mastodon@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_mastodon_token_gaqiho5dnpq",
+            "refresh_token": "mock_mastodon_refresh_token",
+            "expires_at": null,
+            "scope": "read write follow instance:mastodon.social",
+            "status": "connected",
+            "last_sync": "2026-07-29T17:53:10.472Z",
+            "created_at": "2026-07-24T17:43:31.901Z",
+            "updated_at": "2026-07-29T17:53:10.473Z"
+          }
         }
       ]
     },
@@ -2761,19 +2945,19 @@
       "id": "id_social_accounts_dik8d97j1",
       "user_id": "usr_fiverr_pro_001",
       "created_at": "2026-07-29T17:52:03.017Z",
-      "updated_at": "2026-07-29T17:52:26.767Z",
+      "updated_at": "2026-07-31T18:10:43.601Z",
       "provider": "bluesky",
       "provider_user_id": "did:plc:mock_gigpilot",
       "username": "gigpilot.bsky.social",
       "display_name": "GigPilot AI",
       "email": "bluesky@gigpilot.ai",
       "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
-      "access_token": "mock_bluesky_jwt_qrn3abdnbkf",
+      "access_token": "mock_bluesky_jwt_n2gnwytuwn",
       "refresh_token": "mock_bluesky_refresh_jwt",
-      "expires_at": "2026-07-29T19:52:26.766Z",
+      "expires_at": "2026-07-31T20:10:43.600Z",
       "scope": "atproto",
       "status": "connected",
-      "last_sync": "2026-07-29T17:52:26.766Z",
+      "last_sync": "2026-07-31T18:10:43.600Z",
       "versions": [
         {
           "version": 1,
@@ -2795,6 +2979,28 @@
             "scope": "atproto",
             "status": "connected",
             "last_sync": "2026-07-29T17:52:03.016Z"
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-29T17:52:26.767Z",
+          "payload": {
+            "id": "id_social_accounts_dik8d97j1",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:52:03.017Z",
+            "updated_at": "2026-07-29T17:52:26.767Z",
+            "provider": "bluesky",
+            "provider_user_id": "did:plc:mock_gigpilot",
+            "username": "gigpilot.bsky.social",
+            "display_name": "GigPilot AI",
+            "email": "bluesky@gigpilot.ai",
+            "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=100&q=80",
+            "access_token": "mock_bluesky_jwt_qrn3abdnbkf",
+            "refresh_token": "mock_bluesky_refresh_jwt",
+            "expires_at": "2026-07-29T19:52:26.766Z",
+            "scope": "atproto",
+            "status": "connected",
+            "last_sync": "2026-07-29T17:52:26.766Z"
           }
         }
       ]
@@ -2886,14 +3092,33 @@
       "id": "id_posts_1x6rrov53",
       "user_id": "usr_fiverr_pro_001",
       "created_at": "2026-07-29T17:43:31.930Z",
-      "updated_at": "2026-07-29T17:43:31.930Z",
+      "updated_at": "2026-07-31T18:10:43.679Z",
       "title": "Scheduled Test Post",
       "content": "This post is scheduled for tomorrow",
       "hashtags": "",
       "mentions": "",
       "link": "",
       "mediaUrls": [],
-      "status": "Scheduled"
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T17:43:31.930Z",
+          "payload": {
+            "id": "id_posts_1x6rrov53",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:43:31.930Z",
+            "updated_at": "2026-07-29T17:43:31.930Z",
+            "title": "Scheduled Test Post",
+            "content": "This post is scheduled for tomorrow",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Scheduled"
+          }
+        }
+      ]
     },
     {
       "id": "id_posts_x0p7ve600",
@@ -2976,14 +3201,33 @@
       "id": "id_posts_sjnrs9kbb",
       "user_id": "usr_fiverr_pro_001",
       "created_at": "2026-07-29T17:52:03.059Z",
-      "updated_at": "2026-07-29T17:52:03.059Z",
+      "updated_at": "2026-07-31T18:10:43.687Z",
       "title": "Scheduled Test Post",
       "content": "This post is scheduled for tomorrow",
       "hashtags": "",
       "mentions": "",
       "link": "",
       "mediaUrls": [],
-      "status": "Scheduled"
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T17:52:03.059Z",
+          "payload": {
+            "id": "id_posts_sjnrs9kbb",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:52:03.059Z",
+            "updated_at": "2026-07-29T17:52:03.059Z",
+            "title": "Scheduled Test Post",
+            "content": "This post is scheduled for tomorrow",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Scheduled"
+          }
+        }
+      ]
     },
     {
       "id": "id_posts_hcyoa565h",
@@ -3066,14 +3310,33 @@
       "id": "id_posts_f1p8yd9l0",
       "user_id": "usr_fiverr_pro_001",
       "created_at": "2026-07-29T17:52:26.811Z",
-      "updated_at": "2026-07-29T17:52:26.811Z",
+      "updated_at": "2026-07-31T18:10:43.695Z",
       "title": "Scheduled Test Post",
       "content": "This post is scheduled for tomorrow",
       "hashtags": "",
       "mentions": "",
       "link": "",
       "mediaUrls": [],
-      "status": "Scheduled"
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T17:52:26.811Z",
+          "payload": {
+            "id": "id_posts_f1p8yd9l0",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:52:26.811Z",
+            "updated_at": "2026-07-29T17:52:26.811Z",
+            "title": "Scheduled Test Post",
+            "content": "This post is scheduled for tomorrow",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Scheduled"
+          }
+        }
+      ]
     },
     {
       "id": "id_posts_thg3fj4uj",
@@ -3156,14 +3419,33 @@
       "id": "id_posts_hdy117kj2",
       "user_id": "usr_fiverr_pro_001",
       "created_at": "2026-07-29T17:53:10.478Z",
-      "updated_at": "2026-07-29T17:53:10.478Z",
+      "updated_at": "2026-07-31T18:10:43.703Z",
       "title": "Scheduled Test Post",
       "content": "This post is scheduled for tomorrow",
       "hashtags": "",
       "mentions": "",
       "link": "",
       "mediaUrls": [],
-      "status": "Scheduled"
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T17:53:10.478Z",
+          "payload": {
+            "id": "id_posts_hdy117kj2",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:53:10.478Z",
+            "updated_at": "2026-07-29T17:53:10.478Z",
+            "title": "Scheduled Test Post",
+            "content": "This post is scheduled for tomorrow",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Scheduled"
+          }
+        }
+      ]
     },
     {
       "id": "id_posts_071upwcj0",
@@ -3196,6 +3478,96 @@
           }
         }
       ]
+    },
+    {
+      "id": "id_posts_yn9nuz3rf",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.612Z",
+      "updated_at": "2026-07-31T18:10:43.612Z",
+      "title": "Test Post Draft",
+      "content": "This is a test post content",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "media_urls": [],
+      "status": "Draft"
+    },
+    {
+      "id": "id_posts_263mfkjte",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.623Z",
+      "updated_at": "2026-07-31T18:10:43.626Z",
+      "title": "Instant Publish Test",
+      "content": "Publishing immediately to LinkedIn!",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-31T18:10:43.623Z",
+          "payload": {
+            "id": "id_posts_263mfkjte",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-31T18:10:43.623Z",
+            "updated_at": "2026-07-31T18:10:43.623Z",
+            "title": "Instant Publish Test",
+            "content": "Publishing immediately to LinkedIn!",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Publishing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_posts_ql6pfxs8x",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.641Z",
+      "updated_at": "2026-07-31T18:10:43.641Z",
+      "title": "Scheduled Test Post",
+      "content": "This post is scheduled for tomorrow",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Scheduled"
+    },
+    {
+      "id": "id_posts_wcp6pe0a8",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.659Z",
+      "updated_at": "2026-07-31T18:10:43.710Z",
+      "title": "Past Scheduled Post",
+      "content": "Should trigger right now!",
+      "hashtags": "",
+      "mentions": "",
+      "link": "",
+      "mediaUrls": [],
+      "status": "Published",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-31T18:10:43.659Z",
+          "payload": {
+            "id": "id_posts_wcp6pe0a8",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-31T18:10:43.659Z",
+            "updated_at": "2026-07-31T18:10:43.659Z",
+            "title": "Past Scheduled Post",
+            "content": "Should trigger right now!",
+            "hashtags": "",
+            "mentions": "",
+            "link": "",
+            "mediaUrls": [],
+            "status": "Scheduled"
+          }
+        }
+      ]
     }
   ],
   "scheduled_posts": [
@@ -3206,12 +3578,32 @@
       "provider": "linkedin",
       "scheduled_time": "2026-07-30T11:43:31.901Z",
       "timezone": "UTC",
-      "status": "Scheduled",
+      "status": "Failed",
       "retry_count": 0,
       "published_at": null,
-      "error_message": null,
+      "error_message": "Post or connected social account details not found",
       "created_at": "2026-07-29T16:43:31.901Z",
-      "updated_at": "2026-07-29T16:43:31.901Z"
+      "updated_at": "2026-07-31T18:10:43.668Z",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T16:43:31.901Z",
+          "payload": {
+            "id": "sched_001",
+            "user_id": "usr_fiverr_pro_001",
+            "post_id": "post_002",
+            "provider": "linkedin",
+            "scheduled_time": "2026-07-30T11:43:31.901Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null,
+            "created_at": "2026-07-29T16:43:31.901Z",
+            "updated_at": "2026-07-29T16:43:31.901Z"
+          }
+        }
+      ]
     },
     {
       "id": "sched_002",
@@ -3220,27 +3612,87 @@
       "provider": "mastodon",
       "scheduled_time": "2026-07-30T11:43:31.901Z",
       "timezone": "UTC",
-      "status": "Scheduled",
+      "status": "Failed",
       "retry_count": 0,
       "published_at": null,
-      "error_message": null,
+      "error_message": "Post or connected social account details not found",
       "created_at": "2026-07-29T16:43:31.901Z",
-      "updated_at": "2026-07-29T16:43:31.901Z"
+      "updated_at": "2026-07-31T18:10:43.672Z",
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T16:43:31.901Z",
+          "payload": {
+            "id": "sched_002",
+            "user_id": "usr_fiverr_pro_001",
+            "post_id": "post_002",
+            "provider": "mastodon",
+            "scheduled_time": "2026-07-30T11:43:31.901Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null,
+            "created_at": "2026-07-29T16:43:31.901Z",
+            "updated_at": "2026-07-29T16:43:31.901Z"
+          }
+        }
+      ]
     },
     {
       "id": "id_scheduled_posts_51o8mvm5o",
       "user_id": "usr_fiverr_pro_001",
       "created_at": "2026-07-29T17:43:31.932Z",
-      "updated_at": "2026-07-29T17:43:31.932Z",
+      "updated_at": "2026-07-31T18:10:43.677Z",
       "post_id": "id_posts_1x6rrov53",
       "provider": "mastodon",
       "social_account_id": "acc_ma_001",
       "scheduled_time": "2026-07-30T17:43:31.928Z",
       "timezone": "UTC",
-      "status": "Scheduled",
+      "status": "Published",
       "retry_count": 0,
-      "published_at": null,
-      "error_message": null
+      "published_at": "2026-07-31T18:10:43.676Z",
+      "error_message": null,
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T17:43:31.932Z",
+          "payload": {
+            "id": "id_scheduled_posts_51o8mvm5o",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:43:31.932Z",
+            "updated_at": "2026-07-29T17:43:31.932Z",
+            "post_id": "id_posts_1x6rrov53",
+            "provider": "mastodon",
+            "social_account_id": "acc_ma_001",
+            "scheduled_time": "2026-07-30T17:43:31.928Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-31T18:10:43.675Z",
+          "payload": {
+            "id": "id_scheduled_posts_51o8mvm5o",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:43:31.932Z",
+            "updated_at": "2026-07-31T18:10:43.675Z",
+            "post_id": "id_posts_1x6rrov53",
+            "provider": "mastodon",
+            "social_account_id": "acc_ma_001",
+            "scheduled_time": "2026-07-30T17:43:31.928Z",
+            "timezone": "UTC",
+            "status": "Publishing",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        }
+      ]
     },
     {
       "id": "id_scheduled_posts_jyli3gtbp",
@@ -3301,16 +3753,56 @@
       "id": "id_scheduled_posts_kbzu0rqm2",
       "user_id": "usr_fiverr_pro_001",
       "created_at": "2026-07-29T17:52:03.062Z",
-      "updated_at": "2026-07-29T17:52:03.062Z",
+      "updated_at": "2026-07-31T18:10:43.684Z",
       "post_id": "id_posts_sjnrs9kbb",
       "provider": "mastodon",
       "social_account_id": "acc_ma_001",
       "scheduled_time": "2026-07-30T17:52:03.052Z",
       "timezone": "UTC",
-      "status": "Scheduled",
+      "status": "Published",
       "retry_count": 0,
-      "published_at": null,
-      "error_message": null
+      "published_at": "2026-07-31T18:10:43.683Z",
+      "error_message": null,
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T17:52:03.062Z",
+          "payload": {
+            "id": "id_scheduled_posts_kbzu0rqm2",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:52:03.062Z",
+            "updated_at": "2026-07-29T17:52:03.062Z",
+            "post_id": "id_posts_sjnrs9kbb",
+            "provider": "mastodon",
+            "social_account_id": "acc_ma_001",
+            "scheduled_time": "2026-07-30T17:52:03.052Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-31T18:10:43.683Z",
+          "payload": {
+            "id": "id_scheduled_posts_kbzu0rqm2",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:52:03.062Z",
+            "updated_at": "2026-07-31T18:10:43.683Z",
+            "post_id": "id_posts_sjnrs9kbb",
+            "provider": "mastodon",
+            "social_account_id": "acc_ma_001",
+            "scheduled_time": "2026-07-30T17:52:03.052Z",
+            "timezone": "UTC",
+            "status": "Publishing",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        }
+      ]
     },
     {
       "id": "id_scheduled_posts_x9ke1pdyq",
@@ -3371,16 +3863,56 @@
       "id": "id_scheduled_posts_x125uj918",
       "user_id": "usr_fiverr_pro_001",
       "created_at": "2026-07-29T17:52:26.814Z",
-      "updated_at": "2026-07-29T17:52:26.814Z",
+      "updated_at": "2026-07-31T18:10:43.692Z",
       "post_id": "id_posts_f1p8yd9l0",
       "provider": "mastodon",
       "social_account_id": "acc_ma_001",
       "scheduled_time": "2026-07-30T17:52:26.806Z",
       "timezone": "UTC",
-      "status": "Scheduled",
+      "status": "Published",
       "retry_count": 0,
-      "published_at": null,
-      "error_message": null
+      "published_at": "2026-07-31T18:10:43.691Z",
+      "error_message": null,
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T17:52:26.814Z",
+          "payload": {
+            "id": "id_scheduled_posts_x125uj918",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:52:26.814Z",
+            "updated_at": "2026-07-29T17:52:26.814Z",
+            "post_id": "id_posts_f1p8yd9l0",
+            "provider": "mastodon",
+            "social_account_id": "acc_ma_001",
+            "scheduled_time": "2026-07-30T17:52:26.806Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-31T18:10:43.691Z",
+          "payload": {
+            "id": "id_scheduled_posts_x125uj918",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:52:26.814Z",
+            "updated_at": "2026-07-31T18:10:43.691Z",
+            "post_id": "id_posts_f1p8yd9l0",
+            "provider": "mastodon",
+            "social_account_id": "acc_ma_001",
+            "scheduled_time": "2026-07-30T17:52:26.806Z",
+            "timezone": "UTC",
+            "status": "Publishing",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        }
+      ]
     },
     {
       "id": "id_scheduled_posts_alu5tvap8",
@@ -3441,16 +3973,56 @@
       "id": "id_scheduled_posts_ylugentm6",
       "user_id": "usr_fiverr_pro_001",
       "created_at": "2026-07-29T17:53:10.481Z",
-      "updated_at": "2026-07-29T17:53:10.481Z",
+      "updated_at": "2026-07-31T18:10:43.700Z",
       "post_id": "id_posts_hdy117kj2",
       "provider": "mastodon",
       "social_account_id": "acc_ma_001",
       "scheduled_time": "2026-07-30T17:53:10.475Z",
       "timezone": "UTC",
-      "status": "Scheduled",
+      "status": "Published",
       "retry_count": 0,
-      "published_at": null,
-      "error_message": null
+      "published_at": "2026-07-31T18:10:43.699Z",
+      "error_message": null,
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-29T17:53:10.481Z",
+          "payload": {
+            "id": "id_scheduled_posts_ylugentm6",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:53:10.481Z",
+            "updated_at": "2026-07-29T17:53:10.481Z",
+            "post_id": "id_posts_hdy117kj2",
+            "provider": "mastodon",
+            "social_account_id": "acc_ma_001",
+            "scheduled_time": "2026-07-30T17:53:10.475Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-31T18:10:43.699Z",
+          "payload": {
+            "id": "id_scheduled_posts_ylugentm6",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-29T17:53:10.481Z",
+            "updated_at": "2026-07-31T18:10:43.699Z",
+            "post_id": "id_posts_hdy117kj2",
+            "provider": "mastodon",
+            "social_account_id": "acc_ma_001",
+            "scheduled_time": "2026-07-30T17:53:10.475Z",
+            "timezone": "UTC",
+            "status": "Publishing",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        }
+      ]
     },
     {
       "id": "id_scheduled_posts_27v885x34",
@@ -3498,6 +4070,76 @@
             "provider": "linkedin",
             "social_account_id": "acc_li_001",
             "scheduled_time": "2026-07-29T17:53:05.490Z",
+            "timezone": "UTC",
+            "status": "Publishing",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "id_scheduled_posts_vfy1x0btt",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.644Z",
+      "updated_at": "2026-07-31T18:10:43.644Z",
+      "post_id": "id_posts_ql6pfxs8x",
+      "provider": "mastodon",
+      "social_account_id": "acc_ma_001",
+      "scheduled_time": "2026-08-01T18:10:43.635Z",
+      "timezone": "UTC",
+      "status": "Scheduled",
+      "retry_count": 0,
+      "published_at": null,
+      "error_message": null
+    },
+    {
+      "id": "id_scheduled_posts_eqhppo62f",
+      "user_id": "usr_fiverr_pro_001",
+      "created_at": "2026-07-31T18:10:43.661Z",
+      "updated_at": "2026-07-31T18:10:43.708Z",
+      "post_id": "id_posts_wcp6pe0a8",
+      "provider": "linkedin",
+      "social_account_id": "acc_li_001",
+      "scheduled_time": "2026-07-31T18:10:38.656Z",
+      "timezone": "UTC",
+      "status": "Published",
+      "retry_count": 0,
+      "published_at": "2026-07-31T18:10:43.707Z",
+      "error_message": null,
+      "versions": [
+        {
+          "version": 1,
+          "updated_at": "2026-07-31T18:10:43.661Z",
+          "payload": {
+            "id": "id_scheduled_posts_eqhppo62f",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-31T18:10:43.661Z",
+            "updated_at": "2026-07-31T18:10:43.661Z",
+            "post_id": "id_posts_wcp6pe0a8",
+            "provider": "linkedin",
+            "social_account_id": "acc_li_001",
+            "scheduled_time": "2026-07-31T18:10:38.656Z",
+            "timezone": "UTC",
+            "status": "Scheduled",
+            "retry_count": 0,
+            "published_at": null,
+            "error_message": null
+          }
+        },
+        {
+          "version": 2,
+          "updated_at": "2026-07-31T18:10:43.706Z",
+          "payload": {
+            "id": "id_scheduled_posts_eqhppo62f",
+            "user_id": "usr_fiverr_pro_001",
+            "created_at": "2026-07-31T18:10:43.661Z",
+            "updated_at": "2026-07-31T18:10:43.706Z",
+            "post_id": "id_posts_wcp6pe0a8",
+            "provider": "linkedin",
+            "social_account_id": "acc_li_001",
+            "scheduled_time": "2026-07-31T18:10:38.656Z",
             "timezone": "UTC",
             "status": "Publishing",
             "retry_count": 0,

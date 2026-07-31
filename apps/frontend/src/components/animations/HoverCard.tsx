@@ -69,7 +69,7 @@ export const HoverCard: React.FC<HoverCardProps> = ({
   // Extract base border and bg styles if not provided in className
   const defaultStyles = className.includes('bg-') 
     ? '' 
-    : 'bg-slate-900/40 border-slate-800/80 backdrop-blur-xl';
+    : 'bg-white border-slate-200 ';
 
   return (
     <motion.div

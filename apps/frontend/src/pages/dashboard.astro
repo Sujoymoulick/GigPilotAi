@@ -8,126 +8,126 @@ import {
 ---
 
 <Layout title="Dashboard - GigPilot AI">
-  <div class="flex min-h-screen bg-[#0B0F17]">
+  <div class="flex min-h-screen bg-[#F8F9FA]">
     <!-- Sidebar Navigation -->
     <Sidebar currentPath="/dashboard" client:load />
 
     <!-- Main Content Area -->
-    <main class="flex-1 flex flex-col min-w-0 overflow-y-auto">
+    <main class="flex-1 flex flex-col min-w-0 overflow-y-auto md:pl-0">
       <!-- Top Navbar -->
-      <header class="h-16 border-b border-slate-800/80 bg-slate-950/40 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-30">
+      <header class="h-16 border-b border-slate-200 bg-white/95 backdrop-blur-md px-6 flex items-center justify-between sticky top-0 z-30">
         <!-- Search bar -->
         <div class="relative max-w-xs w-full hidden sm:block">
           <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <Search class="w-4 h-4 text-slate-500" />
+            <Search class="w-4 h-4 text-slate-400" />
           </span>
           <input
             type="text"
             placeholder="Search AI jobs, gigs..."
-            class="w-full bg-slate-900/80 border border-slate-800 rounded-xl pl-9 pr-4 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500/60 focus:ring-1 focus:ring-emerald-500/40"
+            class="w-full bg-slate-50 border border-slate-200 rounded-xl pl-9 pr-4 py-1.5 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500/60 focus:ring-1 focus:ring-emerald-500/40"
           />
         </div>
 
         <div class="flex items-center gap-4 ml-auto">
           <!-- Credits Remaining Pill -->
-          <div class="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-[10px] font-bold tracking-wide flex items-center gap-1.5">
-            <Cpu class="w-3.5 h-3.5 text-emerald-400" />
+          <div class="px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-[10px] font-bold tracking-wide flex items-center gap-1.5">
+            <Cpu class="w-3.5 h-3.5 text-emerald-600" />
             <span>450 / 500 Credits</span>
           </div>
 
           <!-- Upgrade Button -->
-          <a href="/billing" class="text-xs px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold shadow-md shadow-emerald-500/15 transition-all">
+          <a href="/billing" class="text-xs px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold shadow-sm shadow-emerald-500/15 transition-all">
             Upgrade
           </a>
 
           <!-- Notifications -->
-          <button class="relative p-2 rounded-xl border border-slate-800 hover:bg-slate-900/60 text-slate-400 hover:text-white transition-all">
+          <button class="relative p-2 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-500 hover:text-slate-900 transition-all">
             <Bell class="w-4 h-4" />
             <span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
             <span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-emerald-500"></span>
           </button>
 
           <!-- Profile Menu -->
-          <div class="flex items-center gap-2 border-l border-slate-800 pl-4">
-            <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-emerald-600 to-teal-600 flex items-center justify-center font-bold text-white text-xs shadow-md shadow-emerald-500/10">
+          <div class="flex items-center gap-2 border-l border-slate-200 pl-4">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-emerald-600 to-teal-600 flex items-center justify-center font-bold text-white text-xs shadow-sm shadow-emerald-500/10">
               AV
             </div>
             <div class="hidden md:block text-left">
-              <div class="text-xs font-bold text-white leading-tight">Alex Vance</div>
-              <div class="text-[10px] text-slate-400 font-medium">Pro Member</div>
+              <div class="text-xs font-bold text-slate-900 leading-tight">Alex Vance</div>
+              <div class="text-[10px] text-slate-500 font-medium">Pro Member</div>
             </div>
           </div>
         </div>
       </header>
 
-      <!-- Dashboard Dashboard Workspace -->
-      <div class="p-6 space-y-6 max-w-7xl w-full mx-auto">
+      <!-- Dashboard Workspace -->
+      <div class="p-4 sm:p-6 space-y-6 max-w-7xl w-full mx-auto">
         <!-- Overview Row -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           <!-- Widget 1: Usage -->
-          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+          <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Credits Remaining</span>
-              <Cpu class="w-4 h-4 text-emerald-400" />
+              <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Credits Remaining</span>
+              <Cpu class="w-4 h-4 text-emerald-500" />
             </div>
             <div class="flex items-baseline gap-1.5 mb-2">
-              <span class="text-2xl font-bold text-white">450</span>
-              <span class="text-xs text-slate-500">/ 500 total</span>
+              <span class="text-2xl font-bold text-slate-900">450</span>
+              <span class="text-xs text-slate-400">/ 500 total</span>
             </div>
-            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden">
+            <div class="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
               <div class="bg-gradient-to-r from-emerald-500 to-teal-500 h-full w-[90%]" />
             </div>
           </div>
 
           <!-- Widget 2: Jobs -->
-          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+          <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">AI Jobs Run</span>
-              <Sparkles class="w-4 h-4 text-teal-400" />
+              <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">AI Jobs Run</span>
+              <Sparkles class="w-4 h-4 text-teal-500" />
             </div>
             <div class="flex items-baseline gap-1.5 mb-2">
-              <span class="text-2xl font-bold text-white">128</span>
-              <span class="text-xs text-green-400 font-semibold flex items-center gap-0.5"><ArrowUpRight class="w-3.5 h-3.5" /> +24%</span>
+              <span class="text-2xl font-bold text-slate-900">128</span>
+              <span class="text-xs text-green-600 font-semibold flex items-center gap-0.5"><ArrowUpRight class="w-3.5 h-3.5" /> +24%</span>
             </div>
-            <p class="text-[10px] text-slate-500 font-medium">Generations this month</p>
+            <p class="text-[10px] text-slate-400 font-medium">Generations this month</p>
           </div>
 
           <!-- Widget 3: Saved Gigs -->
-          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+          <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Saved Gig Drafts</span>
-              <Layers class="w-4 h-4 text-emerald-400" />
+              <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Saved Gig Drafts</span>
+              <Layers class="w-4 h-4 text-emerald-500" />
             </div>
             <div class="flex items-baseline gap-1.5 mb-2">
-              <span class="text-2xl font-bold text-white">14</span>
-              <span class="text-xs text-slate-500">/ 50 maximum</span>
+              <span class="text-2xl font-bold text-slate-900">14</span>
+              <span class="text-xs text-slate-400">/ 50 maximum</span>
             </div>
-            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden">
+            <div class="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
               <div class="bg-emerald-500 h-full w-[28%]" />
             </div>
           </div>
 
           <!-- Widget 4: Rating -->
-          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+          <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Fiverr SEO Health</span>
-              <TrendingUp class="w-4 h-4 text-emerald-400" />
+              <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Fiverr SEO Health</span>
+              <TrendingUp class="w-4 h-4 text-emerald-500" />
             </div>
             <div class="flex items-baseline gap-1.5 mb-2">
-              <span class="text-2xl font-bold text-white">94%</span>
-              <span class="text-xs text-green-400 font-semibold flex items-center gap-0.5"><ArrowUpRight class="w-3.5 h-3.5" /> +5%</span>
+              <span class="text-2xl font-bold text-slate-900">94%</span>
+              <span class="text-xs text-green-600 font-semibold flex items-center gap-0.5"><ArrowUpRight class="w-3.5 h-3.5" /> +5%</span>
             </div>
-            <p class="text-[10px] text-slate-500 font-medium">Average SEO health score</p>
+            <p class="text-[10px] text-slate-400 font-medium">Average SEO health score</p>
           </div>
         </div>
 
         <!-- Charts Row -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <!-- Daily Usage Chart -->
-          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl lg:col-span-2 space-y-4">
+          <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm lg:col-span-2 space-y-4">
             <div class="flex items-center justify-between">
               <div>
-                <h3 class="text-sm font-bold text-white">Credits & Words Used</h3>
+                <h3 class="text-sm font-bold text-slate-900">Credits & Words Used</h3>
                 <p class="text-[10px] text-slate-400 font-medium">Daily credit consumption this week</p>
               </div>
               <div class="flex items-center gap-3 text-[10px] font-semibold text-slate-400">
@@ -140,9 +140,9 @@ import {
             <div class="h-48 w-full relative pt-2">
               <svg class="w-full h-full" viewBox="0 0 600 200" preserveAspectRatio="none">
                 <!-- Grid Lines -->
-                <line x1="0" y1="50" x2="600" y2="50" stroke="#1e293b" stroke-width="0.5" stroke-dasharray="4" />
-                <line x1="0" y1="100" x2="600" y2="100" stroke="#1e293b" stroke-width="0.5" stroke-dasharray="4" />
-                <line x1="0" y1="150" x2="600" y2="150" stroke="#1e293b" stroke-width="0.5" stroke-dasharray="4" />
+                <line x1="0" y1="50" x2="600" y2="50" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4" />
+                <line x1="0" y1="100" x2="600" y2="100" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4" />
+                <line x1="0" y1="150" x2="600" y2="150" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4" />
                 
                 <!-- Purple Line (Credits) -->
                 <path
@@ -164,12 +164,12 @@ import {
                 />
                 
                 <!-- Data Dots -->
-                <circle cx="200" cy="90" r="4.5" fill="#8B5CF6" stroke="#0B0F17" stroke-width="1.5" />
-                <circle cx="380" cy="110" r="4.5" fill="#8B5CF6" stroke="#0B0F17" stroke-width="1.5" />
-                <circle cx="560" cy="50" r="4.5" fill="#8B5CF6" stroke="#0B0F17" stroke-width="1.5" />
+                <circle cx="200" cy="90" r="4.5" fill="#8B5CF6" stroke="#ffffff" stroke-width="1.5" />
+                <circle cx="380" cy="110" r="4.5" fill="#8B5CF6" stroke="#ffffff" stroke-width="1.5" />
+                <circle cx="560" cy="50" r="4.5" fill="#8B5CF6" stroke="#ffffff" stroke-width="1.5" />
               </svg>
               <!-- Chart Labels -->
-              <div class="absolute bottom-[-10px] left-0 w-full flex justify-between text-[9px] text-slate-500 font-bold px-2">
+              <div class="absolute bottom-[-10px] left-0 w-full flex justify-between text-[9px] text-slate-400 font-bold px-2">
                 <span>Mon</span>
                 <span>Tue</span>
                 <span>Wed</span>
@@ -182,9 +182,9 @@ import {
           </div>
 
           <!-- Keyword Rankings -->
-          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+          <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
             <div>
-              <h3 class="text-sm font-bold text-white mb-1.5">Fiverr Search Keywords</h3>
+              <h3 class="text-sm font-bold text-slate-900 mb-1.5">Fiverr Search Keywords</h3>
               <p class="text-[10px] text-slate-400 font-medium mb-4">Top tracked keywords ranking position</p>
             </div>
             
@@ -192,10 +192,10 @@ import {
               <!-- Keyword 1 -->
               <div>
                 <div class="flex items-center justify-between text-[11px] mb-1">
-                  <span class="font-mono text-slate-300">nextjs developer</span>
-                  <span class="text-green-400 font-semibold flex items-center gap-0.5">#3 <TrendingUp class="w-3 h-3" /></span>
+                  <span class="font-mono text-slate-700">nextjs developer</span>
+                  <span class="text-green-600 font-semibold flex items-center gap-0.5">#3 <TrendingUp class="w-3 h-3" /></span>
                 </div>
-                <div class="w-full bg-slate-950 rounded-full h-1 overflow-hidden">
+                <div class="w-full bg-slate-100 rounded-full h-1 overflow-hidden">
                   <div class="bg-emerald-500 h-full w-[92%]" />
                 </div>
               </div>
@@ -203,10 +203,10 @@ import {
               <!-- Keyword 2 -->
               <div>
                 <div class="flex items-center justify-between text-[11px] mb-1">
-                  <span class="font-mono text-slate-300">fiverr nextjs</span>
-                  <span class="text-green-400 font-semibold flex items-center gap-0.5">#5 <TrendingUp class="w-3 h-3" /></span>
+                  <span class="font-mono text-slate-700">fiverr nextjs</span>
+                  <span class="text-green-600 font-semibold flex items-center gap-0.5">#5 <TrendingUp class="w-3 h-3" /></span>
                 </div>
-                <div class="w-full bg-slate-950 rounded-full h-1 overflow-hidden">
+                <div class="w-full bg-slate-100 rounded-full h-1 overflow-hidden">
                   <div class="bg-emerald-500 h-full w-[85%]" />
                 </div>
               </div>
@@ -214,10 +214,10 @@ import {
               <!-- Keyword 3 -->
               <div>
                 <div class="flex items-center justify-between text-[11px] mb-1">
-                  <span class="font-mono text-slate-300">api integration react</span>
-                  <span class="text-yellow-400 font-semibold">#14</span>
+                  <span class="font-mono text-slate-700">api integration react</span>
+                  <span class="text-yellow-600 font-semibold">#14</span>
                 </div>
-                <div class="w-full bg-slate-950 rounded-full h-1 overflow-hidden">
+                <div class="w-full bg-slate-100 rounded-full h-1 overflow-hidden">
                   <div class="bg-teal-500 h-full w-[65%]" />
                 </div>
               </div>
@@ -225,16 +225,16 @@ import {
               <!-- Keyword 4 -->
               <div>
                 <div class="flex items-center justify-between text-[11px] mb-1">
-                  <span class="font-mono text-slate-300">website-development</span>
-                  <span class="text-rose-400 font-semibold">#42</span>
+                  <span class="font-mono text-slate-700">website-development</span>
+                  <span class="text-rose-500 font-semibold">#42</span>
                 </div>
-                <div class="w-full bg-slate-950 rounded-full h-1 overflow-hidden">
-                  <div class="bg-slate-700 h-full w-[35%]" />
+                <div class="w-full bg-slate-100 rounded-full h-1 overflow-hidden">
+                  <div class="bg-slate-300 h-full w-[35%]" />
                 </div>
               </div>
             </div>
             
-            <a href="/tools/keyword-finder" class="w-full text-center py-2 border border-slate-800 rounded-xl text-[10px] text-slate-400 hover:text-white font-semibold transition-all mt-4">
+            <a href="/tools/keyword-finder" class="w-full text-center py-2 border border-slate-200 rounded-xl text-[10px] text-slate-500 hover:text-slate-900 hover:border-emerald-300 font-semibold transition-all mt-4">
               Explore Keyword Finder
             </a>
           </div>
@@ -243,81 +243,81 @@ import {
         <!-- Recent Activity & Recommendations -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <!-- Recent Activity -->
-          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl">
-            <h3 class="text-sm font-bold text-white mb-4">Recent AI Workspace Jobs</h3>
+          <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
+            <h3 class="text-sm font-bold text-slate-900 mb-4">Recent AI Workspace Jobs</h3>
             <div class="space-y-4">
               <!-- Item 1 -->
               <div class="flex items-start gap-3 text-xs">
-                <div class="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 mt-0.5">
+                <div class="p-2 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-600 mt-0.5">
                   <Sparkles class="w-4 h-4" />
                 </div>
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center justify-between">
-                    <p class="font-semibold text-white truncate">Generated Next.js Developer Gig</p>
-                    <span class="text-[9px] text-slate-500 font-medium">1 hr ago</span>
+                    <p class="font-semibold text-slate-900 truncate">Generated Next.js Developer Gig</p>
+                    <span class="text-[9px] text-slate-400 font-medium">1 hr ago</span>
                   </div>
-                  <p class="text-[10px] text-slate-400 truncate">Category: Web Programming · Tone: Persuasive</p>
+                  <p class="text-[10px] text-slate-500 truncate">Category: Web Programming · Tone: Persuasive</p>
                 </div>
               </div>
 
               <!-- Item 2 -->
               <div class="flex items-start gap-3 text-xs">
-                <div class="p-2 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-400 mt-0.5">
+                <div class="p-2 rounded-xl bg-teal-50 border border-teal-200 text-teal-600 mt-0.5">
                   <Layers class="w-4 h-4" />
                 </div>
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center justify-between">
-                    <p class="font-semibold text-white truncate">Wrote Custom Offer Proposal</p>
-                    <span class="text-[9px] text-slate-500 font-medium">Yesterday</span>
+                    <p class="font-semibold text-slate-900 truncate">Wrote Custom Offer Proposal</p>
+                    <span class="text-[9px] text-slate-400 font-medium">Yesterday</span>
                   </div>
-                  <p class="text-[10px] text-slate-400 truncate">Buyer Name: Sarah K. · Budget: $250</p>
+                  <p class="text-[10px] text-slate-500 truncate">Buyer Name: Sarah K. · Budget: $250</p>
                 </div>
               </div>
 
               <!-- Item 3 -->
               <div class="flex items-start gap-3 text-xs">
-                <div class="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 mt-0.5">
+                <div class="p-2 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-600 mt-0.5">
                   <Cpu class="w-4 h-4" />
                 </div>
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center justify-between">
-                    <p class="font-semibold text-white truncate">Keyword Analysis for logo-designer</p>
-                    <span class="text-[9px] text-slate-500 font-medium">2 days ago</span>
+                    <p class="font-semibold text-slate-900 truncate">Keyword Analysis for logo-designer</p>
+                    <span class="text-[9px] text-slate-400 font-medium">2 days ago</span>
                   </div>
-                  <p class="text-[10px] text-slate-400 truncate">Extracted 24 keywords · average difficulty 45</p>
+                  <p class="text-[10px] text-slate-500 truncate">Extracted 24 keywords · average difficulty 45</p>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- AI suggestions -->
-          <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+          <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
             <div>
-              <h3 class="text-sm font-bold text-white mb-1.5 flex items-center gap-1.5"><Bot class="w-4 h-4 text-emerald-400" /> GigPilot Intelligence Suggestions</h3>
+              <h3 class="text-sm font-bold text-slate-900 mb-1.5 flex items-center gap-1.5"><Bot class="w-4 h-4 text-emerald-500" /> GigPilot Intelligence Suggestions</h3>
               <p class="text-[10px] text-slate-400 font-medium mb-4">Autogenerated suggestions based on your profile analytics</p>
             </div>
             
             <div class="space-y-3.5">
               <!-- Suggestion 1 -->
-              <div class="p-3 rounded-xl bg-[#0f172a]/60 border border-slate-800 flex gap-3">
-                <AlertTriangle class="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" />
+              <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 flex gap-3">
+                <AlertTriangle class="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5" />
                 <div class="text-[11px]">
-                  <p class="font-bold text-white">Optimize search tags for Gig #2</p>
-                  <p class="text-slate-400 mt-0.5">Search algorithm update: Fiverr is prioritizing long-tail tags. Replace "nextjs" with "nextjs landing page" to capture trending search traffic.</p>
+                  <p class="font-bold text-slate-900">Optimize search tags for Gig #2</p>
+                  <p class="text-slate-600 mt-0.5">Search algorithm update: Fiverr is prioritizing long-tail tags. Replace "nextjs" with "nextjs landing page" to capture trending search traffic.</p>
                 </div>
               </div>
 
               <!-- Suggestion 2 -->
-              <div class="p-3 rounded-xl bg-[#0f172a]/60 border border-slate-800 flex gap-3">
-                <CheckCircle2 class="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
+              <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200 flex gap-3">
+                <CheckCircle2 class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                 <div class="text-[11px]">
-                  <p class="font-bold text-white">Boost pricing for Next.js starter tier</p>
-                  <p class="text-slate-400 mt-0.5">Top-rated sellers in your category charging an average of $45 for the basic tier. You are currently priced at $30. Increase to $40 for higher conversion perceived quality.</p>
+                  <p class="font-bold text-slate-900">Boost pricing for Next.js starter tier</p>
+                  <p class="text-slate-600 mt-0.5">Top-rated sellers in your category charging an average of $45 for the basic tier. You are currently priced at $30. Increase to $40 for higher conversion perceived quality.</p>
                 </div>
               </div>
             </div>
 
-            <a href="/tools/gig-health" class="w-full text-center py-2 bg-gradient-to-r from-emerald-600/20 to-teal-600/20 border border-emerald-500/30 rounded-xl text-[10px] text-emerald-300 hover:text-white font-semibold transition-all mt-4">
+            <a href="/tools/gig-health" class="w-full text-center py-2 bg-emerald-50 border border-emerald-200 rounded-xl text-[10px] text-emerald-700 hover:bg-emerald-100 font-semibold transition-all mt-4">
               Run Gig Health Audit
             </a>
           </div>

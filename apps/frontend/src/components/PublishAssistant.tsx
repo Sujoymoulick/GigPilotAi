@@ -106,7 +106,7 @@ export const PublishAssistant: React.FC = () => {
   const progressPct = checklist.length > 0 ? Math.round((completedCount / checklist.length) * 100) : 0;
 
   return (
-    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-300 font-sans">
+    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-700 font-sans">
       <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 pointer-events-none">
         {toasts.map((t) => (
           <div 
@@ -122,10 +122,10 @@ export const PublishAssistant: React.FC = () => {
       {/* Left Draft Manager & Compliance Checklist Column */}
       <div className="lg:col-span-2 space-y-4">
         {/* Draft list */}
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-4">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  space-y-4">
           <div className="flex justify-between items-center">
-            <h2 className="text-xs font-bold text-slate-300 uppercase tracking-wider">Select Gig Draft</h2>
-            <button onClick={fetchDrafts} className="p-1 rounded hover:bg-slate-850 text-slate-400">
+            <h2 className="text-xs font-bold text-slate-700 uppercase tracking-wider">Select Gig Draft</h2>
+            <button onClick={fetchDrafts} className="p-1 rounded hover:bg-slate-850 text-slate-500">
               <RefreshCw className="w-3.5 h-3.5" />
             </button>
           </div>
@@ -138,8 +138,8 @@ export const PublishAssistant: React.FC = () => {
                   onClick={() => setActiveDraft(d)}
                   className={`w-full text-left p-3.5 rounded-xl border transition-all flex items-center justify-between ${
                     activeDraft?.id === d.id 
-                      ? 'bg-slate-950 border-emerald-500/30 shadow-inner' 
-                      : 'bg-slate-950/40 border-slate-850 hover:border-slate-800'
+                      ? 'bg-slate-50 border-emerald-500/30 shadow-inner' 
+                      : 'bg-white border-slate-850 hover:border-slate-200'
                   }`}
                 >
                   <div className="truncate pr-4">
@@ -159,7 +159,7 @@ export const PublishAssistant: React.FC = () => {
 
         {/* Compliance Checklist */}
         {activeDraft && (
-          <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-4">
+          <div className="bg-white border border-slate-200 rounded-2xl p-5  space-y-4">
             <div>
               <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block mb-1">Compliance Health Checklist</span>
               <p className="text-[10px] text-slate-500 font-medium">Fiverr seller panel optimization rules analyzer.</p>
@@ -167,11 +167,11 @@ export const PublishAssistant: React.FC = () => {
 
             {/* Progress bar */}
             <div className="space-y-1.5">
-              <div className="flex justify-between text-[10px] text-slate-400">
+              <div className="flex justify-between text-[10px] text-slate-500">
                 <span>Optimized Score</span>
                 <span className="font-bold text-white">{progressPct}%</span>
               </div>
-              <div className="w-full bg-slate-950 rounded-full h-2 overflow-hidden border border-slate-900">
+              <div className="w-full bg-slate-50 rounded-full h-2 overflow-hidden border border-slate-200">
                 <div 
                   className={`h-full rounded-full transition-all duration-500 ${progressPct === 100 ? 'bg-emerald-500' : 'bg-emerald-500/50'}`} 
                   style={{ width: `${progressPct}%` }}
@@ -185,7 +185,7 @@ export const PublishAssistant: React.FC = () => {
                 <div key={item.id} className="flex items-start justify-between text-xs gap-3">
                   <div className="flex items-center gap-2">
                     <div className={`w-4 h-4 rounded border flex items-center justify-center flex-shrink-0 ${
-                      item.status ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-400' : 'border-slate-800 bg-slate-950 text-transparent'
+                      item.status ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-400' : 'border-slate-200 bg-slate-50 text-transparent'
                     }`}>
                       <Check className="w-3 h-3 stroke-[3]" />
                     </div>
@@ -201,16 +201,16 @@ export const PublishAssistant: React.FC = () => {
 
       {/* Right Column Workspace */}
       <div className="lg:col-span-3 flex flex-col min-h-[500px]">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl flex-1 flex flex-col">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden  flex-1 flex flex-col">
           {/* Header */}
-          <div className="px-5 py-4 bg-slate-950/60 border-b border-slate-800/60 flex items-center justify-between flex-wrap gap-2">
-            <span className="text-xs font-bold text-slate-300">Publish Assistant Workspace</span>
+          <div className="px-5 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between flex-wrap gap-2">
+            <span className="text-xs font-bold text-slate-700">Publish Assistant Workspace</span>
 
             {activeDraft && (
               <div className="flex items-center gap-2">
                 <button 
                   onClick={handleCopyAll}
-                  className="px-2.5 py-1.5 rounded bg-slate-900 border border-slate-800 text-[10px] text-slate-400 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
+                  className="px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 text-[10px] text-slate-500 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
                 >
                   <Copy className="w-3.5 h-3.5" /> Copy All fields
                 </button>
@@ -228,11 +228,11 @@ export const PublishAssistant: React.FC = () => {
 
           <div className="p-6 flex-1 overflow-y-auto space-y-5">
             {activeDraft ? (
-              <div className="space-y-4 text-xs text-slate-300">
+              <div className="space-y-4 text-xs text-slate-700">
                 {/* 1. Title */}
-                <div className="p-4 bg-slate-950/50 rounded-xl border border-slate-850 space-y-2">
+                <div className="p-4 bg-slate-50/50 rounded-xl border border-slate-850 space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Gig Title</span>
+                    <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">Gig Title</span>
                     <button 
                       onClick={() => handleCopy(activeDraft.content.seoTitle, 'Title')}
                       className="text-[10px] text-emerald-400 hover:text-emerald-300 font-semibold"
@@ -244,9 +244,9 @@ export const PublishAssistant: React.FC = () => {
                 </div>
 
                 {/* 2. Category */}
-                <div className="p-4 bg-slate-950/50 rounded-xl border border-slate-850 space-y-2">
+                <div className="p-4 bg-slate-50/50 rounded-xl border border-slate-850 space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Category Routing</span>
+                    <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">Category Routing</span>
                     <button 
                       onClick={() => handleCopy(activeDraft.category, 'Category')}
                       className="text-[10px] text-emerald-400 hover:text-emerald-300 font-semibold"
@@ -258,9 +258,9 @@ export const PublishAssistant: React.FC = () => {
                 </div>
 
                 {/* 3. Description */}
-                <div className="p-4 bg-slate-950/50 rounded-xl border border-slate-855 space-y-2">
+                <div className="p-4 bg-slate-50/50 rounded-xl border border-slate-855 space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Gig Description Pitch</span>
+                    <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">Gig Description Pitch</span>
                     <button 
                       onClick={() => handleCopy(activeDraft.content.description, 'Description')}
                       className="text-[10px] text-emerald-400 hover:text-emerald-300 font-semibold"
@@ -268,14 +268,14 @@ export const PublishAssistant: React.FC = () => {
                       Copy
                     </button>
                   </div>
-                  <p className="leading-relaxed whitespace-pre-wrap text-slate-300">{activeDraft.content.description}</p>
+                  <p className="leading-relaxed whitespace-pre-wrap text-slate-700">{activeDraft.content.description}</p>
                 </div>
 
                 {/* 4. Tags */}
                 {activeDraft.content.tags && (
-                  <div className="p-4 bg-slate-950/50 rounded-xl border border-slate-850 space-y-2">
+                  <div className="p-4 bg-slate-50/50 rounded-xl border border-slate-850 space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Search Keywords Tags</span>
+                      <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">Search Keywords Tags</span>
                       <button 
                         onClick={() => handleCopy(activeDraft.content.tags?.join(', ') || '', 'Tags')}
                         className="text-[10px] text-emerald-400 hover:text-emerald-300 font-semibold"
@@ -285,7 +285,7 @@ export const PublishAssistant: React.FC = () => {
                     </div>
                     <div className="flex flex-wrap gap-1.5 pt-1">
                       {activeDraft.content.tags.map((tag, i) => (
-                        <span key={i} className="bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded-lg">{tag}</span>
+                        <span key={i} className="bg-slate-50 border border-slate-200 text-[10px] font-mono text-slate-500 px-2 py-0.5 rounded-lg">{tag}</span>
                       ))}
                     </div>
                   </div>

@@ -174,7 +174,7 @@ export const SEOAuditor: React.FC = () => {
   };
 
   return (
-    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-300 font-sans">
+    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-700 font-sans">
       <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 pointer-events-none">
         {toasts.map((t) => (
           <div 
@@ -189,66 +189,66 @@ export const SEOAuditor: React.FC = () => {
 
       {/* Left Input Configuration Column */}
       <div className="lg:col-span-2 space-y-4">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-4">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  space-y-4">
           <div>
-            <h2 className="text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">SEO Auditor</h2>
+            <h2 className="text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">SEO Auditor</h2>
             <p className="text-[10px] text-slate-500 font-medium">Paste your Fiverr Gig text copy to audit search keywords indexing score.</p>
           </div>
 
           <form onSubmit={handleAudit} className="space-y-3.5">
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Fiverr Gig Title</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Fiverr Gig Title</label>
               <input 
                 type="text" 
                 required
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 placeholder="I will develop Nextjs web applications..."
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none"
               />
             </div>
 
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Target SEO Keywords (comma-separated)</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Target SEO Keywords (comma-separated)</label>
               <input 
                 type="text" 
                 required
                 value={targetKeywords}
                 onChange={(e) => setTargetKeywords(e.target.value)}
                 placeholder="nextjs, react, web development"
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none"
               />
             </div>
 
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Fiverr Gig Description</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Fiverr Gig Description</label>
               <textarea 
                 required
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 placeholder="Paste descriptions details..."
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none h-24"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none h-24"
               />
             </div>
 
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Packages (optional)</label>
+                <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Packages (optional)</label>
                 <textarea 
                   value={packages}
                   onChange={(e) => setPackages(e.target.value)}
                   placeholder="Paste details..."
-                  className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none h-14"
+                  className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none h-14"
                 />
               </div>
               
               <div>
-                <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">FAQs (optional)</label>
+                <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">FAQs (optional)</label>
                 <textarea 
                   value={faqs}
                   onChange={(e) => setFaqs(e.target.value)}
                   placeholder="Paste FAQs list..."
-                  className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none h-14"
+                  className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none h-14"
                 />
               </div>
             </div>
@@ -275,15 +275,15 @@ export const SEOAuditor: React.FC = () => {
 
       {/* Right Column Workspace */}
       <div className="lg:col-span-3 flex flex-col min-h-[500px]">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl flex-1 flex flex-col">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden  flex-1 flex flex-col">
           {/* Header */}
-          <div className="px-5 py-4 bg-slate-950/60 border-b border-slate-800/60 flex items-center justify-between flex-wrap gap-2">
-            <span className="text-xs font-bold text-slate-300">SEO Analysis Workspace</span>
+          <div className="px-5 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between flex-wrap gap-2">
+            <span className="text-xs font-bold text-slate-700">SEO Analysis Workspace</span>
 
             {activeRun && (
               <button 
                 onClick={() => copyTips(activeRun)}
-                className="px-2.5 py-1.5 rounded bg-slate-900 border border-slate-800 text-[10px] text-slate-400 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
+                className="px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 text-[10px] text-slate-500 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
               >
                 <Copy className="w-3.5 h-3.5" /> Copy Recommendations
               </button>
@@ -298,20 +298,20 @@ export const SEOAuditor: React.FC = () => {
                 <div className="h-32 bg-slate-850 rounded"></div>
               </div>
             ) : activeRun ? (
-              <div className="space-y-6 text-xs text-slate-300">
+              <div className="space-y-6 text-xs text-slate-700">
                 {/* Score meters */}
                 <div className="grid grid-cols-3 gap-4">
-                  <div className="bg-slate-950/50 p-4 border border-slate-855 rounded-xl text-center">
+                  <div className="bg-slate-50/50 p-4 border border-slate-855 rounded-xl text-center">
                     <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">SEO Score</span>
                     <span className={`text-xl font-extrabold mt-1 block ${getScoreColor(activeRun.output.seoScore).split(' ')[0]}`}>{activeRun.output.seoScore}%</span>
                   </div>
                   
-                  <div className="bg-slate-950/50 p-4 border border-slate-855 rounded-xl text-center">
+                  <div className="bg-slate-50/50 p-4 border border-slate-855 rounded-xl text-center">
                     <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">CTR Prediction</span>
                     <span className="text-xl font-extrabold text-white mt-1 block">{activeRun.output.ctrPrediction}%</span>
                   </div>
 
-                  <div className="bg-slate-950/50 p-4 border border-slate-855 rounded-xl text-center">
+                  <div className="bg-slate-50/50 p-4 border border-slate-855 rounded-xl text-center">
                     <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">Keyword Match</span>
                     <span className="text-xl font-extrabold text-emerald-400 mt-1 block">{activeRun.output.keywordScore}%</span>
                   </div>
@@ -319,18 +319,18 @@ export const SEOAuditor: React.FC = () => {
 
                 {/* Missing keywords warnings */}
                 {activeRun.output.missingKeywords.length > 0 && (
-                  <div className="bg-slate-950/40 p-4 border border-rose-500/20 bg-rose-500/5 rounded-xl space-y-2">
+                  <div className="bg-white p-4 border border-rose-500/20 bg-rose-500/5 rounded-xl space-y-2">
                     <span className="text-[9px] font-bold text-rose-400 uppercase tracking-wider block flex items-center gap-1.5"><AlertTriangle className="w-4 h-4" /> Missing target keywords in text</span>
                     <div className="flex flex-wrap gap-1.5 pt-1">
                       {activeRun.output.missingKeywords.map((kw, i) => (
-                        <span key={i} className="px-2 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-400 font-mono">{kw}</span>
+                        <span key={i} className="px-2 py-0.5 rounded bg-slate-50 border border-slate-200 text-[10px] text-slate-500 font-mono">{kw}</span>
                       ))}
                     </div>
                   </div>
                 )}
 
                 {/* Suggestions checklists */}
-                <div className="bg-slate-950/40 p-4 border border-slate-850 rounded-xl space-y-2.5">
+                <div className="bg-white p-4 border border-slate-850 rounded-xl space-y-2.5">
                   <span className="text-[10px] font-bold text-emerald-400 uppercase block mb-1">A9 Optimization Rules Checklist</span>
                   <ul className="list-disc pl-4 space-y-1.5 leading-relaxed text-slate-350">
                     {activeRun.output.optimizationTips.map((tip, idx) => (
@@ -340,11 +340,11 @@ export const SEOAuditor: React.FC = () => {
                 </div>
 
                 {/* Title suggestions */}
-                <div className="bg-slate-950/40 p-4 border border-slate-850 rounded-xl space-y-3">
+                <div className="bg-white p-4 border border-slate-850 rounded-xl space-y-3">
                   <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Optimized Fiverr title variations</span>
                   <div className="space-y-2">
                     {activeRun.output.titleSuggestions.map((title, idx) => (
-                      <div key={idx} className="p-3 bg-slate-900/60 border border-slate-850 rounded-xl flex items-center justify-between gap-3">
+                      <div key={idx} className="p-3 bg-white border border-slate-850 rounded-xl flex items-center justify-between gap-3">
                         <span className="font-bold text-white leading-relaxed text-[11px]">{title}</span>
                         <button 
                           onClick={() => { navigator.clipboard.writeText(title); addToast('Copied title!', 'success'); }}
@@ -368,19 +368,19 @@ export const SEOAuditor: React.FC = () => {
       </div>
 
       {/* History logs */}
-      <div className="lg:col-span-5 border-t border-slate-800/80 pt-6 space-y-4">
+      <div className="lg:col-span-5 border-t border-slate-200 pt-6 space-y-4">
         <div>
-          <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+          <h3 className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
             <SearchCode className="w-4 h-4 text-emerald-400" /> Saved SEO Audits
           </h3>
           <p className="text-[10px] text-slate-500 mt-0.5">Explore saved optimization search summaries.</p>
         </div>
 
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
           {historyList.length > 0 ? (
             <div className="divide-y divide-slate-850">
               {historyList.map((run) => (
-                <div key={run.id} className="p-4 hover:bg-slate-950/20 transition-all flex items-center justify-between gap-4">
+                <div key={run.id} className="p-4 hover:bg-slate-50/20 transition-all flex items-center justify-between gap-4">
                   <div>
                     <p className="text-xs font-bold text-white">Title: {run.input.title}</p>
                     <p className="text-[10px] text-slate-500">Audited on {new Date(run.created_at).toLocaleDateString()} · Score: {run.output.seoScore}%</p>
@@ -395,7 +395,7 @@ export const SEOAuditor: React.FC = () => {
                     </button>
                     <button 
                       onClick={() => handleDelete(run.id)}
-                      className="p-2 rounded bg-slate-950 border border-slate-800 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
+                      className="p-2 rounded bg-slate-50 border border-slate-200 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </button>

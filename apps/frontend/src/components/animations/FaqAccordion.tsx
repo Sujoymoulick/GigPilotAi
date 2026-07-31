@@ -39,7 +39,7 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({ items }) => {
               <motion.span
                 animate={{ rotate: isOpen ? 180 : 0 }}
                 transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                className="text-slate-400 flex-shrink-0"
+                className="text-slate-500 flex-shrink-0"
               >
                 <ChevronDown className="w-4 h-4" />
               </motion.span>

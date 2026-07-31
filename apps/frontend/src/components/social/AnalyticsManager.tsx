@@ -178,19 +178,19 @@ export const AnalyticsManager: React.FC = () => {
       </div>
 
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800/80 pb-5">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5">
         <div>
           <h1 className="text-xl font-bold text-white flex items-center gap-2">
             <LineChart className="w-5 h-5 text-emerald-400" />
             Social Analytics
           </h1>
-          <p className="text-xs text-slate-400 mt-1">
+          <p className="text-xs text-slate-500 mt-1">
             Analyze followers growth, engagement distribution, and marketing campaign performance.
           </p>
         </div>
         <button 
           onClick={loadAnalytics}
-          className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-slate-300 hover:text-white bg-slate-900 border border-slate-800 rounded-xl transition-all"
+          className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-slate-700 hover:text-white bg-white border border-slate-200 rounded-xl transition-all"
         >
           <RefreshCw className="w-3.5 h-3.5" />
           Refresh Stats
@@ -200,7 +200,7 @@ export const AnalyticsManager: React.FC = () => {
       {/* Overview Cards Row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Metric 1: Followers */}
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  flex flex-col justify-between">
           <div className="flex items-center justify-between mb-3">
             <span className="text-[10px] font-bold text-slate-450 uppercase tracking-wider">Total Followers</span>
             <Users className="w-4 h-4 text-emerald-400" />
@@ -213,7 +213,7 @@ export const AnalyticsManager: React.FC = () => {
         </div>
 
         {/* Metric 2: Likes */}
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  flex flex-col justify-between">
           <div className="flex items-center justify-between mb-3">
             <span className="text-[10px] font-bold text-slate-450 uppercase tracking-wider">Accumulated Likes</span>
             <ThumbsUp className="w-4 h-4 text-sky-400" />
@@ -226,7 +226,7 @@ export const AnalyticsManager: React.FC = () => {
         </div>
 
         {/* Metric 3: Clicks */}
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  flex flex-col justify-between">
           <div className="flex items-center justify-between mb-3">
             <span className="text-[10px] font-bold text-slate-450 uppercase tracking-wider">Link Click-throughs</span>
             <MousePointer className="w-4 h-4 text-yellow-500" />
@@ -239,7 +239,7 @@ export const AnalyticsManager: React.FC = () => {
         </div>
 
         {/* Metric 4: Engagement Rate */}
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  flex flex-col justify-between">
           <div className="flex items-center justify-between mb-3">
             <span className="text-[10px] font-bold text-slate-450 uppercase tracking-wider">Engagement Rate</span>
             <MessageCircle className="w-4 h-4 text-indigo-400" />
@@ -255,7 +255,7 @@ export const AnalyticsManager: React.FC = () => {
       {/* Charts Display grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Follower Growth Trend Line */}
-        <div className="bg-slate-950/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl lg:col-span-2 space-y-4">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  lg:col-span-2 space-y-4">
           <div>
             <h3 className="text-xs font-bold text-white uppercase tracking-wider text-slate-350">Followers Growth Trend</h3>
             <p className="text-[10px] text-slate-450 font-medium">Active audience trajectory over past 30 days</p>
@@ -286,7 +286,7 @@ export const AnalyticsManager: React.FC = () => {
         </div>
 
         {/* Platform Post distribution */}
-        <div className="bg-slate-950/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col justify-between">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  flex flex-col justify-between">
           <div>
             <h3 className="text-xs font-bold text-white uppercase tracking-wider text-slate-350 font-sans">Posts Distribution</h3>
             <p className="text-[10px] text-slate-450 font-medium mb-5">Share of publication activity by channel</p>
@@ -295,14 +295,14 @@ export const AnalyticsManager: React.FC = () => {
           <div className="space-y-4">
             {platformShare.map(item => (
               <div key={item.provider} className="space-y-1 text-xs">
-                <div className="flex items-center justify-between text-slate-300">
+                <div className="flex items-center justify-between text-slate-700">
                   <span className="capitalize font-semibold flex items-center gap-1.5">
                     {getPlatformIcon(item.provider)}
                     {item.provider}
                   </span>
-                  <span className="font-bold text-slate-400 font-mono">{item.percent}% ({item.count})</span>
+                  <span className="font-bold text-slate-500 font-mono">{item.percent}% ({item.count})</span>
                 </div>
-                <div className="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden">
+                <div className="w-full bg-slate-50 rounded-full h-1.5 overflow-hidden">
                   <div className="bg-emerald-500 h-full rounded-full" style={{ width: `${item.percent}%` }} />
                 </div>
               </div>
@@ -314,7 +314,7 @@ export const AnalyticsManager: React.FC = () => {
             )}
           </div>
 
-          <div className="text-[9px] text-slate-500 border-t border-slate-900 pt-3 mt-4">
+          <div className="text-[9px] text-slate-500 border-t border-slate-200 pt-3 mt-4">
             Tracks total counts of posts published in active history log.
           </div>
         </div>

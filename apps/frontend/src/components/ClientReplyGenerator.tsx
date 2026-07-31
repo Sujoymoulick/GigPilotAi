@@ -166,7 +166,7 @@ export const ClientReplyGenerator: React.FC = () => {
   ];
 
   return (
-    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-300 font-sans">
+    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-700 font-sans">
       <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 pointer-events-none">
         {toasts.map((t) => (
           <div 
@@ -181,19 +181,19 @@ export const ClientReplyGenerator: React.FC = () => {
 
       {/* Left Input Configuration Column */}
       <div className="lg:col-span-2 space-y-4">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-4">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  space-y-4">
           <div>
-            <h2 className="text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">Reply Config</h2>
+            <h2 className="text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Reply Config</h2>
             <p className="text-[10px] text-slate-500 font-medium">Input client questions or complaints to formulate professional, high-conversion responses.</p>
           </div>
 
           <form onSubmit={handleGenerate} className="space-y-4">
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Scenario Type</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Scenario Type</label>
               <select 
                 value={replyType} 
                 onChange={(e) => setReplyType(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500/50"
               >
                 <option value="professional">Professional / General Reply</option>
                 <option value="friendly">Friendly Greeting / Welcome</option>
@@ -206,23 +206,23 @@ export const ClientReplyGenerator: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Client Message</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Client Message</label>
               <textarea 
                 required
                 value={clientMessage}
                 onChange={(e) => setClientMessage(e.target.value)}
                 placeholder="Paste what the buyer wrote to you..."
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-24"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50 h-24"
               />
             </div>
 
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Additional Context / Instructions (optional)</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Additional Context / Instructions (optional)</label>
               <textarea 
                 value={context}
                 onChange={(e) => setContext(e.target.value)}
                 placeholder="e.g. 'Politely deny the refund request but offer 1 extra revision', 'Upsell source files for $25'..."
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-20"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50 h-20"
               />
             </div>
 
@@ -246,11 +246,11 @@ export const ClientReplyGenerator: React.FC = () => {
         </div>
 
         {/* Quick Canned Replies */}
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-3">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  space-y-3">
           <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Fiverr Quick Reply Templates</span>
           <div className="space-y-2">
             {quickTemplates.map((t, idx) => (
-              <div key={idx} className="p-3 bg-slate-950/60 rounded-xl border border-slate-850 space-y-1">
+              <div key={idx} className="p-3 bg-slate-50 rounded-xl border border-slate-850 space-y-1">
                 <div className="flex justify-between items-center">
                   <span className="font-bold text-white text-[10px]">{t.title}</span>
                   <button 
@@ -260,7 +260,7 @@ export const ClientReplyGenerator: React.FC = () => {
                     Copy
                   </button>
                 </div>
-                <p className="text-[10px] text-slate-400 line-clamp-2 leading-relaxed">"{t.text}"</p>
+                <p className="text-[10px] text-slate-500 line-clamp-2 leading-relaxed">"{t.text}"</p>
               </div>
             ))}
           </div>
@@ -269,15 +269,15 @@ export const ClientReplyGenerator: React.FC = () => {
 
       {/* Right Column Workspace */}
       <div className="lg:col-span-3 flex flex-col min-h-[500px]">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl flex-1 flex flex-col">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden  flex-1 flex flex-col">
           {/* Header */}
-          <div className="px-5 py-4 bg-slate-950/60 border-b border-slate-800/60 flex items-center justify-between flex-wrap gap-2">
-            <span className="text-xs font-bold text-slate-300">Draft Editor Workspace</span>
+          <div className="px-5 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between flex-wrap gap-2">
+            <span className="text-xs font-bold text-slate-700">Draft Editor Workspace</span>
 
             {activeReply && (
               <button 
                 onClick={() => copyText(replyText)}
-                className="px-2.5 py-1.5 rounded bg-slate-900 border border-slate-800 text-[10px] text-slate-400 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
+                className="px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 text-[10px] text-slate-500 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
               >
                 <Copy className="w-3.5 h-3.5" /> Copy Message
               </button>
@@ -292,9 +292,9 @@ export const ClientReplyGenerator: React.FC = () => {
                 <div className="h-24 bg-slate-850 rounded"></div>
               </div>
             ) : activeReply ? (
-              <div className="space-y-5 text-xs text-slate-300">
+              <div className="space-y-5 text-xs text-slate-700">
                 {/* Main draft text */}
-                <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-855 space-y-2">
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-855 space-y-2">
                   <div className="flex justify-between items-center mb-1">
                     <span className="text-[9px] font-bold text-emerald-400 uppercase tracking-wider">Generated Response copy</span>
                     <span className="text-[9px] text-slate-500 capitalize">Tone: {activeReply.input.type}</span>
@@ -302,7 +302,7 @@ export const ClientReplyGenerator: React.FC = () => {
                   <textarea 
                     value={replyText}
                     onChange={(e) => setReplyText(e.target.value)}
-                    className="w-full bg-transparent min-h-[180px] focus:outline-none leading-relaxed text-slate-300 font-sans text-xs resize-y"
+                    className="w-full bg-transparent min-h-[180px] focus:outline-none leading-relaxed text-slate-700 font-sans text-xs resize-y"
                     style={{ whiteSpace: 'pre-wrap' }}
                   />
                 </div>
@@ -312,8 +312,8 @@ export const ClientReplyGenerator: React.FC = () => {
                   <div className="space-y-3">
                     <span className="text-[9px] font-bold text-emerald-400 uppercase tracking-wider block">Alternative phrasing variations</span>
                     {activeReply.output.alternativeOptions.map((alt, idx) => (
-                      <div key={idx} className="p-3 bg-slate-950/50 border border-slate-850 rounded-xl space-y-2">
-                        <p className="leading-relaxed text-slate-400 italic">"{alt}"</p>
+                      <div key={idx} className="p-3 bg-slate-50/50 border border-slate-850 rounded-xl space-y-2">
+                        <p className="leading-relaxed text-slate-500 italic">"{alt}"</p>
                         <button 
                           onClick={() => { setReplyText(alt); addToast('Loaded variation into workspace!', 'success'); }}
                           className="text-[9px] text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1"
@@ -336,19 +336,19 @@ export const ClientReplyGenerator: React.FC = () => {
       </div>
 
       {/* History table */}
-      <div className="lg:col-span-5 border-t border-slate-800/80 pt-6 space-y-4">
+      <div className="lg:col-span-5 border-t border-slate-200 pt-6 space-y-4">
         <div>
-          <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+          <h3 className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
             <MessageSquare className="w-4 h-4 text-emerald-400" /> Historical Client Messages
           </h3>
           <p className="text-[10px] text-slate-500 mt-0.5 font-medium">Browse past communication drafts generated in this workspace.</p>
         </div>
 
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
           {historyList.length > 0 ? (
             <div className="divide-y divide-slate-850">
               {historyList.map((run) => (
-                <div key={run.id} className="p-4 hover:bg-slate-950/20 transition-all flex items-center justify-between gap-4">
+                <div key={run.id} className="p-4 hover:bg-slate-50/20 transition-all flex items-center justify-between gap-4">
                   <div className="max-w-xl">
                     <p className="text-xs font-bold text-white">Scenario: {run.input.type.toUpperCase()}</p>
                     <p className="text-[10px] text-slate-500 line-clamp-1 italic">Client: "{run.input.clientMessage}"</p>
@@ -363,7 +363,7 @@ export const ClientReplyGenerator: React.FC = () => {
                     </button>
                     <button 
                       onClick={() => handleDelete(run.id)}
-                      className="p-2 rounded bg-slate-950 border border-slate-800 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
+                      className="p-2 rounded bg-slate-50 border border-slate-200 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </button>

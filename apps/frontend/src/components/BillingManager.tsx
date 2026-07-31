@@ -143,7 +143,7 @@ export const BillingManager: React.FC = () => {
   };
 
   return (
-    <div className="p-6 max-w-4xl w-full mx-auto space-y-6 text-slate-300 font-sans">
+    <div className="p-6 max-w-4xl w-full mx-auto space-y-6 text-slate-700 font-sans">
       <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 pointer-events-none">
         {toasts.map((t) => (
           <div 
@@ -179,17 +179,17 @@ export const BillingManager: React.FC = () => {
                   </span>
                 </div>
                 <h2 className="text-2xl font-extrabold text-white">{billing.currentPlan} Plan</h2>
-                <p className="text-slate-400 text-xs mt-1">
+                <p className="text-slate-500 text-xs mt-1">
                   Next renewal date: {billing.renewalDate} {billing.currentPlan === 'Pro' ? '($29/mo)' : billing.currentPlan === 'Agency' ? '($89/mo)' : '($0/mo)'}
                 </p>
               </div>
               
-              <div className="w-full md:w-auto bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2 text-xs">
+              <div className="w-full md:w-auto bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2 text-xs">
                 <div className="flex items-center justify-between gap-6 mb-1">
-                  <span className="text-slate-400 font-medium">Credits remaining:</span>
+                  <span className="text-slate-500 font-medium">Credits remaining:</span>
                   <span className="font-bold text-white">{billing.creditsRemaining} / {billing.monthlyQuota} Credits</span>
                 </div>
-                <div className="w-48 bg-slate-900 rounded-full h-1.5 overflow-hidden">
+                <div className="w-48 bg-slate-50 rounded-full h-1.5 overflow-hidden">
                   <div 
                     className="bg-gradient-to-r from-emerald-500 to-teal-500 h-full transition-all duration-500" 
                     style={{ width: `${(billing.creditsRemaining / billing.monthlyQuota) * 100}%` }}
@@ -211,12 +211,12 @@ export const BillingManager: React.FC = () => {
           {/* Plan Upgrade tiers grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
             {/* Free */}
-            <div className="bg-slate-900/40 border border-slate-800/85 p-5 rounded-2xl flex flex-col justify-between space-y-4">
+            <div className="bg-white border border-slate-200/85 p-5 rounded-2xl flex flex-col justify-between space-y-4">
               <div>
                 <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Free Starter</span>
                 <span className="text-3xl font-extrabold text-white mt-1 block">$0</span>
                 <p className="text-[10px] text-slate-500">Perfect to test capabilities.</p>
-                <ul className="space-y-2 text-[11px] text-slate-400 pt-4 border-t border-slate-850">
+                <ul className="space-y-2 text-[11px] text-slate-500 pt-4 border-t border-slate-850">
                   <li className="flex items-center gap-1.5">✓ 50 AI credits per month</li>
                   <li className="flex items-center gap-1.5">✓ Standard buyer reply templates</li>
                   <li className="flex items-center gap-1.5">✓ 2 Fiverr Keyword searches</li>
@@ -224,20 +224,20 @@ export const BillingManager: React.FC = () => {
               </div>
               <button 
                 disabled 
-                className="w-full py-2 bg-slate-950 border border-slate-850 text-slate-600 rounded-lg text-xs font-semibold cursor-not-allowed"
+                className="w-full py-2 bg-slate-50 border border-slate-850 text-slate-600 rounded-lg text-xs font-semibold cursor-not-allowed"
               >
                 {billing.currentPlan === 'Free' ? 'Current Plan' : 'Downgrade Blocked'}
               </button>
             </div>
 
             {/* Pro */}
-            <div className="bg-slate-900/40 border border-emerald-500/20 bg-emerald-500/5 p-5 rounded-2xl flex flex-col justify-between space-y-4 relative overflow-hidden">
+            <div className="bg-white border border-emerald-500/20 bg-emerald-500/5 p-5 rounded-2xl flex flex-col justify-between space-y-4 relative overflow-hidden">
               <span className="absolute top-0 right-0 text-[8px] font-extrabold bg-emerald-500 text-slate-950 px-2 py-0.5 rounded-bl uppercase">Active Choice</span>
               <div>
                 <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Pro Freelancer</span>
                 <span className="text-3xl font-extrabold text-white mt-1 block">$29<span className="text-xs text-slate-500">/mo</span></span>
                 <p className="text-[10px] text-slate-500">For active full-time gig sellers.</p>
-                <ul className="space-y-2 text-[11px] text-slate-300 pt-4 border-t border-slate-850">
+                <ul className="space-y-2 text-[11px] text-slate-700 pt-4 border-t border-slate-850">
                   <li className="flex items-center gap-1.5">✓ 500 AI credits per month</li>
                   <li className="flex items-center gap-1.5">✓ Full A9 Keyword Analytics</li>
                   <li className="flex items-center gap-1.5">✓ All 9 Workspace Tools enabled</li>
@@ -257,12 +257,12 @@ export const BillingManager: React.FC = () => {
             </div>
 
             {/* Agency */}
-            <div className="bg-slate-900/40 border border-slate-800/85 p-5 rounded-2xl flex flex-col justify-between space-y-4">
+            <div className="bg-white border border-slate-200/85 p-5 rounded-2xl flex flex-col justify-between space-y-4">
               <div>
                 <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Agency Scale</span>
                 <span className="text-3xl font-extrabold text-white mt-1 block">$89<span className="text-xs text-slate-500">/mo</span></span>
                 <p className="text-[10px] text-slate-500">For multi-account gig agencies.</p>
-                <ul className="space-y-2 text-[11px] text-slate-400 pt-4 border-t border-slate-850">
+                <ul className="space-y-2 text-[11px] text-slate-500 pt-4 border-t border-slate-850">
                   <li className="flex items-center gap-1.5">✓ 2000 AI credits per month</li>
                   <li className="flex items-center gap-1.5">✓ Multi-account API integration</li>
                   <li className="flex items-center gap-1.5">✓ Priority Customer service</li>
@@ -283,12 +283,12 @@ export const BillingManager: React.FC = () => {
           </div>
 
           {/* Invoices list */}
-          <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-4">
-            <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider">Invoice History</h3>
+          <div className="bg-white border border-slate-200 rounded-2xl p-5  space-y-4">
+            <h3 className="text-xs font-bold text-slate-700 uppercase tracking-wider">Invoice History</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-left text-xs border-collapse">
                 <thead>
-                  <tr className="border-b border-slate-800/80 text-slate-500 font-bold">
+                  <tr className="border-b border-slate-200 text-slate-500 font-bold">
                     <th className="pb-3">Invoice ID</th>
                     <th className="pb-3">Billing Date</th>
                     <th className="pb-3">Amount</th>
@@ -298,7 +298,7 @@ export const BillingManager: React.FC = () => {
                 </thead>
                 <tbody className="divide-y divide-slate-850">
                   {billing.invoices.map((inv) => (
-                    <tr key={inv.id} className="text-slate-350 hover:bg-slate-950/10 transition-all">
+                    <tr key={inv.id} className="text-slate-350 hover:bg-slate-50/10 transition-all">
                       <td className="py-3.5 font-mono text-[10px] text-white">{inv.invoice_id}</td>
                       <td className="py-3.5 flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5 text-slate-600" /> {new Date(inv.created_at).toLocaleDateString()}</td>
                       <td className="py-3.5 font-bold text-white">${inv.amount} {inv.currency}</td>
@@ -319,9 +319,9 @@ export const BillingManager: React.FC = () => {
 
       {/* Razorpay Simulation Modal */}
       {showPaymentModal && selectedPlan && (
-        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-sm overflow-hidden shadow-2xl animate-scale-in">
-            <div className="px-5 py-4 bg-slate-950/60 border-b border-slate-850 flex justify-between items-center">
+        <div className="fixed inset-0 z-50 bg-white backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white border border-slate-200 rounded-2xl w-full max-w-sm overflow-hidden shadow-2xl animate-scale-in">
+            <div className="px-5 py-4 bg-slate-50 border-b border-slate-850 flex justify-between items-center">
               <span className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-1">
                 <CreditCard className="w-4 h-4 text-emerald-400" /> Razorpay Payment Portal
               </span>
@@ -332,13 +332,13 @@ export const BillingManager: React.FC = () => {
 
             {paymentStep === 'summary' && (
               <div className="p-5 space-y-4">
-                <div className="p-4 bg-slate-950 rounded-xl border border-slate-850 space-y-2">
+                <div className="p-4 bg-slate-50 rounded-xl border border-slate-850 space-y-2">
                   <div className="flex justify-between text-xs">
-                    <span className="text-slate-400">Selected Plan:</span>
+                    <span className="text-slate-500">Selected Plan:</span>
                     <span className="font-bold text-white">{selectedPlan} Plan</span>
                   </div>
                   <div className="flex justify-between text-xs">
-                    <span className="text-slate-400">Regular Price:</span>
+                    <span className="text-slate-500">Regular Price:</span>
                     <span className="font-bold text-white">{selectedPlan === 'Pro' ? '$29.00' : '$89.00'}</span>
                   </div>
                   {discount > 0 && (
@@ -366,11 +366,11 @@ export const BillingManager: React.FC = () => {
                     value={couponCode}
                     onChange={(e) => setCouponCode(e.target.value)}
                     placeholder="Enter Coupon (e.g. LAUNCH20)" 
-                    className="flex-1 bg-slate-950 border border-slate-800 rounded-lg px-3 py-1.5 text-xs text-white placeholder-slate-600 focus:outline-none"
+                    className="flex-1 bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs text-white placeholder-slate-400 focus:outline-none"
                   />
                   <button 
                     onClick={handleApplyCoupon}
-                    className="px-3 py-1.5 rounded-lg border border-slate-800 hover:bg-slate-850 text-slate-300 font-bold text-xs"
+                    className="px-3 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-850 text-slate-700 font-bold text-xs"
                   >
                     Apply
                   </button>
@@ -404,7 +404,7 @@ export const BillingManager: React.FC = () => {
                 </div>
                 <button 
                   onClick={() => setShowPaymentModal(false)}
-                  className="w-full py-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 font-bold text-xs hover:text-white"
+                  className="w-full py-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 font-bold text-xs hover:text-white"
                 >
                   Back to Dashboard
                 </button>

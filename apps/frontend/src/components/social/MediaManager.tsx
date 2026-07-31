@@ -150,13 +150,13 @@ export const MediaManager: React.FC = () => {
       </div>
 
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800/80 pb-5">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5">
         <div>
           <h1 className="text-xl font-bold text-white flex items-center gap-2">
             <ImageIcon className="w-5 h-5 text-emerald-400" />
             Media Library
           </h1>
-          <p className="text-xs text-slate-400 mt-1">
+          <p className="text-xs text-slate-500 mt-1">
             Store and search images, product demonstrations, PDFs, and marketing slide decks.
           </p>
         </div>
@@ -172,15 +172,15 @@ export const MediaManager: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Left column: Folders tree (3 cols) */}
         <div className="lg:col-span-3 space-y-4">
-          <div className="bg-slate-950/40 border border-slate-800/80 rounded-2xl p-4 space-y-2.5 backdrop-blur-xl">
+          <div className="bg-white border border-slate-200 rounded-2xl p-4 space-y-2.5 ">
             <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest block mb-2 px-2">Folders</span>
             
             <button
               onClick={() => setActiveFolder('all')}
               className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeFolder === 'all' 
-                  ? 'bg-slate-900 text-white border border-slate-800' 
-                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/40 border border-transparent'
+                  ? 'bg-slate-50 text-white border border-slate-200' 
+                  : 'text-slate-500 hover:text-slate-200 hover:bg-white border border-transparent'
               }`}
             >
               <div className="flex items-center gap-2">
@@ -194,8 +194,8 @@ export const MediaManager: React.FC = () => {
               onClick={() => setActiveFolder('images')}
               className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeFolder === 'images' 
-                  ? 'bg-slate-900 text-white border border-slate-800' 
-                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/40 border border-transparent'
+                  ? 'bg-slate-50 text-white border border-slate-200' 
+                  : 'text-slate-500 hover:text-slate-200 hover:bg-white border border-transparent'
               }`}
             >
               <div className="flex items-center gap-2">
@@ -209,8 +209,8 @@ export const MediaManager: React.FC = () => {
               onClick={() => setActiveFolder('videos')}
               className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeFolder === 'videos' 
-                  ? 'bg-slate-900 text-white border border-slate-800' 
-                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/40 border border-transparent'
+                  ? 'bg-slate-50 text-white border border-slate-200' 
+                  : 'text-slate-500 hover:text-slate-200 hover:bg-white border border-transparent'
               }`}
             >
               <div className="flex items-center gap-2">
@@ -224,8 +224,8 @@ export const MediaManager: React.FC = () => {
               onClick={() => setActiveFolder('docs')}
               className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeFolder === 'docs' 
-                  ? 'bg-slate-900 text-white border border-slate-800' 
-                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/40 border border-transparent'
+                  ? 'bg-slate-50 text-white border border-slate-200' 
+                  : 'text-slate-500 hover:text-slate-200 hover:bg-white border border-transparent'
               }`}
             >
               <div className="flex items-center gap-2">
@@ -249,13 +249,13 @@ export const MediaManager: React.FC = () => {
               placeholder="Search file library..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded-2xl pl-9 pr-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500"
+              className="w-full bg-white border border-slate-200 rounded-2xl pl-9 pr-4 py-2.5 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500"
             />
           </div>
 
           {/* Grid display */}
           {filteredItems.length === 0 ? (
-            <div className="py-24 text-center border border-dashed border-slate-800 rounded-3xl bg-slate-950/20">
+            <div className="py-24 text-center border border-dashed border-slate-200 rounded-3xl bg-slate-50/20">
               <ImageIcon className="w-10 h-10 text-slate-700 mx-auto mb-2 stroke-[1.5]" />
               <p className="text-xs text-slate-500">No media assets match your active folder/search filters.</p>
             </div>
@@ -264,21 +264,21 @@ export const MediaManager: React.FC = () => {
               {filteredItems.map((item) => (
                 <div 
                   key={item.id} 
-                  className="bg-slate-950/40 border border-slate-800/80 rounded-2xl overflow-hidden hover:border-slate-700 transition-all flex flex-col group"
+                  className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-700 transition-all flex flex-col group"
                 >
                   {/* Thumbnail */}
-                  <div className="bg-slate-900 h-32 flex items-center justify-center relative overflow-hidden">
+                  <div className="bg-slate-50 h-32 flex items-center justify-center relative overflow-hidden">
                     {item.type.startsWith('image/') ? (
                       <img src={item.url} alt={item.filename} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                     ) : item.type.startsWith('video/') ? (
                       <div className="flex flex-col items-center gap-1.5">
                         <Video className="w-8 h-8 text-sky-400" />
-                        <span className="text-[8px] bg-slate-950 px-1 py-0.5 rounded text-slate-400 uppercase tracking-widest">Video Clip</span>
+                        <span className="text-[8px] bg-slate-50 px-1 py-0.5 rounded text-slate-500 uppercase tracking-widest">Video Clip</span>
                       </div>
                     ) : (
                       <div className="flex flex-col items-center gap-1.5">
                         <FileText className="w-8 h-8 text-yellow-500" />
-                        <span className="text-[8px] bg-slate-950 px-1 py-0.5 rounded text-slate-400 uppercase tracking-widest">PDF Document</span>
+                        <span className="text-[8px] bg-slate-50 px-1 py-0.5 rounded text-slate-500 uppercase tracking-widest">PDF Document</span>
                       </div>
                     )}
                     
@@ -286,14 +286,14 @@ export const MediaManager: React.FC = () => {
                     <div className="absolute inset-0 bg-black/75 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2.5 transition-opacity">
                       <button 
                         onClick={() => window.open(item.url, '_blank')}
-                        className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all"
+                        className="p-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-700 hover:text-white hover:border-slate-700 transition-all"
                         title="View Asset"
                       >
                         <Eye className="w-4 h-4" />
                       </button>
                       <button 
                         onClick={() => handleDelete(item.id, item.filename)}
-                        className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-rose-400 hover:text-rose-300 hover:border-rose-900/30 transition-all"
+                        className="p-2 rounded-xl bg-slate-50 border border-slate-200 text-rose-400 hover:text-rose-300 hover:border-rose-900/30 transition-all"
                         title="Delete Asset"
                       >
                         <Trash2 className="w-4 h-4" />
@@ -302,7 +302,7 @@ export const MediaManager: React.FC = () => {
                   </div>
 
                   {/* Details */}
-                  <div className="p-3 border-t border-slate-900/60 bg-slate-950/20 text-xs flex flex-col justify-between flex-1">
+                  <div className="p-3 border-t border-slate-200/60 bg-slate-50/20 text-xs flex flex-col justify-between flex-1">
                     <p className="font-bold text-white truncate" title={item.filename}>{item.filename}</p>
                     <div className="flex items-center justify-between text-[10px] text-slate-500 font-semibold mt-2.5">
                       <span className="flex items-center gap-1">

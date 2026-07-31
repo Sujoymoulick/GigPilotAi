@@ -270,28 +270,28 @@ export const CalendarManager: React.FC = () => {
       </div>
 
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800/80 pb-5">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5">
         <div>
           <h1 className="text-xl font-bold text-white flex items-center gap-2">
             <Calendar className="w-5 h-5 text-emerald-400" />
             Content Calendar
           </h1>
-          <p className="text-xs text-slate-400 mt-1">
+          <p className="text-xs text-slate-500 mt-1">
             Drag, drop, and coordinate your multi-channel posts in Monthly, Weekly or Kanban board views.
           </p>
         </div>
         
         {/* Toggle view controls */}
-        <div className="flex bg-slate-900 border border-slate-850 p-1.5 rounded-xl text-xs gap-1 font-semibold text-slate-400">
+        <div className="flex bg-slate-50 border border-slate-850 p-1.5 rounded-xl text-xs gap-1 font-semibold text-slate-500">
           <button 
             onClick={() => setViewMode('month')}
-            className={`px-3.5 py-1.5 rounded-lg transition-all ${viewMode === 'month' ? 'bg-slate-950 text-white' : 'hover:text-slate-200'}`}
+            className={`px-3.5 py-1.5 rounded-lg transition-all ${viewMode === 'month' ? 'bg-slate-50 text-white' : 'hover:text-slate-200'}`}
           >
             Monthly
           </button>
           <button 
             onClick={() => setViewMode('kanban')}
-            className={`px-3.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${viewMode === 'kanban' ? 'bg-slate-950 text-white' : 'hover:text-slate-200'}`}
+            className={`px-3.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${viewMode === 'kanban' ? 'bg-slate-50 text-white' : 'hover:text-slate-200'}`}
           >
             <KanbanSquare className="w-3.5 h-3.5" />
             Kanban
@@ -300,7 +300,7 @@ export const CalendarManager: React.FC = () => {
       </div>
 
       {/* Filters block */}
-      <div className="flex flex-wrap items-center gap-4 bg-slate-950/30 border border-slate-800/60 p-4 rounded-2xl backdrop-blur-xl">
+      <div className="flex flex-wrap items-center gap-4 bg-slate-50 border border-slate-200 p-4 rounded-2xl ">
         <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
           <Filter className="w-3.5 h-3.5 text-slate-500" />
           Filter Schedule:
@@ -310,7 +310,7 @@ export const CalendarManager: React.FC = () => {
         <select
           value={filterPlatform}
           onChange={(e) => setFilterPlatform(e.target.value)}
-          className="bg-slate-900 border border-slate-850 rounded-xl p-2 text-xs text-white focus:outline-none"
+          className="bg-slate-50 border border-slate-850 rounded-xl p-2 text-xs text-white focus:outline-none"
         >
           <option value="">All Social Networks</option>
           <option value="linkedin">LinkedIn</option>
@@ -325,7 +325,7 @@ export const CalendarManager: React.FC = () => {
         <select
           value={filterCampaign}
           onChange={(e) => setFilterCampaign(e.target.value)}
-          className="bg-slate-900 border border-slate-850 rounded-xl p-2 text-xs text-white focus:outline-none"
+          className="bg-slate-50 border border-slate-850 rounded-xl p-2 text-xs text-white focus:outline-none"
         >
           <option value="">All Campaigns</option>
           {campaigns.map(camp => (
@@ -337,7 +337,7 @@ export const CalendarManager: React.FC = () => {
         <select
           value={filterStatus}
           onChange={(e) => setFilterStatus(e.target.value)}
-          className="bg-slate-900 border border-slate-850 rounded-xl p-2 text-xs text-white focus:outline-none"
+          className="bg-slate-50 border border-slate-850 rounded-xl p-2 text-xs text-white focus:outline-none"
         >
           <option value="">All Statuses</option>
           <option value="draft">Drafts</option>
@@ -357,7 +357,7 @@ export const CalendarManager: React.FC = () => {
 
       {/* Month Calendar layout */}
       {viewMode === 'month' && (
-        <div className="bg-slate-950/40 border border-slate-800/80 rounded-3xl overflow-hidden backdrop-blur-xl">
+        <div className="bg-white border border-slate-200 rounded-3xl overflow-hidden ">
           {/* Calendar Month Header */}
           <div className="p-5 border-b border-slate-850 flex items-center justify-between">
             <h2 className="text-sm font-bold text-white uppercase tracking-wider">
@@ -366,13 +366,13 @@ export const CalendarManager: React.FC = () => {
             <div className="flex gap-2">
               <button 
                 onClick={prevMonth}
-                className="p-2 bg-slate-900 border border-slate-850 hover:border-slate-750 text-slate-400 hover:text-white rounded-xl transition-all"
+                className="p-2 bg-slate-50 border border-slate-850 hover:border-slate-750 text-slate-500 hover:text-white rounded-xl transition-all"
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
               <button 
                 onClick={nextMonth}
-                className="p-2 bg-slate-900 border border-slate-850 hover:border-slate-750 text-slate-400 hover:text-white rounded-xl transition-all"
+                className="p-2 bg-slate-50 border border-slate-850 hover:border-slate-750 text-slate-500 hover:text-white rounded-xl transition-all"
               >
                 <ChevronRight className="w-4 h-4" />
               </button>
@@ -380,16 +380,16 @@ export const CalendarManager: React.FC = () => {
           </div>
 
           {/* Days labels */}
-          <div className="grid grid-cols-7 border-b border-slate-850/60 bg-slate-900/35 text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest py-3">
+          <div className="grid grid-cols-7 border-b border-slate-850/60 bg-slate-50/35 text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest py-3">
             {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(d => (
               <span key={d}>{d}</span>
             ))}
           </div>
 
           {/* Days Grid */}
-          <div className="grid grid-cols-7 grid-flow-row min-h-[450px] bg-slate-950/20">
+          <div className="grid grid-cols-7 grid-flow-row min-h-[450px] bg-slate-50/20">
             {getDaysInMonth().map((day, idx) => {
-              if (!day) return <div key={`pad-${idx}`} className="border-r border-b border-slate-850/50 bg-slate-950/5" />;
+              if (!day) return <div key={`pad-${idx}`} className="border-r border-b border-slate-850/50 bg-slate-50/5" />;
               
               const dayStr = day.toISOString().split('T')[0];
               const dayPosts = filteredPosts.filter(p => {
@@ -400,7 +400,7 @@ export const CalendarManager: React.FC = () => {
               return (
                 <div 
                   key={dayStr} 
-                  className="border-r border-b border-slate-850/50 p-3 min-h-[90px] flex flex-col justify-between hover:bg-slate-900/10 transition-colors"
+                  className="border-r border-b border-slate-850/50 p-3 min-h-[90px] flex flex-col justify-between hover:bg-slate-50/10 transition-colors"
                 >
                   <span className="text-xs font-bold text-slate-500 mb-1">{day.getDate()}</span>
                   
@@ -436,7 +436,7 @@ export const CalendarManager: React.FC = () => {
             const colPosts = filteredPosts.filter(p => p.status.toLowerCase() === status.toLowerCase());
             
             return (
-              <div key={status} className="bg-slate-950/40 border border-slate-800/80 rounded-3xl p-5 backdrop-blur-xl flex flex-col max-h-[500px]">
+              <div key={status} className="bg-white border border-slate-200 rounded-3xl p-5  flex flex-col max-h-[500px]">
                 <div className="flex items-center justify-between border-b border-slate-850 pb-3 mb-4">
                   <h3 className="text-xs font-bold text-white flex items-center gap-1.5 uppercase tracking-wider">
                     <span className={`w-2 h-2 rounded-full ${
@@ -446,7 +446,7 @@ export const CalendarManager: React.FC = () => {
                     }`} />
                     {status}
                   </h3>
-                  <span className="text-[10px] px-2 py-0.5 rounded bg-slate-900 text-slate-400 font-mono font-bold">
+                  <span className="text-[10px] px-2 py-0.5 rounded bg-slate-50 text-slate-500 font-mono font-bold">
                     {colPosts.length}
                   </span>
                 </div>
@@ -456,7 +456,7 @@ export const CalendarManager: React.FC = () => {
                     <div 
                       key={post.id}
                       onClick={() => handleOpenDetail(post)}
-                      className="p-3.5 rounded-2xl bg-slate-900 border border-slate-850/80 hover:border-slate-700/80 transition-all cursor-pointer space-y-2 text-xs"
+                      className="p-3.5 rounded-2xl bg-slate-50 border border-slate-850/80 hover:border-slate-700/80 transition-all cursor-pointer space-y-2 text-xs"
                     >
                       <div className="flex items-center justify-between">
                         <span className={`text-[8px] font-bold px-1.5 py-0.5 rounded uppercase flex items-center gap-1 ${getPlatformColor(post.provider || 'linkedin')}`}>
@@ -472,7 +472,7 @@ export const CalendarManager: React.FC = () => {
                       </div>
 
                       <h4 className="font-bold text-white truncate">{post.title || 'Untitled Post'}</h4>
-                      <p className="text-[10px] text-slate-400 line-clamp-2 leading-relaxed">{post.content}</p>
+                      <p className="text-[10px] text-slate-500 line-clamp-2 leading-relaxed">{post.content}</p>
                     </div>
                   ))}
                   {colPosts.length === 0 && (
@@ -489,9 +489,9 @@ export const CalendarManager: React.FC = () => {
 
       {/* Edit / Detail Modal overlay */}
       {selectedPost && (
-        <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4">
-          <div className="bg-[#0D121F] border border-slate-800 rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl">
-            <div className="p-6 border-b border-slate-850">
+        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-white border border-slate-200 rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl">
+            <div className="p-6 border-b border-slate-200">
               <div className="flex items-center justify-between">
                 <span className={`text-[9px] font-bold px-2 py-0.5 rounded uppercase flex items-center gap-1 ${getPlatformColor(selectedPost.provider || 'linkedin')}`}>
                   {getPlatformIcon(selectedPost.provider || 'linkedin')}
@@ -499,42 +499,42 @@ export const CalendarManager: React.FC = () => {
                 </span>
                 <button 
                   onClick={() => setSelectedPost(null)}
-                  className="text-xs text-slate-500 hover:text-white"
+                  className="text-xs text-slate-500 hover:text-slate-800"
                 >
                   Cancel
                 </button>
               </div>
-              <h3 className="text-sm font-bold text-white mt-3">Post Detail Options</h3>
+              <h3 className="text-sm font-bold text-slate-900 mt-3">Post Detail Options</h3>
             </div>
 
             <form onSubmit={handleQuickEdit} className="p-6 space-y-4">
               <div className="space-y-1">
-                <label className="text-[9px] font-bold text-slate-400 uppercase block">Title / Ref</label>
+                <label className="text-[9px] font-bold text-slate-500 uppercase block">Title / Ref</label>
                 <input
                   type="text"
                   value={editTitle}
                   onChange={(e) => setEditTitle(e.target.value)}
-                  className="w-full bg-slate-950 border border-slate-850 rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-emerald-500"
+                  className="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-800 focus:outline-none focus:border-emerald-500"
                 />
               </div>
 
               <div className="space-y-1">
-                <label className="text-[9px] font-bold text-slate-400 uppercase block">Content</label>
+                <label className="text-[9px] font-bold text-slate-500 uppercase block">Content</label>
                 <textarea
                   value={editContent}
                   onChange={(e) => setEditContent(e.target.value)}
                   rows={4}
-                  className="w-full bg-slate-950 border border-slate-850 rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-emerald-500 leading-relaxed"
+                  className="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-800 focus:outline-none focus:border-emerald-500 leading-relaxed"
                 />
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-1">
-                  <label className="text-[9px] font-bold text-slate-400 uppercase block">Workflow Stage</label>
+                  <label className="text-[9px] font-bold text-slate-500 uppercase block">Workflow Stage</label>
                   <select
                     value={editStatus}
                     onChange={(e) => setEditStatus(e.target.value)}
-                    className="w-full bg-slate-950 border border-slate-850 rounded-lg p-2.5 text-xs text-white focus:outline-none"
+                    className="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-800 focus:outline-none"
                   >
                     <option value="Draft">Draft</option>
                     <option value="Scheduled">Scheduled</option>
@@ -544,22 +544,22 @@ export const CalendarManager: React.FC = () => {
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-[9px] font-bold text-slate-400 uppercase block">Schedule Timestamp</label>
+                  <label className="text-[9px] font-bold text-slate-500 uppercase block">Schedule Timestamp</label>
                   <input
                     type="datetime-local"
                     value={editTime}
                     disabled={editStatus !== 'Scheduled'}
                     onChange={(e) => setEditTime(e.target.value)}
-                    className="w-full bg-slate-950 border border-slate-850 rounded-lg p-2 text-xs text-white focus:outline-none disabled:opacity-40"
+                    className="w-full bg-slate-50 border border-slate-200 rounded-lg p-2 text-xs text-slate-800 focus:outline-none disabled:opacity-40"
                   />
                 </div>
               </div>
 
-              <div className="flex gap-3 border-t border-slate-850 pt-4 mt-2">
+              <div className="flex gap-3 border-t border-slate-200 pt-4 mt-2">
                 <button
                   type="button"
                   onClick={() => handleDeletePost(selectedPost.id)}
-                  className="px-4 py-2.5 bg-rose-950/20 hover:bg-rose-950/40 text-rose-400 hover:text-rose-300 rounded-xl border border-rose-900/30 text-xs font-bold flex items-center gap-1.5 transition-all"
+                  className="px-4 py-2.5 bg-rose-50 hover:bg-rose-100 text-rose-600 rounded-xl border border-rose-200 text-xs font-bold flex items-center gap-1.5 transition-all"
                 >
                   <Trash2 className="w-4 h-4" /> Delete Post
                 </button>

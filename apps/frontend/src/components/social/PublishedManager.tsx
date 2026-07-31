@@ -116,19 +116,19 @@ export const PublishedManager: React.FC = () => {
       </div>
 
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800/80 pb-5">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5">
         <div>
           <h1 className="text-xl font-bold text-white flex items-center gap-2">
             <CheckCircle className="w-5 h-5 text-emerald-400" />
             Published History
           </h1>
-          <p className="text-xs text-slate-400 mt-1">
+          <p className="text-xs text-slate-500 mt-1">
             Browse posts that have been successfully published to your linked channels.
           </p>
         </div>
         <button 
           onClick={loadPosts}
-          className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-slate-300 hover:text-white bg-slate-900 border border-slate-800 rounded-xl transition-all"
+          className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-slate-700 hover:text-white bg-white border border-slate-200 rounded-xl transition-all"
         >
           <RefreshCw className="w-3.5 h-3.5" />
           Sync History
@@ -142,7 +142,7 @@ export const PublishedManager: React.FC = () => {
           Loading publication history...
         </div>
       ) : posts.length === 0 ? (
-        <div className="bg-slate-950/20 border border-dashed border-slate-800 rounded-3xl p-12 text-center max-w-lg mx-auto">
+        <div className="bg-slate-50/20 border border-dashed border-slate-200 rounded-3xl p-12 text-center max-w-lg mx-auto">
           <CheckCircle className="w-12 h-12 text-slate-700 mx-auto mb-3 stroke-[1.5]" />
           <h3 className="text-sm font-bold text-slate-350">No Published Posts</h3>
           <p className="text-xs text-slate-500 mt-1 max-w-[280px] mx-auto">
@@ -160,11 +160,11 @@ export const PublishedManager: React.FC = () => {
           {posts.map((post) => (
             <div 
               key={post.id} 
-              className="bg-slate-950/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl flex flex-col md:flex-row gap-5 items-start justify-between hover:border-slate-750 transition-all"
+              className="bg-white border border-slate-200 rounded-2xl p-5  flex flex-col md:flex-row gap-5 items-start justify-between hover:border-slate-750 transition-all"
             >
               <div className="space-y-3 flex-1 min-w-0">
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 font-bold uppercase flex items-center gap-1">
+                  <span className="text-[10px] px-2 py-0.5 rounded bg-slate-50 border border-slate-200 text-slate-500 font-bold uppercase flex items-center gap-1">
                     {getPlatformIcon(post.provider)}
                     {post.provider || 'LinkedIn'}
                   </span>
@@ -176,7 +176,7 @@ export const PublishedManager: React.FC = () => {
                 </div>
 
                 <h3 className="text-sm font-bold text-white leading-snug truncate">{post.title || 'Untitled Post'}</h3>
-                <p className="text-xs text-slate-400 whitespace-pre-wrap leading-relaxed max-w-3xl">{post.content}</p>
+                <p className="text-xs text-slate-500 whitespace-pre-wrap leading-relaxed max-w-3xl">{post.content}</p>
                 
                 {post.link && (
                   <p className="text-[10px] text-sky-400 underline font-mono truncate">{post.link}</p>
@@ -184,12 +184,12 @@ export const PublishedManager: React.FC = () => {
               </div>
 
               {/* Action buttons */}
-              <div className="flex md:flex-col gap-2 w-full md:w-auto shrink-0 border-t md:border-t-0 border-slate-900/60 pt-3.5 md:pt-0">
+              <div className="flex md:flex-col gap-2 w-full md:w-auto shrink-0 border-t md:border-t-0 border-slate-200/60 pt-3.5 md:pt-0">
                 <a
                   href={getPostLink(post)}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-3.5 py-2 bg-slate-900 hover:bg-slate-800 border border-slate-850 hover:border-slate-750 text-slate-300 hover:text-white font-bold text-xs rounded-xl transition-all"
+                  className="flex-1 md:flex-none flex items-center justify-center gap-1.5 px-3.5 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-850 hover:border-slate-750 text-slate-700 hover:text-white font-bold text-xs rounded-xl transition-all"
                 >
                   <ExternalLink className="w-3.5 h-3.5" />
                   View Live Post

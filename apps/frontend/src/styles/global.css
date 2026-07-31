@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    --bg-color: #05080E;
-    --card-bg: #090D16;
-    --card-border: #1E293B;
+    --bg-color: #F8F9FA;
+    --card-bg: #FFFFFF;
+    --card-border: #E2E8F0;
     
     /* Easing curves (spring and bounce approximations) */
     --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -16,19 +16,19 @@
 
   body {
     background-color: var(--bg-color);
-    color: #f8fafc;
+    color: #0f172a;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
   }
 }
 
-/* Glassmorphism utility classes */
+/* Glassmorphism utility classes (light mode) */
 .glass-panel {
-  background: rgba(9, 13, 22, 0.6);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(30, 41, 59, 0.5);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
 }
 
 .gradient-text {
@@ -47,20 +47,20 @@
   box-shadow: 0 0 24px rgba(16, 185, 129, 0.4);
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar (light mode) */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0b0f17;
+  background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #cbd5e1;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: #94a3b8;
 }
 
 /* Ripple effect keyframes */
@@ -81,15 +81,15 @@
 
 /* Noise overlay */
 .noise-bg {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.015'/%3E%3C/svg%3E");
 }
 
-/* Animated Grid Background */
+/* Animated Grid Background (light) */
 .grid-bg {
   background-size: 40px 40px;
   background-image: 
-    linear-gradient(to right, rgba(30, 41, 59, 0.15) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(30, 41, 59, 0.15) 1px, transparent 1px);
+    linear-gradient(to right, rgba(226, 232, 240, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(226, 232, 240, 0.5) 1px, transparent 1px);
   position: relative;
 }
 
@@ -97,7 +97,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 50%, transparent 20%, #05080E 90%);
+  background: radial-gradient(circle at 50% 50%, transparent 20%, #F8F9FA 90%);
   pointer-events: none;
 }
 
@@ -121,7 +121,7 @@
   overflow: hidden;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.75;
+  opacity: 0.5;
   filter: blur(120px);
 }
 
@@ -132,7 +132,7 @@
   width: 50%;
   height: 50%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.18) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
   animation: float-aurora-1 25s ease-in-out infinite alternate;
 }
 
@@ -143,7 +143,7 @@
   width: 60%;
   height: 60%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(13, 148, 136, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.10) 0%, transparent 70%);
   animation: float-aurora-2 30s ease-in-out infinite alternate;
 }
 
@@ -183,6 +183,101 @@
   animation: draw-path 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* ============================================================
+   GLOBAL LIGHT MODE OVERRIDES
+   These convert dark-background Tailwind classes to light equivalents
+   across all app pages without needing to edit each file individually.
+   ============================================================ */
+
+/* App shell — dark page bg becomes light */
+.bg-\[#0B0F17\],
+.bg-\[#05080E\] {
+  background-color: #F8F9FA !important;
+}
+
+/* Dark cards → light cards */
+.bg-slate-900\/40,
+.bg-slate-900\/60,
+.bg-slate-900\/80,
+.bg-slate-950\/40 {
+  background-color: #FFFFFF !important;
+}
+
+/* Dark header bar → white */
+header.border-b.border-slate-800\/80 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom-color: #E2E8F0 !important;
+}
+
+/* Dark borders → light borders */
+.border-slate-800\/80,
+.border-slate-800 {
+  border-color: #E2E8F0 !important;
+}
+
+/* Dark text overrides */
+.text-white {
+  color: #0f172a !important;
+}
+
+.text-slate-300,
+.text-slate-400 {
+  color: #64748b !important;
+}
+
+.text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+/* Input / Select dark overrides */
+input.bg-slate-900\/80,
+input.bg-slate-950,
+select.bg-slate-900,
+select.bg-slate-950,
+.bg-slate-950 {
+  background-color: #F1F5F9 !important;
+  color: #0f172a !important;
+  border-color: #CBD5E1 !important;
+}
+
+/* Progress bar track */
+.bg-slate-950.rounded-full {
+  background-color: #E2E8F0 !important;
+}
+
+/* SVG chart grid lines – make them match light theme */
+/* (handled inline in dashboard) */
+
+/* Sidebar-specific overrides handled in component */
+
+/* Mobile: sidebar hidden by default on small screens */
+@media (max-width: 767px) {
+  /* Sidebar is hidden on mobile unless toggled */
+  aside.sidebar-nav {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    position: fixed !important;
+    z-index: 100;
+  }
+
+  aside.sidebar-nav.open {
+    transform: translateX(0);
+  }
+}
+
+/* Mobile: App shell header needs left padding for hamburger button */
+@media (max-width: 767px) {
+  /* Give the top navbar header space for the hamburger button */
+  main header {
+    padding-left: 4rem !important;
+  }
+
+  /* Ensure flex layout stacks properly on mobile */
+  .flex.min-h-screen {
+    flex-direction: column;
+  }
+}
+
 /* Accessibility: respect user preferences */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -194,4 +289,3 @@
     transform: none !important;
   }
 }
-

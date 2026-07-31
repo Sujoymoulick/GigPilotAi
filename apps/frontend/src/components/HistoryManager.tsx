@@ -160,7 +160,7 @@ export const HistoryManager: React.FC = () => {
   });
 
   return (
-    <div className="p-6 max-w-7xl w-full mx-auto space-y-6 text-slate-300 font-sans">
+    <div className="p-6 max-w-7xl w-full mx-auto space-y-6 text-slate-700 font-sans">
       <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 pointer-events-none">
         {toasts.map((t) => (
           <div 
@@ -174,7 +174,7 @@ export const HistoryManager: React.FC = () => {
       </div>
 
       {/* Toolbar Filter block */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-slate-900/40 border border-slate-800/80 p-4 rounded-2xl backdrop-blur-xl">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white border border-slate-200 p-4 rounded-2xl ">
         <div className="flex flex-wrap items-center gap-3">
           <div className="relative">
             <span className="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none">
@@ -185,14 +185,14 @@ export const HistoryManager: React.FC = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search history content..." 
-              className="bg-slate-950 border border-slate-850 rounded-lg pl-8 pr-3 py-1.5 text-[10px] text-white focus:outline-none"
+              className="bg-white border border-slate-200 rounded-lg pl-8 pr-3 py-1.5 text-[10px] text-slate-800 focus:outline-none focus:border-emerald-500/50"
             />
           </div>
 
           <select 
             value={toolFilter} 
             onChange={(e) => setToolFilter(e.target.value)}
-            className="bg-slate-950 border border-slate-850 rounded-lg px-2.5 py-1.5 text-[10px] text-slate-400 focus:outline-none"
+            className="bg-white border border-slate-200 rounded-lg px-2.5 py-1.5 text-[10px] text-slate-700 focus:outline-none"
           >
             <option value="all">All Modules</option>
             <option value="proposal-generator">Proposal Generator</option>
@@ -209,8 +209,8 @@ export const HistoryManager: React.FC = () => {
             onClick={() => setFavoriteFilter(!favoriteFilter)}
             className={`px-3 py-1.5 rounded-lg border text-[10px] font-bold flex items-center gap-1.5 transition-all ${
               favoriteFilter 
-                ? 'bg-amber-500/10 border-amber-500/30 text-amber-400' 
-                : 'bg-slate-950 border-slate-850 text-slate-400 hover:text-white'
+                ? 'bg-amber-50 border-amber-250 text-amber-700' 
+                : 'bg-white border-slate-200 text-slate-500 hover:text-slate-800'
             }`}
           >
             <Star className="w-3 h-3 fill-current" /> Favorites
@@ -220,7 +220,7 @@ export const HistoryManager: React.FC = () => {
         {history.length > 0 && (
           <button 
             onClick={handleClearAll}
-            className="px-3.5 py-1.5 rounded-lg bg-rose-950 hover:bg-rose-900 border border-rose-500/20 text-rose-400 text-[10px] font-bold flex items-center gap-1.5 transition-all"
+            className="px-3.5 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 border border-rose-200 text-rose-600 text-[10px] font-bold flex items-center gap-1.5 transition-all"
           >
             <Trash2 className="w-3.5 h-3.5" /> Clear All History
           </button>
@@ -228,11 +228,11 @@ export const HistoryManager: React.FC = () => {
       </div>
 
       {/* History table */}
-      <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl">
+      <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs border-collapse">
             <thead>
-              <tr className="border-b border-slate-800/80 text-slate-500 font-bold bg-slate-950/40">
+              <tr className="border-b border-slate-200 text-slate-500 font-bold bg-slate-50">
                 <th className="p-4">Module Tool</th>
                 <th className="p-4">Inputs Summary</th>
                 <th className="p-4">Date Run</th>
@@ -240,47 +240,47 @@ export const HistoryManager: React.FC = () => {
                 <th className="p-4 text-right">Actions</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-850">
+            <tbody className="divide-y divide-slate-200">
               {filteredHistory.length > 0 ? (
                 filteredHistory.map((item) => (
-                  <tr key={item.id} className="hover:bg-slate-950/20 text-slate-350 transition-all">
+                  <tr key={item.id} className="hover:bg-slate-50/50 text-slate-700 transition-all">
                     <td className="p-4">
                       <div className="flex items-center gap-2">
-                        <span className="font-extrabold text-white">{item.module}</span>
-                        {(item.is_favorite || item.isFavorite) && <Star className="w-3 h-3 text-amber-400 fill-current" />}
+                        <span className="font-bold text-slate-900">{item.module}</span>
+                        {(item.is_favorite || item.isFavorite) && <Star className="w-3 h-3 text-amber-500 fill-current" />}
                       </div>
                     </td>
                     <td className="p-4 max-w-xs truncate">
-                      <span className="text-[10px] text-slate-400 font-mono truncate block">
+                      <span className="text-[10px] text-slate-500 font-mono truncate block">
                         {JSON.stringify(item.input)}
                       </span>
                     </td>
-                    <td className="p-4 flex items-center gap-1.5 text-slate-400">
-                      <Calendar className="w-3.5 h-3.5 text-slate-600" />
+                    <td className="p-4 flex items-center gap-1.5 text-slate-500">
+                      <Calendar className="w-3.5 h-3.5 text-slate-400" />
                       {new Date(item.created_at).toLocaleString()}
                     </td>
-                    <td className="p-4 font-mono text-[10px] text-teal-400">
+                    <td className="p-4 font-mono text-[10px] text-teal-650">
                       {item.provider || 'AI engine'}
                     </td>
                     <td className="p-4 text-right">
                       <div className="flex items-center gap-1.5 justify-end">
                         <button 
                           onClick={() => setActiveItem(item)}
-                          className="px-2.5 py-1.5 rounded bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold flex items-center gap-1"
+                          className="px-2.5 py-1 rounded-full bg-[#8DE55A] hover:bg-[#7ad34a] text-slate-900 text-[9px] font-extrabold shadow-sm active:scale-95 transition-all duration-200"
                         >
-                          <Eye className="w-3.5 h-3.5" /> Inspect
+                          <Eye className="w-3 h-3 mr-0.5 inline" /> Inspect
                         </button>
                         <button 
                           onClick={() => handleFavorite(item)}
-                          className="p-1.5 rounded bg-slate-950 border border-slate-850 hover:bg-slate-900 text-slate-400"
+                          className="p-1 rounded bg-slate-50 border border-slate-200 hover:bg-slate-105 text-slate-500"
                         >
-                          <Star className="w-3.5 h-3.5" />
+                          <Star className="w-3 h-3" />
                         </button>
                         <button 
                           onClick={() => handleDelete(item.id)}
-                          className="p-1.5 rounded bg-slate-950 border border-slate-850 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
+                          className="p-1 rounded bg-slate-50 border border-slate-200 hover:bg-rose-50 hover:text-rose-600 hover:border-rose-200 text-slate-500"
                         >
-                          <Trash2 className="w-3.5 h-3.5" />
+                          <Trash2 className="w-3 h-3" />
                         </button>
                       </div>
                     </td>
@@ -300,51 +300,51 @@ export const HistoryManager: React.FC = () => {
 
       {/* Inspector Details Drawer Modal */}
       {activeItem && (
-        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-xl overflow-hidden shadow-2xl animate-scale-in flex flex-col max-h-[85vh]">
-            <div className="px-5 py-4 bg-slate-950/60 border-b border-slate-850 flex justify-between items-center flex-shrink-0">
-              <span className="text-xs font-bold text-white uppercase tracking-wider">
+        <div className="fixed inset-0 z-50 bg-black/30 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white border border-slate-200 rounded-2xl w-full max-w-xl overflow-hidden shadow-2xl animate-scale-in flex flex-col max-h-[85vh]">
+            <div className="px-5 py-4 bg-slate-50 border-b border-slate-200 flex justify-between items-center flex-shrink-0">
+              <span className="text-xs font-bold text-slate-900 uppercase tracking-wider">
                 Inspect generation Log ({activeItem.module})
               </span>
-              <button onClick={() => setActiveItem(null)} className="text-slate-500 hover:text-white">
+              <button onClick={() => setActiveItem(null)} className="text-slate-500 hover:text-slate-800">
                 <X className="w-4 h-4" />
               </button>
             </div>
 
             <div className="p-5 space-y-4 overflow-y-auto flex-1 text-xs">
               {/* Info row */}
-              <div className="grid grid-cols-2 gap-3 text-[10px] bg-slate-950 p-3 rounded-xl border border-slate-850">
+              <div className="grid grid-cols-2 gap-3 text-[10px] bg-slate-50 p-3 rounded-xl border border-slate-200">
                 <div>Date: <strong>{new Date(activeItem.created_at).toLocaleString()}</strong></div>
                 <div>Model Provider: <strong>{activeItem.provider}</strong></div>
               </div>
 
               {/* Input details */}
               <div className="space-y-2">
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Input configuration</span>
-                <pre className="bg-slate-950 p-3.5 rounded-xl border border-slate-850 overflow-x-auto text-[10px] font-mono text-slate-300">
+                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Input configuration</span>
+                <pre className="bg-slate-50 p-3.5 rounded-xl border border-slate-200 overflow-x-auto text-[10px] font-mono text-slate-700">
                   {JSON.stringify(activeItem.input, null, 2)}
                 </pre>
               </div>
 
               {/* Output Details */}
               <div className="space-y-2">
-                <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Output payload results</span>
-                <pre className="bg-slate-950 p-3.5 rounded-xl border border-slate-850 overflow-x-auto text-[10px] font-mono text-slate-350">
+                <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Output payload results</span>
+                <pre className="bg-slate-50 p-3.5 rounded-xl border border-slate-200 overflow-x-auto text-[10px] font-mono text-slate-700">
                   {JSON.stringify(activeItem.output, null, 2)}
                 </pre>
               </div>
             </div>
 
-            <div className="px-5 py-4 bg-slate-950/60 border-t border-slate-850 flex justify-end gap-2 flex-shrink-0">
+            <div className="px-5 py-4 bg-slate-50 border-t border-slate-200 flex justify-end gap-2 flex-shrink-0">
               <button 
                 onClick={() => copyPayload(activeItem)}
-                className="px-3 py-1.5 rounded bg-slate-900 border border-slate-800 text-[10px] text-slate-400 hover:text-white font-bold flex items-center gap-1"
+                className="px-3 py-1.5 rounded bg-slate-50 border border-slate-200 text-[10px] text-slate-500 hover:text-slate-800 hover:bg-slate-100 font-bold flex items-center gap-1 transition-colors"
               >
                 <Copy className="w-3.5 h-3.5" /> Copy Output
               </button>
               <button 
                 onClick={() => downloadJson(activeItem)}
-                className="px-3 py-1.5 rounded bg-slate-900 border border-slate-800 text-[10px] text-slate-400 hover:text-white font-bold flex items-center gap-1"
+                className="px-3 py-1.5 rounded bg-slate-50 border border-slate-200 text-[10px] text-slate-500 hover:text-slate-800 hover:bg-slate-100 font-bold flex items-center gap-1 transition-colors"
               >
                 <Download className="w-3.5 h-3.5" /> Download JSON
               </button>

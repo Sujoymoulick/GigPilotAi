@@ -52,7 +52,7 @@ export const GlowButton: React.FC<GlowButtonProps> = ({
       case 'outline':
         return 'bg-transparent border border-slate-300 text-slate-700 hover:text-slate-950 hover:bg-slate-50/50 font-bold';
       case 'ghost':
-        return 'bg-transparent hover:bg-slate-800/50 text-slate-300 hover:text-white font-medium';
+        return 'bg-transparent hover:bg-slate-100/50 text-slate-700 hover:text-white font-medium';
     }
   };
 

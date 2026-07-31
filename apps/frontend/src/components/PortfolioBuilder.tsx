@@ -210,7 +210,7 @@ export const PortfolioBuilder: React.FC = () => {
   };
 
   return (
-    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-300 font-sans">
+    <div className="p-6 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 text-slate-700 font-sans">
       <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 pointer-events-none">
         {toasts.map((t) => (
           <div 
@@ -225,44 +225,44 @@ export const PortfolioBuilder: React.FC = () => {
 
       {/* Left Input Configuration Column */}
       <div className="lg:col-span-2 space-y-4">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-5 backdrop-blur-xl space-y-4">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5  space-y-4">
           <div>
-            <h2 className="text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">Portfolio Configuration</h2>
+            <h2 className="text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Portfolio Configuration</h2>
             <p className="text-[10px] text-slate-500 font-medium">Input your skills and experience to build high-converting landing page layouts and bio details.</p>
           </div>
 
           <form onSubmit={handleGenerate} className="space-y-4">
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Freelance Role / Speciality</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Freelance Role / Speciality</label>
               <input 
                 type="text" 
                 required
                 value={role}
                 onChange={(e) => setRole(e.target.value)}
                 placeholder="e.g. Senior Next.js Full-Stack Developer"
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50"
               />
             </div>
 
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Key Skills (comma-separated)</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Key Skills (comma-separated)</label>
               <input 
                 type="text" 
                 required
                 value={skills}
                 onChange={(e) => setSkills(e.target.value)}
                 placeholder="React, Next.js, Supabase, Tailwind CSS"
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50"
               />
             </div>
 
             <div>
-              <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Past Projects / Custom Context (optional)</label>
+              <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Past Projects / Custom Context (optional)</label>
               <textarea 
                 value={pastProjects}
                 onChange={(e) => setPastProjects(e.target.value)}
                 placeholder="E-commerce startup site rebrand, responsive SaaS portal design..."
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-emerald-500/50 h-20"
+                className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500/50 h-20"
               />
             </div>
 
@@ -288,22 +288,22 @@ export const PortfolioBuilder: React.FC = () => {
 
       {/* Right Column Workspace */}
       <div className="lg:col-span-3 flex flex-col min-h-[500px]">
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden backdrop-blur-xl flex-1 flex flex-col">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden  flex-1 flex flex-col">
           {/* Header */}
-          <div className="px-5 py-4 bg-slate-950/60 border-b border-slate-800/60 flex items-center justify-between flex-wrap gap-2">
-            <span className="text-xs font-bold text-slate-300">Portfolio Copy Layout</span>
+          <div className="px-5 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between flex-wrap gap-2">
+            <span className="text-xs font-bold text-slate-700">Portfolio Copy Layout</span>
 
             {activeRun && (
               <div className="flex items-center gap-2">
                 <button 
                   onClick={copyTabContent}
-                  className="px-2.5 py-1.5 rounded bg-slate-900 border border-slate-800 text-[10px] text-slate-400 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
+                  className="px-2.5 py-1.5 rounded bg-slate-50 border border-slate-200 text-[10px] text-slate-500 hover:text-white hover:border-slate-700 font-bold flex items-center gap-1"
                 >
                   <Copy className="w-3.5 h-3.5" /> Copy Tab
                 </button>
                 <select 
                   onChange={(e) => exportAsFile(e.target.value as any)}
-                  className="bg-slate-900 border border-slate-800 rounded px-2 py-1 text-[10px] text-slate-300 font-bold focus:outline-none"
+                  className="bg-white border border-slate-200 rounded px-2 py-1 text-[10px] text-slate-700 font-bold focus:outline-none"
                   defaultValue=""
                 >
                   <option value="" disabled>Export Copy...</option>
@@ -317,7 +317,7 @@ export const PortfolioBuilder: React.FC = () => {
 
           {activeRun && (
             /* Tabs bar */
-            <div className="flex bg-slate-950/60 border-b border-slate-850 px-4">
+            <div className="flex bg-slate-50 border-b border-slate-850 px-4">
               {[
                 { id: 'aboutme', label: 'About & LinkedIn' },
                 { id: 'casestudies', label: 'Case Studies' },
@@ -329,8 +329,8 @@ export const PortfolioBuilder: React.FC = () => {
                   onClick={() => setActiveTab(tab.id)}
                   className={`px-4 py-3 text-[10px] font-bold uppercase border-b-2 transition-all ${
                     activeTab === tab.id 
-                      ? 'border-emerald-500 text-white bg-slate-900/40' 
-                      : 'border-transparent text-slate-500 hover:text-slate-300'
+                      ? 'border-emerald-500 text-white bg-white' 
+                      : 'border-transparent text-slate-500 hover:text-slate-700'
                   }`}
                 >
                   {tab.label}
@@ -347,17 +347,17 @@ export const PortfolioBuilder: React.FC = () => {
                 <div className="h-28 bg-slate-850 rounded"></div>
               </div>
             ) : activeRun ? (
-              <div className="space-y-5 text-xs text-slate-300">
+              <div className="space-y-5 text-xs text-slate-700">
                 {activeTab === 'aboutme' && (
                   <div className="space-y-5">
-                    <div className="bg-slate-950/50 p-4 border border-slate-850 rounded-xl space-y-2">
+                    <div className="bg-slate-50/50 p-4 border border-slate-850 rounded-xl space-y-2">
                       <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Bio Description (About Me)</span>
-                      <p className="leading-relaxed whitespace-pre-wrap text-slate-300">{activeRun.portfolio_data.aboutMe}</p>
+                      <p className="leading-relaxed whitespace-pre-wrap text-slate-700">{activeRun.portfolio_data.aboutMe}</p>
                     </div>
 
-                    <div className="bg-slate-950/50 p-4 border border-slate-850 rounded-xl space-y-2">
+                    <div className="bg-slate-50/50 p-4 border border-slate-850 rounded-xl space-y-2">
                       <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">LinkedIn About section Copy</span>
-                      <p className="leading-relaxed whitespace-pre-wrap text-slate-300">{activeRun.portfolio_data.linkedInAbout}</p>
+                      <p className="leading-relaxed whitespace-pre-wrap text-slate-700">{activeRun.portfolio_data.linkedInAbout}</p>
                     </div>
                   </div>
                 )}
@@ -365,11 +365,11 @@ export const PortfolioBuilder: React.FC = () => {
                 {activeTab === 'casestudies' && (
                   <div className="space-y-4">
                     {activeRun.portfolio_data.caseStudies.map((c, idx) => (
-                      <div key={idx} className="bg-slate-950/50 p-4 border border-slate-850 rounded-xl space-y-3">
-                        <span className="font-bold text-white text-sm block border-b border-slate-900 pb-2">{c.title}</span>
+                      <div key={idx} className="bg-slate-50/50 p-4 border border-slate-850 rounded-xl space-y-3">
+                        <span className="font-bold text-white text-sm block border-b border-slate-200 pb-2">{c.title}</span>
                         <div className="space-y-2">
-                          <p className="text-slate-400"><strong>Problem:</strong> {c.problem}</p>
-                          <p className="text-slate-400"><strong>Solution:</strong> {c.solution}</p>
+                          <p className="text-slate-500"><strong>Problem:</strong> {c.problem}</p>
+                          <p className="text-slate-500"><strong>Solution:</strong> {c.solution}</p>
                           <p className="text-emerald-400 bg-emerald-500/5 px-2 py-1.5 rounded border border-emerald-500/10 mt-1"><strong>Outcome:</strong> {c.outcome}</p>
                         </div>
                       </div>
@@ -380,12 +380,12 @@ export const PortfolioBuilder: React.FC = () => {
                 {activeTab === 'projects' && (
                   <div className="space-y-4">
                     {activeRun.portfolio_data.projectDescriptions.map((p, idx) => (
-                      <div key={idx} className="bg-slate-950/50 p-4 border border-slate-850 rounded-xl space-y-2">
+                      <div key={idx} className="bg-slate-50/50 p-4 border border-slate-850 rounded-xl space-y-2">
                         <span className="font-bold text-white text-sm block">{p.title}</span>
-                        <p className="leading-relaxed text-slate-400">{p.description}</p>
+                        <p className="leading-relaxed text-slate-500">{p.description}</p>
                         <div className="flex flex-wrap gap-1.5 pt-2">
                           {p.tags.map((t, i) => (
-                            <span key={i} className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-400">{t}</span>
+                            <span key={i} className="px-2 py-0.5 rounded bg-slate-50 border border-slate-200 text-[10px] font-mono text-slate-500">{t}</span>
                           ))}
                         </div>
                       </div>
@@ -394,9 +394,9 @@ export const PortfolioBuilder: React.FC = () => {
                 )}
 
                 {activeTab === 'web' && (
-                  <div className="bg-slate-950/50 p-4 border border-slate-850 rounded-xl space-y-2">
+                  <div className="bg-slate-50/50 p-4 border border-slate-850 rounded-xl space-y-2">
                     <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">Website Hero / landing Copy</span>
-                    <pre className="leading-relaxed whitespace-pre-wrap text-slate-300 font-sans">{activeRun.portfolio_data.portfolioWebsiteCopy}</pre>
+                    <pre className="leading-relaxed whitespace-pre-wrap text-slate-700 font-sans">{activeRun.portfolio_data.portfolioWebsiteCopy}</pre>
                   </div>
                 )}
               </div>
@@ -411,19 +411,19 @@ export const PortfolioBuilder: React.FC = () => {
       </div>
 
       {/* History section */}
-      <div className="lg:col-span-5 border-t border-slate-800/80 pt-6 space-y-4">
+      <div className="lg:col-span-5 border-t border-slate-200 pt-6 space-y-4">
         <div>
-          <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+          <h3 className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
             <LayoutGrid className="w-4 h-4 text-emerald-400" /> Saved Portfolios
           </h3>
           <p className="text-[10px] text-slate-500 mt-0.5 font-medium">Reload saved portfolio copy sets.</p>
         </div>
 
-        <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl overflow-hidden">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
           {historyList.length > 0 ? (
             <div className="divide-y divide-slate-850">
               {historyList.map((run) => (
-                <div key={run.id} className="p-4 hover:bg-slate-950/20 transition-all flex items-center justify-between gap-4">
+                <div key={run.id} className="p-4 hover:bg-slate-50/20 transition-all flex items-center justify-between gap-4">
                   <div>
                     <p className="text-xs font-bold text-white">Role: {run.role}</p>
                     <p className="text-[10px] text-slate-500">Created on {new Date(run.created_at).toLocaleDateString()}</p>
@@ -438,7 +438,7 @@ export const PortfolioBuilder: React.FC = () => {
                     </button>
                     <button 
                       onClick={() => handleDelete(run.id)}
-                      className="p-2 rounded bg-slate-950 border border-slate-800 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
+                      className="p-2 rounded bg-slate-50 border border-slate-200 hover:bg-rose-950 hover:text-rose-400 text-slate-500"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </button>
